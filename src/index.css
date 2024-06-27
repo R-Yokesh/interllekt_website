@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: Sentinel, Palatino Linotype, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Sentinel, Palatino Linotype, sans-serif;
+}
