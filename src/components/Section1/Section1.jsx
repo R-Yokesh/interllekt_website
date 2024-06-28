@@ -1,5 +1,8 @@
 import React from 'react';
 import './Section1.css';
+import logo from '../../assets/interllekt-logo.png'
+import search from '../../assets/search-icon.png'
+import menu from '../../assets/menu-icon.png'
 
 
 const Section1 = () => {
@@ -7,11 +10,11 @@ const Section1 = () => {
     <div className="section1-container">
       <header className="header">
         <div className="nav-left">
-          <img src="assets/interllekt-logo.png" alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </div>
         <div className="nav-right">
-          <img src="assets/search-icon.png" alt="Search" className="icon" />
-          <img src="assets/menu-icon.png" alt="Menu" className="icon" />
+          <img src={search} alt="Search" className="icon" />
+          <img src={menu} alt="Menu" className="icon" />
         </div>
       </header>
       <div className="section1-body">
