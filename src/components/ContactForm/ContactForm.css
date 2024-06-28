@@ -6,12 +6,15 @@
 }
 .contact-form {
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
   text-align: center;
   position: relative;
   padding-bottom: 6.25rem;
   padding-top: 6.875rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  
 }
 
 .contact-form h2 {
@@ -67,9 +70,10 @@ button {
   transition: all 0.25s;
   cursor: pointer;
   letter-spacing: 0.08em;
-  width: 40%;
+  width: 20%;
   float: left;
   margin-left: 0;
+  margin-bottom: 2rem;
 }
 
 button:hover {

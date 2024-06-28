@@ -1,14 +1,11 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
 }
 
-/* Partner Styles */
 .container {
     display: flex;
-    /* height: 100vh; */
+    height: 100vh; 
     margin-top: 100px;
 }
 
@@ -20,16 +17,18 @@
     width: 60%;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .image img {
     object-fit: cover;
     width: 100%;
-    max-width: 42.5rem;
-    /* min-height: 700px; */
-    /* position: absolute;
-    top: auto;
-    bottom: auto; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
 }
 
 .content {

@@ -9,8 +9,8 @@ const Section1 = () => {
           <img src="https://placehold.co/93x45" alt="Logo" className="logo" />
         </div>
         <div className="nav-right">
-          <img src="/assets/search-icon.png" alt="Search" className="icon" />
-          <img src="/assets/menu-icon.png" alt="Menu" className="icon" />
+          <img src="https://placehold.co/50x50" alt="Search" className="icon" />
+          <img src="https://placehold.co/50x50" alt="Menu" className="icon" />
         </div>
       </header>
       <div className="section1-body">
