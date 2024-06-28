@@ -17,9 +17,8 @@ const Slider = () => {
             </div>
         </div>
         <div class="slider-text">
-            <h1>Talk less.</h1>
-            <h1><i>Do more.</i></h1><br/><br/>
-            <h4>We build to think, make quick prototypes, and test relentlessly to find breakthrough ideas that shape the future.</h4>
+            <h1><i>Built with Creativity.</i></h1><br/><br/>
+            <h4>We let the creativity take over and help build experiences. Individual to organisations transformation is inevitable</h4>
         </div>
     </div>
     );
