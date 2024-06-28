@@ -1,3 +1,28 @@
+
+
+:root {
+  --swatches--elderberry: #17182b;
+  --swatches--lighter-gray: #d4d3d8;
+  --swatches--white: white;
+  --swatches--fades--lighter-gray-50: rgba(212,211,216,.5);
+  --swatches--fades--white-50: rgba(255,255,255,.5);
+  --swatches--light-gray: #aaa9b2;
+  --swatches--gray: #82818e;
+  --swatches--dark-gray: #5c5b6b;
+  --swatches--fades--black-50: rgba(13,13,23,.5);
+  --swatches--fades--elderberry-5: rgba(23,24,43,.05);
+  --swatches--fades--elderberry-10: rgba(23,24,43,.1);
+  --swatches--black: #0d0d17;
+  --swatches--white-smoke: #f8f8fa;
+  --webflow-blue: #146ef5;
+  --swatches--sea-green: #00ffcd;
+  --swatches--fades--rasperry-10: rgba(255,0,108,.1);
+  --swatches--rasperry: #ff006c;
+  --swatches--darker-gray: #38384a;
+  --nav-color: var(--swatches--elderberry);
+  --white: white;
+  --black: black;
+}
 .App {
   text-align: center;
 }
