@@ -1,8 +1,8 @@
 import React from 'react';
 import './Section1.css';
-import logo from '../../assets/interllekt-logo.png'
-import search from '../../assets/search-icon.png'
-import menu from '../../assets/menu-icon.png'
+import logo from '../../../assets/interllekt-logo.png'
+import search from '../../../assets/search-icon.png'
+import menu from '../../../assets/menu-icon.png'
 
 
 const Section1 = () => {
