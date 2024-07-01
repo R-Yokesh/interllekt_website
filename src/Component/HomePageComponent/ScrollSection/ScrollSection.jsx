@@ -78,10 +78,10 @@ const Card = ({ card }) => {
       <div className="super-card-frame">
         <div className="container m">
           <a href={card.link} className="super-card">
-            <div className="super-card-name">
+            {/* <div className="super-card-name">
               <h2 className="sh no-mrg">{card.title}</h2>
-            </div>
-            <div className="super-cover">
+            </div> */}
+            {/* <div className="super-cover">
               <img src={card.imgSrc} alt={card.description} className="fit-cover" />
               <div className="video-wrap bg-over">
                 <video className="fit-cover" preload="none" autoPlay loop muted playsInline>
@@ -90,10 +90,10 @@ const Card = ({ card }) => {
               </div>
               <div className="start-overlay"></div>
               <div className="card-cover-overlay"></div>
-            </div>
-            <div className="super-card-title">
+            </div> */}
+            {/* <div className="super-card-title">
               <p className="no-mrg">{card.description}</p>
-            </div>
+            </div> */}
           </a>
         </div>
       </div>
