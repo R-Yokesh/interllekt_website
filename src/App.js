@@ -12,7 +12,12 @@ import InnoSlider2 from './components/Innovation/InnoSlider2/InnoSlider2';
 import InnoTestiomonial from './components/Innovation/InnoTestiomonial/InnoTestiomonial';
 import InnoContactForm from './components/Innovation/InnoContactForm/InnoContactForm';
 import Header from './components/Header/Header';
-
+import BSection2 from './components/Business/BSection2/BSection2';
+import BSlider from './components/Business/BSlider/BSlider';
+import BCard from './components/Business/BCard/BCard';
+import BSlider2 from './components/Business/BSlider2/BSlider2';
+import BTestiomonial from './components/Business/BTestiomonial/BTestiomonial';
+import BContactForm from './components/Business/BContactForm/BContactForm';
 
 
 
@@ -35,6 +40,13 @@ function App() {
       <InnoSlider2 />
       <InnoTestiomonial />
       <InnoContactForm />
+      {/*--Business-- */}
+      <BSection2 />
+      <BSlider />
+      <BCard />
+      <BSlider2 />
+      <BTestiomonial />
+      <BContactForm />
       
     </div>
   );
