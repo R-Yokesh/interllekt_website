@@ -1,29 +1,30 @@
+/* src/components/Slider2.css */
 
-.slider2 {
+.Bslider2 {
     position: relative;
     width: 100%;
     overflow: hidden;
     font-family: Sentinel, Palatino Linotype, sans-serif;
 }
 
-.slider2-content {
+.Bslider2-content {
     display: flex;
     animation: slide-animation 12s infinite alternate;
     
 }
 
-.slide2 {
+.Bslide2 {
     position: relative;
     width: 100%;
     flex-shrink: 0;
 }
 
-.slider2-image {
+.Bslider2-image {
     width: 100%;
     height: 100vh;
 }
 
-.slider-card {
+.Bslider-card {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -35,7 +36,7 @@
     height: 60vh;
 }
 
-.slider-card h2 {
+.Bslider-card h2 {
     display: inline;
     position: relative;
     font-size: 1.5rem;
@@ -49,12 +50,12 @@
     background-position: left bottom;
 }
 
-.slider-card:hover h2 {
+.Bslider-card:hover h2 {
     box-shadow: inset 100% 0 0 0 #f7f30de0;
     background-size: 100% 40%;
 }
 
-.slider-card p {
+.Bslider-card p {
     font-size: 1rem;
     margin-bottom: 10px;
 }
@@ -66,10 +67,9 @@
     75%, 95% { transform: translateX(-100%); }
     100% { transform: translateX(0%); }
 }
-
 @media (max-width: 600px) 
 {   
-  .slider2{     
+  .Bslider2{     
     flex: 1 1 100%; 
   } 
 }
