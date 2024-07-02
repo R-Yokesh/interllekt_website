@@ -3,14 +3,14 @@
     font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
 }
 
-.container {
+.Bcontainer {
     display: flex;
     height: 100vh; 
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.image {
+.Bimage {
     background-color: #f2f4f5;
     flex-direction: column;
     justify-content: flex-end;
@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 
-.image img {
+.Bimage img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@
     bottom:0;
 }
 
-.content {
+.Bcontent {
     background-color: yellow;
     flex: 2;
     padding: 20px;
@@ -42,7 +42,7 @@
     align-items: flex-start;
 }
 
-.description {
+.Bdescription {
     margin-bottom: 0;
     font-size: 30px;
     font-style: italic;
@@ -51,14 +51,14 @@
     margin: 0;
 }
 
-.human-wrapper {
+.Bhuman-wrapper {
     margin-top: 50px;
     text-align: left;
     padding-right: 20px;
     width: 100%;
 }
 
-.human-name-text-text {
+.Bhuman-name-text-text {
     font-family: 'Gotham', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
@@ -67,7 +67,7 @@
     margin: 0;
 }
 
-.human-name-text {
+.Bhuman-name-text {
     font-family: 'Gotham', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
@@ -75,14 +75,14 @@
     margin: 0;
 }
 
-.partner-text {
+.Bpartner-text {
     font-family: 'Gotham', sans-serif;
     font-size: 1rem;
     line-height: 1.2;
     margin: 0;
 }
 
-.human-line {
+.Bhuman-line {
     background-color: #000;
     width: 100%;
     height: 2px;
@@ -90,11 +90,11 @@
     margin-bottom: 10px;
 }
 
-.container .content p {
+.Bcontainer .Bcontent p {
     text-align: justify;
 }
 
-.description p {
+.Bdescription p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -104,7 +104,7 @@
 }
 @media (max-width: 600px) 
 {   
-  .container{     
+  .Bcontainer{     
     flex: 1 1 100%; 
   } 
 }

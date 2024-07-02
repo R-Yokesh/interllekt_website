@@ -1,13 +1,20 @@
 import React from 'react';
 import './Section2.css';
+import Header from '../../Header/Header';
 
 const Section2 = () => {
   return (
     <div className="section2-container">
+      <Header />
       <div className="section2-body">
-        <h1>Build products, services, & experiences that <i>break through</i></h1>
-        <p>We design the way people experience everyday life by surfacing unmet needs and using those insights to create things people love. From pioneering supersonic jet experiences to breakthrough medical innovations and next-generation AI tools, IDEO has been at the forefront.</p>
-        <p><i><b>We can help you design something better.</b></i></p>
+        <h1>Concept & Design</h1>
+        <p>
+          <i>
+            A visionary creative network striving to craft sublime communication
+            through design, pushing boundaries, we boldly explore new horizons,
+            unlocking limitless possibilities through creative expression.
+          </i>
+        </p>
       </div>
     </div>
   );

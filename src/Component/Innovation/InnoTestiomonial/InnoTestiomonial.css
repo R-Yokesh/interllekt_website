@@ -3,14 +3,14 @@
     font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
 }
 
-.container {
+.Icontainer {
     display: flex;
     height: 100vh; 
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.image {
+.Iimage {
     background-color: #f2f4f5;
     flex-direction: column;
     justify-content: flex-end;
@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 
-.image img {
+.Iimage img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@
     bottom:0;
 }
 
-.content {
+.Icontent {
     background-color: yellow;
     flex: 2;
     padding: 20px;
@@ -42,7 +42,7 @@
     align-items: flex-start;
 }
 
-.description {
+.Idescription {
     margin-bottom: 0;
     font-size: 30px;
     font-style: italic;
@@ -51,14 +51,14 @@
     margin: 0;
 }
 
-.human-wrapper {
+.Ihuman-wrapper {
     margin-top: 50px;
     text-align: left;
     padding-right: 20px;
     width: 100%;
 }
 
-.human-name-text-text {
+.Ihuman-name-text-text {
     font-family: 'Gotham', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
@@ -67,7 +67,7 @@
     margin: 0;
 }
 
-.human-name-text {
+.Ihuman-name-text {
     font-family: 'Gotham', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
@@ -82,7 +82,7 @@
     margin: 0;
 }
 
-.human-line {
+.Ihuman-line {
     background-color: #000;
     width: 100%;
     height: 2px;
@@ -90,21 +90,15 @@
     margin-bottom: 10px;
 }
 
-.container .content p {
+.Icontainer .content p {
     text-align: justify;
 }
 
-.description p {
+.Idescription p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-}
-@media (max-width: 600px) 
-{   
-  .container{     
-    flex: 1 1 100%; 
-  } 
 }

@@ -1,21 +1,21 @@
-.slider {
+.Bslider {
     position: relative;
     width: 100%;
     overflow: hidden;
     font-family: Sentinel, Palatino Linotype, sans-serif;
 }
 
-.slider-content {
+.Bslider-content {
     display: flex;
     animation: slide-animation 12s infinite alternate;
 }
 
-.slide {
+.Bslide {
     width: 100%;
     flex-shrink: 0;
 }
 
-.slider-image {
+.Bslider-image {
     width: 100%;
     height: 110vh;
 }
@@ -28,7 +28,7 @@
     100% { transform: translateX(0%); }
 }
 
-.slider-text {
+.Bslider-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,7 +40,7 @@
     padding: 0 20px;
 }
 
-.slider-text h1 {
+.Bslider-text h1 {
     margin: 20px;
     font-size: 150px;
     font-weight: 500px;
@@ -53,7 +53,7 @@
     line-height: 1;
 }
 
-.slider-text h4 {
+.Bslider-text h4 {
     font-family: Sentinel, Palatino Linotype, sans-serif;
     font-size: 40px;
     margin: 20px;
@@ -64,7 +64,7 @@
 }
 @media (max-width: 600px) 
 {   
-  .slider{     
+  .Bslider{     
     flex: 1 1 100%; 
   } 
 }

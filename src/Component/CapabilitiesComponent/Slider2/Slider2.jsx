@@ -7,25 +7,25 @@ const Slider2 = () => {
         <div className="slider2-content">
             <div className="slide2">
                 <div className="slider-card">
-                    <p>Willow</p><br/>
-                    <h2>Designing the First All-in-One,Wearable Breast Pump</h2><br/><br/>
-                    <p>Collaborating with the startup tean at willow that reimagined the breast pumping expierince</p>
+                    {/* <p>Willow</p><br/> */}
+                    <h2>Social Media Imaging Creative Ideation</h2><br/><br/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ab adipisci. Et accusantium laboriosam excepturi repellat, corporis consectetur corrupti nostrum?</p>
                 </div>
                 <img src="https://placehold.co/1280x600" alt="Slide 1" className="slider2-image" />
             </div>
             <div className="slide2">
                 <div className="slider-card">
-                    <p>Moooi</p><br/>
-                    <h2>Teaching Robots to Dance Like Ballerinas</h2><br/><br/>
-                    <p>What if technology were designed to make our lives more poetic?</p>
+                    {/* <p>Moooi</p><br/> */}
+                    <h2>Digital Environment Aesthetic</h2><br/><br/>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, laudantium! Atque quasi nam possimus architecto ad autem ut eaque dolorum!</p>
                 </div>
                 <img src="https://placehold.co/1280x600" alt="Slide 2" className="slider2-image" />
             </div>
             <div className="slide2">
                 <div className="slider-card">
-                    <p>Ikou</p><br/>
-                    <h2>Giving Every Kid the Freedom to Roam</h2><br/><br/>
-                    <p>Redefining and simplifying how customers engage with their pharmacy.</p>
+                    {/* <p>Ikou</p><br/> */}
+                    <h2>Web App development Event design & production</h2><br/><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi quam dolorem cumque perferendis! Harum nobis officiis assumenda soluta perferendis?</p>
                 </div>
                 <img src="https://placehold.co/1280x600" alt="Slide 3" className="slider2-image" />
             </div>
