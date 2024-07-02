@@ -15,6 +15,7 @@ const Section2 = () => {
             unlocking limitless possibilities through creative expression.
           </i>
         </p>
+        <p>We can bring something to life for you.</p>
       </div>
     </div>
   );

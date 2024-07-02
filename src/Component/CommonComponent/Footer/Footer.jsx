@@ -3,7 +3,7 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Assets from '../../../assets/Assets';
+import Assets from '../../../Assets/Assets';
 
 const Footer = () => {
   const handleSubmit = (e) => {
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 ccpjn">
+          <div className="col-lg-12 ccpjn">
             <p className="copy-right">&copy; {new Date().getFullYear()} Interllekt. All rights reserved.</p>
           </div>
         </div>

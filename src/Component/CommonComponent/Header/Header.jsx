@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Assets from "../../../assets/Assets"
+import Assets from '../../../Assets/Assets';
 
 import "./Header.css";
 
@@ -24,7 +24,7 @@ const Header = () => {
           <Nav className="mx-auto headsm">
             <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="/PrivacyAndPolicy">About</Nav.Link>
-            <Nav.Link href="#">Capabilities</Nav.Link>
+            <Nav.Link href="/Capabilities">Capabilities</Nav.Link>
             <Nav.Link href="#">Contact</Nav.Link>
             {/* <NavDropdown title="Dropdown link" id="basic-nav-dropdown">
               <NavDropdown.Item href="#">Action</NavDropdown.Item>

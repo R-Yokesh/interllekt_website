@@ -4,7 +4,7 @@ import './Testiomonial.css'
 const Partner = () => {
   return (
 
-    <div class="container">
+    <div class="tcontainer">
         <div class="image">
             <img src="https://placehold.co/700x700" alt="yourimage"></img>
         </div>

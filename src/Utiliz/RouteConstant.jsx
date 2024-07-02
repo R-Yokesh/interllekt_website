@@ -9,8 +9,9 @@ const HomePage = React.lazy(() =>
     import('../Pages/Capabilities/CapabilitiesPage')
   );
 
+
   export const routes = [
     { path: '/PrivacyAndPolicy', name: 'Privacy And Policy', element: PrivacyAndPolicy },
     { path: '/', name: 'HomePage', element: HomePage },
-    { path: '/capabilities', name: 'CapabilitiesPage', element: CapabilitiesPage },
+    { path: '/Capabilities', name: 'CapabilitiesPage', element: CapabilitiesPage },
   ]  
