@@ -3,6 +3,7 @@ import AnimationBanner from '../../Component/HomePageComponent/AnimationBanner/A
 import ScrollSection from '../../Component/HomePageComponent/ScrollSection/ScrollSection'
 import DesignFutureAnimation from '../../Component/HomePageComponent/DesignFutureAnimation/DesignFutureAnimation'
 import ArrowAni from '../../Component/HomePageComponent/AnimationBanner/ArrowAni'
+import IndustrySection from '../../Component/HomePageComponent/IndustrySection/IndustrySection'
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <AnimationBanner/>
         <ArrowAni/>
         <DesignFutureAnimation/>
+        <IndustrySection/>
         {/* <ScrollSection/> */}
     </div>
   )

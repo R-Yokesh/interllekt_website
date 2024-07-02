@@ -3,6 +3,9 @@ html.w-mod-touch * {
 }
 
 /* ///firsy section */
+.wholbghs{
+    background-color: var(--black);
+}
 .value-section {
     background-color: var(--white);
     border-radius: 44px 44px 0 0;
@@ -284,4 +287,14 @@ html.w-mod-touch * {
     }
     .firstsval{
         background-color: var(--white) !important;
+    }
+    .faq-content {
+        padding-top: 44px;
+    }
+    .dropdown-list.w--open {
+        background-color: rgba(255, 255, 255, 0);
+        position: static;
+    }
+    .w-dropdown-list.w--open {
+        display: block;
     }
