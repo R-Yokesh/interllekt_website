@@ -1,11 +1,11 @@
 import React from 'react';
 import './Section2.css';
-import Header from '../../Header/Header';
+import { TabSection } from '../TabSection/TabSection';
 
 const Section2 = () => {
   return (
     <div className="section2-container">
-      <Header />
+      <TabSection />
       <div className="section2-body">
         <h1>Concept & Design</h1>
         <p>
