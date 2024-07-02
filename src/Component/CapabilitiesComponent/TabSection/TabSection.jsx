@@ -1,7 +1,7 @@
 import React from 'react'
 import './TabSection.css'
 
-export const TabSection = () => {
+const TabSection = () => {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -35,3 +35,5 @@ export const TabSection = () => {
   )
 }
 
+
+export default TabSection
