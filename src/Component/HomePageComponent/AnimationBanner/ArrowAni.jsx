@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './ArrowAni.css';
 
 const ArrowAni = () => {
   const [transformStyle, setTransformStyle] = useState({
     transform: 'translate3d(-40svw, -40svh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(20deg) skew(0deg, 0deg)',
   });
+  const arrowRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,14 +38,33 @@ const ArrowAni = () => {
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            window.addEventListener('scroll', handleScroll);
+          } else {
+            window.removeEventListener('scroll', handleScroll);
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust this value as needed
+    );
+
+    if (arrowRef.current) {
+      observer.observe(arrowRef.current);
+    }
+
     return () => {
+      if (arrowRef.current) {
+        observer.unobserve(arrowRef.current);
+      }
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <div data-w-id="fae282c3-5007-f083-e4a5-a22ad99df51a" className="scroll-path bow-flight">
+    <div ref={arrowRef} data-w-id="fae282c3-5007-f083-e4a5-a22ad99df51a" className="scroll-path bow-flight">
       <div className="scroll-frame sticky">
         <div className="mega-wrap">
           <div className="narrow-wrap align-center">
