@@ -3,7 +3,7 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Assets from '../../../Assets/Assets';
+import Assets from '../../../assets/Assets';
 
 const Footer = () => {
   const handleSubmit = (e) => {
