@@ -1,0 +1,185 @@
+.scroll-path.bow-flight {
+  min-height: 200svh;
+  position: relative;
+}
+
+.scroll-frame.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.mega-wrap {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+  height: 100svh;
+  margin-top: -50svh;
+  margin-left: -50svw;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0);
+}
+
+.narrow-wrap {
+  max-width: 760px;
+}
+
+.narrow-wrap {
+  /* max-width: 1000px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.p.huge {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+
+.bow-wrap {
+  position: absolute;
+}
+
+.bow-ilo {
+  width: 1100px;
+  height: 48px;
+  color: var(--swatches--lighter-gray);
+  display: block;
+  position: relative;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.bow-ilo.shadow {
+  z-index: -1;
+  opacity: .5;
+  filter: blur(8px);
+  margin-top: -40px;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .scroll-path.bow-flight {
+    min-height: 1250svh;
+  }
+
+  .narrow-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+  }
+
+  .p.huge {
+    font-size: 30px;
+    line-height: 1.5em;
+  }
+
+
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  .bow-ilo.shadow {
+    z-index: -1;
+    opacity: .5;
+    filter: blur(8px);
+    margin-top: -30px;
+  }
+
+  .bow-ilo {
+    color: var(--swatches--lighter-gray);
+    width: 930px;
+    height: 35px;
+    display: block;
+    position: relative;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .scroll-path.bow-flight {
+    min-height: 1000svh;
+  }
+
+  .narrow-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+  }
+
+  .p.huge {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+
+  .bow-ilo {
+    width: 720px;
+    height: 24px;
+  }
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  .bow-ilo.shadow {
+    margin-top: -20px;
+  }
+
+}
+
+@media (min-width: 399px) and (max-width: 589px) {
+  .scroll-path.bow-flight {
+    min-height: 600svh;
+  }
+  .narrow-wrap {
+    width: 100%;
+    max-width: 990px;
+    margin-left: auto;
+  }
+  .p.huge {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+  .bow-ilo {
+    width: 320px;
+    height: 12px;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  .bow-ilo.shadow {
+    margin-top: -4px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 398px) {
+  .scroll-path.bow-flight {
+    min-height: 500svh;
+  }
+  .narrow-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+  }
+  .p.huge {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  .bow-ilo {
+    width: 280px;
+    height: 12px;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  .bow-ilo.shadow {
+    margin-top: -4px;
+  }
+}

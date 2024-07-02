@@ -1,0 +1,41 @@
+/* Header.css */
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px; /* Add some padding to ensure the elements are not touching the edges */
+    background-color: unset;
+  }
+  
+  .navbar-custom .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-custom .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mainheaderrs{
+    /* padding: 2%; */
+  }
+  .navbar-expand-lg{
+    flex-basis: unset !important;
+  }
+  .mx-auto.headsm.navbar-nav{
+    gap: 10%;
+    font-size: 22px;
+    font-weight: 600;
+    width: 50%;
+  }
+  @media (min-width: 600px) and (max-width: 780px){
+    .navbar-custom {
+        justify-content: space-between;
+        padding: 5px;
+
+    }
+    .mainheaderrs{
+        /* padding: 2%; */
+      }
+  }
