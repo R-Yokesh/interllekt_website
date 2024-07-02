@@ -1,6 +1,6 @@
 import React from 'react';
 import './Section2.css';
-import { TabSection } from '../TabSection/TabSection';
+import  TabSection  from '../TabSection/TabSection';
 
 const Section2 = () => {
   return (
