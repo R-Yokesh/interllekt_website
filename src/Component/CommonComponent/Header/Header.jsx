@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Assets from "../../../Assets/Assets"
+import Assets from "../../../assets/Assets"
 
 import "./Header.css";
 
