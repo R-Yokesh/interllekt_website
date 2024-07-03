@@ -4,6 +4,7 @@ import ScrollSection from '../../Component/HomePageComponent/ScrollSection/Scrol
 import DesignFutureAnimation from '../../Component/HomePageComponent/DesignFutureAnimation/DesignFutureAnimation'
 import ArrowAni from '../../Component/HomePageComponent/AnimationBanner/ArrowAni'
 import IndustrySection from '../../Component/HomePageComponent/IndustrySection/IndustrySection'
+import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,9 @@ const HomePage = () => {
         <DesignFutureAnimation/>
         <IndustrySection/>
         {/* <ScrollSection/> */}
+        <div id="contact">
+        <ContactForm/>
+        </div>
     </div>
   )
 }

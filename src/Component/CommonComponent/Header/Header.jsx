@@ -6,10 +6,16 @@ import Assets from '../../../Assets/Assets';
 import "./Header.css";
 
 const Header = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="mainheaderrs">
       <Navbar bg="" expand="lg" className="navbar-custom">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="#" className='bandbv'>
           <img
             src={Assets.logo} // Replace with your logo path
             // width="110px"
@@ -22,10 +28,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav className="mx-auto headsm">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="/PrivacyAndPolicy">About</Nav.Link>
-            <Nav.Link href="/Capabilities">Capabilities</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
+            <Nav.Link href="/interllekt.com">Home</Nav.Link>
+            <Nav.Link href="/interllekt.com">About</Nav.Link>
+            <Nav.Link href="/interllekt.com/Capabilities">Capabilities</Nav.Link>
+            <Nav.Link href="#" onClick={() => scrollToSection('contact')}>Contact</Nav.Link>
             {/* <NavDropdown title="Dropdown link" id="basic-nav-dropdown">
               <NavDropdown.Item href="#">Action</NavDropdown.Item>
               <NavDropdown.Item href="#">Another action</NavDropdown.Item>

@@ -20,7 +20,9 @@ const CapabilitiesPage = () => {
       <CardSection />
       <Slider2 />
       <Testimonial />
-      <ContactForm />
+      <div id="contact">
+        <ContactForm/>
+        </div>
       <div id="innovation">
         <InnovationPage />
       </div>

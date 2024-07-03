@@ -5,7 +5,7 @@ import  TabSection  from '../TabSection/TabSection';
 const Section2 = () => {
   return (
     <div className="section2-container">
-      <TabSection />
+      {/* <TabSection /> */}
       <div className="section2-body">
         <h1>Concept & Design</h1>
         <p>

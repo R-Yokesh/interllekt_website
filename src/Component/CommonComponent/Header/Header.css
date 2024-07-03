@@ -10,6 +10,7 @@
   
   .navbar-custom .navbar-collapse {
     flex-grow: 0;
+    width: 100%;
   }
   
   .navbar-custom .nav {
@@ -24,16 +25,57 @@
     flex-basis: unset !important;
   }
   .mx-auto.headsm.navbar-nav{
-    gap: 10%;
+    gap: 6%;
     font-size: 22px;
     font-weight: 600;
-    width: 50%;
+    width: 100%;
+  }
+  .bandbv{
+    width: 100%;
   }
   @media (min-width: 600px) and (max-width: 780px){
     .navbar-custom {
         justify-content: space-between;
         padding: 5px;
 
+    }
+    .bandbv{
+      width: auto;
+    }
+    .mx-auto.headsm.navbar-nav{
+      padding-left: 4%;
+    }
+    .mainheaderrs{
+        /* padding: 2%; */
+      }
+  }
+  @media (min-width: 398px) and (max-width: 580px){
+    .navbar-custom {
+        justify-content: space-between;
+        padding: 5px;
+
+    }
+    .bandbv{
+      width: auto;
+    }
+    .mx-auto.headsm.navbar-nav{
+      padding-left: 4%;
+    }
+    .mainheaderrs{
+        /* padding: 2%; */
+      }
+  }
+  @media (min-width: 280px) and (max-width: 397px){
+    .navbar-custom {
+        justify-content: space-between;
+        padding: 5px;
+
+    }
+    .bandbv{
+      width: auto;
+    }
+    .mx-auto.headsm.navbar-nav{
+      padding-left: 4%;
     }
     .mainheaderrs{
         /* padding: 2%; */

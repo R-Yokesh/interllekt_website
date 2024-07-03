@@ -254,6 +254,8 @@ const PrivacyAndPolicy = () => {
           <li><a href="mailto:contactus@interllekt.com" className='emalc'> contactus@interllekt.com</a></li>
           </ul>
         </div>
+      
+      
       </div>
       );
 };
