@@ -1,50 +1,47 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .tab-container {
-    background-color: #fff;
-    padding: 10px 20px;
-    color: black;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Adjust z-index as needed */
-  }
-  
-  .tab-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .tab-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: space-around;
-    gap: 50px;
-  }
-  
-  .tab-item {
-    margin: 0 30px; /* Increased margin for larger spacing */
-  }
-  
-  .tab-link {
-    color: black;
-    text-decoration: none;
-    font-size: 2rem; /* Increased font size */
-    font-weight: bold; /* Make the text bold */
-    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-    padding-bottom: 5px;
-  }
-  
-  .tab-link:hover {
-    color: black;
-    border-bottom: 5px solid black;
-  }
-  
+.tab-container {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: white; 
+  padding: 10px 15px;
+  color: black;
+  left: 0;
+  width: 100%;
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.tab-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.tab-item {
+  margin: 0 30px; 
+}
+
+.tab-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  font-family: Gotham, sans-serif; /* Added font-family */
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  padding-bottom: 5px;
+}
+
+.tab-link:hover,
+.tab-link.active {
+  color: black;
+  border-bottom: 5px solid black;
+}

@@ -15,7 +15,9 @@ const CapabilitiesPage = () => {
     <div>
       <Section1 />
       <TabSection />
-      <Section2 />
+      <div id="capabilities">
+        <Section2 />
+      </div>
       <Slider />
       <CardSection />
       <Slider2 />
