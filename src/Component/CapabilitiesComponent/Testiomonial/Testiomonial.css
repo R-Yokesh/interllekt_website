@@ -87,7 +87,7 @@
     margin-bottom: 10px;
 }
 
-.container .content p {
+.tcontainer .content p {
     text-align: justify;
 }
 
@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 600px) {   
-    .container {     
+    .tcontainer {     
         flex-direction: column;
         margin-top: 0;
         margin-bottom: 0;
