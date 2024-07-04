@@ -19,7 +19,7 @@ const CapabilitiesPage = () => {
         <Section2 />
       </div>
       <Slider />
-      <CardSection />
+      {/* <CardSection /> */}
       <Slider2 />
       <Testimonial />
       <div id="contact">

@@ -12,7 +12,7 @@ const BuisnessPage = () => {
     <div>
         <BSection2 />
         <BSlider />
-        <BCard />
+        {/* <BCard /> */}
         <BSlider2 />
         <BTestiomonial />
         <ContactForm />

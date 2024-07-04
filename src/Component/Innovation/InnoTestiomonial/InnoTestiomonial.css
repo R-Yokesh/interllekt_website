@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
-}
+}  
 
 .Icontainer {
     display: flex;
@@ -75,7 +75,7 @@
     margin: 0;
 }
 
-.partner-text {
+.Ipartner-text {
     font-family: 'Gotham', sans-serif;
     font-size: 1rem;
     line-height: 1.2;
