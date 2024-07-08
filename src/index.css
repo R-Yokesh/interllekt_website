@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 body {
   margin: 0;
   font-family: Sentinel, Palatino Linotype, sans-serif;
-=======
+}
 :root {
   --swatches--elderberry: #17182b;
   --swatches--lighter-gray: #d4d3d8;
@@ -57,27 +57,13 @@ body {
 
 body {
   margin: 0;
-<<<<<<< HEAD
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
->>>>>>> 087fd2d6f9a3b598e299ba47c0cbaa521cdb877a
-=======
   font-family:'Switzer-Regular', 'CabinetGrotesk-Bold', sans-serif ;
->>>>>>> 271e463f9808bd8558335beaf5062f51fb033966
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  font-family: Sentinel, Palatino Linotype, sans-serif;
-=======
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
->>>>>>> 087fd2d6f9a3b598e299ba47c0cbaa521cdb877a
-=======
+
   font-family: 'Switzer-Regular', 'CabinetGrotesk-Bold' sans-serif;
->>>>>>> 271e463f9808bd8558335beaf5062f51fb033966
+
 }

@@ -1,22 +1,9 @@
 {
-<<<<<<< HEAD
-  "name": "interllekt-app",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": " https://democenter.in/interllekt/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-=======
   "name": "interllekt_website",
   "version": "0.1.0",
   "homepage": "http://democenter.in/interllekt.com/",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.2",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
@@ -28,12 +15,7 @@
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.10.3",
-<<<<<<< HEAD
-    "react-router-dom": "^6.23.1",
->>>>>>> 087fd2d6f9a3b598e299ba47c0cbaa521cdb877a
-=======
     "react-router-dom": "^6.24.0",
->>>>>>> 271e463f9808bd8558335beaf5062f51fb033966
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
