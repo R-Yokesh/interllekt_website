@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
 }
 
 .Bslider-content {
@@ -47,14 +47,14 @@
     letter-spacing: 0;
     text-transform: none;
     margin-bottom: 0;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
-    font-size: 6.25rem;
+    font-family: 'CabinetGrotesk-Bold',sans-serif;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
 .Bslider-text h4 {
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'CabinetGrotesk-Bold',sans-serif;
     font-size: 40px;
     margin: 20px;
     padding: 20px;

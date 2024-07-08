@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
 }
 
 .Bcontainer {
@@ -59,7 +59,7 @@
 }
 
 .Bhuman-name-text-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.2;
@@ -68,7 +68,7 @@
 }
 
 .Bhuman-name-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.2;
@@ -76,7 +76,7 @@
 }
 
 .Bpartner-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
     font-size: 1rem;
     line-height: 1.2;
     margin: 0;

@@ -1,13 +1,10 @@
-* {
-    /* box-sizing: border-box; */
-    font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
-} 
 
 .tcontainer {
     display: flex;
     height: 100vh; 
     margin-top: 80px;
     margin-bottom: 80px;
+    font-family: 'Switzer-Regular', sans-serif;
 }
 
 .image {
@@ -43,6 +40,7 @@
 }
 
 .description {
+    font-family: 'Switzer-Regular', sans-serif;
     margin-bottom: 0;
     font-size: 30px;
     font-style: italic;
@@ -59,7 +57,7 @@
 }
 
 .human-name-text-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.2;
@@ -68,7 +66,7 @@
 }
 
 .human-name-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.2;
@@ -76,7 +74,7 @@
 }
 
 .partner-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular', sans-serif;
     font-size: 1rem;
     line-height: 1.2;
     margin: 0;

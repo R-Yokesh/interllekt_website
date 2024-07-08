@@ -27,19 +27,36 @@
     --light_green: #c4d0a1;
     --green: #616657;
 }
+@font-face {
+  font-family: 'Switzer-Regular';
+  src: url('./Fonts/Switzer/Switzer-Regular.woff2') format('woff2'),
+       url('./Fonts/Switzer/Switzer-Regular.woff') format('woff'),
+       url('./Fonts/Switzer/Switzer-Regular.ttf') format('ttf');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'CabinetGrotesk-Bold';
+  src: url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.woff2') format('woff2'),
+       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.woff') format('woff'),
+       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.ttf') format('ttf');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
 
 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:'Switzer-Regular', 'CabinetGrotesk-Bold', sans-serif ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Switzer-Regular', 'CabinetGrotesk-Bold' sans-serif;
 }
