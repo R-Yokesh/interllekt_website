@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
 }
 
 .Islider2-content {
@@ -36,6 +35,7 @@
 .Islider-card h2 {
     display: inline;
     position: relative;
+    font-family: 'CabinetGrotesk-Bold',sans-serif;
     font-size: 1.5rem;
     margin-bottom: 15px;
     box-shadow: inset 0 0 0 0 #f7f30de0;
@@ -55,6 +55,7 @@
 .Islider-card p {
     font-size: 1rem;
     margin-bottom: 10px;
+    font-family: 'Switzer-Regular',sans-serif;
 }
 
 /* @keyframes slide-animation {

@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
 }
 
 .slider2-content {
@@ -38,6 +37,7 @@
 .slider-card h2 {
     display: inline;
     position: relative;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 15px;
     box-shadow: inset 0 0 0 0 #f7f30de0;
@@ -56,6 +56,7 @@
 
 .slider-card p {
     font-size: 1rem;
+    font-family: 'Switzer-Regular',sans-serif;
     margin-bottom: 10px;
 }
 

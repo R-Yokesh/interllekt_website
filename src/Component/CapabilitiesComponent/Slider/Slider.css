@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'CabinetGrotesk-Bold';
 }
 
 .slider-content {
@@ -40,21 +40,21 @@
     padding: 0 20px;
 }
 
-.slider-text h1 {
+.slider-text h1 i{
     margin: 20px;
     font-size: 150px;
     font-weight: 500px;
     letter-spacing: 0;
     text-transform: none;
     margin-bottom: 0;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
     font-size: 6.25rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .slider-text h4 {
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
     font-size: 40px;
     margin: 20px;
     padding: 20px;

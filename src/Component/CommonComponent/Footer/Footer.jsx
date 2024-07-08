@@ -11,25 +11,29 @@ const Footer = () => {
     // Implement your subscription logic here
     console.log('Subscribe button clicked');
   };
-
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <footer className="bg-img s">
       <div className="container">
         <div className="row">
-          <div className="col-md-2 logcnm">
+          <div className="col-lg-2 col-md-6 logcnm">
             <img src={Assets.logo} alt="Logo" style={{ width: "120px" }} />
           </div>
-          <div className="col-md-3 logcnm titls">
+          <div className="col-lg-3 col-md-6 logcnm titls">
             <ul className="list-unstyled">
-              <li className='folin'><Link to="/">Home</Link></li>
-              <li className='folin'><Link to="/about">About</Link></li>
-              <li className='folin'><Link to="/contact">contact</Link></li>
-              <li className='folin'><Link to="/contact">Capabilities</Link></li>
-             
-              <li className='folin'><Link to="/PrivacyAndPolicy">Privacy And Policy</Link></li>
+            <li className='folin'><Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link></li>
+              <li className='folin'><Link to="/" onClick={() => console.log('Navigating to About')}>About</Link></li>
+              <li className='folin'><Link to="/" onClick={() => scrollToSection('contact') }>Contact</Link></li>
+              <li className='folin'><Link to="/Capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link></li>
+              <li className='folin'><Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy And Policy</Link></li>
             </ul>
           </div>
-          <div className="col-md-3 social-section logcnm" >
+          <div className="col-lg-3 col-md-6 social-section logcnm" >
             <h4>Socials</h4>
             <div className="social-icons">
               <a href="https://www.instagram.com/interllekt" target="_blank" rel="noopener noreferrer">
@@ -46,7 +50,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-4 logcnm">
+          <div className="col-lg-4 col-md-6 logcnm">
             <h4 className='sgh'>Subscribe</h4>
             <form className="form-subscribe" onSubmit={handleSubmit}>
               <div className="input-group">
@@ -59,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 ccpjn">
+          <div className="col-lg-12 ccpjn">
             <p className="copy-right">&copy; {new Date().getFullYear()} Interllekt. All rights reserved.</p>
           </div>
         </div>

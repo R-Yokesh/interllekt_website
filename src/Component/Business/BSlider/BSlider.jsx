@@ -17,11 +17,10 @@ const BSlider = () => {
                 </div>
             </div>
             <div className="Bslider-text">
-                <h1><i>When innovating thinking made it
-                    happen. </i></h1><br /><br />
-                <h4>We know what an idea can do and how it
+                <h1><i>We Help your businesses succeed with a smarter way ahead.</i></h1><br /><br />
+                {/* <h4>We know what an idea can do and how it
                     can change the world.
-                </h4>
+                </h4> */}
             </div>
         </div>
     );

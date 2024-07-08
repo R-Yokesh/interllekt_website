@@ -64,10 +64,35 @@ li.folin a{
 }
 .ccpjn{
   text-align: center;
-margin-top: 2%;}
+margin-top: 2%;
+}
+
 footer.bg-img.s{
   margin-top: 3%;
 }
 .sgh{
   text-align: center;
+}
+@media (min-width: 800px) and (max-width: 1150px){
+  .social-icons{
+    justify-content: start;
+  }
+}
+@media (min-width: 600px) and (max-width: 780px){
+  .logcnm{
+    /* text-align: center; */
+  }
+  .social-icons{
+    justify-content: start;
+  }
+}
+@media (min-width: 398px) and (max-width: 580px){
+  .logcnm{
+    text-align: center;
+  }
+}
+@media (min-width: 280px) and (max-width: 397px){
+  .logcnm{
+    text-align: center;
+  }
 }

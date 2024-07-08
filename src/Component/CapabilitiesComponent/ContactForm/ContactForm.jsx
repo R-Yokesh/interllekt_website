@@ -3,34 +3,36 @@ import './ContactForm.css';
 
 const ContactForm = () => {
   return (
-    <div className="contact-form">
+    <div className="ccontact-form">
       <h2>Want to learn more? <span>Get in touch.</span></h2>
       <form>
-        <div className="form-row">
-          <div className="form-group">
-            <input type="text" name="firstName" required placeholder="First Name" />
+        <div className="cform-row">
+          <div className="cform-group">
+            <input type="text" name="firstName" className='cinput'required placeholder="First Name" />
             <label></label>
           </div>
-          <div className="form-group">
-            <input type="text" name="lastName" required placeholder="Last Name" />
+          <div className="cform-group">
+            <input type="text" name="lastName" className='cinput' required placeholder="Last Name" />
             <label></label>
           </div>
-          <div className="form-group">
-            <input type="text" name="title" required placeholder="Title" />
-            <label></label>
-          </div>
-        </div>
-        <div className="form-row">
-          <div className="form-group wide">
-            <input type="text" name="company" required placeholder="Company" />
-            <label></label>
-          </div>
-          <div className="form-group wide">
-            <input type="email" name="email" required placeholder="Email" />
+          <div className="cform-group">
+            <input type="text" name="title" className='cinput' required placeholder="Title" />
             <label></label>
           </div>
         </div>
+        <div className="cform-row">
+          <div className="cform-group wide">
+            <input type="text" name="company" className='cinput' required placeholder="Company" />
+            <label></label>
+          </div>
+          <div className="cform-group wide">
+            <input type="email" name="email" className='cinput' required placeholder="Email" />
+            <label></label>
+          </div>
+        </div>
+        <div className='cbtn'>
         <button type="submit">Contact Us</button>
+        </div>
       </form>
     </div>
   );

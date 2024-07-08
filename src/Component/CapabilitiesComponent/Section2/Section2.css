@@ -23,7 +23,7 @@
   margin: 40px 30px 20px 30px;
   letter-spacing: 0;
   text-transform: none;
-  font-family: Sentinel, Palatino Linotype, sans-serif;
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
   font-size: 4.5rem;
   font-weight: 200;
   line-height: 1.2;
@@ -32,14 +32,16 @@
 
 .section2-body p {
   width: 75%;
-  margin: 0 30px 10px 30px;
+  margin: 0 30px 60px 30px;
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: left;
-  font-family: Sentinel, Palatino Linotype, sans-serif;
+  font-family: 'Switzer-Regular', sans-serif;
 }
 
 .section2-body p i {
   font-style: italic;
-  font-family: Sentinel, Palatino Linotype, sans-serif;
+  font-family: 'Switzer-Regular', sans-serif;
 }
+
+
