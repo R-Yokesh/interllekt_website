@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../../Component/CommonComponent/Header/Header'
+// import Header from '../../Component/CommonComponent/Header/Header'
 import AppContents from '../../Utiliz/AppContents'
 import Footer from '../../Component/CommonComponent/Footer/Footer'
 import NewHeader from '../../Component/CommonComponent/NewHeader/NewHeader'
@@ -7,7 +7,7 @@ import NewHeader from '../../Component/CommonComponent/NewHeader/NewHeader'
 const Layout = ({children}) => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <NewHeader/>
       <AppContents/>
       <Footer/>
