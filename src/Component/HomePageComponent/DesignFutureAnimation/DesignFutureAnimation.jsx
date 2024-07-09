@@ -1,11 +1,11 @@
-import React, { useEffect, useRef , useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './DesignFutureAnimation.css'; // Make sure to import your CSS
 
 const DesignFutureAnimation = () => {
     const firstSectionRef = useRef(null);
     const [openItems, setOpenItems] = useState([false, false, false]); // State to track open/close status of FAQ items
 
-
+    const [openIndex, setOpenIndex] = useState(null);
     useEffect(() => {
         const handleScroll = () => {
             if (!firstSectionRef.current) return;
@@ -23,15 +23,21 @@ const DesignFutureAnimation = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    // const [openIndex, setOpenIndex] = useState(null); // State to track the open FAQ item
 
     const toggleItem = (index) => {
-        const updatedItems = [...openItems];
-        updatedItems[index] = !updatedItems[index]; // Toggle the state of the clicked item
-        setOpenItems(updatedItems);
+        if (openIndex === index) {
+            // Clicking on the open FAQ item again should close it
+            setOpenIndex(null);
+        } else {
+            setOpenIndex(index); // Open the clicked FAQ item
+        }
     };
 
+
+
     return (
-        <div>
+        <div className='wholbghs'>
             <section
                 data-w-id="4e104f86-a9a9-43ab-cf7d-c7af3646bcd6"
                 className="value-section"
@@ -55,15 +61,13 @@ const DesignFutureAnimation = () => {
                                     }}
                                     className="heading-1 fluor dark"
                                 >
-                                    It doesn't <br />
-                                    build
-                                    <br />
-                                    websites.
+                                   We are here 
+                                   
                                 </h2>
                                 <h2 data-w-id="573b7921-7302-0611-b910-3fac6e1febaf" style={{ color: 'rgb(0, 0, 0)', opacity: 1 }} className="heading-1">
-                                    It creates
-                                    <br />
-                                    experiences.
+                                 
+                                   
+                                    to design your future
                                 </h2>
                             </div>
                             <div className="content-right-wrap">
@@ -76,9 +80,13 @@ const DesignFutureAnimation = () => {
                                     }}
                                     className="heading-3 black"
                                 >
-                                    You read it better now, right? Well, that's pleasant.
+                                  “We look ahead and manifest the future, 
+through design, technology, strategy, venture 
+and an omni thinking. From a startup to a 
+legacy enterprise, building challenging 
+transformations online and offline
                                 </h2>
-                                <div
+                                {/* <div
                                     data-w-id="e818578c-b7cc-20e4-6088-8ddbe3d2cf18"
                                     style={{
                                         opacity: 1,
@@ -100,8 +108,8 @@ const DesignFutureAnimation = () => {
                                         alt=""
                                         className="button-arrow"
                                     />
-                                </div>
-                                <div
+                                </div> */}
+                                {/* <div
                                     data-w-id="001f3d77-17b6-5433-c538-f199e7be4865"
                                     style={{
                                         opacity: 1,
@@ -111,7 +119,7 @@ const DesignFutureAnimation = () => {
                                     className="text-m black"
                                 >
                                     Structuring content and creating a visual environment so that none of your visitors leave without the information you want to convey. A design product with smooth animations and good copywriting.
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -134,18 +142,18 @@ const DesignFutureAnimation = () => {
                             className="columns-wrap expert"
                         >
                             <div className="heading-left-wrap">
-                                <h2 className="heading-1">Webflow template</h2>
+                                <h2 className="heading-1">CAPABILITIES</h2>
                             </div>
                             <div className="content-right-wrap">
                                 <h2 className="heading-3 black">A cutting-edge web development tool that changes the game.</h2>
                                 <div className="text-m black">
-                                    No plugins.
+                                Concept & Design
                                     <br />
-                                    No updates.
+                                    Innovation
                                     <br />
-                                    No design limitations.
+                                    Business
                                     <br />
-                                    Uses the same servers as Amazon, ensuring security and performance are beyond question.
+                                  
                                 </div>
                             </div>
                         </div>
@@ -173,7 +181,7 @@ const DesignFutureAnimation = () => {
                                     data-hover="false"
                                     data-delay="0"
                                     data-w-id={`faq-item-${index}`}
-                                    style={{ width: '100%', height: '95px' }}
+                                    style={{ width: '100%', height: openIndex === index ? 'auto' : '95px' }}
                                 >
                                     <div
                                         className="faq-tittle w-dropdown-toggle"
@@ -182,31 +190,28 @@ const DesignFutureAnimation = () => {
                                         role="button"
                                         tabIndex={0}
                                         aria-controls={`faq-item-${index}-list`}
-                                        aria-haspopup="menu"
-                                        aria-expanded={openItems[index]}
+                                        aria-haspopup="true"
+                                        aria-expanded={openIndex === index ? 'true' : 'false'}
                                     >
                                         <h3 className="heading-3 faq">{item.question}</h3>
-                                        <div
-                                            className={`plus-icon-black ${openItems[index] ? 'open' : ''}`}
-                                        >
+                                        <div className={`plus-icon-black ${openIndex === index ? 'open' : ''}`}>
                                             <div className="plus-line-vertical black"></div>
                                             <div className="plus-line-horizontal black"></div>
                                         </div>
                                     </div>
-                                    {openItems[index] && (
-                                        <nav
-                                            className="dropdown-list w-dropdown-list"
-                                            id={`faq-item-${index}-list`}
-                                            aria-labelledby={`faq-item-${index}`}
-                                        >
-                                            <div className="faq-content">
-                                                <div className="text-m black">{item.answer}</div>
-                                            </div>
-                                        </nav>
-                                    )}
+                                    <nav
+                                        className={`dropdown-list w-dropdown-list ${openIndex === index ? 'open' : ''}`}
+                                        id={`faq-item-${index}-list`}
+                                        aria-labelledby={`faq-item-${index}`}
+                                    >
+                                        <div className="faq-content">
+                                            <div className="text-m black">{item.answer}</div>
+                                        </div>
+                                    </nav>
                                 </div>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </section>

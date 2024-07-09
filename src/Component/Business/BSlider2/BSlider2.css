@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
 }
 
 .Bslider2-content {
@@ -40,6 +40,7 @@
     display: inline;
     position: relative;
     font-size: 1.5rem;
+    font-family: 'CabinetGrotesk-Bold',sans-serif;
     margin-bottom: 15px;
     box-shadow: inset 0 0 0 0 #f7f30de0;
     color: black;
@@ -58,6 +59,7 @@
 .Bslider-card p {
     font-size: 1rem;
     margin-bottom: 10px;
+    font-family: 'Switzer-Regular',sans-serif;
 }
 
 @keyframes slide-animation {

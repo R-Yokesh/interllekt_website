@@ -58,17 +58,19 @@ function App() {
 // import "./App.sass";
 import RoutesComponent from "./CommonRoutes";
 import Layout from "./Pages/Layout/Layout";
+import ErrorBoundary from './Utiliz/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
       {/* <RoutesComponent /> */}
+      <ErrorBoundary>
       <Router basename='/interllekt.com'>
         <Routes>
           <Route path='/*' element={<Layout />} />
         </Routes>
       </Router>
->>>>>>> 087fd2d6f9a3b598e299ba47c0cbaa521cdb877a
+      </ErrorBoundary>
     </div>
   );
 }
