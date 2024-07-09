@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
+    font-family: 'Switzer-Regular', sans-serif;
 }  
 
 .Icontainer {
@@ -43,6 +43,7 @@
 }
 
 .Idescription {
+    font-family: 'Switzer-Regular',sans-serif;
     margin-bottom: 0;
     font-size: 30px;
     font-style: italic;
@@ -59,7 +60,7 @@
 }
 
 .Ihuman-name-text-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.2;
@@ -68,7 +69,7 @@
 }
 
 .Ihuman-name-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     line-height: 1.2;
@@ -76,7 +77,7 @@
 }
 
 .Ipartner-text {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Switzer-Regular',sans-serif;
     font-size: 1rem;
     line-height: 1.2;
     margin: 0;

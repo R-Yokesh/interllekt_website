@@ -38,7 +38,7 @@
 .heading-style-h1 {
   letter-spacing: 0;
   text-transform: none;
-  font-family: Sentinel, Palatino Linotype, sans-serif;
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
   font-size: 6rem;
   font-weight: 400;
   line-height: 1.2;
@@ -47,14 +47,14 @@
 }
 
 .text-style-italic {
-  font-family: Sentinel, Palatino Linotype, sans-serif;
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
   font-style: italic;
-  color: rgb(2, 131, 237);
+  color: #31175b;
 }
 
 .para p{
     margin-bottom: 50px;
-    font-family: Sentinel, Palatino Linotype, sans-serif;
+    font-family: 'Switzer-Regular', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.2em;

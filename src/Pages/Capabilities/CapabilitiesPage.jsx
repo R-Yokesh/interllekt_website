@@ -7,7 +7,7 @@ import CardSection from '../../Component/CapabilitiesComponent/CardSection/CardS
 import Testimonial from '../../Component/CapabilitiesComponent/Testiomonial/Testiomonial';
 import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm';
 import TabSection from '../../Component/CapabilitiesComponent/TabSection/TabSection';
-import BusinessPage from '../Business/BuisnessPage';
+import BusinessPage from '../Business/BusinessPage';
 import InnovationPage from '../Innovation/InnovationPage';
 
 const CapabilitiesPage = () => {
