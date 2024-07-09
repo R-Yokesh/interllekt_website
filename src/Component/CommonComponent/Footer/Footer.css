@@ -95,14 +95,14 @@
   color:#ddd; 
 }
 
-/* .social-icons {
+/* .social-iconss {
   width: 75%;
   display: flex;
   justify-content: space-between;
 } */
 
 @media (min-width: 800px) and (max-width: 1150px) {
-  .social-icons {
+  .social-iconss {
     justify-content: start;
   }
 }
@@ -112,7 +112,7 @@
     /* text-align: center; */
   }
 
-  .social-icons {
+  .social-iconsss {
     justify-content: start;
   }
 }
