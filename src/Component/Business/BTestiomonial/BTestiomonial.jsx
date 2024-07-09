@@ -14,7 +14,7 @@ const BPartner = () => {
             <div class="Bhuman-wrapper">
                 <p class="Bhuman-name-text-text">LUIS CILIMINGRAS</p>
                 <div class="Bhuman-line"></div>
-                <p class="Buman-name-text">PARTNER</p>
+                <p class="Bhuman-name-text">PARTNER</p>
             </div>
         </div>
     </div>

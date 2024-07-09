@@ -69,7 +69,12 @@ const NewHeader = () => {
                 <Link to="/">Ethos</Link>
               </li>
               <li>
-                <Link to="/">Legal</Link>
+                <Link
+                  to="/legal"
+                  onClick={() => console.log("Navigating to Legal Page")}
+                >
+                  Legal
+                </Link>
               </li>
               <li>
                 <Link

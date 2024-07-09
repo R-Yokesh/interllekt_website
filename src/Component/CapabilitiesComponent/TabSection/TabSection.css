@@ -1,13 +1,13 @@
 .tab-container {
-  position: -webkit-sticky; 
   position: sticky;
-  top: 0;
-  z-index: 1000; 
-  background-color: white; 
+  top: 90px; /* Height of NewHeader */
+  z-index: 1000;
+  background-color: white;
   padding: 10px 15px;
   color: black;
   left: 0;
   width: 100%;
+  transition: top 0.3s ease-in-out;
 }
 
 .tab-nav {
@@ -27,15 +27,15 @@
 }
 
 .tab-item {
-  margin: 0 30px; 
+  margin: 0 30px;
 }
 
 .tab-link {
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
-  font-size: 1.5rem; 
-  font-weight: bold; 
+  font-size: 1.5rem;
+  font-weight: bold;
   font-family: 'CabinetGrotesk-Bold';
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
   padding-bottom: 5px;

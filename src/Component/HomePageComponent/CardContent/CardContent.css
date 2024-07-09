@@ -1,0 +1,83 @@
+.card-content {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  
+  .left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 20px;
+  }
+  
+  .card {
+    width: 45%;
+    padding: 20px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    border-radius: 0  0 50px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, height 0.3s ease;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .card h1 {
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card.focused {
+    width: 80%;
+    height: 200px;
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    border-radius: 10px;
+  }
+  
+  .card.focused h1::after {
+    background-color: #000;
+    width:23%;
+  }
+  
+  .right-side {
+    width: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .content {
+    transition: opacity 0.3s ease; 
+  }
+
+  .content h2 {
+    font-family: 'CabinetGrotesk-Bold', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+  } 
+
+  .content p {
+    font-family: 'Switzer-Regular',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2rem;
+    width: 75%;
+  }
+  
