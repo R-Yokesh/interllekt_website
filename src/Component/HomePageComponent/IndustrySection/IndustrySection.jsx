@@ -7,9 +7,9 @@ const IndustrySection = () => {
     <div className="industry-section container">
       <div className="industry-content">
         <div className="industry-text">
-          <h2 className='cham'>We champion the bold to achieve the extraordinary.</h2>
+          {/* <h2 className='cham'>We champion the bold to achieve the extraordinary.</h2>
           <p>Answer two questions and put our thinking to work on your challenges.</p>
-          <h3>1. What is your industry? <span className="question-count">Question 1 of 2</span></h3>
+          <h3>1. What is your industry? <span className="question-count">Question 1 of 2</span></h3> */}
           <div className="industry-tags">
             <button className="tag">Aerospace</button>
             <button className="tag">Consumer Products Industry	</button>
