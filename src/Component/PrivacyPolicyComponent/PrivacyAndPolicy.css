@@ -1,18 +1,22 @@
 .privacy-container {
   padding: 20px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   text-align: justify;
 }
 
+h1 , h2 , h3 {
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
+}
 h2 {
   color: #333;
   margin-top: 20px;
 }
 
 p {
+  font-family: 'Switzer-Regular',sans-serif;
   margin: 10px 0;
 }
 

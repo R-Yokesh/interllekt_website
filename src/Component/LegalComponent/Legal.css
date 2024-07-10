@@ -1,19 +1,21 @@
 .legal-container {
   padding: 20px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   text-align: justify;
 }
 
 .legal-container h1 {
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
   font-size: 2em;
   margin-bottom: 0.5em;
   text-align: center;
 }
 
 .legal-container h2 {
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
   font-size: 1.5em;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -21,6 +23,7 @@
 }
 
 .legal-container p {
+  font-family: 'Switzer-Regular',sans-serif;
   font-size: 1em;
   line-height: 1.6;
   margin: 10px 0;

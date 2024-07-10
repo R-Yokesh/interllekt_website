@@ -30,7 +30,9 @@
 
 .section1-body {
   margin: 30px;
+  margin-top: 50px;
   padding: 10px;
+  padding-top: 30px;
   align-items: center;
   justify-content: center;
 }

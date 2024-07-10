@@ -66,7 +66,7 @@ const NewHeader = () => {
                 <Link to="/">About</Link>
               </li>
               <li>
-                <Link to="/">Ethos</Link>
+                <Link to="/Ethos">Ethos</Link>
               </li>
               <li>
                 <Link
