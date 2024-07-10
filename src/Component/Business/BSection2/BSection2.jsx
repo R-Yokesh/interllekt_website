@@ -7,10 +7,10 @@ const BSection2 = () => {
       <div className="Bsection2-body">
         <h1>Business </h1>
         <p>
-          <i>Crafting processes that help transform our partner organisation to
+          Crafting processes that help transform our partner organisation to
             be future-proof. With Strategy together with an approach so bold
             that ideas become Enterprise and transform them into truly global
-            entities forging the way ahead with impact.</i>
+            entities forging the way ahead with impact.
         </p>
       </div>
     </div>

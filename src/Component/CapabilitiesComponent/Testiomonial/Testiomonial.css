@@ -30,7 +30,7 @@
 }
 
 .content {
-    background-color: yellow;
+    background-color:#31175b;
     flex: 1;
     padding: 20px;
     display: flex;
@@ -81,7 +81,7 @@
 }
 
 .human-line {
-    background-color: #000;
+    background-color: #fff;
     width: 100%;
     height: 2px;
     margin-top: 10px;
@@ -89,6 +89,7 @@
 }
 
 .tcontainer .content p {
+    color: #fff;
     text-align: justify;
 }
 

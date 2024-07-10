@@ -42,13 +42,32 @@ body {
        font-style: normal;
 }
 
+@font-face {
+  font-family: 'Switzer-Semibold';
+  src: url('./Fonts/Switzer/Switzer-Semibold.woff2') format('woff2'),
+       url('./Fonts/Switzer/Switzer-Semibold.woff') format('woff'),
+       url('./Fonts/Switzer/Switzer-Semibold.ttf') format('ttf');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
 
+/* ----------------------------------------------------------------------------------------------------------------*/    
 @font-face {
   font-family: 'CabinetGrotesk-Bold';
   src: url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.woff2') format('woff2'),
        url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.woff') format('woff'),
        url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.ttf') format('ttf');
        font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'CabinetGrotesk-Medium';
+  src: url('./Fonts/CabinetGrostesk/CabinetGrotesk-Medium.woff2') format('woff2'),
+       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Medium.woff') format('woff'),
+       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Medium.ttf') format('ttf');
+       font-weight: 500;
        font-display: swap;
        font-style: normal;
 }
@@ -63,5 +82,7 @@ body {
 }
 
 code {
+
   font-family: 'Switzer-Regular', 'CabinetGrotesk-Bold' sans-serif;
+
 }

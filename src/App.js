@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect, useReducer } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
- 
- 
-// import "./App.sass";
+ // import "./App.sass";
 import RoutesComponent from "./CommonRoutes";
 import Layout from "./Pages/Layout/Layout";
 import ErrorBoundary from './Utiliz/ErrorBoundary';

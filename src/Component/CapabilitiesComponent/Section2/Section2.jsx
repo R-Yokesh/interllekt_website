@@ -9,13 +9,11 @@ const Section2 = () => {
       <div className="section2-body">
         <h1>Concept & Design</h1>
         <p>
-          <i>
             A visionary creative network striving to craft sublime communication
             through design, pushing boundaries, we boldly explore new horizons,
             unlocking limitless possibilities through creative expression.
-          </i>
         </p>
-        <p>We can bring something to life for you.</p>
+        <p className='line1'>We can bring something to life for you.</p>
       </div>
     </div>
   );

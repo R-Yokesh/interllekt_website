@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Assets from '../../../Assets/Assets';
 import './Footer.css'; // Ensure this path is correct
-
+ 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -10,13 +10,13 @@ const Footer = () => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+ 
   return (
     <footer className="footer">
       <div className="footer-addr">
         <img src={Assets.interllektlogo} alt="Logo" style={{ width: "100px" }} />
       </div>
-      
+     
       <nav className="footer-nav">
         <ul className="nav-ul">
           <li><Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link></li>
@@ -26,7 +26,7 @@ const Footer = () => {
           <li><Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy And Policy</Link></li>
         </ul>
       </nav>
-
+ 
       <div className="nav-item nav-item-extra">
         <h2 className="nav-title">Follow us</h2>
         <ul className="nav-ul nav-ul-extra">
@@ -36,7 +36,7 @@ const Footer = () => {
           <li><a href="https://www.instagram.com/interllekt" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
       </div>
-      
+     
       <div className="nav-address-item">
         <h2 className="nav-title">Office</h2>
         <ul className="office-location">
@@ -44,12 +44,12 @@ const Footer = () => {
           <li>215 Park Ave South, New York</li>
         </ul>
       </div>
-      
+     
       <div className="legal">
         <p>&copy; {new Date().getFullYear()} Interllekt. All rights reserved.</p>
       </div>
     </footer>
   );
 };
-
+ 
 export default Footer;

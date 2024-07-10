@@ -39,10 +39,11 @@
     font-family: 'Switzer-Regular',sans-serif;
   }
 
-  .Bsection2-body p i {
-    font-style: italic;
+  .Bsection2-body p {
     font-family: 'Switzer-Regular',sans-serif;
   }
+
+  
   @media (max-width: 600px) 
 {   
   .Bsection2-container{     

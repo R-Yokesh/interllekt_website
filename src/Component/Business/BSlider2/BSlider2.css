@@ -42,17 +42,17 @@
     font-size: 1.5rem;
     font-family: 'CabinetGrotesk-Bold',sans-serif;
     margin-bottom: 15px;
-    box-shadow: inset 0 0 0 0 #f7f30de0;
+    box-shadow: inset 0 0 0 0 #beb4c9;
     color: black;
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-size 0.3s ease-in-out;
-    background-image: linear-gradient(to right, #f7f30de0, #f7f30de0);
+    background-image: linear-gradient(to right, #beb4c9, #beb4c9);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     background-position: left bottom;
 }
 
 .Bslider-card:hover h2 {
-    box-shadow: inset 100% 0 0 0 #f7f30de0;
+    box-shadow: inset 100% 0 0 0 #beb4c9;
     background-size: 100% 40%;
 }
 
