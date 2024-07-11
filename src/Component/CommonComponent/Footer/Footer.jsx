@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Assets from '../../../Assets/Assets';
 import './Footer.css';
-
+ 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -10,7 +10,7 @@ const Footer = () => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+ 
   return (
     <footer className="custom-footer">
       <div className="c-layout is-footer">
@@ -35,9 +35,9 @@ const Footer = () => {
             <a href="https://www.instagram.com/interllekt" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
           <div className="footer-section offices">
-            <h3>Offices</h3>
-            <p>Menachem Begin 144, Tel Aviv</p>
-            <p>215 Park Ave South, New York</p>
+            <h3>Office</h3>
+            <p>12, Murugappa Road, Kotturpuram</p>
+            <p>Chennai, Tamil Nadu 600085</p>
           </div>
         </div>
       </div>
@@ -45,5 +45,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+ 
 export default Footer;
