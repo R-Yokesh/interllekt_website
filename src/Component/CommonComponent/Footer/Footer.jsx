@@ -24,8 +24,8 @@ const Footer = () => {
             <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
             <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
             <Link to="/" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
-            <Link to="/" onClick={() => scrollToSection('legal')}>Legal</Link>
-            <Link to="/privacy-and-policy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy and Policy</Link>
+            <Link to="/legal" onClick={() => scrollToSection('legal')}>Legal</Link>
+            <Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy and Policy</Link>
           </div>
           <div className="footer-section follow-us">
             <h3>Follow us</h3>
