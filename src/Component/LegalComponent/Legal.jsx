@@ -6,7 +6,7 @@ const Legal = () => {
     <div className="legal-container container">
       <h1>Terms of Use</h1>
       <p>
-        Thanks for your interest in our Website at <a href="http://www.interllekt.com">www.interllekt.com</a>. Your use of this Website, including the content, materials, and information available on or through this Website (together, the “Materials”), is governed by these Terms of Use (these “Terms”). By using this Website, you acknowledge that you have read and agree to these Terms.
+        Thanks for your interest in our Website at <a href="http://www.interllekt.com" target="_blank" rel="noopener noreferrer">www.interllekt.com</a>. Your use of this Website, including the content, materials, and information available on or through this Website (together, the “Materials”), is governed by these Terms of Use (these “Terms”). By using this Website, you acknowledge that you have read and agree to these Terms.
       </p>
       <h2 className='titlsublegl'>MATERIALS</h2>
       <p>
@@ -34,12 +34,8 @@ const Legal = () => {
       </p>
       <h2 className='titlsublegl'>CONTACT INFORMATION</h2>
       <p>
-        Any questions, concerns, or complaints regarding these Terms should be sent to contactus <a href="mailto:contactus@interllekt.com" className='emalc'> @interllekt.com</a>
-      </p>
-      <p>
-        Effective Date: June 1, 2024
-      </p>
-      <p>
+        Any questions, concerns, or complaints regarding these Terms should be sent to contact us <a href="mailto:contactus@interllekt.com"  target="_blank" rel="noopener noreferrer"  className='emalc'> @interllekt.com</a><br/>
+        Effective Date: June 1, 2024<br/>
         ©2024 Interllekt Ventures Private Limited. All Rights Reserved
       </p>
     </div>

@@ -1,11 +1,11 @@
 .ethos-container {
-    padding: 20px;
+    padding: 50px 20px 0 0;
     max-width: 800px;
     margin: 50px auto;
     font-family: 'Switzer-Regular', sans-serif;
-    line-height: 1.6;
+    line-height: 2;
     text-align: justify;
-    height: 100vh;
+    height: 80vh;
   }
   
   .ethos-container h1 {

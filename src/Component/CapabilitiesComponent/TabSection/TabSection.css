@@ -1,13 +1,4 @@
 .tab-container {
-  /* position: sticky;
-  top: 90px; /* Height of NewHeader 
-  z-index: 1001;
-  background-color: white;
-  padding: 10px 15px;
-  color: black;
-  left: 0;
-  width: 100%;
-  transition: top 0.3s ease-in-out; */
   z-index: 1001;
   width: 868px;
   max-width: 80%;

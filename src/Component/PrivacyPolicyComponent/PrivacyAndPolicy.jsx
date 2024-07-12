@@ -251,7 +251,7 @@ const PrivacyAndPolicy = () => {
           <h2>Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, You can contact us:</p>
           <ul>
-          <li><a href="mailto:contactus@interllekt.com" className='emalc'> contactus@interllekt.com</a></li>
+          <li><a href="mailto:contactus@interllekt.com" className='emalc' target="_blank" rel="noopener noreferrer"> contactus@interllekt.com</a></li>
           </ul>
         </div>
       
