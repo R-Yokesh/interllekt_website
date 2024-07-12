@@ -23,7 +23,7 @@ const Footer = () => {
             <Link to="/about" onClick={() => console.log('Navigating to About')}>About</Link>
             <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
             <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
-            <Link to="/" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
+            <Link to="/Ethos" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
             <Link to="/legal" onClick={() => scrollToSection('legal')}>Legal</Link>
             <Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy and Policy</Link>
           </div>
