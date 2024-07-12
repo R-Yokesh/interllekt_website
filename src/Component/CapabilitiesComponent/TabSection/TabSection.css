@@ -43,6 +43,6 @@
 
 .tab-link:hover,
 .tab-link.active {
-  color: black;
-  border-bottom: 5px solid black;
+  color: #31175b;
+  border-bottom: 5px solid #31175b;
 }
