@@ -86,7 +86,7 @@ const NewHeader = () => {
             <p>WHO WE ARE</p>
             <ul>
               <li>
-                <Link to="/">About</Link>
+                <Link to="/About">About</Link>
               </li>
               <li>
                 <Link to="/Ethos">Interllekt Ethos</Link>
