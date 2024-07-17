@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="footer-right">
           <div className="footer-section">
             <Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link>
-            <Link to="/about" onClick={() => console.log('Navigating to About')}>About</Link>
+            <Link to="/About" onClick={() => console.log('Navigating to About')}>About</Link>
             <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
             <Link to="/Careers" onClick={() => scrollToSection('careers')}>Careers</Link>
             <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>

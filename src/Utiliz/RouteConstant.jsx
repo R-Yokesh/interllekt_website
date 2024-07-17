@@ -5,6 +5,10 @@ const PrivacyPolicyPage = React.lazy(() =>
 const HomePage = React.lazy(() =>
     import('../Pages/HomePage/HomePage')
   );
+
+  const AboutPage = React.lazy(() =>
+    import('../Pages/AboutusPage/AboutPage')
+  );
   const CapabilitiesPage = React.lazy(() =>
     import('../Pages/Capabilities/CapabilitiesPage')
   );
@@ -31,6 +35,7 @@ const HomePage = React.lazy(() =>
   export const routes = [
     { path: '/PrivacyAndPolicy', name: 'Privacy And Policy', element: PrivacyPolicyPage },
     { path: '/', name: 'Home ', element: HomePage },
+    { path: '/About', name: 'About ', element: AboutPage },
     { path: '/Capabilities', name: 'Capabilities', element: CapabilitiesPage },
     { path: '/legal', name: 'Legal', element: LegalPage },
     { path: '/Ethos', name: 'Ethos', element: EthosPage },

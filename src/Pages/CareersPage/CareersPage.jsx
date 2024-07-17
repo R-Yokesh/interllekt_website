@@ -3,7 +3,7 @@ import Careers from '../../Component/CareersComponent/Careers'
 
 const CareersPage = () => {
   return (
-    <div id="careers">
+    <div id="Careers">
 <Careers  />
 
     </div>
