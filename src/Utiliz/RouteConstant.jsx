@@ -14,6 +14,10 @@ const HomePage = React.lazy(() =>
   const EthosPage = React.lazy(() =>
     import('../Pages/EthosPage/EthosPage')
   );
+  const CareersPage = React.lazy(() =>
+    import('../Pages/CareersPage/CareersPage')
+  );
+
   const InnovationPage = React.lazy(() =>
     import('../Pages/Innovation/InnovationPage')
   );
@@ -23,12 +27,14 @@ const HomePage = React.lazy(() =>
 
 
 
+
   export const routes = [
     { path: '/PrivacyAndPolicy', name: 'Privacy And Policy', element: PrivacyPolicyPage },
     { path: '/', name: 'Home ', element: HomePage },
     { path: '/Capabilities', name: 'Capabilities', element: CapabilitiesPage },
     { path: '/legal', name: 'Legal', element: LegalPage },
     { path: '/Ethos', name: 'Ethos', element: EthosPage },
+    { path: '/Careers', name: 'Careers', element: CareersPage },
     {path:'/Innovation', name:'Innovation', element:InnovationPage},
     {path:'/Business', name:'Business', element:BusinessPage},
   ]  

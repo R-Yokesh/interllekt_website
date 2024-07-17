@@ -21,11 +21,12 @@ const Footer = () => {
           <div className="footer-section">
             <Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link>
             <Link to="/about" onClick={() => console.log('Navigating to About')}>About</Link>
-            <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
             <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
+            <Link to="/Careers" onClick={() => scrollToSection('careers')}>Careers</Link>
+            <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
             <Link to="/Ethos" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
             <Link to="/legal" onClick={() => scrollToSection('legal')}>Legal</Link>
-            <Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy and Policy</Link>
+            <Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy Policy</Link>
           </div>
           <div className="footer-section follow-us">
             <h3>Follow us</h3>
