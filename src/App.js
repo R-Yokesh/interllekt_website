@@ -4,10 +4,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RoutesComponent from "./CommonRoutes";
 import Layout from "./Pages/Layout/Layout";
 import ErrorBoundary from './Utiliz/ErrorBoundary';
+import { Helmet } from 'react-helmet';
+
  
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Interllekt - A Global Business Development Company</title>
+        <meta name="description" content="Interllekt - A Global Business Development Company" />
+      </Helmet>
+
       {/* <RoutesComponent /> */}
       <ErrorBoundary>
       <Router basename='/interllekt.com'>

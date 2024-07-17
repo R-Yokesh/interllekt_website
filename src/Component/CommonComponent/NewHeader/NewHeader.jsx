@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import logo from "../../../Assets/Images/logoblue.png";
 import menu from "../../../Assets/Images/menu-icon.png";
+import searchIcon from "../../../Assets/Images/search-icon.png";
+import closeIcon from "../../../Assets/Images/close-icon.png";
 import "./NewHeader.css";
 
 const scrollToSection = (id) => {
@@ -14,6 +16,7 @@ const scrollToSection = (id) => {
 
 const NewHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -21,8 +24,13 @@ const NewHeader = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
+  };
+
   useEffect(() => {
     setMenuOpen(false);
+    setSearchOpen(false);
   }, [location]);
 
   return (
@@ -35,9 +43,24 @@ const NewHeader = () => {
           onClick={() => navigate("/")}
         />
       </div>
-      <div className="menu-icon" onClick={toggleMenu}>
-        <img src={menu} alt="Menu Icon" className="menu-img" />
+      <div className="icons-container">
+        <div className="search-icon" onClick={toggleSearch}>
+          <img
+            src={searchOpen ? closeIcon : searchIcon}
+            alt="Search Icon"
+            className="search-img"
+          />
+        </div>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <img src={menu} alt="Menu Icon" className="menu-img" />
+        </div>
       </div>
+
+      {searchOpen && (
+        <div className="search-bar">
+          <input type="text" placeholder="Search" />
+        </div>
+      )}
 
       {/* Navigation Menu Page */}
       <div className={`menu-page ${menuOpen ? "active" : ""}`}>
@@ -66,25 +89,13 @@ const NewHeader = () => {
                 <Link to="/">About</Link>
               </li>
               <li>
-                <Link to="/Ethos">Ethos</Link>
+                <Link to="/Ethos">Interllekt Ethos</Link>
               </li>
               <li>
-                <Link
-                  to="/legal"
-                  onClick={() => console.log("Navigating to Legal Page")}
-                >
-                  Legal
-                </Link>
+                <Link to="/legal">Legal</Link>
               </li>
               <li>
-                <Link
-                  to="/PrivacyAndPolicy"
-                  onClick={() =>
-                    console.log("Navigating to Privacy and Policy")
-                  }
-                >
-                  Privacy and Policy
-                </Link>
+                <Link to="/PrivacyAndPolicy">Privacy and Policy</Link>
               </li>
             </ul>
           </div>
