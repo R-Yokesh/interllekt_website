@@ -2,14 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Switzer-Regular',sans-serif;
+  font-family: 'Switzer-Regular', sans-serif;
 }
+
 .ccontact-form {
   padding: 80px;
-  margin: 80px; 
+  margin: 80px;
   text-align: center;
   position: relative;
-  padding: 16px; 
   padding-bottom: 6.25rem;
   padding-top: 6.875rem;
   font-family: 'Switzer-Regular', sans-serif;
@@ -93,8 +93,79 @@
   color: #000;
 }
 
-@media (max-width: 600px) {   
-  .ccontact-form {     
-    flex: 1 1 100%; 
-  } 
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .ccontact-form {
+    padding: 60px;
+    margin: 60px;
+  }
+
+  .ccontact-form h2 {
+    font-size: 1.4em;
+  }
+
+  .cbtn button {
+    width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .ccontact-form {
+    padding: 40px;
+    margin: 40px;
+  }
+
+  .ccontact-form h2 {
+    font-size: 1.3em;
+  }
+
+  .cbtn button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ccontact-form {
+    padding: 30px;
+    margin: 30px;
+  }
+
+  .ccontact-form h2 {
+    font-size: 1.2em;
+  }
+
+  .cform-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cform-group {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .cbtn button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ccontact-form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .ccontact-form h2 {
+    font-size: 1.1em;
+  }
+
+  .cform-group input {
+    padding: 0.4em;
+    font-size: 0.9em;
+  }
+
+  .cbtn button {
+    width: 100%;
+    padding: 0.8rem 2rem;
+  }
 }

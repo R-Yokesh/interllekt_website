@@ -12,6 +12,9 @@ const BSection2 = () => {
             that ideas become Enterprise and transform them into truly global
             entities forging the way ahead with impact.
         </p>
+        <p className="line1">
+        We Help your businesses succeed with a smarter way ahead.
+        </p>
       </div>
     </div>
   );

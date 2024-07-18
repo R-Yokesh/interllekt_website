@@ -24,7 +24,7 @@
   letter-spacing: 0;
   text-transform: none;
   font-family: 'CabinetGrotesk-Medium', sans-serif;
-  font-size: 4.5rem;
+  font-size: 2rem;
   font-weight: 200;
   line-height: 1.2;
   text-align: left;
@@ -32,16 +32,17 @@
 
 .section2-body p {
   width: 75%;
-  margin: 0 30px 60px 30px;
-  font-size: 1.8rem;
-  line-height: 1.5;
+  margin: 0 30px 50px 30px;
+  font-size: 1.5rem;
+  line-height: 1.6;
   text-align: left;
   font-family: 'Switzer-Regular', sans-serif;
 }
 
 .section2-body .line1 {
   font-family: 'Switzer-Regular', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 3rem;
 }
 
 
