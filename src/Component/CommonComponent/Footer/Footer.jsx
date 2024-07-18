@@ -4,8 +4,8 @@ import Assets from '../../../Assets/Assets';
 import './Footer.css';
  
 const Footer = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
+  const scrollToSection = (contact) => {
+    const section = document.getElementById(contact);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="footer-section">
-            <Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link>
+            <Link to="/Contact" onClick={() => console.log('Navigating to Home')}>Home</Link>
             <Link to="/About" onClick={() => console.log('Navigating to About')}>About</Link>
             <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
             <Link to="/Careers" onClick={() => scrollToSection('careers')}>Careers</Link>
@@ -37,12 +37,18 @@ const Footer = () => {
           </div>
           <div className="footer-section offices">
             <h3>Office</h3>
-            <p>12, Murugappa Road, Kotturpuram</p>
-            <p>Chennai, Tamil Nadu 600085</p>
+            <p>The location of the company will updated soon</p>
           </div>
         </div>
       </div>
-      <p className="footer-bottom-text">&copy; {new Date().getFullYear()} Interllekt. All rights reserved.</p>
+      <p className="footer-bottom-text">
+        &copy; {new Date().getFullYear()} Interllekt. All rights reserved.
+      </p>
+      {/* <div className="footer-bottom-paragraph">
+      <p>
+        Interllekt is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, gender identity / expression, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable.
+      </p>
+      </div>  */}
     </footer>
   );
 };
