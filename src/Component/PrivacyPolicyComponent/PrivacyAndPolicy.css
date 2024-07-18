@@ -2,17 +2,16 @@
   padding: 50px 20px 0 0;
   max-width: 800px;
   margin: 50px auto;
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   text-align: justify;
   background: #fff;
 }
 
 h1 , h2 , h3 {
-  font-family: 'CabinetGrotesk-Bold', sans-serif;
+  font-family: 'Ranberg Semibold', sans-serif;
 }
 h2 {
-  color: #333;
+  color: black;
   margin-top: 20px;
 }
 

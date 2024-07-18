@@ -36,7 +36,7 @@
   color: #333;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'CabinetGrotesk-Bold';
+  font-family: 'Ranberg Semibold', sans-serif;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
   padding-bottom: 5px;
 }

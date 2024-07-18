@@ -17,6 +17,7 @@ const scrollToSection = (id) => {
 const NewHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [searchText, setSearchText] = useState('');
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -28,13 +29,22 @@ const NewHeader = () => {
     setSearchOpen(!searchOpen);
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchText.trim()) {
+      navigate(`/search?query=${searchText}`);
+    } else {
+      alert('Please enter a search term.');
+    }
+  };
+
   useEffect(() => {
     setMenuOpen(false);
     setSearchOpen(false);
   }, [location]);
 
   return (
-    <header className="new-header">
+    <header className={`new-header ${searchOpen ? 'search-active' : ''}`}>
       <div className="logo-container">
         <img
           src={logo}
@@ -57,9 +67,18 @@ const NewHeader = () => {
       </div>
 
       {searchOpen && (
-        <div className="search-bar">
-          <input type="text" placeholder="Search" />
-        </div>
+        <form className="search-bar" onSubmit={handleSearch}>
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            required
+          />
+          <button type="submit" className="search-icon-input">
+            <img src={searchIcon} alt="Search Icon" />
+          </button>
+        </form>
       )}
 
       {/* Navigation Menu Page */}

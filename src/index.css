@@ -53,35 +53,22 @@ body {
 
 /* ----------------------------------------------------------------------------------------------------------------*/    
 @font-face {
-  font-family: 'CabinetGrotesk-Bold';
-  src: url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.woff2') format('woff2'),
-       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.woff') format('woff'),
-       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Bold.ttf') format('ttf');
-       font-weight: 700;
-       font-display: swap;
-       font-style: normal;
+  font-family: 'Ranberg Semibold';
+  src: url('./Fonts/RanbergFree/Ranberg-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
 }
-@font-face {
-  font-family: 'CabinetGrotesk-Medium';
-  src: url('./Fonts/CabinetGrostesk/CabinetGrotesk-Medium.woff2') format('woff2'),
-       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Medium.woff') format('woff'),
-       url('./Fonts/CabinetGrostesk/CabinetGrotesk-Medium.ttf') format('ttf');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
-}
-
 
 
 body {
   margin: 0;
-  font-family:'Switzer-Regular', 'CabinetGrotesk-Bold', sans-serif ;
+  font-family:'Switzer-Regular', 'Ranberg Semibold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
 
-  font-family: 'Switzer-Regular', 'CabinetGrotesk-Bold' sans-serif;
+  font-family: 'Switzer-Regular', 'Ranberg Semibold', sans-serif;
 
 }
