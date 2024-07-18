@@ -73,8 +73,9 @@
 }
 
 .search-bar input::placeholder {
-    font-family: "Switzer-Regular", sans-serif;
+    font-family: 'Ranberg Semibold', sans-serif;
     color: #000;
+    font-size: 2rem;
 }
 
 .search-icon-input {
@@ -90,6 +91,7 @@
 .search-icon-input img {
     width: 30px;
     height: auto;
+    font-size: 18px;
 }
 
 .menu-page {
@@ -154,11 +156,12 @@
     padding: 0;
     text-align: left;
     justify-items: flex-start;
-    font-family: 'CabinetGrotesk-Bold', sans-serif !important;
+ 
 }
 
 .menu-column ul li {
     margin-bottom: 20px;
+   
 }
 
 .menu-column ul li a {
@@ -166,6 +169,7 @@
     text-decoration: none;
     font-size: 32px;
     font-weight: 500;
+    font-family: 'Ranberg Semibold', sans-serif !important;
 }
 
 .menu-column ul li a:hover {

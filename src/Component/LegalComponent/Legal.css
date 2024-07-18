@@ -8,18 +8,18 @@
 }
 
 .legal-container h1 {
-  font-family: 'CabinetGrotesk-Bold', sans-serif;
+  font-family: 'Ranberg Semibold', sans-serif;
   font-size: 2em;
   margin-bottom: 0.5em;
   text-align: center;
 }
 
 .legal-container h2 {
-  font-family: 'CabinetGrotesk-Bold', sans-serif;
+  font-family: 'Ranberg Semibold', sans-serif;
   font-size: 1.5em;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  color: #333;
+  color:#000;
 }
 
 .legal-container p {

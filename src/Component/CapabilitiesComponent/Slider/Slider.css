@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    font-family: 'CabinetGrotesk-Bold';
+    font-family: 'Ranberg Semibold', sans-serif;;
 }
 
 .slider-content {
@@ -47,14 +47,14 @@
     letter-spacing: 0;
     text-transform: none;
     margin-bottom: 0;
-    font-family: 'CabinetGrotesk-Bold', sans-serif;
+    font-family: 'Ranberg Semibold', sans-serif;
     font-size: 6.25rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .slider-text h4 {
-    font-family: 'CabinetGrotesk-Bold', sans-serif;
+    font-family: 'Ranberg Semibold', sans-serif;
     font-size: 40px;
     margin: 20px;
     padding: 20px;

@@ -11,12 +11,15 @@
   
   .about-page h2 {
     font-size: 38px;
+    font-weight: 400;
     margin-bottom: 20px; 
     color: #000; 
+    font-family: 'Ranberg Semibold', sans-serif;
   }
   
   .about-page h2 span {
     color: #31175b; 
+    font-family: 'Ranberg Semibold', sans-serif;
   }
   
   .about-page p {
