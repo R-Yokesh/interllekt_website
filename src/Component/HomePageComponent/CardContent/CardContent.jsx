@@ -48,7 +48,7 @@ const CardContent = () => {
           </div>
         )}
         {focusedCard === 'Business' && (
-          <div className="c-content">
+          <div className="c-content center-content">
             <h2>Business</h2>
             <p>Crafting processes that help transform our partner organisation to be future-proof. With Strategy together with an approach so bold that ideas become Enterprise and transform them into truly global entities forging the way ahead with impact.</p>
           </div>
