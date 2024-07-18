@@ -29,7 +29,7 @@
     bottom:0;
 }
 
-.content {
+.tcontent {
     background-color:#31175b;
     flex: 1;
     padding: 20px;
@@ -39,7 +39,7 @@
     align-items: flex-start;
 }
 
-.description {
+.tdescription {
     font-family: 'Switzer-Regular', sans-serif;
     margin-bottom: 0;
     font-size: 30px;

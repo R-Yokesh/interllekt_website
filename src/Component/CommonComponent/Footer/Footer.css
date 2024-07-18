@@ -40,7 +40,7 @@
 .footer-section h3 {
   color: #777;
   margin-top: 0;
-  font-family: 'CabinetGrotesk-Bold', sans-serif;
+  font-family: 'Ranberg Semibold', sans-serif;
   font-size: 18px;
 }
  
@@ -49,6 +49,7 @@
   color: #fff;
   text-decoration: none;
   margin: 5px 0;
+  font-family: 'Switzer-Regular', sans-serif;
 }
  
 .footer-section a:hover {
@@ -57,6 +58,7 @@
  
 .footer-section p {
   margin: 5px 0;
+  font-family: 'Switzer-Regular', sans-serif;
 }
 .footer-bottom-text{
   margin-left: 15px;
