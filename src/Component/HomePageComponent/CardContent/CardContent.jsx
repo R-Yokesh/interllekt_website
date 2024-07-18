@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './CardContent.css';
 
 const CardContent = () => {
@@ -24,15 +25,15 @@ const CardContent = () => {
   return (
     <div className="card-content">
       <div className="left-side">
-        {['Capabilities', 'Innovation', 'Business'].map((card) => (
-          <div 
-            key={card}
-            className={`card ${focusedCard === card ? 'focused' : ''}`}
-            data-card={card}
-          >
-            <h1>{card}</h1>
-          </div>
-        ))}
+        <Link to="/capabilities" className={`card ${focusedCard === 'Capabilities' ? 'focused' : ''}`} data-card="Capabilities">
+          <h1>Capabilities</h1>
+        </Link>
+        <Link to="/innovation" className={`card ${focusedCard === 'Innovation' ? 'focused' : ''}`} data-card="Innovation">
+          <h1>Innovation</h1>
+        </Link>
+        <Link to="/business" className={`card ${focusedCard === 'Business' ? 'focused' : ''}`} data-card="Business">
+          <h1>Business</h1>
+        </Link>
       </div>
       <div className="right-side">
         {focusedCard === 'Capabilities' && (
