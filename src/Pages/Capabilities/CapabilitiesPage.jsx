@@ -9,6 +9,7 @@ import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/Conta
 import TabSection from '../../Component/CapabilitiesComponent/TabSection/TabSection';
 import BusinessPage from '../Business/BusinessPage';
 import InnovationPage from '../Innovation/InnovationPage';
+import CapSubservices from '../../Component/CapabilitiesComponent/CapSubservices/CapSubservices';
 
 const CapabilitiesPage = () => {
   return (
@@ -18,6 +19,7 @@ const CapabilitiesPage = () => {
       <div id="capabilities">
         <Section2 />
       </div>
+      <CapSubservices />
       <Slider />
       {/* <CardSection /> */}
       <Slider2 />
