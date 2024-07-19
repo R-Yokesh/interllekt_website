@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './CapSubservices.css';
+import './BSubservices.css';
 
-const CapSubservices = () => {
+const BSubservices = () => {
   const services = [
     { name: 'Social Media Imaging', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Creative Ideation', logo: require('../../../Assets/Images/Color Mark 2.png') },
@@ -56,13 +56,13 @@ const CapSubservices = () => {
   );
 };
 
-export default CapSubservices;
+export default BSubservices;
 
 
 // import React from 'react';
-// import './CapSubservices.css';
+// import './BSubservices.css';
  
-// const CapSubservices = () => {
+// const BSubservices = () => {
 //   const services = [
 //     { name: 'Social Media Imaging', logo: require('../../../Assets/Images/Color Mark 1.png') },
 //     { name: 'Creative Ideation', logo: require('../../../Assets/Images/Color Mark 2.png') },
@@ -105,5 +105,5 @@ export default CapSubservices;
 //   );
 // };
  
-// export default CapSubservices;
+// export default BSubservices;
  
