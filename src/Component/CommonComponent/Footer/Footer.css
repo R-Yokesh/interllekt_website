@@ -6,6 +6,7 @@
   max-width: 85rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 10px;
   /* padding-left: 2rem;
   padding-right: 2rem; */
   /* border-radius: 4px; */
@@ -63,4 +64,13 @@
 .footer-bottom-text{
   margin-left: 15px;
   color: #fff;
+}
+.footer-bottom-paragraph{
+  margin-left: 15px;
+  margin-top: 5px;
+  color: #fff;
+  width: 95%;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
 }

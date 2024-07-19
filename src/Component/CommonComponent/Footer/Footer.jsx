@@ -44,11 +44,11 @@ const Footer = () => {
       <p className="footer-bottom-text">
         &copy; {new Date().getFullYear()} Interllekt. All rights reserved.
       </p>
-      {/* <div className="footer-bottom-paragraph">
+      <div className="footer-bottom-paragraph">
       <p>
-        Interllekt is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, gender identity / expression, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable.
+        Interllekt is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable.
       </p>
-      </div>  */}
+      </div> 
     </footer>
   );
 };
