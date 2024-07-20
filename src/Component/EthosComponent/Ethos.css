@@ -18,6 +18,7 @@
   
   .ethos-container p {
     margin: 10px 0;
+    text-align: justify;
   }
   
   @media (max-width: 768px) {

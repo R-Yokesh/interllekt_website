@@ -77,11 +77,14 @@
   float: left;
   margin-left: 0;
   margin-bottom: 2rem;
+  /* outline: 2px solid transparent; */
+  transition: outline-color 0.3s ease;
 }
 
 .cbtn button:hover {
   background-color: white;
   color: black;
+  outline: 1px solid #31175b;
 }
 
 .cform-row > .cform-group {
