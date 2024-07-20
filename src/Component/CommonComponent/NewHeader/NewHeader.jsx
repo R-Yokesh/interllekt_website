@@ -3,8 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import logo from "../../../Assets/Images/logoblue.png";
 import menu from "../../../Assets/Images/menu-icon.png";
-import searchIcon from "../../../Assets/Images/search-icon.png";
-import closeIcon from "../../../Assets/Images/close-icon.png";
+// import searchIcon from "../../../Assets/Images/search-icon.png";
+// import closeIcon from "../../../Assets/Images/close-icon.png";
 import "./NewHeader.css";
 
 const scrollToSection = (id) => {
@@ -17,7 +17,7 @@ const scrollToSection = (id) => {
 const NewHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchText, setSearchText] = useState('');
+  // const [searchText, setSearchText] = useState('');
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -25,18 +25,18 @@ const NewHeader = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
-  };
+  // const toggleSearch = () => {
+  //   setSearchOpen(!searchOpen);
+  // };
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchText.trim()) {
-      navigate(`/search?query=${searchText}`);
-    } else {
-      alert('Please enter a search term.');
-    }
-  };
+  // const handleSearch = (e) => {
+  //   e.preventDefault();
+  //   if (searchText.trim()) {
+  //     navigate(`/search?query=${searchText}`);
+  //   } else {
+  //     alert('Please enter a search term.');
+  //   }
+  // };
 
   useEffect(() => {
     setMenuOpen(false);
@@ -54,19 +54,19 @@ const NewHeader = () => {
         />
       </div>
       <div className="icons-container">
-        <div className="search-icon" onClick={toggleSearch}>
+        {/* <div className="search-icon" onClick={toggleSearch}>
           <img
             src={searchOpen ? closeIcon : searchIcon}
             alt="Search Icon"
             className="search-img"
           />
-        </div>
+        </div> */}
         <div className="menu-icon" onClick={toggleMenu}>
           <img src={menu} alt="Menu Icon" className="menu-img" />
         </div>
       </div>
 
-      {searchOpen && (
+      {/* {searchOpen && (
         <form className="search-bar" onSubmit={handleSearch}>
           <input
             type="text"
@@ -79,7 +79,7 @@ const NewHeader = () => {
             <img src={searchIcon} alt="Search Icon" />
           </button>
         </form>
-      )}
+      )} */}
 
       {/* Navigation Menu Page */}
       <div className={`menu-page ${menuOpen ? "active" : ""}`}>
