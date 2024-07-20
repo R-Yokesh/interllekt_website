@@ -34,7 +34,7 @@ const Legal = () => {
       </p>
       <h2 className='titlsublegl'>CONTACT INFORMATION</h2>
       <p>
-        Any questions, concerns, or complaints regarding these Terms should be sent to contact us <a href="mailto:contactus@interllekt.com"  target="_blank" rel="noopener noreferrer"  className='emalc'> @interllekt.com</a><br/>
+        Any questions, concerns, or complaints regarding these Terms should be sent to <a href="mailto:contactus@interllekt.com"  target="_blank" rel="noopener noreferrer"  className='emalc'>contactus@interllekt.com</a><br/>
         Effective Date: June 1, 2024<br/>
         ©2024 Interllekt Ventures Private Limited. All Rights Reserved
       </p>
