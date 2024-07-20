@@ -11,30 +11,30 @@ const ISubservices = () => {
   ];
  
   return (
-    <div className="carousel-container">
-      <div className="carousel">
+    <div className="icarousel-container">
+      <div className="icarousel">
         {services.map((service, index) => (
-          <div key={index} className="carousel-item">
+          <div key={index} className="icarousel-item">
             <img src={service.logo} alt={`Logo ${index + 1}`} />
             <span>{service.name}</span>
           </div>
         ))}
         {services.map((service, index) => (
-          <div key={index + services.length} className="carousel-item">
+          <div key={index + services.length} className="icarousel-item">
             <img src={service.logo} alt={`Logo ${index + 1}`} />
             <span>{service.name}</span>
           </div>
         ))}
       </div>
-      <div className="carousel reverse">
+      <div className="icarousel reverse">
         {services.map((service, index) => (
-          <div key={index} className="carousel-item">
+          <div key={index} className="icarousel-item">
             <img src={service.logo} alt={`Logo ${index + 1}`} />
             <span>{service.name}</span>
           </div>
         ))}
         {services.map((service, index) => (
-          <div key={index + services.length} className="carousel-item">
+          <div key={index + services.length} className="icarousel-item">
             <img src={service.logo} alt={`Logo ${index + 1}`} />
             <span>{service.name}</span>
           </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Section1.css';
 
 const Section1 = () => {
-  const [displayText, setDisplayText] = useState('Capabilities');
+  const [displayText, setDisplayText] = useState('Core');
 
   useEffect(() => {
     const interval = setInterval(() => {

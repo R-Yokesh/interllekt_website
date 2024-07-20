@@ -10,8 +10,8 @@
   }
   
   .about-page h2 {
-    font-size: 38px;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 500;
     margin-bottom: 20px; 
     color: #000; 
     font-family: 'Ranberg Semibold', sans-serif;
@@ -24,7 +24,7 @@
   
   .about-page p {
     font-family: 'Switzer-Regular', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     margin: 20px 0; 
     text-align: justify; 

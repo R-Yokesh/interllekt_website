@@ -1,36 +1,36 @@
-.carousel-container {
+.bcarousel-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   width: 100%;
-  
 }
 
-.carousel {
+.bcarousel {
   display: flex;
   white-space: nowrap;
   animation: scrollLeft 40s linear infinite;
+  margin-bottom: 30px;
  
 }
 
-.carousel.reverse {
+.bcarousel.reverse {
   animation: scrollRight 40s linear infinite;
  
 }
 
-.carousel-item {
+.bcarousel-item {
   display: inline-flex;
   align-items: center;
   padding: 0 20px;
 }
 
-.carousel-item span {
+.bcarousel-item span {
   font-family: 'Ranberg Semibold', sans-serif;
   font-size: 32px;
 }
 
-.carousel-item img {
+.bcarousel-item img {
   height: 30px;
   width: auto;
   margin-right: 10px;

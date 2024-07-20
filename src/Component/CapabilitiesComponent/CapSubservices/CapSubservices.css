@@ -1,4 +1,4 @@
- .carousel-container {
+ .ccarousel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,7 @@
     
   }
  
-  .carousel {
+  .ccarousel {
     display: flex;
     white-space: nowrap;
     animation: scrollLeft 40s linear infinite;
@@ -15,23 +15,23 @@
    
   }
  
-  .carousel.reverse {
+  .ccarousel.reverse {
     animation: scrollRight 40s linear infinite;
    
   }
  
-  .carousel-item {
+  .ccarousel-item {
     display: inline-flex;
     align-items: center;
     padding: 0 20px;
   }
  
-  .carousel-item span {
+  .ccarousel-item span {
     font-family: 'Ranberg Semibold', sans-serif;
     font-size: 32px;
   }
  
-  .carousel-item img {
+  .ccarousel-item img {
     height: 30px;
     width: auto;
     margin-right: 10px;

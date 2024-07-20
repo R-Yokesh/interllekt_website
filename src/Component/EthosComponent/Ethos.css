@@ -5,20 +5,21 @@
     font-family: 'Switzer-Regular', sans-serif;
     line-height: 2;
     text-align: justify;
-    height: 80vh;
+    height: 100%;
   }
   
   .ethos-container h1 {
     font-family:'Ranberg Semibold', sans-serif;
-    font-size: 2em;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
     text-align: center;
   }
   
   .ethos-container p {
     margin: 10px 0;
     text-align: justify;
+    font-size: 18px;
   }
   
   @media (max-width: 768px) {

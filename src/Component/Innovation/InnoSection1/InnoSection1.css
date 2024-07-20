@@ -24,18 +24,18 @@
     letter-spacing: 0;
     text-transform: none;
     font-family: 'Ranberg Semibold', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 200;
     line-height: 1.2;
     text-align: left;
   }
   
   .Isection2-body p {
-    width: 75%;
+    width: 90%;
     margin: 0 30px 40px 30px; 
     font-size: 1.5rem;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
     font-family: 'Switzer-Regular', sans-serif;
   }
 
