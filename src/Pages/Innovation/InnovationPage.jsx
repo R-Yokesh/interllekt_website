@@ -6,11 +6,13 @@ import InnoSection1 from '../../Component/Innovation/InnoSection1/InnoSection1'
 // import InnoContactForm from '../../Component/Innovation/InnoContactForm/InnoContactForm'
 import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm'
 import ISubservices from '../../Component/Innovation/ISubservices/ISubservices'
+import InnoParallax from '../../Component/Innovation/InnoParallax/InnoParallax'
 
 
 const InnovationPage = () => {
   return (
     <div>
+        <InnoParallax />
         <InnoSection1 />
         <ISubservices />
         {/* <InnoSlider1 /> */}
