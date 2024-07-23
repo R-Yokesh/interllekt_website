@@ -58,6 +58,12 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Ranberg Regular';
+  src: url('./Fonts/RanbergFree/Ranberg_regular.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
 
 
 body {

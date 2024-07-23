@@ -29,7 +29,7 @@
   
   .card h1 {
     color: #000;
-    font-family: 'Ranberg Semibold', sans-serif;
+    font-family: 'Ranberg Regular', sans-serif;
     font-weight: 500;
     margin: 0;
     position: relative;
@@ -73,7 +73,7 @@
   }
 
   .c-content h2 {
-    font-family: 'Ranberg Semibold', sans-serif;
+    font-family: 'Ranberg Regular', sans-serif;
     font-weight: 500;
     font-size: 38px;
     font-weight: 500;

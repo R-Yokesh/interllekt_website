@@ -34,9 +34,9 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  font-family: 'Ranberg Semibold', sans-serif;
+  font-family: 'Ranberg Regular', sans-serif;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
   padding-bottom: 5px;
 }

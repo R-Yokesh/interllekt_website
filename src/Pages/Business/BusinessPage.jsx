@@ -6,11 +6,13 @@ import BSection2 from '../../Component/Business/BSection2/BSection2'
 // import BTestiomonial from '../../Component/Business/BTestiomonial/BTestiomonial'
 import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm'
 import BSubservices from '../../Component/Business/BSubservices/BSubservices'
+import BParallax from '../../Component/Business/BParallax/BParallax'
 
 
 const BuisnessPage = () => {
   return (
     <div>
+        <BParallax />
         <BSection2 />
         <BSubservices />
         {/* <BSlider /> */}
