@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./CapParallax.css";
-import leftImage from '../../../Assets/Images/top-left.png'; 
-import rightImage from '../../../Assets/Images/bottom-right.png'; 
-import iconImage from '../../../Assets/Images/icon.png'; 
-import textImage from '../../../Assets/Images/cap-text.png'; 
+import leftImage from '../../../Assets/Images/top-left.png';
+import rightImage from '../../../Assets/Images/bottom-right.png';
+import iconImage from '../../../Assets/Images/icon.png';
+import textImage from '../../../Assets/Images/cap-text.png';
 
 const CapParallax = () => {
   useEffect(() => {

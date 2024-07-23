@@ -9,14 +9,15 @@
 .bcarousel {
   display: flex;
   white-space: nowrap;
-  animation: scrollLeft 40s linear infinite;
-  margin-bottom: 30px;
- 
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  margin-bottom: 50px;
 }
 
 .bcarousel.reverse {
-  animation: scrollRight 40s linear infinite;
- 
+  display: flex;
+  white-space: nowrap;
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  margin-bottom: 30px;
 }
 
 .bcarousel-item {
@@ -34,23 +35,4 @@
   height: 30px;
   width: auto;
   margin-right: 10px;
-}
-
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scrollRight {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(50%);
-  }
 }

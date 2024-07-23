@@ -10,15 +10,15 @@ import TabSection from '../../Component/CapabilitiesComponent/TabSection/TabSect
 import BusinessPage from '../Business/BusinessPage';
 import InnovationPage from '../Innovation/InnovationPage';
 import CapSubservices from '../../Component/CapabilitiesComponent/CapSubservices/CapSubservices';
-// import CapParallax from '../../Component/CapabilitiesComponent/CapParallax/CapParallax';
+import CapParallax from '../../Component/CapabilitiesComponent/CapParallax/CapParallax';
 
 const CapabilitiesPage = () => {
   return (
     <div>
       <Section1 />
       <TabSection />
-      {/* <CapParallax /> */}
       <div id="capabilities">
+      <CapParallax />
         <Section2 />
       </div>
       <CapSubservices />
