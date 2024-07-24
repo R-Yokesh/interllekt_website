@@ -1,0 +1,69 @@
+.cap-parallax-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff
+}
+
+.cap-parallax-image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: none;
+  transition: all 1.5s ease-out;
+  opacity: 0;
+}
+
+.cap-parallax-container.animate .top-left-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.animate .bottom-right-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.animate .icon-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.animate .cap-text-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.top-left-image {
+  top: 0;
+  left:0;
+  transform: translateX(-100%) translateY(-100%);
+  width: 90%;
+}
+
+.bottom-right-image {
+  top: 25%;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%) translateY(100%);
+  width: 70%;
+}
+
+.icon-image {
+  top: 12%;
+  left: 15%;
+  transform: translateX(-50%) translateY(-100%);
+  width: 80%;
+}
+
+.cap-text-image {
+  bottom: 2%;
+  left: 10%;
+  transform: translateY(100%);
+  width: 50%;
+}

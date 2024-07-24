@@ -34,9 +34,9 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  font-family: 'Ranberg Semibold', sans-serif;
+  font-family: 'Ranberg Regular', sans-serif;
   transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
   padding-bottom: 5px;
 }
@@ -45,4 +45,64 @@
 .tab-link.active {
   color: #000;
   border-bottom: 5px solid #31175b;
+}
+
+@media (max-width: 600px) {
+  .tab-container {
+    max-width: 100%;
+    top: 0;
+  }
+
+  .tab-link {
+    font-size: 1.2rem;
+  }
+
+  .tab-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tab-item {
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tab-container {
+    max-width: 90%;
+  }
+
+  .tab-link {
+    font-size: 1.4rem;
+  }
+
+  .tab-list {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .tab-item {
+    margin: 0 20px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .tab-container {
+    max-width: 80%;
+  }
+
+  .tab-link {
+    font-size: 1.7rem;
+  }
+
+  .tab-list {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .tab-item {
+    margin: 0 30px;
+  }
 }

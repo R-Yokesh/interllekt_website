@@ -1,57 +1,38 @@
- .ccarousel-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    
-  }
- 
-  .ccarousel {
-    display: flex;
-    white-space: nowrap;
-    animation: scrollLeft 40s linear infinite;
-    margin-bottom: 30px;
-   
-  }
- 
-  .ccarousel.reverse {
-    animation: scrollRight 40s linear infinite;
-   
-  }
- 
-  .ccarousel-item {
-    display: inline-flex;
-    align-items: center;
-    padding: 0 20px;
-  }
- 
-  .ccarousel-item span {
-    font-family: 'Ranberg Semibold', sans-serif;
-    font-size: 32px;
-  }
- 
-  .ccarousel-item img {
-    height: 30px;
-    width: auto;
-    margin-right: 10px;
-  }
- 
+.ccarousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
 
-  @keyframes scrollLeft {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
- 
-  @keyframes scrollRight {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(50%);
-    }
-  }
+.ccarousel {
+  display: flex;
+  white-space: nowrap;
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  margin-bottom: 30px;
+}
+
+.ccarousel.reverse {
+  display: flex;
+  white-space: nowrap;
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  margin-bottom: 30px;
+}
+
+.ccarousel-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.ccarousel-item span {
+  font-family: 'Ranberg Regular', sans-serif;
+  font-size: 32px;
+}
+
+.ccarousel-item img {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+}

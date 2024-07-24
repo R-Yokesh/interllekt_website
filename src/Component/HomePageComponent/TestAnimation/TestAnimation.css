@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 50px;
-    font-family: 'Ranberg Semibold', sans-serif;
+    margin: 20px;
+    font-family: 'Ranberg Regular', sans-serif;
     
   }
   
@@ -21,7 +21,7 @@
   }
   
   .scroll-reveal-text h2 span {
-    font-family: 'Ranberg Semibold', sans-serif;
+    font-family: 'Ranberg Regular', sans-serif;
     animation-range-start: cover 20vh;
     animation-range-end: cover 30vh;
   }

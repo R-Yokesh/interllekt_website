@@ -13,7 +13,7 @@
     width: 90%;
     height: 110vh;
     max-width: none;
-    transition: all 1s ease-out;
+    transition: all 1.5s ease-out;
     opacity: 0;
   }
   
