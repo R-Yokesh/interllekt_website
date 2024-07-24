@@ -21,7 +21,7 @@ const AnimationVideo = () => {
     };
 
     const observer = new IntersectionObserver(handlePlayPause, {
-      threshold: 0.5, // Adjust this value as needed
+      threshold: 0.5, 
     });
 
     observer.observe(videoElement);

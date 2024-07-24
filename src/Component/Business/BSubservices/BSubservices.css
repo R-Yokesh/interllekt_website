@@ -4,13 +4,17 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
+      /* border: 10px solid transparent;
+    border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
+    padding: 10px;  */
 }
 
 .bcarousel {
   display: flex;
   white-space: nowrap;
   transition: transform 2s ease-in-out; /* Increased the transition duration */
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .bcarousel.reverse {

@@ -3,7 +3,7 @@
     margin-top: 30px;
     /* margin-left: 50px; */
     margin-bottom: 50px;
-    background: linear-gradient(45deg, #31c0ff, #bae7ff);
+    background: #eef9ff;
     /* border-radius: 70px 0 70px 70px; */
   }
   
@@ -76,9 +76,22 @@
     font-family: 'Ranberg Regular', sans-serif;
     font-weight: 500;
     font-size: 38px;
-    font-weight: 500;
     color: #000;
-  } 
+    display: inline;
+    position: relative;
+    box-shadow: inset 0 0 0 0 #95dbff;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-size 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #95dbff, #95dbff);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.c-content:hover h2 {
+    box-shadow: inset 100% 0 0 0 #95dbff;
+    background-size: 100% 40%;
+}
+
 
   .c-content p {
     margin-top: 30px;
