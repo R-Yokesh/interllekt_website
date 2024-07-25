@@ -1,7 +1,7 @@
 .new-header {
     display: flex;
     z-index: 1000;
-    background-color: var(--white);
+    background-color: transparent; /* Default to transparent */
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
@@ -10,13 +10,22 @@
     top: 0;
     left: 0;
     right: 0;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.new-header.transparent {
+    background-color: transparent; /* Transparent background */
+}
+
+.new-header.not-transparent {
+    background-color: var(--white); /* White background when not transparent */
 }
 
 .new-header.search-active {
-    background-color: #FFB32C;
+    background-color: #FFB32C; 
 }
 
+/* Logo Styles */
 .logo-container {
     display: flex;
     align-items: center;
@@ -29,6 +38,7 @@
     cursor: pointer;
 }
 
+/* Icons Container Styles */
 .icons-container {
     display: flex;
     align-items: center;
@@ -47,6 +57,7 @@
     height: auto;
 }
 
+/* Search Bar Styles */
 .search-bar {
     position: fixed;
     top: 70px;
@@ -94,6 +105,7 @@
     font-size: 18px;
 }
 
+/* Menu Page Styles */
 .menu-page {
     display: flex;
     flex-direction: column;
@@ -124,6 +136,7 @@
     cursor: pointer;
 }
 
+/* Menu Content Styles */
 .menu-content {
     display: flex;
     justify-content: space-around;
@@ -134,6 +147,7 @@
     box-sizing: border-box;
 }
 
+/* Menu Column Styles */
 .menu-column {
     flex: 1;
     min-width: 200px;
@@ -156,12 +170,10 @@
     padding: 0;
     text-align: left;
     justify-items: flex-start;
- 
 }
 
 .menu-column ul li {
     margin-bottom: 20px;
-   
 }
 
 .menu-column ul li a {

@@ -7,7 +7,9 @@ import React from 'react'
 import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm'
 import AnimationVideo from '../../Component/HomePageComponent/AnimationVideo/AnimationVideo'
 import CardContent from '../../Component/HomePageComponent/CardContent/CardContent'
+import HomeServices from '../../Component/HomePageComponent/HomeServices/HomeServices'
 import TestAnimation from '../../Component/HomePageComponent/TestAnimation/TestAnimation'
+
 
 
 const HomePage = () => {
@@ -21,6 +23,7 @@ const HomePage = () => {
         <CardContent />
         {/* <IndustrySection/> */}
         {/* <ScrollSection/> */}
+        <HomeServices />
         <div id="contact">
         <ContactForm/>
         </div>

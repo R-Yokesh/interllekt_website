@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import logo from "../../../Assets/Images/logoblue.png";
 import menu from "../../../Assets/Images/menu-icon.png";
-// import searchIcon from "../../../Assets/Images/search-icon.png";
-// import closeIcon from "../../../Assets/Images/close-icon.png";
 import "./NewHeader.css";
 
 const scrollToSection = (id) => {
@@ -17,34 +14,65 @@ const scrollToSection = (id) => {
 const NewHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  // const [searchText, setSearchText] = useState('');
+  const [headerStyle, setHeaderStyle] = useState("transparent");
   const location = useLocation();
   const navigate = useNavigate();
 
+  const isHomePage = location.pathname === "/";
+
   const toggleMenu = () => {
+    const navHide = document.querySelector(".tab-list");
+    if (navHide) {
+      if (navHide.classList.contains("hide")) {
+        navHide.classList.remove("hide");
+        navHide.style.display = 'flex';
+      } else {
+        navHide.classList.add("hide");
+        navHide.style.display = 'none';
+      }
+    }
     setMenuOpen(!menuOpen);
   };
-
-  // const toggleSearch = () => {
-  //   setSearchOpen(!searchOpen);
-  // };
-
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
-  //   if (searchText.trim()) {
-  //     navigate(`/search?query=${searchText}`);
-  //   } else {
-  //     alert('Please enter a search term.');
-  //   }
-  // };
 
   useEffect(() => {
     setMenuOpen(false);
     setSearchOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const videoElement = document.getElementById("animation-video");
+
+      if (videoElement) {
+        const videoRect = videoElement.getBoundingClientRect();
+        if (videoRect.top <= 0 && videoRect.bottom > 0) {
+          setHeaderStyle("transparent");
+        } else {
+          setHeaderStyle("not-transparent");
+        }
+      } else {
+        setHeaderStyle("not-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!isHomePage) {
+      setHeaderStyle("not-transparent");
+    }
+  }, [isHomePage]);
+
   return (
-    <header className={`new-header ${searchOpen ? 'search-active' : ''}`}>
+    <header
+      className={`new-header ${headerStyle} ${
+        searchOpen ? "search-active" : ""
+      }`}
+    >
       <div className="logo-container">
         <img
           src={logo}
@@ -54,34 +82,11 @@ const NewHeader = () => {
         />
       </div>
       <div className="icons-container">
-        {/* <div className="search-icon" onClick={toggleSearch}>
-          <img
-            src={searchOpen ? closeIcon : searchIcon}
-            alt="Search Icon"
-            className="search-img"
-          />
-        </div> */}
         <div className="menu-icon" onClick={toggleMenu}>
           <img src={menu} alt="Menu Icon" className="menu-img" />
         </div>
       </div>
 
-      {/* {searchOpen && (
-        <form className="search-bar" onSubmit={handleSearch}>
-          <input
-            type="text"
-            placeholder="Search"
-            value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
-            required
-          />
-          <button type="submit" className="search-icon-input">
-            <img src={searchIcon} alt="Search Icon" />
-          </button>
-        </form>
-      )} */}
-
-      {/* Navigation Menu Page */}
       <div className={`menu-page ${menuOpen ? "active" : ""}`}>
         <span className="close-btn" onClick={toggleMenu}>
           &times;

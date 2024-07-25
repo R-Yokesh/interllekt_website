@@ -11,12 +11,10 @@ const AnimationVideo = () => {
     const handlePlayPause = (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Play the video from the start
           videoElement.currentTime = 0;
           videoElement.play();
           videoElement.classList.remove('paused');
         } else {
-          // Pause the video and apply grayscale filter
           videoElement.pause();
           videoElement.classList.add('paused');
         }

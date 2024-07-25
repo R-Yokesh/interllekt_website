@@ -1,14 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
-import './CapSubservices.css';
+import './HomeServices.css';
 
-const CapSubservices = () => {
+const HomeServices = () => {
   const services = [
     { name: 'Social Media Imaging', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Creative Ideation', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Digital Environment', logo: require('../../../Assets/Images/Color Mark 3.png') },
-    { name: 'Aesthetics', logo: require('../../../Assets/Images/Color Mark 4.png') },
-    { name: 'Web app development', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Event Design Production', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    { name: 'Software', logo: require('../../../Assets/Images/Color Mark 4.png') },
+    { name: 'Digital Integration', logo: require('../../../Assets/Images/Color Mark 3.png') },
+    { name: 'Business Strategy', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    { name: 'Brand Strategy', logo: require('../../../Assets/Images/Color Mark 4.png') },
   ];
 
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -45,7 +45,7 @@ const CapSubservices = () => {
 
   const renderCarouselItems = (serviceList) => {
     return serviceList.map((service, index) => (
-      <div key={index} className="ccarousel-item">
+      <div key={index} className="hcarousel-item">
         <img src={service.logo} alt={`Logo ${index + 1}`} />
         <span>{service.name}</span>
       </div>
@@ -53,12 +53,12 @@ const CapSubservices = () => {
   };
 
   return (
-    <div className="ccarousel-container">
-      <div ref={carouselRef} className="ccarousel">
+    <div className="hcarousel-container">
+      <div ref={carouselRef} className="hcarousel">
         {renderCarouselItems(firstThreeServices)}
         {renderCarouselItems(firstThreeServices)}
       </div>
-      <div ref={reverseCarouselRef} className="ccarousel reverse">
+      <div ref={reverseCarouselRef} className="hcarousel reverse">
         {renderCarouselItems(lastThreeServices)}
         {renderCarouselItems(lastThreeServices)}
       </div>
@@ -66,4 +66,4 @@ const CapSubservices = () => {
   );
 };
 
-export default CapSubservices;
+export default HomeServices;
