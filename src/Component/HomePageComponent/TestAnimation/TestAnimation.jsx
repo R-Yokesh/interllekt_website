@@ -1,6 +1,6 @@
 import React from 'react'
 import './TestAnimation.css'
-
+ 
 const TestAnimation = () => {
   return (
 //     <div className="scroll-reveal-text">
@@ -12,14 +12,14 @@ const TestAnimation = () => {
 //     <div className="right-section-text">
 //         <p>
 //             <span>
-//                 “We look ahead and manifest the future, through design, technology, strategy, 
-//                 venture and an omni thinking. From a startup to a legacy enterprise, 
+//                 “We look ahead and manifest the future, through design, technology, strategy,
+//                 venture and an omni thinking. From a startup to a legacy enterprise,
 //                 building challenging transformations online and offline"
 //             </span>
 //         </p>
 //     </div>
 // </div>
-
+ 
 <section className="scroll-reveal-text">
 <h2 className="section-title-text">
   <span>"We are here <br/>to design <br/><span className="highlight">your future</span>"</span>
@@ -32,5 +32,5 @@ const TestAnimation = () => {
 </section>
 );
 }
-
+ 
 export default TestAnimation
