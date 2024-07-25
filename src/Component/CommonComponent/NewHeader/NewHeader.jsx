@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import logo from "../../../Assets/Images/logoblue.png";
 import menu from "../../../Assets/Images/menu-icon.png";
 // import searchIcon from "../../../Assets/Images/search-icon.png";
@@ -17,34 +16,56 @@ const scrollToSection = (id) => {
 const NewHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  // const [searchText, setSearchText] = useState('');
+  const [headerStyle, setHeaderStyle] = useState("transparent");
   const location = useLocation();
   const navigate = useNavigate();
+
+  const isHomePage = location.pathname === "/";
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-  // const toggleSearch = () => {
-  //   setSearchOpen(!searchOpen);
-  // };
-
-  // const handleSearch = (e) => {
-  //   e.preventDefault();
-  //   if (searchText.trim()) {
-  //     navigate(`/search?query=${searchText}`);
-  //   } else {
-  //     alert('Please enter a search term.');
-  //   }
-  // };
 
   useEffect(() => {
     setMenuOpen(false);
     setSearchOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(".new-header");
+      const videoElement = document.getElementById("animation-video");
+
+      if (videoElement) {
+        const videoRect = videoElement.getBoundingClientRect();
+        if (videoRect.top <= 0 && videoRect.bottom > 0) {
+          setHeaderStyle("transparent");
+        } else {
+          setHeaderStyle("not-transparent");
+        }
+      } else {
+        setHeaderStyle("not-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!isHomePage) {
+      setHeaderStyle("not-transparent");
+    }
+  }, [isHomePage]);
+
   return (
-    <header className={`new-header ${searchOpen ? 'search-active' : ''}`}>
+    <header
+      className={`new-header ${headerStyle} ${
+        searchOpen ? "search-active" : ""
+      }`}
+    >
       <div className="logo-container">
         <img
           src={logo}
