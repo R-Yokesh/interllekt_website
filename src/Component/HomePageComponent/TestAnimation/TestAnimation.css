@@ -21,13 +21,13 @@
 
 .scroll-reveal-text h2 span {
   font-family: 'Ranberg Regular', sans-serif;
-  animation-range-start: cover 20vh;
+  animation-range-start: cover 10vh;
   animation-range-end: cover 30vh;
 }
 
 .scroll-reveal-text p span {
   font-family: 'Switzer-Regular', sans-serif;
-  animation-range-start: cover 20vh;
+  animation-range-start: cover 10vh;
   animation-range-end: cover 30vh;
 }
 
@@ -74,4 +74,56 @@
 .section-title-text {
   font-size: 24px;
   margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .scroll-reveal-text h2 {
+    font-size: 4rem;
+  }
+  
+  .scroll-reveal-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .scroll-reveal-text h2 {
+    font-size: 3rem;
+    padding-left: 10px;
+  }
+  
+  .scroll-reveal-text p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-reveal-text {
+    margin: 10px;
+  }
+  
+  .scroll-reveal-text h2 {
+    font-size: 2.5rem;
+  }
+  
+  .scroll-reveal-text p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .scroll-reveal-text {
+    height: auto; /* Adjust height for small screens */
+    padding: 20px;
+  }
+  
+  .scroll-reveal-text h2 {
+    font-size: 2rem;
+  }
+  
+  .scroll-reveal-text p {
+    font-size: 0.875rem;
+  }
 }
