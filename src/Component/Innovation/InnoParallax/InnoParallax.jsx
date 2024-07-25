@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import "./InnoParallax.css";
+import React, { useEffect } from 'react';
+import './InnoParallax.css';
 import leftImage from '../../../Assets/Images/left.png';
 import rightImage from '../../../Assets/Images/right.png';
 import bottomImage from '../../../Assets/Images/bottom.png';

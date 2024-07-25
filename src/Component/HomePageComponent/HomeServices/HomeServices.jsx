@@ -8,7 +8,7 @@ const HomeServices = () => {
     { name: 'Software', logo: require('../../../Assets/Images/Color Mark 4.png') },
     { name: 'Digital Integration', logo: require('../../../Assets/Images/Color Mark 3.png') },
     { name: 'Business Strategy', logo: require('../../../Assets/Images/Color Mark 1.png') },
-    { name: 'Brand Strategy', logo: require('../../../Assets/Images/Color Mark 4.png') }, 
+    { name: 'Brand Strategy', logo: require('../../../Assets/Images/Color Mark 4.png') },
   ];
 
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -22,12 +22,16 @@ const HomeServices = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY) {
         setScrollDirection('down');
-        carouselRef.current.style.transform = 'translateX(-100px)';
-        reverseCarouselRef.current.style.transform = 'translateX(100px)';
+        if (carouselRef.current && reverseCarouselRef.current) {
+          carouselRef.current.style.transform = 'translateX(-100px)';
+          reverseCarouselRef.current.style.transform = 'translateX(100px)';
+        }
       } else {
         setScrollDirection('up');
-        carouselRef.current.style.transform = 'translateX(100px)';
-        reverseCarouselRef.current.style.transform = 'translateX(-100px)';
+        if (carouselRef.current && reverseCarouselRef.current) {
+          carouselRef.current.style.transform = 'translateX(100px)';
+          reverseCarouselRef.current.style.transform = 'translateX(-100px)';
+        }
       }
       lastScrollY = currentScrollY;
     };

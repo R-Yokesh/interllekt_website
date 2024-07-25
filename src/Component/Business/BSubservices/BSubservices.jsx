@@ -20,14 +20,16 @@ const BSubservices = () => {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setScrollDirection('down');
-        carouselRef.current.style.transform = 'translateX(-100px)';
-        reverseCarouselRef.current.style.transform = 'translateX(100px)';
-      } else {
-        setScrollDirection('up');
-        carouselRef.current.style.transform = 'translateX(100px)';
-        reverseCarouselRef.current.style.transform = 'translateX(-100px)';
+      if (carouselRef.current && reverseCarouselRef.current) {
+        if (currentScrollY > lastScrollY) {
+          setScrollDirection('down');
+          carouselRef.current.style.transform = 'translateX(-100px)';
+          reverseCarouselRef.current.style.transform = 'translateX(100px)';
+        } else {
+          setScrollDirection('up');
+          carouselRef.current.style.transform = 'translateX(100px)';
+          reverseCarouselRef.current.style.transform = 'translateX(-100px)';
+        }
       }
       lastScrollY = currentScrollY;
     };
