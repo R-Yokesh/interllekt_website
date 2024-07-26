@@ -1,60 +1,27 @@
 .section1-container {
-  width: 100%;
-  height: 100%;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: transparent;
-}
-
-.nav-left .logo {
-  height: 40px;
-  width: 80px;
-}
-
-.nav-right {
-  display: flex;
-  gap: 40px;
-}
-
-.icon {
-  height: 30px;
-  cursor: pointer;
-  justify-content: space-between;
+  margin: 2%;
+  padding: 2%;
 }
 
 .section1-body {
-  margin: 30px;
-  margin-top: 50px;
-  padding: 10px;
-  padding-top: 30px;
   align-items: center;
   justify-content: center;
 }
 
 .heading-style-h1 {
-  letter-spacing: 0;
-  text-transform: none;
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 13rem;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 50px;
-  align-items: center;
 }
 
 .text-style-italic {
   font-family: 'Ranberg Regular', sans-serif;
   font-style: italic;
-  color: #31c0ff;
+  color: #ff2e2e;
 }
 
 .para p {
-  margin-bottom: 50px;
   font-family: 'Switzer-Regular', sans-serif;
   font-size: 1.7rem;
   font-weight: 500;
@@ -84,99 +51,4 @@
 .animated-text {
   display: inline-block;
   animation: slideIn 3s linear infinite;
-}
-
-@media (max-width: 1200px) {
-  .heading-style-h1 {
-    font-size: 10rem;
-  }
-
-  .nav-right {
-    gap: 30px;
-  }
-
-  .icon {
-    height: 25px;
-  }
-}
-
-@media (max-width: 992px) {
-  .heading-style-h1 {
-    font-size: 8rem;
-  }
-
-  .nav-right {
-    gap: 20px;
-  }
-
-  .icon {
-    height: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 15px;
-  }
-
-  .nav-left .logo {
-    height: 35px;
-    width: 70px;
-  }
-
-  .section1-body {
-    margin: 20px;
-    margin-top: 40px;
-    padding: 8px;
-    padding-top: 20px;
-  }
-
-  .heading-style-h1 {
-    font-size: 6rem;
-    margin-bottom: 40px;
-  }
-
-  .para p {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .nav-right {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-left .logo {
-    height: 30px;
-    width: 60px;
-  }
-
-  .icon {
-    height: 18px;
-  }
-
-  .section1-body {
-    margin: 15px;
-    margin-top: 30px;
-    padding: 6px;
-    padding-top: 15px;
-  }
-
-  .heading-style-h1 {
-    font-size: 5rem;
-    margin-bottom: 30px;
-  }
-
-  .para p {
-    font-size: 1.8rem;
-  }
-
-  .section1-container {
-    flex: 1 1 100%;
-  }
 }

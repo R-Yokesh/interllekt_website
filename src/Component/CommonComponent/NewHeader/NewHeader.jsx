@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../../Assets/Images/logoblue.png";
 import menu from "../../../Assets/Images/menu-icon.png";
+import searchIcon from "../../../Assets/Images/search-icon.png";
+import closeIcon from "../../../Assets/Images/close-icon.png";
 import "./NewHeader.css";
 
 const scrollToSection = (id) => {
@@ -25,13 +27,17 @@ const NewHeader = () => {
     if (navHide) {
       if (navHide.classList.contains("hide")) {
         navHide.classList.remove("hide");
-        navHide.style.display = 'flex';
+        navHide.style.display = "flex";
       } else {
         navHide.classList.add("hide");
-        navHide.style.display = 'none';
+        navHide.style.display = "none";
       }
     }
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
   };
 
   useEffect(() => {
@@ -82,10 +88,27 @@ const NewHeader = () => {
         />
       </div>
       <div className="icons-container">
+        <div className="search-icon" onClick={toggleSearch}>
+          <img
+            src={searchOpen ? closeIcon : searchIcon}
+            alt="Search Icon"
+            className="search-img"
+          />
+        </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <img src={menu} alt="Menu Icon" className="menu-img" />
         </div>
       </div>
+
+      {searchOpen && (
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Search..."
+            autoFocus
+          />
+        </div>
+      )}
 
       <div className={`menu-page ${menuOpen ? "active" : ""}`}>
         <span className="close-btn" onClick={toggleMenu}>

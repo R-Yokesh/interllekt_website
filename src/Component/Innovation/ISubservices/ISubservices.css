@@ -4,9 +4,9 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-  /* border: 10px solid transparent;
-  border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
-  padding: 10px; */
+    /* border: 10px solid transparent;
+    border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
+    padding: 10px;  */
 }
 
 .icarousel {
@@ -14,7 +14,7 @@
   white-space: nowrap;
   transition: transform 2s ease-in-out; /* Increased the transition duration */
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .icarousel.reverse {
@@ -27,7 +27,7 @@
 .icarousel-item {
   display: inline-flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .icarousel-item span {
@@ -38,36 +38,5 @@
 .icarousel-item img {
   height: 30px;
   width: auto;
-  margin-right: 10px;
-}
-
-/* Responsive styles */
-@media (max-width: 1024px) {
-  .icarousel-item span {
-    font-size: 28px;
-  }
-  .icarousel-item img {
-    height: 25px;
-    margin-right: 8px;
-  }
-}
-
-@media (max-width: 768px) {
-  .icarousel-item span {
-    font-size: 24px;
-  }
-  .icarousel-item img {
-    height: 20px;
-    margin-right: 6px;
-  }
-}
-
-@media (max-width: 480px) {
-  .icarousel-item span {
-    font-size: 20px;
-  }
-  .icarousel-item img {
-    height: 15px;
-    margin-right: 4px;
-  }
+  margin-right: 15px;
 }

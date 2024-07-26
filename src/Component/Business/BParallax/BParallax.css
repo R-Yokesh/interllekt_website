@@ -46,24 +46,36 @@
   transform: translateY(100%);
 }
 
-/* Responsive styles */
 @media (max-width: 1024px) {
   .b-parallax-image {
     width: 90%;
     height: 90vh;
   }
+
+  .text-image {
+    margin-top: 20px;
+  }
 }
+
 
 @media (max-width: 768px) {
   .b-parallax-image {
     width: 100%;
     height: 80vh;
   }
+
+  .text-image {
+    margin-top: 15px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .b-parallax-image {
     width: 100%;
     height: 70vh;
+  }
+
+  .text-image {
+    margin-top: 10px;
   }
 }

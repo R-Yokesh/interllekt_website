@@ -7,7 +7,7 @@
   transition: all .2s;
   position: -webkit-sticky;
   position: sticky;
-  top: 6px;
+  top: 2px;
 }
 
 .tab-nav {

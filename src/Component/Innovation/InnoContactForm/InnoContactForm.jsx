@@ -3,7 +3,7 @@ import './InnoContactForm.css';
 
 const InnoContactForm = () => {
   return (
-    <div className="ccontact-form">
+    <div className="ccontact-form container">
       <h2>Want to learn more? <span>Get in touch.</span></h2>
       <form>
         <div className="cform-row">

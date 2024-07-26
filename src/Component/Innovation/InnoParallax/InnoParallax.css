@@ -33,15 +33,15 @@
   }
   
   .left-image {
-    transform: translateX(-100%);
+    transform: translateX(-30%);
   }
   
   .right-image {
-    transform: translateX(100%);
+    transform: translateX(30%);
   }
   
   .bottom-image {
     margin-top: 70px;
-    transform: translateY(100%);
+    transform: translateY(30%);
   }
   
