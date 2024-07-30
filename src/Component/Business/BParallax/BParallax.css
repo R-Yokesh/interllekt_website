@@ -13,23 +13,8 @@
   width: 80%;
   height: 100vh;
   max-width: none;
-  transition: all 1.5s ease-out;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   opacity: 0;
-}
-
-.b-parallax-container.animate .top-image {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.b-parallax-container.animate .bottom-image {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.b-parallax-container.animate .text-image {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .top-image {
@@ -46,6 +31,38 @@
   transform: translateY(100%);
 }
 
+/* Scroll down animation */
+.b-parallax-container.down .top-image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.b-parallax-container.down .bottom-image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.b-parallax-container.down .text-image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Scroll up animation */
+.b-parallax-container.up .top-image {
+  transform: translateY(-10%);
+  opacity: 1;
+}
+
+.b-parallax-container.up .bottom-image {
+  transform: translateY(10%);
+  opacity: 1;
+}
+
+.b-parallax-container.up .text-image {
+  transform: translateY(10%);
+  opacity: 1;
+}
+
 @media (max-width: 1024px) {
   .b-parallax-image {
     width: 90%;
@@ -56,7 +73,6 @@
     margin-top: 20px;
   }
 }
-
 
 @media (max-width: 768px) {
   .b-parallax-image {

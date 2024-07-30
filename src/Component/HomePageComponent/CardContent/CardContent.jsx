@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './CardContent.css';
+import image1 from '../../../Assets/Images/Color Mark 4.png';
+import image2 from '../../../Assets/Images/Color Mark 3.png';
+import image3 from '../../../Assets/Images/Color Mark 1.png';
+import image4 from '../../../Assets/Images/Color Mark 2.png';
+import image5 from '../../../Assets/Images/Color Mark 3.png';
+import image6 from '../../../Assets/Images/Color Mark 4.png';
 
 const CardContent = () => {
   const [focusedCard, setFocusedCard] = useState('Capabilities');
@@ -22,53 +28,31 @@ const CardContent = () => {
     };
   }, []);
 
+  const renderMasonryGrid = () => (
+    <div className="brandMasonry">
+      <div className="col" style={{ backgroundImage: `url(${image1})` }}></div>
+      <div className="col" style={{ backgroundImage: `url(${image2})` }}></div>
+      <div className="col" style={{ backgroundImage: `url(${image3})` }}></div>
+      <div className="col" style={{ backgroundImage: `url(${image4})` }}></div>
+      <div className="col" style={{ backgroundImage: `url(${image5})` }}></div>
+      <div className="col" style={{ backgroundImage: `url(${image6})` }}></div>
+    </div>
+  );
+
   return (
     <div className="card-content">
       <div className="left-side">
         <Link to="/capabilities" className={`card ${focusedCard === 'Capabilities' ? 'focused' : ''}`} data-card="Capabilities">
           <h1>Capabilities</h1>
-          {focusedCard === 'Capabilities' && (
-            <div custom-tab_img="1" className="c-svg is-tab-menu-img eq-1 w-embed" style={{ opacity: 1, visibility: 'inherit' }}>
-              <div className="brandMasonry eq-2">
-                <div className="col"></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea26fb80f1bd9d874388_decarbonization-jorik-kleen-vAgSEXaMhZ8-unsplash.jpg)' }}></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea27df7028173fd79b28_decarbonization-pexels-martin-damboldt-799091.jpg)' }}></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea26cd06463bff631174_decarbonization-Container%20ship.jpg)' }}></div>
-                <div className="col"></div>
-                <div className="col"></div>
-              </div>
-            </div>
-          )}
+          {focusedCard === 'Capabilities' && renderMasonryGrid()}
         </Link>
         <Link to="/innovation" className={`card ${focusedCard === 'Innovation' ? 'focused' : ''}`} data-card="Innovation">
           <h1>Innovation</h1>
-          {focusedCard === 'Innovation' && (
-            <div custom-tab_img="1" className="c-svg is-tab-menu-img eq-1 w-embed" style={{ opacity: 1, visibility: 'inherit' }}>
-              <div className="brandMasonry eq-2">
-                <div className="col"></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea26fb80f1bd9d874388_decarbonization-jorik-kleen-vAgSEXaMhZ8-unsplash.jpg)' }}></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea27df7028173fd79b28_decarbonization-pexels-martin-damboldt-799091.jpg)' }}></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea26cd06463bff631174_decarbonization-Container%20ship.jpg)' }}></div>
-                <div className="col"></div>
-                <div className="col"></div>
-              </div>
-            </div>
-          )}
+          {focusedCard === 'Innovation' && renderMasonryGrid()}
         </Link>
         <Link to="/business" className={`card ${focusedCard === 'Business' ? 'focused' : ''}`} data-card="Business">
           <h1>Business</h1>
-          {focusedCard === 'Business' && (
-            <div custom-tab_img="1" className="c-svg is-tab-menu-img eq-1 w-embed" style={{ opacity: 1, visibility: 'inherit' }}>
-              <div className="brandMasonry eq-2">
-                <div className="col"></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea26fb80f1bd9d874388_decarbonization-jorik-kleen-vAgSEXaMhZ8-unsplash.jpg)' }}></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea27df7028173fd79b28_decarbonization-pexels-martin-damboldt-799091.jpg)' }}></div>
-                <div className="col" grid-picture="" style={{ backgroundImage: 'url(https://cdn.prod.website-files.com/64d5fe4571f9cde08da49dd9/64f5ea26cd06463bff631174_decarbonization-Container%20ship.jpg)' }}></div>
-                <div className="col"></div>
-                <div className="col"></div>
-              </div>
-            </div>
-          )}
+          {focusedCard === 'Business' && renderMasonryGrid()}
         </Link>
       </div>
       <div className="right-side">

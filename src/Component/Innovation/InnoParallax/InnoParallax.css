@@ -1,47 +1,62 @@
 .parallax-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .parallax-image {
-    position: absolute;
-    width: 90%;
-    height: 110vh;
-    max-width: none;
-    transition: all 1.5s ease-out;
-    opacity: 0;
-  }
-  
-  .parallax-container.animate .left-image {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  
-  .parallax-container.animate .right-image {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  
-  .parallax-container.animate .bottom-image {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
-  .left-image {
-    transform: translateX(-30%);
-  }
-  
-  .right-image {
-    transform: translateX(30%);
-  }
-  
-  .bottom-image {
-    margin-top: 70px;
-    transform: translateY(30%);
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-image {
+  position: absolute;
+  width: 80%;
+  height: 110vh;
+  max-width: none;
+  transition: transform 1s ease-out;
+}
+
+.left-image {
+  transform: translateX(-30%);
+}
+
+.right-image {
+  transform: translateX(30%);
+}
+
+.bottom-image {
+  transform: translateY(30%);
+}
+
+/* Scroll down animation */
+.parallax-container.down .left-image {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.parallax-container.down .right-image {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.parallax-container.down .bottom-image {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Scroll up animation */
+.parallax-container.up .left-image {
+  transform: translateX(-10%);
+  opacity: 1;
+}
+
+.parallax-container.up .right-image {
+  transform: translateX(10%);
+  opacity: 1;
+
+}
+
+.parallax-container.up .bottom-image {
+  transform: translateY(10%);
+  opacity: 1;
+}
