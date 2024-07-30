@@ -14,7 +14,6 @@
   white-space: nowrap;
   transition: transform 2s ease-in-out; /* Increased the transition duration */
   margin-top: 20px;
-  margin-bottom: 5px;
 }
 
 .bcarousel.reverse {
