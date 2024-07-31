@@ -44,7 +44,7 @@ const CardContent = () => {
   return (
     <div className="container">
       <div className="card-content row">
-        <div className="sleft-side col-lg-6">
+        <div className="sleft-side col-lg-6 col-md-6 col-sm-6">
           <div className="capclass">
             <Link to="/capabilities" className={`card ${focusedCard === 'Capabilities' ? 'focused' : ''}`} data-card="Capabilities">
               <div><h1>Capabilities</h1></div>
@@ -64,7 +64,7 @@ const CardContent = () => {
             {focusedCard === 'Business' && renderMasonryGrid()}
           </div>
         </div>
-        <div className="sright-side col-lg-6">
+        <div className="sright-side col-lg-6 col-md-6 col-sm-6">
           {focusedCard === 'Capabilities' && (
             <div className="c-content cap-content">
               <h2>Capabilities</h2>
@@ -83,6 +83,27 @@ const CardContent = () => {
               <p>Crafting processes that help transform our partner organisation to be future-proof. With Strategy together with an approach so bold that ideas become Enterprise and transform them into truly global entities forging the way ahead with impact.</p>
             </div>
           )}
+        </div>
+      </div>
+
+      <div className="tabsresponsive">
+        <div className="firstsechg">
+          <Link to={"/"}>Capabilities</Link>
+          <p>hii</p>
+          <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+
+        </div>
+        <div className="firstsechg">
+          <Link to={"/"}>Capabilities</Link>
+          <p> bansss</p>
+          <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+
+        </div>
+        <div className="firstsechg">
+          <Link to={"/"}>Capabilities</Link>
+          {}
+          <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+
         </div>
       </div>
     </div>

@@ -39,6 +39,37 @@
     .para p{
         text-align: unset !important;
     }
+
+
+    /* animation */
+    .parallax-image{
+        width: 100% !important;
+        height: auto !important;
+
+    }
+
+    .brandMasonry{
+        /* display: none !important; */
+        height: 32vh !important;
+    width: 77% !important;
+    left: auto !important;
+    top: -168px !important;
+    }
+    .capclass, .innoclass, .buiclass{
+display: block !important;
+    }
+    .card.focused {
+        width: 81% !important;
+        height: 40vh !important;
+    }
+    .cap-content{
+        margin-top: 1px !important;
+    }
+    .sright-side {
+        /* width: 100% !important; */
+        padding: 1% !important;
+    }
+   
 }
 
 @media (min-width: 399px) and (max-width: 589px){
@@ -107,6 +138,56 @@ header.tab-container.sticky{
 .section2-body{
     margin-top: 2% !important;
     padding: 3% !important;
+}
+
+
+ /* animation */
+ .parallax-image{
+    width: 100% !important;
+    height: auto !important;
+
+}
+.parallax-container{
+    height: 70vh !important;
+}
+.sright-side{
+    width: 100% !important;
+}
+.brandMasonry{
+    /* display: none !important; */
+    height: 32vh !important;
+width: 77% !important;
+left: auto !important;
+top: -168px !important;
+}
+.capclass, .innoclass, .buiclass{
+display: block !important;
+}
+.card.focused {
+    width: 81% !important;
+    height: 40vh !important;
+}
+.cap-content{
+    margin-top: 1px !important;
+}
+.sright-side {
+    /* width: 100% !important; */
+    padding: 1% !important;
+}
+.sleft-side{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+.brandMasonry{
+    display: none !important;
+}
+
+.card-content.row{
+    display: none !important;
+}
+.tabsresponsive{
+    display: block !important;
 }
 }
 @media (min-width: 290px) and (max-width: 398px){
@@ -178,6 +259,17 @@ header.tab-container.sticky{
 .section2-body{
     margin-top: 2% !important;
     padding: 3% !important;
+}
+
+
+ /* animation */
+ .parallax-image{
+    width: 100% !important;
+    height: auto !important;
+
+}
+.parallax-container{
+    height: 70vh !important;
 }
 
 /* ///footer */
