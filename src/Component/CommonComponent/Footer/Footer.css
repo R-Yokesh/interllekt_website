@@ -2,50 +2,48 @@
   background-color: #31175b;
   border-top: 1px solid #e7e7e7;
   width: 100%;
-  height: 100%;
   max-width: 85rem;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 10px;
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
-  /* border-radius: 4px; */
+  color: #fff;
 }
- 
+
 .c-layout.is-footer {
   display: grid;
   grid-template-columns: 25% 75%;
   padding: 20px;
 }
+
 .footer-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
- 
+
 .footer-left p {
   margin: 10px 0 0 0;
 }
- 
+
 .footer-right {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   gap: 20px;
   margin-right: 50px;
 }
- 
+
 .footer-section {
   margin-left: 90px;
-  color: #fff;
 }
- 
+
 .footer-section h3 {
   color: #777;
   margin-top: 0;
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 18px;
 }
- 
+
 .footer-section a {
   display: block;
   color: #fff;
@@ -53,22 +51,24 @@
   margin: 5px 0;
   font-family: 'Switzer-Regular', sans-serif;
 }
- 
+
 .footer-section a:hover {
   text-decoration: underline;
 }
- 
+
 .footer-section p {
   margin: 5px 0;
   font-family: 'Switzer-Regular', sans-serif;
   line-height: 1.5;
 }
-.footer-bottom-text{
+
+.footer-bottom-text {
   margin-left: 15px;
   color: #fff;
   line-height: 1.5;
 }
-.footer-bottom-paragraph{
+
+.footer-bottom-paragraph {
   margin-left: 15px;
   margin-top: 5px;
   color: #fff;
@@ -76,6 +76,63 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
-  /* justify-content: center; */
   text-align: justify;
+}
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+  .c-layout.is-footer {
+    grid-template-columns: 35% 65%;
+  }
+
+  .footer-section {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .c-layout.is-footer {
+    grid-template-columns: 40% 60%;
+  }
+
+  .footer-section {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-layout.is-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .footer-section {
+    margin-left: 0;
+  }
+
+  .footer-left {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .c-layout.is-footer {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .footer-section {
+    margin: 0 auto;
+  }
+
+  .footer-bottom-text,
+  .footer-bottom-paragraph {
+    margin-left: 0;
+    text-align: center;
+  }
 }

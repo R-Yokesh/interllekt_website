@@ -3,7 +3,7 @@ import "./BSection2.css";
 
 const BSection2 = () => {
   return (
-    <div className="Bsection2-container">
+    <div className="Bsection2-containers container">
       <div className="Bsection2-body">
         <h1>Business </h1>
         <p>

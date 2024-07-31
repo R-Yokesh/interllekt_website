@@ -12,7 +12,7 @@ import InnoParallax from '../../Component/Innovation/InnoParallax/InnoParallax'
 const InnovationPage = () => {
   return (
     <div>
-        <InnoParallax />
+        {/* <InnoParallax /> */}
         <InnoSection1 />
         <ISubservices />
         {/* <InnoSlider1 /> */}
