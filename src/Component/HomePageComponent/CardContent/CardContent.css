@@ -30,6 +30,9 @@
   background-color:#eff3f9;
   text-decoration: none; 
 }
+.tabsresponsive{
+  display: none;
+}
 
 .card h1 {
   color: #000;
