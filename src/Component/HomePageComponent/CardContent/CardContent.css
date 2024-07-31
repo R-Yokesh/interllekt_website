@@ -1,8 +1,6 @@
 .scard-content {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  background: #eef9ff;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
 }
 
 .capclass, .innoclass, .buiclass {
@@ -206,7 +204,7 @@
   font-weight: 500;
   line-height: 2rem;
   color: #000;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .cap-content {

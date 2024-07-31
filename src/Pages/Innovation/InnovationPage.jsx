@@ -7,6 +7,7 @@ import InnoSection1 from '../../Component/Innovation/InnoSection1/InnoSection1'
 import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm'
 import ISubservices from '../../Component/Innovation/ISubservices/ISubservices'
 import InnoParallax from '../../Component/Innovation/InnoParallax/InnoParallax'
+import CardContent from '../../Component/HomePageComponent/CardContent/CardContent'
 
 
 const InnovationPage = () => {
@@ -19,6 +20,7 @@ const InnovationPage = () => {
         {/* <InnoSlider2 /> */}
         {/* <InnoTestiomonial /> */}
         {/* <InnoContactForm /> */}
+        <CardContent />
         <ContactForm />
     </div>
   )

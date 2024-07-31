@@ -7,6 +7,7 @@ import BSection2 from '../../Component/Business/BSection2/BSection2'
 import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/ContactForm'
 import BSubservices from '../../Component/Business/BSubservices/BSubservices'
 import BParallax from '../../Component/Business/BParallax/BParallax'
+import CardContent from '../../Component/HomePageComponent/CardContent/CardContent'
 
 
 const BuisnessPage = () => {
@@ -19,6 +20,7 @@ const BuisnessPage = () => {
         {/* <BCard /> */}
         {/* <BSlider2 /> */}
         {/* <BTestiomonial /> */}
+        <CardContent />
         <ContactForm />
     </div>
   )

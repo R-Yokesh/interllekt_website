@@ -179,9 +179,9 @@ display: block !important;
     display: flex !important;
     flex-direction: row !important;
 }
-.brandMasonry{
+/* .brandMasonry{
     display: none !important;
-}
+} */
 
 .card-content.row{
     display: none !important;

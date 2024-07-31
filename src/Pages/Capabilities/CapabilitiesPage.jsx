@@ -11,6 +11,7 @@ import BusinessPage from '../Business/BusinessPage';
 import InnovationPage from '../Innovation/InnovationPage';
 import CapSubservices from '../../Component/CapabilitiesComponent/CapSubservices/CapSubservices';
 import CapParallax from '../../Component/CapabilitiesComponent/CapParallax/CapParallax';
+import CardContent from '../../Component/HomePageComponent/CardContent/CardContent'
 
 const CapabilitiesPage = () => {
   return (
@@ -26,6 +27,7 @@ const CapabilitiesPage = () => {
       {/* <CardSection /> */}
       {/* <Slider2 /> */}
       {/* <Testimonial /> */}
+      <CardContent />
       <div id="contact">
         <ContactForm/>
         </div>

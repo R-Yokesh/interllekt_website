@@ -42,7 +42,7 @@ const CardContent = () => {
   );
 
   return (
-    <div className="container">
+    <div className="container res-commoncard">
       <div className="card-content row">
         <div className="sleft-side col-lg-6 col-md-6 col-sm-6">
           <div className="capclass">
@@ -89,21 +89,18 @@ const CardContent = () => {
       <div className="tabsresponsive">
         <div className="firstsechg">
           <Link to={"/"}>Capabilities</Link>
-          <p>hii</p>
+          {renderMasonryGrid()}
           <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
-
         </div>
         <div className="firstsechg">
           <Link to={"/"}>Capabilities</Link>
-          <p> bansss</p>
+          {renderMasonryGrid()}
           <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
-
         </div>
         <div className="firstsechg">
           <Link to={"/"}>Capabilities</Link>
-          {}
+          {renderMasonryGrid()}
           <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
-
         </div>
       </div>
     </div>
