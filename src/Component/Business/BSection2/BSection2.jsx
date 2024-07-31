@@ -3,8 +3,8 @@ import "./BSection2.css";
 
 const BSection2 = () => {
   return (
-    <div className="Bsection2-containers container">
-      <div className="Bsection2-body">
+    <div className="Bsection2-containers container common-class">
+      <div className="Bsection2-body res-section">
         <h1>Business </h1>
         <p>
           Crafting processes that help transform our partner organisation to
@@ -13,7 +13,7 @@ const BSection2 = () => {
             entities forging the way ahead with impact.
         </p>
         <p className="line1">
-        We Help your businesses succeed with a smarter way ahead.
+        We help your businesses succeed with a smarter way ahead.
         </p>
       </div>
     </div>

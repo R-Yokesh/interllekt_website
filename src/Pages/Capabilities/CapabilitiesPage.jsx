@@ -18,7 +18,7 @@ const CapabilitiesPage = () => {
       <Section1 />
       <TabSection />
       <div id="capabilities">
-      {/* <CapParallax /> */}
+      <CapParallax />
         <Section2 />
       </div>
       <CapSubservices />

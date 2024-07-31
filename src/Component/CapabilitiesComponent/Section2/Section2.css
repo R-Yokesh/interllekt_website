@@ -3,26 +3,16 @@
 padding: 2%; */
 }
 
-.section2-body {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .section2-body h1 {
-  text-transform: none;
+  /* text-transform: none; */
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 3rem;
   font-weight: 200;
-  line-height: 1.2;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .section2-body p {
   font-size: 1.5rem;
-  line-height: 1.2;
-  text-align: justify;
   letter-spacing: 1px;
   font-family: 'Switzer-Regular', sans-serif;
 }
@@ -30,6 +20,6 @@ padding: 2%; */
 .section2-body .line1 {
   font-family: 'Ranberg Regular', sans-serif;
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 3.5rem !important; 
 }
 

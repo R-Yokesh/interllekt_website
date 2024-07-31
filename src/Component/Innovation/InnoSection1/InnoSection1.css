@@ -20,19 +20,18 @@
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 3.5rem;
   font-weight: 200;
-  line-height: 1.2;
   text-align: left;
 }
 
 .Isection2-body p {
   font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: justify;
   font-family: 'Switzer-Regular', sans-serif;
 }
 
 .Isection2-body .line1 {
   font-family: 'Ranberg Regular', sans-serif;
-  font-size: 3.5rem;
+  font-weight: 500;
+  font-size: 3.5rem !important;
+  line-height: 1.2;
 }
 

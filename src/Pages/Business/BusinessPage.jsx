@@ -12,7 +12,7 @@ import BParallax from '../../Component/Business/BParallax/BParallax'
 const BuisnessPage = () => {
   return (
     <div>
-        {/* <BParallax /> */}
+        <BParallax />
         <BSection2 />
         <BSubservices />
         {/* <BSlider /> */}

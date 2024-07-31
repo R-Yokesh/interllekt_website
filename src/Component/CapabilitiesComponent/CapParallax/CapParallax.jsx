@@ -38,7 +38,7 @@ const CapParallax = () => {
   }, []);
 
   return (
-    <div className={`cap-parallax-container ${scrollDirection}`}>
+    <div className={`cap-parallax-container common-class parallax-margins ${scrollDirection}`}>
       <img src={leftImage} alt="Left" className="cap-parallax-image top-left-image" />
       <img src={rightImage} alt="Right" className="cap-parallax-image bottom-right-image" />
       <img src={iconImage} alt="Icon" className="cap-parallax-image icon-image" />

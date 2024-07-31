@@ -51,7 +51,7 @@ const BSubservices = () => {
   };
 
   return (
-    <div className="bcarousel-container">
+    <div className="bcarousel-container common-class">
       <div ref={carouselRef} className="bcarousel">
         {renderCarouselItems(firstThreeServices)}
         {renderCarouselItems(firstThreeServices)}

@@ -37,7 +37,7 @@ const InnoParallax = () => {
   }, []);
 
   return (
-    <div className={`parallax-container ${scrollDirection}`}>
+    <div className={`parallax-container common-class ${scrollDirection}`}>
       <img src={leftImage} alt="Left" className="parallax-image left-image" />
       <img src={rightImage} alt="Right" className="parallax-image right-image" />
       <img src={bottomImage} alt="Bottom" className="parallax-image bottom-image" />

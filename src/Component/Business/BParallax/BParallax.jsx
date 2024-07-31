@@ -37,7 +37,7 @@ const BParallax = () => {
   }, []);
 
   return (
-    <div className={`b-parallax-container ${scrollDirection}`}>
+    <div className={`b-parallax-container common-class ${scrollDirection}`}>
       <img src={topImage} alt="Building" className="b-parallax-image top-image" />
       <img src={bottomImage} alt="Hands" className="b-parallax-image bottom-image" />
       <img src={textImage} alt="Text" className="b-parallax-image text-image" />
