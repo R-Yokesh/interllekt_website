@@ -74,6 +74,7 @@ const NewHeader = () => {
   }, [isHomePage]);
 
   return (
+    <div className="reshed">
     <header
       className={`new-header ${headerStyle} ${
         searchOpen ? "search-active" : ""
@@ -197,6 +198,7 @@ const NewHeader = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 

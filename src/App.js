@@ -5,6 +5,7 @@ import RoutesComponent from "./CommonRoutes";
 import Layout from "./Pages/Layout/Layout";
 import ErrorBoundary from './Utiliz/ErrorBoundary';
 import { Helmet } from 'react-helmet';
+import "./Utiliz/Responsive.css"
 
  
 function App() {

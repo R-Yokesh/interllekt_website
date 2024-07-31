@@ -20,7 +20,7 @@ const HomePage = () => {
         {/* <ArrowAni/> */}
         <TestAnimation />
         {/* <DesignFutureAnimation/> */}
-        <CardContent />
+        {/* <CardContent /> */}
         {/* <IndustrySection/> */}
         {/* <ScrollSection/> */}
         <HomeServices />

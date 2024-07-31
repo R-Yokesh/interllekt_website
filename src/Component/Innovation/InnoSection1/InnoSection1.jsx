@@ -3,7 +3,7 @@ import "./InnoSection1.css";
 
 const InnoSection1 = () => {
   return (
-    <div className="Isection2-container container">
+    <div className="Isection2-containers container">
       <div className="Isection2-body">
         <h1>Innovation</h1>
         <p>
