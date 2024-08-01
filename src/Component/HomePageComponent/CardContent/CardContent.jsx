@@ -88,19 +88,19 @@ const CardContent = () => {
 
       <div className="tabsresponsive">
         <div className="firstsechg">
-          <Link to={"/"}>Capabilities</Link>
+          <Link to={"/capabilities"} className='caplin'>Capabilities</Link>
           {renderMasonryGrid()}
-          <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+          <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
         </div>
         <div className="firstsechg">
-          <Link to={"/"}>Capabilities</Link>
+          <Link to={"/innovation"}  className='caplin'>Innovation</Link>
           {renderMasonryGrid()}
-          <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+          <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
         </div>
         <div className="firstsechg">
-          <Link to={"/"}>Capabilities</Link>
+          <Link to={"/business"}  className='caplin'>Business</Link>
           {renderMasonryGrid()}
-          <p>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+          <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
         </div>
       </div>
     </div>

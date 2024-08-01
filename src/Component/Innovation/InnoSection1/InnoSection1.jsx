@@ -9,7 +9,7 @@ const InnoSection1 = () => {
         <p>
           We built an environment where every idea is valued and explored. When staying ahead of the curve or finding a way to make it work are a system of belief that we foster to help at any stage of an organisation. Whether it is digital transformation or creating a product with impact we explore and push boundaries.
         </p>
-        <p className="line1">We help you build on innovative ideas to shape future solutions.</p>
+        <p className="line1 s">We help you build on innovative ideas to shape future solutions.</p>
       </div>
     </div>
   );
