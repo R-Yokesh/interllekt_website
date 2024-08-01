@@ -3,7 +3,7 @@
 padding: 2%; */
 }
 
-.section2-body h1 {
+.section2-body h3 {
   /* text-transform: none; */
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 3rem;
@@ -17,9 +17,9 @@ padding: 2%; */
   font-family: 'Switzer-Regular', sans-serif;
 }
 
-.section2-body .line1 {
+.section2-body h1 {
   font-family: 'Ranberg Regular', sans-serif;
   font-weight: 500;
-  font-size: 3.5rem !important; 
+  font-size: 3.5rem; 
 }
 

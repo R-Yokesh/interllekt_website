@@ -10,7 +10,7 @@
 
 .parallax-image {
   position: absolute;
-  width: 80%;
+  width: 70%;
   height: 110vh;
   max-width: none;
   transition: transform 1s ease-out;

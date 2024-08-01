@@ -13,12 +13,20 @@
   flex-direction: column;
   align-items: flex-start;
 }
-
+.Isection2-body h3 {
+  font-family: 'Ranberg Regular', sans-serif;
+  font-weight: 200;
+}
 .Isection2-body h1 {
+  font-family: 'Ranberg Regular', sans-serif;
+  font-weight: 500;
+}
+
+/* .Isection2-body h3 {
   letter-spacing: 0;
   text-transform: none;
   font-family: 'Ranberg Regular', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 200;
   text-align: left;
 }
@@ -28,10 +36,10 @@
   font-family: 'Switzer-Regular', sans-serif;
 }
 
-.Isection2-body .line1 {
+.Isection2-body h1 {
   font-family: 'Ranberg Regular', sans-serif;
   font-weight: 500;
   font-size: 3.5rem !important;
   line-height: 1.2;
-}
+} */
 

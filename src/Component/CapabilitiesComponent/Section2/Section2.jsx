@@ -7,13 +7,13 @@ const Section2 = () => {
     <div className="section2-container container common-class ">
       {/* <TabSection /> */}
       <div className="section2-body res-section">
-        <h1>Concept & Design</h1>
+        <h3>Concept & Design</h3>
         <p>
             A visionary creative network striving to craft sublime communication
             through design, pushing boundaries, we boldly explore new horizons,
             unlocking limitless possibilities through creative expression.
         </p>
-        <p className='line1'>We can bring something to life for you.</p>
+        <h1 className='line1'>We can bring something to life for you.</h1>
       </div>
     </div>
   );

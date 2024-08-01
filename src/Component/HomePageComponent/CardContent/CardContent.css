@@ -202,7 +202,7 @@
   font-family: 'Switzer-Regular', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 2rem;
+  /* line-height: 2rem; */
   color: #000;
   /* text-align: justify; */
 }
@@ -216,5 +216,5 @@
 }
 
 .b-content {
-  margin-top: 30vh;
+  margin-top: 50vh;
 }

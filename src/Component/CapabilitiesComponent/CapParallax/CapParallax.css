@@ -101,10 +101,10 @@
 }
 
 @media (max-width: 768px) {
-  .cap-parallax-image {
+  /* .cap-parallax-image {
     width: 100%;
     height: 80vh;
-  }
+  } */
 
   .cap-text-image {
     margin-top: 15px;

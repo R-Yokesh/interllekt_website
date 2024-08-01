@@ -11,7 +11,7 @@
   text-align: center;
   position: relative;
   padding-bottom: 6.25rem;
-  padding-top: 6.875rem;
+  padding-top: 3rem;
   font-family: 'Switzer-Regular', sans-serif;
 }
 
@@ -105,7 +105,7 @@
   }
 
   .ccontact-form h2 {
-    font-size: 1.4em;
+    font-size: 2rem;
   }
 
   .cbtn button {
@@ -135,7 +135,7 @@
   }
 
   .ccontact-form h2 {
-    font-size: 1.2em;
+    font-size: 2rem;
   }
 
   .cform-row {

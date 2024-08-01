@@ -9,6 +9,10 @@
     .section1-container{
         margin: auto;
     }
+    .cap-parallax-image {
+        width: 76% !important ;
+        height: 85vh !important;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 780px){
@@ -40,31 +44,75 @@
         text-align: unset !important;
     }
 
-
+   /* text-scroll-reveal */
+   .scroll-reveal-text {
+    height: 60vh !important;
+   }
     /* animation */
     .parallax-image{
         width: 100% !important;
         height: auto !important;
 
     }
-
-    .brandMasonry{
-        /* display: none !important; */
-        height: 32vh !important;
-    width: 77% !important;
-    left: auto !important;
-    top: -168px !important;
+    .cap-parallax-image {
+        width: 75% !important;
+        height: 77vh !important;
     }
+
+    .brandMasonry {
+        /* display: none !important; */
+        height: 50vh !important;
+        width: 60% !important;
+        left: auto !important;
+        top: 30px !important;
+    }
+    p.subvism {
+        margin-top: 7%;
+        font-size: 22px;
+    }
+
+    .Isection2-body h1 {
+        font-family: 'Ranberg Regular', sans-serif;
+        font-weight: 500;
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+
+    .caplin{
+        color: #000;
+        font-family: 'Ranberg Regular', sans-serif;
+        font-weight: 500;
+        margin: 0;
+        /* position: relative; */
+        font-size: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
     .capclass, .innoclass, .buiclass{
 display: block !important;
     }
     .card.focused {
+        margin-top: 13%;
         width: 81% !important;
-        height: 40vh !important;
+        height: 48vh !important;
     }
     .cap-content{
-        margin-top: 1px !important;
+        margin-top: 7vh !important;
     }
+    .i-content{
+        margin-top: 40vh !important;
+    }
+    .b-content {
+        margin-top: 70vh !important;
+    }
+
+    .card-content.row{
+        display: none !important;
+    }
+    .tabsresponsive{
+        display: block !important;
+    }
+
     .sright-side {
         /* width: 100% !important; */
         padding: 1% !important;
@@ -147,6 +195,10 @@ header.tab-container.sticky{
     height: auto !important;
 
 }
+.cap-parallax-image {
+    width: 70% !important;
+    height: 60vh !important;
+}
 .parallax-container{
     height: 70vh !important;
 }
@@ -155,14 +207,20 @@ header.tab-container.sticky{
 }
 .brandMasonry{
     /* display: none !important; */
-    height: 32vh !important;
-width: 77% !important;
+    height: 50vh !important;
+width: 70% !important;
 left: auto !important;
 top: 30px !important;
 }
-.subvism{
+.subvism {
     margin-top: 10%;
+    font-size: 18px;
 }
+
+.res-section h1 {
+    font-size: 2rem !important;
+}
+
 .caplin{
     color: #000;
     font-family: 'Ranberg Regular', sans-serif;
@@ -200,13 +258,17 @@ display: block !important;
 }
 .tabsresponsive{
     display: block !important;
+    background-color:#f5f9ff;
 }
 .menu-column ul li a {
     font-size: 1.5rem !important;
 }
 
 .res-section p{
-    font-size: 22px !important;
+    font-size: 20px !important;
+}
+.res-section h3 {
+    font-size: 2rem !important;
 }
 }
 @media (min-width: 290px) and (max-width: 398px){
@@ -280,12 +342,20 @@ header.tab-container.sticky{
     padding: 3% !important;
 }
 
+.res-section h3 {
+    font-size: 1.5rem !important;
+}
+
 
  /* animation */
  .parallax-image{
     width: 100% !important;
     height: auto !important;
 
+}
+.cap-parallax-image {
+    width: 60% !important;
+    height: 50vh !important;
 }
 .parallax-container{
     height: 70vh !important;
@@ -327,6 +397,10 @@ top: 30px !important;
 
 
 .res-section p{
-    font-size: 22px !important;
+    font-size: 18px !important;
 }
+.res-section h1{
+    font-size: 2rem !important;
+}
+
 }
