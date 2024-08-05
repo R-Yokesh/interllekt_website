@@ -9,12 +9,71 @@
     .section1-container{
         margin: auto;
     }
+
+    .section1-container {
+        margin-top: 11% !important;
+    }
+    .heading-style-h1, .text-style-italic {
+        font-family: Ranberg Regular, sans-serif !important;
+        height: 92vh !important;
+    }
+
     .cap-parallax-image {
         width: 76% !important ;
         height: 85vh !important;
     }
 }
+@media (min-width: 870px) and (max-width: 1000px){
 
+    .scroll-reveal-text {
+        height: auto !important;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .brandMasonry {
+        height: 45vh !important;
+        width: 80% !important;
+        top: 0 !important;
+    }
+    .ccontact-form {
+        padding-bottom: 6.25rem !important;
+        padding-top: 3rem !important;
+        position: relative !important;
+        text-align: center !important;
+    }
+    .ccontact-form h2 {
+        font-size: 2rem !important;
+    }
+    .tab-list{
+        gap: 25px !important;
+    }
+    .tab-item{
+        margin: 0 26px !important;
+    }
+    .tab-link{
+        font-size: 24px;
+    }
+    .heading-style-h1{
+        font-size: 9rem !important;
+        
+    }
+    .section1-container{
+        margin: auto;
+    }
+
+    .section1-container {
+        margin-top: 11% !important;
+    }
+    .heading-style-h1, .text-style-italic {
+        font-family: Ranberg Regular, sans-serif !important;
+        height: 92vh !important;
+    }
+
+    .cap-parallax-image {
+        width: 76% !important ;
+        height: 85vh !important;
+    }
+}
 @media (min-width: 600px) and (max-width: 780px){
 
     /* herder */
@@ -39,6 +98,10 @@
     .heading-style-h1{
         font-size: 7rem !important;
         margin-top: 15%;
+    }
+    .heading-style-h1, .text-style-italic {
+        
+        height: auto !important;
     }
     .para p{
         text-align: unset !important;
@@ -161,6 +224,10 @@ display: block !important;
 .heading-style-h1{
     font-size: 3rem !important;
     margin-top: 37%;
+}
+.heading-style-h1, .text-style-italic {
+        
+    height: auto !important;
 }
 .para p{
     text-align: unset !important;
@@ -313,6 +380,10 @@ display: block !important;
 .heading-style-h1{
     font-size: 3rem !important;
     margin-top: 50% !important;
+}
+.heading-style-h1, .text-style-italic {
+        
+    height: auto !important;
 }
 .para p{
     text-align: unset !important;

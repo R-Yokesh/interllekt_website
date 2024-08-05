@@ -42,7 +42,7 @@ const CardContent = () => {
   );
 
   return (
-    <div className="container res-commoncard">
+    <div className="container-fluid res-commoncard">
       <div className="card-content row">
         <div className="sleft-side col-lg-6 col-md-6 col-sm-6">
           <div className="capclass">

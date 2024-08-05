@@ -20,7 +20,7 @@ const TestAnimation = () => {
 //     </div>
 // </div>
  
-<section className="scroll-reveal-text">
+<section className="scroll-reveal-text container">
 <h2 className="section-title-text">
   <span>"We are here <br/>to design <br/><span className="highlight">your future</span>"</span>
 </h2>

@@ -1,15 +1,15 @@
 .scroll-reveal-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+  margin-top: 3%;
   font-family: 'Ranberg Regular', sans-serif;
 }
 
 .scroll-reveal-text span {
-  color: hsla(0, 33%, 4%, 0.534);
+  color: hsl(0deg 33% 4% / 25%);
   background-clip: text;
   -webkit-background-clip: text !important;
   background-repeat: no-repeat;
@@ -21,18 +21,21 @@
 
 .scroll-reveal-text h2 span {
   font-family: 'Ranberg Regular', sans-serif;
-  animation-range-start: cover 10vh;
+  animation-range-start: cover 20vh;
   animation-range-end: cover 30vh;
 }
 
 .scroll-reveal-text p span {
   font-family: 'Switzer-Regular', sans-serif;
-  animation-range-start: cover 10vh;
+  animation-range-start: cover 20vh;
   animation-range-end: cover 30vh;
+  line-height: 38px;
+  letter-spacing: 1px;
+  margin-top: 1%;
 }
 
 .scroll-reveal-text h2 .highlight {
-  color: hsla(0, 33%, 4%, 0.534);
+  color: hsl(0deg 33% 4% / 25%);
   background-clip: text;
   -webkit-background-clip: text !important;
   background-repeat: no-repeat;
@@ -58,22 +61,23 @@
 .scroll-reveal-text h2 {
   font-size: 5rem;
   line-height: 1;
-  padding-left: 20px;
-  margin-bottom: 5px; /* Added space */
+  text-align: center;
+  /* padding-left: 20px; */
+  /* margin-bottom: 5px;  */
 }
 
 .scroll-reveal-text p {
   font-size: 1.75rem;
   line-height: 1.3;
-  max-width: 55ch;
-  margin-inline: auto;
-  font-weight: 44.8px;
-  text-align: justify;
+  /* max-width: 55ch; */
+  /* margin-inline: auto; */
+  /* font-weight: 44.8px; */
+  /* text-align: justify; */
 }
 
 .section-title-text {
   font-size: 24px;
-  margin: 0;
+  /* margin: 0; */
 }
 
 /* Responsive adjustments */
