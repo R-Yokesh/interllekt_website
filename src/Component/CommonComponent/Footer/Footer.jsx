@@ -17,9 +17,9 @@ const Footer = () => {
 
   return (
     <footer className="custom-footer">
-      <div className="c-layout is-footer">
+      <div className="c-layout is-footer container">
         <div className="footer-left">
-          <img src={Assets.interllektlogo} alt="Logo" style={{ width: '100px' }} />
+          <img src={Assets.interllektlogo} alt="Logo" style={{ width: '70%' }} />
         </div>
         <div className="footer-right">
           <div className="footer-section">

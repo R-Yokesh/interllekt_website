@@ -8,6 +8,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 7px;
+  background-color: white ;
 }
 
 .tab-nav {
@@ -90,7 +91,7 @@
 
 @media (min-width: 1024px) {
   .tab-container {
-    max-width: 80%;
+    max-width: 75%;
   }
 
   .tab-link {

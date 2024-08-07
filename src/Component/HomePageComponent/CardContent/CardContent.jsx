@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './CardContent.css';
-import image1 from '../../../Assets/Images/Color Mark 4.png';
-import image2 from '../../../Assets/Images/Color Mark 3.png';
-import image3 from '../../../Assets/Images/Color Mark 1.png';
-import image4 from '../../../Assets/Images/Color Mark 2.png';
-import image5 from '../../../Assets/Images/Color Mark 3.png';
-import image6 from '../../../Assets/Images/Color Mark 4.png';
-import image7 from '../../../Assets/Images/Color Mark 3.png';
+import Assets from '../../../Assets/Assets';
+
+const images = [
+  Assets.ind, Assets.logo, Assets.ind, Assets.menuicon, Assets.indst, Assets.ind, Assets.interllektlogo, Assets.interllektlogo, Assets.interllektlogo,
+];
+
+const backgroundColors = [
+  '#ffcccb', '#add8e6', '#90ee90', '#ffebcd', '#d3d3d3', '#ffe4e1', '#f0e68c', '#f0e68c'
+];
 
 const CardContent = () => {
   const [focusedCard, setFocusedCard] = useState('Capabilities');
@@ -29,15 +31,55 @@ const CardContent = () => {
     };
   }, []);
 
+  const [imageIndex2, setImageIndex2] = useState(1);
+  const [imageIndex3, setImageIndex3] = useState(2);
+  const [imageIndex4, setImageIndex4] = useState(3);
+
+  const [showBackground2, setShowBackground2] = useState(true);
+  const [showBackground3, setShowBackground3] = useState(true);
+  const [showBackground4, setShowBackground4] = useState(true);
+
+  useEffect(() => {
+    const interval2 = setInterval(() => {
+      setShowBackground2(true);
+      setTimeout(() => setShowBackground2(false), 2000);
+      setTimeout(() => {
+        setImageIndex2(prevIndex => (prevIndex + 1) % images.length);
+        setShowBackground2(true);
+      }, 3000);
+    }, 4000);
+
+    const interval3 = setInterval(() => {
+      setShowBackground3(true);
+      setTimeout(() => setShowBackground3(false), 2000);
+      setTimeout(() => {
+        setImageIndex3(prevIndex => (prevIndex + 1) % images.length);
+        setShowBackground3(true);
+      }, 3000);
+    }, 4000);
+
+    const interval4 = setInterval(() => {
+      setShowBackground4(true);
+      setTimeout(() => setShowBackground4(false), 2000);
+      setTimeout(() => {
+        setImageIndex4(prevIndex => (prevIndex + 1) % images.length);
+        setShowBackground4(true);
+      }, 3000);
+    }, 4000);
+
+    return () => {
+      clearInterval(interval2);
+      clearInterval(interval3);
+      clearInterval(interval4);
+    };
+  }, []);
+
   const renderMasonryGrid = () => (
-    <div className="brandMasonry">
-      <div className="col" style={{ backgroundImage: `url(${image1})` }}></div>
-      <div className="col" style={{ backgroundImage: `url(${image2})` }}></div>
-      <div className="col" style={{ backgroundImage: `url(${image3})` }}></div>
-      <div className="col" style={{ backgroundImage: `url(${image4})` }}></div>
-      <div className="col" style={{ backgroundImage: `url(${image5})` }}></div>
-      <div className="col" style={{ backgroundImage: `url(${image6})` }}></div>
-      <div className="col" style={{ backgroundImage: `url(${image7})` }}></div>
+    <div className="brandMasonry eq-3">
+      <div className="col" style={{backgroundColor:"green"}} ></div>
+      <div className="col" grid-picture="" style={{ opacity: 1, visibility: 'inherit', width:"100%", background: showBackground2 ? backgroundColors[imageIndex2] : `url(${images[imageIndex2]})` }}></div>
+      <div className="col" grid-picture="" style={{ opacity: 1, visibility: 'inherit',  width:"100%", background: showBackground3 ? backgroundColors[imageIndex3] : `url(${images[imageIndex3]})` }}></div>
+      <div className="col" grid-picture="" style={{ opacity: 1, visibility: 'inherit',  width:"100%", background: showBackground4 ? backgroundColors[imageIndex4] : `url(${images[imageIndex4]})` }}></div>
     </div>
   );
 
@@ -88,19 +130,19 @@ const CardContent = () => {
 
       <div className="tabsresponsive">
         <div className="firstsechg">
-          <Link to={"/capabilities"} className='caplin'>Capabilities</Link>
+          <Link to="/capabilities" className='caplin'>Capabilities</Link>
           {renderMasonryGrid()}
           <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
         </div>
         <div className="firstsechg">
-          <Link to={"/innovation"}  className='caplin'>Innovation</Link>
+          <Link to="/innovation" className='caplin'>Innovation</Link>
           {renderMasonryGrid()}
-          <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+          <p className='subvism'>We built an environment where every idea is valued and explored. When staying ahead of the curve or finding a way to make it work are a system of belief that we foster to help at any stage of an organisation. Whether it is digital transformation or creating a product with impact we explore and push boundaries.</p>
         </div>
         <div className="firstsechg">
-          <Link to={"/business"}  className='caplin'>Business</Link>
+          <Link to="/business" className='caplin'>Business</Link>
           {renderMasonryGrid()}
-          <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we boldly explore new horizons, unlocking limitless possibilities through creative expression.</p>
+          <p className='subvism'>Crafting processes that help transform our partner organisation to be future-proof. With Strategy together with an approach so bold that ideas become Enterprise and transform them into truly global entities forging the way ahead with impact.</p>
         </div>
       </div>
     </div>
