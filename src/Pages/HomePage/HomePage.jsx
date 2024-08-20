@@ -9,6 +9,7 @@ import AnimationVideo from '../../Component/HomePageComponent/AnimationVideo/Ani
 import CardContent from '../../Component/HomePageComponent/CardContent/CardContent'
 import HomeServices from '../../Component/HomePageComponent/HomeServices/HomeServices'
 import TestAnimation from '../../Component/HomePageComponent/TestAnimation/TestAnimation'
+import ImageScrollEffect from '../../Component/ImageScrollEffect/ImageScrollEffect'
 
 
 
@@ -24,6 +25,10 @@ const HomePage = () => {
         {/* <IndustrySection/> */}
         {/* <ScrollSection/> */}
         <HomeServices />
+
+{/* <ImageScrollEffect/> */}
+
+        
         <div id="contact">
         <ContactForm/>
         </div>

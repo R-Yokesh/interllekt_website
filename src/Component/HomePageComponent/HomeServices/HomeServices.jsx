@@ -53,14 +53,23 @@ const HomeServices = () => {
   };
 
   return (
-    <div className="hcarousel-container">
-      <div ref={carouselRef} className="hcarousel">
-        {renderCarouselItems(firstThreeServices)}
-        {renderCarouselItems(firstThreeServices)}
+    <div className="maj">
+      <div className="hcarousel-container">
+        <div ref={carouselRef} className="hcarousel">
+          {renderCarouselItems(firstThreeServices)}
+          {renderCarouselItems(firstThreeServices)}
+        </div>
+        <div ref={reverseCarouselRef} className="hcarousel reverse">
+          {renderCarouselItems(lastThreeServices)}
+          {renderCarouselItems(lastThreeServices)}
+        </div>
       </div>
-      <div ref={reverseCarouselRef} className="hcarousel reverse">
-        {renderCarouselItems(lastThreeServices)}
-        {renderCarouselItems(lastThreeServices)}
+
+      <div className="container">
+        <h2 className="section-titlewwn">
+          If you here to make an <br />impact or build a <br />legacy brand
+        </h2>
+
       </div>
     </div>
   );

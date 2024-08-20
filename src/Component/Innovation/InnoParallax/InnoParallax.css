@@ -11,52 +11,35 @@
 .parallax-image {
   position: absolute;
   width: 80%;
-  /* height: 110vh; */
+  height: auto;
   max-width: none;
-  transition: transform 1s ease-out;
+  transition: transform 3.5s ease-out, opacity 1.5s ease-out;
+  opacity: 0; /* Ensure the images are hidden initially */
 }
 
-.left-image {
-  transform: translateX(-30%);
+.parallax-container.animate .left-image {
+  transform: translateX(0); /* Image moves into view */
+  opacity: 1; /* Image fades in */
 }
 
-.right-image {
-  transform: translateX(30%);
-}
-
-.bottom-image {
-  transform: translateY(30%);
-}
-
-/* Scroll down animation */
-.parallax-container.down .left-image {
+.parallax-container.animate .right-image {
   transform: translateX(0);
   opacity: 1;
 }
 
-.parallax-container.down .right-image {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.parallax-container.down .bottom-image {
+.parallax-container.animate .bottom-image {
   transform: translateY(0);
   opacity: 1;
 }
 
-/* Scroll up animation */
-.parallax-container.up .left-image {
-  transform: translateX(-10%);
-  opacity: 1;
+.left-image {
+  transform: translateX(-30%); /* Starting position off-screen to the left */
 }
 
-.parallax-container.up .right-image {
-  transform: translateX(10%);
-  opacity: 1;
-
+.right-image {
+  transform: translateX(30%); /* Starting position off-screen to the right */
 }
 
-.parallax-container.up .bottom-image {
-  transform: translateY(10%);
-  opacity: 1;
+.bottom-image {
+  transform: translateY(30%); /* Starting position off-screen to the bottom */
 }

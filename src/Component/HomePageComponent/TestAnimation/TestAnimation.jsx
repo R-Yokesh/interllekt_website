@@ -15,8 +15,8 @@ const TestAnimation = () => {
           duration: 5.2, // Adjust duration for smoother transition
           scrollTrigger: {
             trigger: element,
-            start: 'top 80%',
-            end: 'bottom 20%',
+            start: 'top 85%',
+            end: 'bottom 15%',
             scrub: 1, // Use a specific scrub value for smoother animation
             toggleActions: 'play none none reverse'
           }
@@ -24,30 +24,30 @@ const TestAnimation = () => {
       );
     });
 
-    gsap.fromTo('.scroll-reveal-text .highlight',
-      { fontWeight: 'normal' },
-      {
-        fontWeight: 'bold',
-        duration: 5.1, // Adjust duration for smoother transition
-        scrollTrigger: {
-          trigger: '.scroll-reveal-text .highlight',
-          start: 'top 80%',
-          end: 'bottom 20%',
-          scrub: 1, // Use a specific scrub value for smoother animation
-          toggleActions: 'play none none reverse'
-        }
-      }
-    );
+    // gsap.fromTo('.scroll-reveal-text .highlight',
+    //   { fontWeight: 'normal' },
+    //   {
+    //     fontWeight: 'bold',
+    //     duration: 5.1, // Adjust duration for smoother transition
+    //     scrollTrigger: {
+    //       trigger: '.scroll-reveal-text .highlight',
+    //       start: 'top 80%',
+    //       end: 'bottom 20%',
+    //       scrub: 1, // Use a specific scrub value for smoother animation
+    //       toggleActions: 'play none none reverse'
+    //     }
+    //   }
+    // );
   }, []);
 
   return (
-    <section className="scroll-reveal-text container">
+    <section className="scroll-reveal-text ">
       <h2 className="section-title-text">
-        <span>"We are here <br />to design <br /><span className="highlight">your future</span>"</span>
+        <span>"We are here <br></br>to design <br></br>your future"</span>
       </h2>
-      <p>
+      <p className='txtn' >
         <span>
-          “We look ahead and manifest the future, through design, technology, strategy, venture, and an omni-thinking. From a startup to a legacy enterprise, building challenging transformations online and offline."
+        “We look ahead and manifest the future, through design, technology, strategy, venture and an omni thinking. From a startup to a legacy enterprise, building challenging transformations online and offline.
         </span>
       </p>
     </section>

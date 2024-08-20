@@ -8,11 +8,30 @@ import ContactForm from '../../Component/CapabilitiesComponent/ContactForm/Conta
 import ISubservices from '../../Component/Innovation/ISubservices/ISubservices'
 import InnoParallax from '../../Component/Innovation/InnoParallax/InnoParallax'
 import CardContent from '../../Component/HomePageComponent/CardContent/CardContent'
+import ImageScrollEffect from '../../Component/ImageScrollEffect/ImageScrollEffect'
+import Assets from '../../Assets/Assets';
 
 
 const InnovationPage = () => {
+  const innovationImages = [
+    Assets.inno1,
+  Assets.inno2,
+  Assets.inno3,
+  Assets.inno4,
+  Assets.inno5,
+  Assets.inno6,
+  Assets.inno7,
+  Assets.inno8,
+  Assets.inno9,
+  Assets.inno10,
+  Assets.inno11,
+ 
+   
+    // Add more images as needed
+  ];
   return (
     <div>
+     
         <InnoParallax />
         <InnoSection1 />
         <ISubservices />
@@ -20,7 +39,8 @@ const InnovationPage = () => {
         {/* <InnoSlider2 /> */}
         {/* <InnoTestiomonial /> */}
         {/* <InnoContactForm /> */}
-        <CardContent />
+        {/* <CardContent /> */}
+        <ImageScrollEffect images={innovationImages}/>
         <ContactForm />
     </div>
   )

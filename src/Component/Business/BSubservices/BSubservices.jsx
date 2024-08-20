@@ -38,7 +38,7 @@ const BSubservices = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const firstThreeServices = services.slice(0, 3);
+  const firstThreeServices = services.slice(0, 2);
   const lastThreeServices = services.slice(3, 6);
 
   const renderCarouselItems = (serviceList) => {

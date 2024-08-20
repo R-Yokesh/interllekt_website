@@ -2,11 +2,12 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  margin-top: 30px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #fff
 }
 
 .cap-parallax-image {
@@ -14,13 +15,33 @@
   width: auto;
   height: auto;
   max-width: none;
-  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  transition: all 3s ease-out;
   opacity: 0;
+}
+
+.cap-parallax-container.animate .top-left-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.animate .bottom-right-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.animate .icon-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.animate .cap-text-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
 }
 
 .top-left-image {
   top: 0;
-  left: 0;
+  left:0;
   transform: translateX(-100%) translateY(-100%);
   width: 90%;
 }
@@ -47,77 +68,3 @@
   width: 50%;
 }
 
-/* Scroll down animation */
-.cap-parallax-container.down .top-left-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.cap-parallax-container.down .bottom-right-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.cap-parallax-container.down .icon-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.cap-parallax-container.down .cap-text-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-/* Scroll up animation */
-.cap-parallax-container.up .top-left-image {
-  transform: translateX(-10%) translateY(-10%);
-  opacity: 1;
-}
-
-.cap-parallax-container.up .bottom-right-image {
-  transform: translateX(10%) translateY(10%);
-  opacity: 1;
-}
-
-.cap-parallax-container.up .icon-image {
-  transform: translateX(-5%) translateY(-10%);
-  opacity: 1;
-}
-
-.cap-parallax-container.up .cap-text-image {
-  transform: translateY(10%);
-  opacity: 1;
-}
-
-@media (max-width: 1024px) {
-  .cap-parallax-image {
-    width: 90%;
-    height: 90vh;
-  }
-
-  .cap-text-image {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* .cap-parallax-image {
-    width: 100%;
-    height: 80vh;
-  } */
-
-  .cap-text-image {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cap-parallax-image {
-    width: 100%;
-    height: 70vh;
-  }
-
-  .cap-text-image {
-    margin-top: 10px;
-  }
-}

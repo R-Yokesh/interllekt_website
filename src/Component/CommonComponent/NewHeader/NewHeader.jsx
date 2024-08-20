@@ -68,136 +68,134 @@ const NewHeader = () => {
   }, []);
 
   useEffect(() => {
-    if (!isHomePage) {
+    if (isHomePage) {
+      setHeaderStyle("transparent");
+    } else {
       setHeaderStyle("not-transparent");
     }
   }, [isHomePage]);
 
   return (
     <div className="reshed">
-    <header
-      className={`new-header ${headerStyle} ${
-        searchOpen ? "search-active" : ""
-      }`}
-    >
-      <div className="logo-container">
-        <img
-          src={logo}
-          alt="Logo"
-          className="logo"
-          onClick={() => navigate("/")}
-        />
-      </div>
-      <div className="icons-container">
-        <div className="search-icon" onClick={toggleSearch}>
+      <header
+        className={`new-header ${headerStyle} ${
+          searchOpen ? "search-active" : ""
+        }`}
+      >
+        <div className="logo-container">
           <img
-            src={searchOpen ? closeIcon : searchIcon}
-            alt="Search Icon"
-            className="search-img"
+            src={logo}
+            alt="Logo"
+            className="logo"
+            onClick={() => navigate("/")}
           />
         </div>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <img src={menu} alt="Menu Icon" className="menu-img" />
+        <div className="icons-container">
+          <div className="search-icon" onClick={toggleSearch}>
+            <img
+              src={searchOpen ? closeIcon : searchIcon}
+              alt="Search Icon"
+              className="search-img"
+            />
+          </div>
+          <div className="menu-icon" onClick={toggleMenu}>
+            <img src={menu} alt="Menu Icon" className="menu-img" />
+          </div>
         </div>
-      </div>
 
-      {searchOpen && (
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search..."
-            autoFocus
-          />
-        </div>
-      )}
+        {searchOpen && (
+          <div className="search-bar">
+            <input type="text" placeholder="Search..." autoFocus />
+          </div>
+        )}
 
-      <div className={`menu-page ${menuOpen ? "active" : ""}`}>
-        <span className="close-btn" onClick={toggleMenu}>
-          &times;
-        </span>
-        <div className="menu-content">
-          <div className="menu-column">
-            <p>WHAT WE DO</p>
-            <ul>
-              <li>
-                <Link to="/capabilities">Capabilities</Link>
-              </li>
-              <li>
-                <Link to="/innovation">Innovation</Link>
-              </li>
-              <li>
-                <Link to="/business">Business</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="menu-column">
-            <p>WHO WE ARE</p>
-            <ul>
-              <li>
-                <Link to="/About">About</Link>
-              </li>
-              <li>
-                <Link to="/Ethos">Interllekt Ethos</Link>
-              </li>
-              <li>
-                <Link to="/legal">Legal</Link>
-              </li>
-              <li>
-                <Link to="/PrivacyAndPolicy">Privacy and Policy</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="menu-column">
-            <p>GET IN TOUCH</p>
-            <ul>
-              <li>
-                <Link to="/" onClick={() => scrollToSection("contact")}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-            <ul className="social-icons">
-              <li>
-                <a
-                  href="https://www.facebook.com/interllekt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/interllekt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/interllekt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/interllekt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-twitter"></i>
-                </a>
-              </li>
-            </ul>
+        <div className={`menu-page ${menuOpen ? "active" : ""}`}>
+          <span className="close-btn" onClick={toggleMenu}>
+            &times;
+          </span>
+          <div className="menu-content">
+            <div className="menu-column">
+              <p>WHAT WE DO</p>
+              <ul>
+                <li>
+                  <Link to="/capabilities">Capabilities</Link>
+                </li>
+                <li>
+                  <Link to="/innovation">Innovation</Link>
+                </li>
+                <li>
+                  <Link to="/business">Business</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="menu-column">
+              <p>WHO WE ARE</p>
+              <ul>
+                <li>
+                  <Link to="/About">About</Link>
+                </li>
+                <li>
+                  <Link to="/Ethos">Interllekt Ethos</Link>
+                </li>
+                <li>
+                  <Link to="/legal">Legal</Link>
+                </li>
+                <li>
+                  <Link to="/PrivacyAndPolicy">Privacy and Policy</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="menu-column">
+              <p>GET IN TOUCH</p>
+              <ul>
+                <li>
+                  <Link to="/" onClick={() => scrollToSection("contact")}>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              <ul className="social-icons">
+                <li>
+                  <a
+                    href="https://www.facebook.com/interllekt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/interllekt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/interllekt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/interllekt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
     </div>
   );
 };

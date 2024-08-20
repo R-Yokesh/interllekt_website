@@ -3,9 +3,9 @@ import "./BSection2.css";
 
 const BSection2 = () => {
   return (
-    <div className="Bsection2-containers container common-class">
+    <div className="Bsection2-containers container-fluid common-class">
       <div className="Bsection2-body res-section">
-        <h3>Business </h3>
+        {/* <h3>Business </h3> */}
         <p>
           Crafting processes that help transform our partner organisation to
             be future-proof. With Strategy together with an approach so bold
@@ -13,7 +13,7 @@ const BSection2 = () => {
             entities forging the way ahead with impact.
         </p>
         <h1 className="line1">
-        We help your businesses succeed with a smarter way ahead.
+        We help your businesses succeed with a <br></br> smarter way ahead.
         </h1>
       </div>
     </div>

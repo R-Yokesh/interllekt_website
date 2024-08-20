@@ -88,8 +88,8 @@ a{
 }
 
 .common-class {
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .res-section h1{
@@ -108,12 +108,14 @@ a{
 .res-section p {
   margin-top: 0 !important;
   margin-bottom: 3% !important;
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
+  text-align: justify;
 }
 
 
 .res-commoncard {
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 

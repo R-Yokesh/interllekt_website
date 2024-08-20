@@ -20,7 +20,7 @@
   }
   
   .new-header.not-transparent {
-    /* background-color: var(--white); */
+    background-color: var(--white);
   }
   
   .new-header.search-active {
