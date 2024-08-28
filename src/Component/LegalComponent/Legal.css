@@ -1,7 +1,7 @@
 .legal-container {
-  padding: 50px 20px 0 0;
+  padding: 50px 0 0 0;
   max-width: 800px;
-  margin: 80px auto;
+  margin: 70px auto;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   text-align: justify;
@@ -26,13 +26,18 @@
   font-family: 'Switzer-Regular',sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  margin: 10px 0;
+  margin: 20px 0 50px 0; 
 }
 
 .titlsublegl {
   color: var(--black);
   font-weight: 600;
 }
+.justspace{
+  text-align: left;
+  /* font-size: 1.5rem !important;  */
+}
+ 
 
 .legal-container a {
   color: #007bff;
