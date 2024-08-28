@@ -7,7 +7,6 @@ const images = [Assets.c1, Assets.c4, Assets.c2, Assets.c3];
 
 const CardContent = () => {
   const [focusedCard, setFocusedCard] = useState('Capabilities');
-  const [currentImages, setCurrentImages] = useState(images);
   const [activeImageIndex1, setActiveImageIndex1] = useState(0);
   const [activeImageIndex2, setActiveImageIndex2] = useState(0);
   const [activeImageIndex3, setActiveImageIndex3] = useState(0);
@@ -41,7 +40,7 @@ const CardContent = () => {
     if (focusedCard === 'Capabilities') {
       if (!isLooping1) {
         timer = setTimeout(() => {
-          setActiveImageIndex1((prevIndex) => (prevIndex + 1) % currentImages.length);
+          setActiveImageIndex1((prevIndex) => (prevIndex + 1) % images.length);
         }, 1000);
       } else {
         timer = setTimeout(() => {
@@ -50,7 +49,7 @@ const CardContent = () => {
         }, 1000);
       }
 
-      if (activeImageIndex1 === currentImages.length - 1) {
+      if (activeImageIndex1 === images.length - 1) {
         setIsLooping1(true);
       }
     }
@@ -64,7 +63,7 @@ const CardContent = () => {
     if (focusedCard === 'Innovation') {
       if (!isLooping2) {
         timer = setTimeout(() => {
-          setActiveImageIndex2((prevIndex) => (prevIndex + 1) % currentImages.length);
+          setActiveImageIndex2((prevIndex) => (prevIndex + 1) % images.length);
         }, 1000);
       } else {
         timer = setTimeout(() => {
@@ -73,7 +72,7 @@ const CardContent = () => {
         }, 1000);
       }
 
-      if (activeImageIndex2 === currentImages.length - 1) {
+      if (activeImageIndex2 === images.length - 1) {
         setIsLooping2(true);
       }
     }
@@ -87,7 +86,7 @@ const CardContent = () => {
     if (focusedCard === 'Business') {
       if (!isLooping3) {
         timer = setTimeout(() => {
-          setActiveImageIndex3((prevIndex) => (prevIndex + 1) % currentImages.length);
+          setActiveImageIndex3((prevIndex) => (prevIndex + 1) % images.length);
         }, 1000);
       } else {
         timer = setTimeout(() => {
@@ -96,7 +95,7 @@ const CardContent = () => {
         }, 1000);
       }
 
-      if (activeImageIndex3 === currentImages.length - 1) {
+      if (activeImageIndex3 === images.length - 1) {
         setIsLooping3(true);
       }
     }
@@ -106,7 +105,7 @@ const CardContent = () => {
 
   const renderMasonryGrid1 = () => (
     <div className="brandMasonry eq-2">
-      {currentImages.map((image, index) => (
+      {images.map((image, index) => (
         <div
           key={index}
           className="col"
@@ -120,26 +119,25 @@ const CardContent = () => {
     </div>
   );
 
- const renderMasonryGrid2 = () => (
-  <div className="brandMasonry eq-2">
-    {[images[1], images[0], images[3], images[2]].map((image, index) => (
-      <div
-        key={index}
-        className="col"
-        style={{
-          backgroundImage: `url(${image})`,
-          opacity: index >= 3 - activeImageIndex2 ? 1 : 0, // Adjusting opacity based on reversed order
-          transition: 'opacity 1s ease-in-out',
-        }}
-      ></div>
-    ))}
-  </div>
-);
-
+  const renderMasonryGrid2 = () => (
+    <div className="brandMasonry eq-2">
+      {[images[1], images[0], images[3], images[2]].map((image, index) => (
+        <div
+          key={index}
+          className="col"
+          style={{
+            backgroundImage: `url(${image})`,
+            opacity: index >= 3 - activeImageIndex2 ? 1 : 0,
+            transition: 'opacity 1s ease-in-out',
+          }}
+        ></div>
+      ))}
+    </div>
+  );
 
   const renderMasonryGrid3 = () => (
     <div className="brandMasonry eq-2">
-      {[images[3], images[2], images[1], images[0]].map((image, index) => (
+      {[images[2], images[1], images[3], images[0]].map((image, index) => (
         <div
           key={index}
           className="col"
@@ -162,6 +160,69 @@ const CardContent = () => {
       return renderMasonryGrid3();
     }
   };
+
+  const renderMasonryGrid4 = () => (
+    <div className="brandMasonry eq-2">
+      <div className="col" style={{ backgroundImage: `url(${images[0]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[1]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[2]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[3]})`, opacity: 1 }}></div>
+    </div>
+  );
+  const renderMasonryGrid5 = () => (
+    <div className="brandMasonry eq-2">
+      <div className="col" style={{ backgroundImage: `url(${images[1]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[0]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[3]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[2]})`, opacity: 1 }}></div>
+    </div>
+  );
+  const renderMasonryGrid6 = () => (
+    <div className="brandMasonry eq-2">
+      <div className="col" style={{ backgroundImage: `url(${images[2]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[1]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[3]})`, opacity: 1 }}></div>
+      <div className="col" style={{ backgroundImage: `url(${images[0]})`, opacity: 1 }}></div>
+    </div>
+  );
+  const [fadeState, setFadeState] = useState('initial');
+
+  useEffect(() => {
+    const sequence = async () => {
+      while (true) {
+        // Fade in each image one by one
+        for (let i = 0; i < images.length; i++) {
+          setFadeState(`fade-in-${i}`);
+          await new Promise(resolve => setTimeout(resolve, 1000)); // Adjust timing as needed
+        }
+        
+        // Keep all images visible for a moment
+        setFadeState('show-all');
+        await new Promise(resolve => setTimeout(resolve, 2000)); // Adjust timing as needed
+
+        // Fade out each image
+        setFadeState('fade-out');
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Adjust timing as needed
+      }
+    };
+
+    sequence();
+
+    // Cleanup function if necessary
+    return () => clearTimeout(sequence);
+  }, []);
+
+  const renderMasonryGrid = (imageOrder) => (
+    <div className="brandMasonry eq-2">
+      {imageOrder.map((img, index) => (
+        <div
+          key={index}
+          className={`col transition-opacity ${fadeState === `fade-in-${index}` ? 'fade-in' : ''} ${fadeState === 'show-all' ? 'fade-in' : ''} ${fadeState === 'fade-out' ? 'fade-out' : ''}`}
+          style={{ backgroundImage: `url(${images[img]})` }}
+        ></div>
+      ))}
+    </div>
+  );
 
   return (
     <div className="res-commoncard">
@@ -228,22 +289,22 @@ const CardContent = () => {
       </div>
 
       <div className="tabsresponsive">
-        <div className="firstsechg">
-          <Link to="/capabilities" className='caplin'>Capabilities</Link>
-          {getMasonryGrid()}
-          <p className='subvism'>A visionary creative network striving to craft sublime communication through design, pushing boundaries, we align.</p>
-        </div>
-        <div className="secondsechg">
-          <Link to="/innovation" className='caplin'>Innovation</Link>
-          {getMasonryGrid()}
-          <p className='subvism'>In the ever-changing landscape, we build innovative products and solutions that resonate with the next generation.</p>
-        </div>
-        <div className="thirdsechg">
-          <Link to="/business" className='caplin'>Business</Link>
-          {getMasonryGrid()}
-          <p className='subvism'>Helping businesses establish themselves, our solutions and services are always in sync with the business environment's demands.</p>
-        </div>
+      <div className="firstsechg">
+        <Link to="/capabilities" className='caplin'>Capabilities</Link>
+        {renderMasonryGrid([0, 1, 2, 3])}
+        <p className='subvism'>With visionary ideas and meticulous craftsmanship, we help design amazing experiences.</p>
       </div>
+      <div className="firstsechg">
+        <Link to="/innovation" className='caplin'>Innovation</Link>
+        {renderMasonryGrid([1, 0, 3, 2])}
+        <p className='subvism'>We help abstract approaches get built into highly versatile products for the next generation.</p>
+      </div>
+      <div className="firstsechg">
+        <Link to="/business" className='caplin'>Business</Link>
+        {renderMasonryGrid([2, 1, 3, 0])}
+        <p className='subvism'>We help build processes and provide support services to make businesses future-proof.</p>
+      </div>
+    </div>
     </div>
   );
 };

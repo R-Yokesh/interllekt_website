@@ -281,3 +281,31 @@ padding-top: 5%;
   visibility: visible;
   transition: opacity 2s ease-in-out;
 }
+@media (max-width: 768px) {
+ 
+
+  
+
+  .tabsresponsive {
+    padding: 10px;
+  }
+
+  .firstsechg, .secondsechg, .thirdsechg {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Add this to your CSS file */
+.transition-opacity {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust timing as needed */
+}
+
+.transition-opacity.fade-in {
+  opacity: 1;
+}
+
+.transition-opacity.fade-out {
+  opacity: 0;
+}

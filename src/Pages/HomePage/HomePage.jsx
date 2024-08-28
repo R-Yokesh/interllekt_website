@@ -19,17 +19,23 @@ const HomePage = () => {
         <AnimationVideo/>
         {/* <AnimationBanner/> */}
         {/* <ArrowAni/> */}
+        <div className='container-fluid'>
         <TestAnimation />
+        </div>
+       
         {/* <DesignFutureAnimation/> */}
+        <div className='container-fluid'>
         <CardContent />
+        </div>
         {/* <IndustrySection/> */}
         {/* <ScrollSection/> */}
+        
         <HomeServices />
 
 {/* <ImageScrollEffect/> */}
 
         
-        <div id="contact">
+        <div id="contact container-fluid">
         <ContactForm/>
         </div>
     </div>

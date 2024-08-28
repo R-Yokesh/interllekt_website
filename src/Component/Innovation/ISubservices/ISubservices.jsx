@@ -39,8 +39,11 @@ const ISubservices = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const firstThreeServices = services.slice(0, 3);
-  const lastThreeServices = services.slice(2, 6);
+  // Showing all services from 0 to 4 (first carousel)
+  const firstAllServices = services.slice(0, 5);
+
+  // Showing the same services from 4 to 0 in reverse order (reverse carousel)
+  const allServicesReversed = services.slice(0, 5).reverse();
 
   const renderCarouselItems = (serviceList) => {
     return serviceList.map((service, index) => (
@@ -54,12 +57,12 @@ const ISubservices = () => {
   return (
     <div className="icarousel-container common-class">
       <div ref={carouselRef} className="icarousel">
-        {renderCarouselItems(firstThreeServices)}
-        {renderCarouselItems(firstThreeServices)}
+        {renderCarouselItems(firstAllServices)}
+        {renderCarouselItems(firstAllServices)}
       </div>
       <div ref={reverseCarouselRef} className="icarousel reverse">
-        {renderCarouselItems(lastThreeServices)}
-        {renderCarouselItems(lastThreeServices)}
+        {renderCarouselItems(allServicesReversed)}
+        {renderCarouselItems(allServicesReversed)}
       </div>
     </div>
   );

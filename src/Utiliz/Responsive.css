@@ -212,20 +212,122 @@ display: block !important;
     height: auto;
 }
 .new-header {
-    height: 167px;
+    height: 70px;
     width: 100%;
-    top: -27px;
+    top: 0px;
 }
+
 
 /* ///banner */
 .video-container{
     height: auto !important;
 }
 .full-screen-video {
-    height: auto !important;
+    height: 50vh !important;
+}
+.new-header{
+    padding-left: 8px !important;
+}
+.new-header.not-transparent {
+    background-color: var(--white);
+    height: 167px;
+    top: -27px;
 }
 
+.scroll-reveal-text{
+    margin-top: 30% !important;
+}
+.scroll-reveal-text p span{
+    letter-spacing: normal !important;
+    line-height: 33px !important;
+    font-weight: 500 !important;
+}
+.scroll-reveal-text p {
+    font-size: 1.5rem !important;
+    margin-top: 7%;
+}
+.tabsresponsive {
 
+    padding: 4% !important;
+}
+
+.caplin{
+    font-size: 3rem !important;
+}
+.subvism {
+    margin-top: 10%;
+    font-size: 27px;
+    text-align: justify;
+}
+.hcarousel-item span {
+font-size: 30px !important;
+}
+.section-titlewwn{
+    text-align: start !important;
+    font-size: 3rem !important;
+    margin-top: 7%;
+}
+.maj {
+    margin-top: 20%;
+}
+.cap-parallax-container{
+    height: 56vh !important;
+}
+.about-page{
+    margin-top: 35% !important;
+}
+.about-page h2 {
+    font-size: 3em !important;
+}
+.subconm p {
+    font-size: 1.4em !important;
+}
+.ethos-container h1 {
+    font-size: 3em !important;
+    margin-top: 35% !important;
+}
+.cap-parallax-image {
+    width: 68% !important;
+    height: 52vh !important;
+}
+.section2-body p{
+    letter-spacing: normal;
+}
+.res-section p {
+    font-size: 26px !important;
+    text-align: unset !important;
+}
+.res-section h1{
+    font-size: 3rem !important;
+    padding-top: 2rem !important;
+}
+.section2-body .line1{
+    font-size: 3rem !important;
+}
+.contact-form h2 {
+    font-size: 3em !important;
+}
+
+section.a {
+    width: 100vw !important;
+    height: 42vh !important;
+}
+.mainssv {
+    width: 100vw !important;
+    height: 100vh !important;
+    transform: rotate(-90deg) translateX(-100vw);
+}
+.sh {
+    position: relative;
+    height: 50vh !important;
+    overflow-x: hidden;
+    margin-top: 15% !important;
+}
+
+.para p{
+    font-size: 24px !important;
+    margin-top: 7%;
+}
 /* //contact */
 .ccontact-form{
     padding: 1rem !important;
@@ -240,16 +342,17 @@ display: block !important;
 
 /* ////sceondhead */
 .heading-style-h1{
-    font-size: 3rem !important;
+    font-size: 4.2rem !important;
     margin-top: 37%;
+    padding-left: 5% !important;
 }
 .heading-style-h1, .text-style-italic {
         
     height: auto !important;
 }
 .para p{
-    text-align: unset !important;
-    font-size: 22px !important;
+    /* text-align: unset !important; */
+    /* font-size: 22px !important; */
 }
 
 /* //tabss */
@@ -266,7 +369,7 @@ header.tab-container.sticky{
 
 /* ///secton2 */
 .section2-body .line1{
-    font-size: 34px !important;
+    /* font-size: 34px !important; */
 }
 .section2-body{
     margin-top: 2% !important;
@@ -281,29 +384,25 @@ header.tab-container.sticky{
 
 }
 .cap-parallax-image {
-    width: 70% !important;
-    height: 60vh !important;
+   
 }
 .parallax-container{
-    height: 70vh !important;
+    height: 68vh !important;
 }
 .sright-side{
     width: 100% !important;
 }
 .brandMasonry{
     /* display: none !important; */
-    height: 50vh !important;
+    height: 40vh !important;
 width: 70% !important;
 left: auto !important;
 top: 30px !important;
 }
-.subvism {
-    margin-top: 10%;
-    font-size: 18px;
-}
+
 
 .res-section h1 {
-    font-size: 2rem !important;
+    /* font-size: 2rem !important; */
 }
 
 .caplin{
@@ -320,8 +419,39 @@ display: block !important;
 }
 .card.focused {
     width: 81% !important;
-    height: 40vh !important;
+    height: 15vh !important;
 }
+.ethos-container p {
+    font-size: 1.4em !important;
+}
+.legal-container {
+    padding: 10px;
+    margin-top: 36% !important;
+}
+.legal-container h1 {
+    font-size: 3.5em !important;
+}
+.legal-container p {
+    font-size: 1.4em !important;
+}
+.privacy-container {
+    padding: 10px;
+    margin-top: 35% !important;
+}
+.privacy-container h1 {
+    font-size: 3rem;
+    text-align: center !important;
+}
+.privacy-container p {
+    font-size: 1.4em !important;
+}
+.privacy-container h2 {
+    font-size: 3rem !important;
+text-align: center; }
+    .privacy-container h3 {
+        font-size: 2.5rem !important;
+    
+    text-align: center;}
 .cap-content{
     margin-top: 1px !important;
 }
@@ -344,13 +474,14 @@ display: block !important;
 .tabsresponsive{
     display: block !important;
     background-color:#f5f9ff;
+    margin-top: 25% !important;
 }
 .menu-column ul li a {
     font-size: 1.5rem !important;
 }
 
 .res-section p{
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
 }
 .res-section h3 {
     font-size: 2rem !important;
@@ -388,9 +519,9 @@ margin-top :4%;}
         height: 90vh;
     }
     .new-header {
-        height: 167px;
-        width: 100%;
-        top: -25px;
+        height: 70px;
+    width: 100%;
+    top: 0px;
     }
 
     .search-img, .menu-img {
@@ -402,11 +533,162 @@ margin-top :4%;}
     .video-container{
         height: auto !important;
     }
-    .full-screen-video {
+    
+
+    .video-container{
         height: auto !important;
     }
+    .full-screen-video {
+        height: 50vh !important;
+    }
+    .new-header{
+        padding-left: 8px !important;
+    }
+    
+    .scroll-reveal-text{
+        margin-top: 30% !important;
+    }
+    .scroll-reveal-text p span{
+        letter-spacing: normal !important;
+        line-height: 33px !important;
+        font-weight: 500 !important;
+    }
+    .scroll-reveal-text p {
+        font-size: 1.5rem !important;
+        margin-top: 7%;
+    }
+    .tabsresponsive {
+    
+        padding: 4% !important;
+        margin-top: 25% !important;
+    }
+    .tabsresponsive {
+        display: block !important;
+        background-color: #f5f9ff;
+        margin-top: 25% !important;
+    }
+    .card.focused{
+        width: 81% !important;
+    height: 15vh !important; 
+    }
+    .card.focused h1{
+        font-size: 2.5rem !important;
+    }
+    .maj {
+        margin-top: 20%;
+    }
+    
+    .caplin{
+        font-size: 3rem !important;
+    }
+    .subvism {
+        margin-top: 10%;
+        font-size: 27px;
+        text-align: justify;
+    }
+    .hcarousel-item span {
+    font-size: 30px !important;
+    }
+    .section-titlewwn{
+        text-align: start !important;
+        font-size: 3rem !important;
+        margin-top: 7%;
+    }
 
+    .new-header.not-transparent {
+        background-color: var(--white);
+        height: 167px;
+        top: -27px;
+    }
+    .about-page{
+        margin-top: 35% !important;
+    }
+    .about-page h2 {
+        font-size: 3em !important;
+    }
+    .subconm p {
+        font-size: 1.4em !important;
+    }
+    .ethos-container h1 {
+        font-size: 3em !important;
+        margin-top: 35% !important;
+    }
+    .ethos-container p {
+        font-size: 1.4em !important;
+    }
+    
 
+    .legal-container {
+        padding: 10px;
+        margin-top: 36% !important;
+    }
+    .legal-container h1 {
+        font-size: 3.5em !important;
+    }
+    .legal-container p {
+        font-size: 1.4em !important;
+    }
+    .privacy-container {
+        padding: 10px;
+        margin-top: 35% !important;
+    }
+    .privacy-container h1 {
+        font-size: 3rem;
+        text-align: center !important;
+    }
+    .privacy-container p {
+        font-size: 1.4em !important;
+    }
+    .privacy-container h2 {
+        font-size: 3rem !important; }
+        .privacy-container h3 {
+            font-size: 2.5rem !important;
+        }
+        .cap-parallax-container {
+            height: 56vh !important;
+        }
+    .cap-parallax-image {
+        width: 68% !important;
+        height: 52vh !important;
+    }
+    .section2-body p{
+        letter-spacing: normal;
+    }
+    .res-section p {
+        font-size: 26px !important;
+        text-align: unset !important;
+    }
+    .res-section h1{
+        font-size: 3rem !important;
+        padding-top: 2rem !important;
+    }
+    .section2-body .line1{
+        font-size: 3rem !important;
+    }
+    .contact-form h2 {
+        font-size: 3em !important;
+    }
+    
+    section.a {
+        width: 100vw !important;
+        height: 42vh !important;
+    }
+    .mainssv {
+        width: 100vw !important;
+        height: 100vh !important;
+        transform: rotate(-90deg) translateX(-100vw);
+    }
+    .sh {
+        position: relative;
+        height: 50vh !important;
+        overflow-x: hidden;
+        margin-top: 15% !important;
+    }
+    
+    .para p{
+        font-size: 24px !important;
+        margin-top: 7%;
+    }
     /* ///contacts */
     .ccontact-form{
         padding: 1rem !important;
@@ -429,8 +711,8 @@ margin-top :4%;}
     height: auto !important;
 }
 .para p{
-    text-align: unset !important;
-    font-size: 22px !important;
+    /* text-align: unset !important; */
+    /* font-size: 22px !important; */
 }
 
 /* //tabss */
@@ -457,7 +739,7 @@ header.tab-container.sticky{
 }
 
 .res-section h3 {
-    font-size: 1.5rem !important;
+    /* font-size: 1.5rem !important; */
 }
 
 
@@ -472,7 +754,7 @@ header.tab-container.sticky{
     height: 50vh !important;
 }
 .parallax-container{
-    height: 70vh !important;
+    height: 68vh !important;
 }
 
 .brandMasonry{
@@ -506,12 +788,12 @@ top: 30px !important;
 
 /* ///footer */
 .custom-footer{
-    padding: 0 !important;
+    /* padding: 0 !important; */
 }
 
 
 .res-section p{
-    font-size: 18px !important;
+    /* font-size: 18px !important; */
 }
 .res-section h1{
     font-size: 2rem !important;

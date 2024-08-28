@@ -11,35 +11,62 @@ const BSubservices = () => {
     { name: 'M & A', logo: require('../../../Assets/Images/Color Mark 2.png') },
   ];
 
-  const [scrollDirection, setScrollDirection] = useState(null);
   const carouselRef = useRef(null);
   const reverseCarouselRef = useRef(null);
+  const sectionRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsActive(true);
+        } else {
+          setIsActive(false);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
+    let scrollValue = 0;
+    let reverseScrollValue = 0;
 
     const handleScroll = () => {
+      if (!isActive) return;
+
       const currentScrollY = window.scrollY;
-      if (carouselRef.current && reverseCarouselRef.current) {
-        if (currentScrollY > lastScrollY) {
-          setScrollDirection('down');
-          carouselRef.current.style.transform = 'translateX(-100px)';
-          reverseCarouselRef.current.style.transform = 'translateX(100px)';
-        } else {
-          setScrollDirection('up');
-          carouselRef.current.style.transform = 'translateX(100px)';
-          reverseCarouselRef.current.style.transform = 'translateX(-100px)';
-        }
+      const scrollDifference = currentScrollY - lastScrollY;
+
+      // Update both carouselRef and reverseCarouselRef
+      if (carouselRef.current) {
+        scrollValue -= scrollDifference * 0.5; // Adjust scrolling speed
+        carouselRef.current.style.transform = `translateX(${scrollValue}px)`;
       }
+
+      if (reverseCarouselRef.current) {
+        reverseScrollValue += scrollDifference * 0.5; // Adjust scrolling speed
+        reverseCarouselRef.current.style.transform = `translateX(${reverseScrollValue}px)`;
+      }
+
       lastScrollY = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const firstThreeServices = services.slice(0, 2);
-  const lastThreeServices = services.slice(3, 6);
+  }, [isActive]);
 
   const renderCarouselItems = (serviceList) => {
     return serviceList.map((service, index) => (
@@ -51,14 +78,14 @@ const BSubservices = () => {
   };
 
   return (
-    <div className="bcarousel-container common-class">
+    <div ref={sectionRef} className="bcarousel-container common-class">
       <div ref={carouselRef} className="bcarousel">
-        {renderCarouselItems(firstThreeServices)}
-        {renderCarouselItems(firstThreeServices)}
+        {renderCarouselItems(services)}
+        {renderCarouselItems(services)}
       </div>
       <div ref={reverseCarouselRef} className="bcarousel reverse">
-        {renderCarouselItems(lastThreeServices)}
-        {renderCarouselItems(lastThreeServices)}
+        {renderCarouselItems(services.reverse())}
+        {renderCarouselItems(services.reverse())}
       </div>
     </div>
   );

@@ -7,22 +7,26 @@
   display: none;
 }
 
+.sh {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+}
+.mobileResponsivecode {
+  display: none;
+}
 .mainssv {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
-  /*  note vh and vw switched  */
-  width: 100vh; 
+  width: 100vh;
   height: 100vw;
   transform-origin: top left;
   transform: rotate(-90deg) translateX(-100vh);
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-.sh{
-  position: relative;
-  height: 100vh;
-}
+
 article {
   display: flex;
   flex-direction: row;
@@ -35,14 +39,11 @@ article {
 section.a {
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: monospace;
   font-size: 3rem;
-  /*  backface visibility keeps font from looking weird  */
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -54,4 +55,74 @@ section.a:nth-of-type(odd) {
 section.a:nth-of-type(even) {
   background: rgb(63, 27, 27);
   color: #fff;
+}
+.imokj{
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(100% * 6); /* Adjust based on the number of images */
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  min-width: calc(100% / 6); /* Adjust based on the number of images */
+  box-sizing: border-box;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CSS animation for continuous horizontal sliding */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@media (max-width: 768px) {
+  .sh {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+  }
+  .mainssv {
+    display: none; /* Hide the main image scroll effect on mobile */
+  }
+
+  .mobileResponsivecode {
+    display: block; /* Show the mobile slider */
+  }
+}
+
+@media (max-width: 580px) {
+  .mainssv {
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(-90deg) translateX(-100vw);
+  }
+
+  article {
+    transform: rotate(90deg) translateY(-100vw);
+  }
+
+  section.a {
+    font-size: 1.5rem; /* Further adjust font size for very small screens */
+  }
+
+  .mainssv {
+    display: none; /* Hide the main image scroll effect on mobile */
+  }
+
+  .mobileResponsivecode {
+    display: block; /* Show the mobile slider */
+  }
 }

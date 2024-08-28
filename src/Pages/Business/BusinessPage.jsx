@@ -32,7 +32,7 @@ const BuisnessPage = () => {
     <div>
         <BParallax />
         <BSection2 />
-        <BSubservices />
+        {/* <BSubservices /> */}
         {/* <BSlider /> */}
         {/* <BCard /> */}
         {/* <BSlider2 /> */}

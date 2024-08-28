@@ -40,8 +40,11 @@ const CapSubservices = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const firstThreeServices = services.slice(0, 3);
-  const lastThreeServices = services.slice(3, 6);
+  // Showing services from 0 to 5 for the first carousel
+  const firstSixServices = services.slice(0, 6);
+
+  // Showing services from 5 to 0 for the reverse carousel
+  const lastSixServicesReversed = services.slice(0, 6).reverse();
 
   const renderCarouselItems = (serviceList) => {
     return serviceList.map((service, index) => (
@@ -55,12 +58,12 @@ const CapSubservices = () => {
   return (
     <div className="ccarousel-container common-class">
       <div ref={carouselRef} className="ccarousel">
-        {renderCarouselItems(firstThreeServices)}
-        {renderCarouselItems(firstThreeServices)}
+        {renderCarouselItems(firstSixServices)}
+        {renderCarouselItems(firstSixServices)}
       </div>
       <div ref={reverseCarouselRef} className="ccarousel reverse">
-        {renderCarouselItems(lastThreeServices)}
-        {renderCarouselItems(lastThreeServices)}
+        {renderCarouselItems(lastSixServicesReversed)}
+        {renderCarouselItems(lastSixServicesReversed)}
       </div>
     </div>
   );

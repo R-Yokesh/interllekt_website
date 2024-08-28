@@ -1,10 +1,5 @@
 .scroll-reveal-text {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 100vh; */
-  margin-top:6%;
+  margin-top: 6%;
   margin-bottom: 6%;
   font-family: 'Ranberg Regular', sans-serif;
 }
@@ -12,82 +7,47 @@
 .scroll-reveal-text span {
   color: hsl(0deg 33% 4% / 25%);
   background-clip: text;
-  -webkit-background-clip: text !important;
+  -webkit-background-clip: text; /* Ensures Safari support */
+  color: transparent; /* Ensures the text is transparent initially */
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-image: linear-gradient(90deg, black, black);
   animation: scroll-reveal-text 3s linear forwards;
-  animation-timeline: view(y) !important;
-}
-
-.scroll-reveal-text h2 span {
-  font-family: 'Ranberg Regular', sans-serif;
-  animation-range-start: cover 35vh;
-  animation-range-end: cover 42vh;
-}
-.scroll-reveal-text h2 .highlight{
-  font-family: 'Ranberg Regular', sans-serif;
-  animation-range-start: cover 35vh;
-  animation-range-end: cover 42vh;
-}
-.scroll-reveal-text p span {
-  font-family: 'Switzer-Regular', sans-serif;
-  animation-range-start: cover 35vh;
-  animation-range-end: cover 42vh;
-  line-height: 38px;
-  letter-spacing: 1px;
-  margin-top: 1%;
-}
-
-/* .scroll-reveal-text h2 .highlight {
-  color: hsl(0deg 33% 4% / 25%);
-  background-clip: text;
-  -webkit-background-clip: text !important;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  background-image: linear-gradient(90deg, gray, gray);
-  animation: highlight-scroll-reveal 3s linear forwards !important;
-} */
-
-.txtn{
-  text-align: justify;
-  padding: 2%;
 }
 
 @keyframes scroll-reveal-text {
   to {
     background-size: 100% 100%;
-    color: #000; /* black */
+    color: #000; /* Sets text color to black */
   }
 }
 
-@keyframes highlight-scroll-reveal {
-  to {
-    background-size: 100% 100%;
-    color: #31C0FF; /* blue */
-  }
+/* Font and size adjustments for responsive design */
+.scroll-reveal-text h2 span {
+  font-family: 'Ranberg Regular', sans-serif;
+}
+
+.scroll-reveal-text p span {
+  font-family: 'Switzer-Regular', sans-serif;
+  line-height: 38px;
+  letter-spacing: 1px;
+  margin-top: 1%;
+}
+
+.txtn {
+  text-align: justify;
+  padding: 2%;
 }
 
 .scroll-reveal-text h2 {
   font-size: 5rem;
   line-height: 1;
   text-align: center;
-  /* padding-left: 20px; */
-  /* margin-bottom: 5px;  */
 }
 
 .scroll-reveal-text p {
   font-size: 1.75rem;
   line-height: 1.3;
-  /* max-width: 55ch; */
-  /* margin-inline: auto; */
-  /* font-weight: 44.8px; */
-  /* text-align: justify; */
-}
-
-.section-title-text {
-  font-size: 24px;
-  /* margin: 0; */
 }
 
 /* Responsive adjustments */
@@ -95,20 +55,11 @@
   .scroll-reveal-text h2 {
     font-size: 4rem;
   }
-  
-  .scroll-reveal-text p {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 992px) {
   .scroll-reveal-text h2 {
     font-size: 3rem;
-    padding-left: 10px;
-  }
-  
-  .scroll-reveal-text p {
-    font-size: 1.25rem;
   }
 }
 
@@ -116,28 +67,31 @@
   .scroll-reveal-text {
     margin: 10px;
   }
-  
+
   .scroll-reveal-text h2 {
     font-size: 2.5rem;
   }
-  
+
   .scroll-reveal-text p {
     font-size: 1rem;
-    max-width: 90%;
   }
 }
 
 @media (max-width: 576px) {
-  .scroll-reveal-text {
-    height: auto; /* Adjust height for small screens */
-    padding: 20px;
-  }
-  
   .scroll-reveal-text h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-  
+
   .scroll-reveal-text p {
     font-size: 0.875rem;
+  }
+}
+
+/* Safari-specific CSS hack */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .scroll-reveal-text span {
+      -webkit-background-clip: text; /* Ensure Safari handles the background clipping correctly */
+    }
   }
 }

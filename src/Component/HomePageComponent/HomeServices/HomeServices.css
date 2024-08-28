@@ -5,22 +5,23 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-    /* border: 10px solid transparent;
-    border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
-    padding: 10px;  */
+  /* padding-top: 10%; */
+  /* border: 10px solid transparent;
+  border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
+  padding: 10px; */
 }
 
 .hcarousel {
   display: flex;
   white-space: nowrap;
-  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  transition: transform 2s ease-in-out; /* Ensure transition is applied */
   margin-top: 20px;
 }
 
 .hcarousel.reverse {
   display: flex;
   white-space: nowrap;
-  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  transition: transform 2s ease-in-out; /* Ensure transition is applied */
   margin-bottom: 20px;
 }
 
@@ -40,12 +41,19 @@
   width: auto;
   margin-right: 15px;
 }
-.section-titlewwn{
+
+.section-titlewwn {
   font-size: 4rem;
   font-weight: 600;
-  text-align: center  ;
+  text-align: center;
   font-family: 'Ranberg Regular', sans-serif;
   margin-top: 4%;
-
 }
 
+.hcarousel-down {
+  transform: translateX(-100px) !important; /* For downward scroll */
+}
+
+.hcarousel-up {
+  transform: translateX(100px) !important; /* For upward scroll */
+}
