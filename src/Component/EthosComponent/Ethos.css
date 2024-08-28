@@ -1,46 +1,54 @@
 .ethos-container {
-    padding: 50px 20px 0 0;
-    /* max-width: 800px; */
-    margin: 50px auto;
-    font-family: 'Switzer-Regular', sans-serif;
-    line-height: 2;
-    text-align: justify;
-    height: 100%;
-    padding: 2%;
-  }
-  
-  .ethos-container h1 {
-    font-family:'Ranberg Regular', sans-serif;
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #000;
-    text-align: center;
-  }
-  .souln{
-    margin-top: 3%;
-  }
-  
-  .ethos-container p {
-    font-family: 'Switzer-Regular', sans-serif;
-    font-size: 2rem;
-    line-height: 1.6;
-    margin: 20px 0; 
-    text-align: justify; 
-    color: #000; 
+  /* padding: 50px 20px 0 0; */
+  /* max-width: 800px; */
+  /* margin: 50px auto;
+  font-family: 'Switzer-Regular', sans-serif;
+  line-height: 2;
+  text-align: justify;
+  height: 100%;
+  padding: 2%; */
 
+  padding: 20px 20px 0 0;
+  max-width: 800px;
+  margin: 50px auto;
+  line-height: 1.6;
+  text-align: justify;
+  background: #fff;
+}
+
+.ethos-container h1 {
+  font-family:'Ranberg Regular', sans-serif;
+  /* font-size: 4rem; */
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+.souln{
+  margin-top: 3%;
+}
+
+.ethos-container p {
+  font-family: 'Switzer-Regular', sans-serif;
+  /* font-size: 2rem; */
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+  text-align: justify;
+  color: #000;
+
+}
+
+@media (max-width: 768px) {
+  .ethos-container {
+    padding: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .ethos-container {
-      padding: 10px;
-    }
-  
-    .ethos-container h1 {
-      font-size: 1.5em;
-    }
-  
-    .ethos-container p {
-      font-size: 0.9em;
-    }
+
+  .ethos-container h1 {
+    font-size: 1.5em;
   }
-  
+
+  .ethos-container p {
+    font-size: 0.9em;
+  }
+}
