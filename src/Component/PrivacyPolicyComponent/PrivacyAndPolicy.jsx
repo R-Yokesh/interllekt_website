@@ -173,12 +173,9 @@ const PrivacyAndPolicy = () => {
           <p>Our Service may give You the ability to delete certain information about You from within the Service. </p>
           <p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us. </p>
           <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so. </p>
-        </div>
-
-        <div className="privacy-container">
-          <h1>Disclosure of Your Personal Data</h1>
-
-          <div className="section">
+        
+        <div className="section">
+          <h2 className='disclosure'>Disclosure of Your Personal Data</h2>
             <h2>Business Transactions</h2>
             <p>
               If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.
@@ -249,10 +246,8 @@ const PrivacyAndPolicy = () => {
         </div>
         <div className="section">
           <h2>Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-          <ul>
-          <li><a href="mailto:contactus@interllekt.com" className='emalc' target="_blank" rel="noopener noreferrer"> contactus@interllekt.com</a></li>
-          </ul>
+          <p>If you have any questions about this Privacy Policy, You can contact us:<a href="mailto:contactus@interllekt.com" className='emalc' target="_blank" rel="noopener noreferrer"> contactus@interllekt.com</a></p>
+        
         </div>
       
       
