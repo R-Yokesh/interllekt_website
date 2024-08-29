@@ -12,6 +12,7 @@
   font-size: 3rem;
   margin-bottom: 0.5em;
   text-align: center;
+  color:#31175b;
 }
 
 .legal-container h2 {
@@ -19,8 +20,23 @@
   font-size: 2rem;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  color: #333;
+  /* color: #333; */
+  display: inline;
+  position: relative;
+  box-shadow: inset 0 0 0 0 #ffb32c;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-size 0.3s ease-in-out;
+  background-image: linear-gradient(to right, #ffb32c, #ffb32c);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
+
+.legal-container h2:hover {
+  color: #000; /* Adjust color change on hover */
+  box-shadow: inset 100% 0 0 0 #ffb32c;
+  background-size: 100% 40%;
+}
+
 
 .legal-container p {
   font-family: 'Switzer-Regular',sans-serif;
@@ -38,7 +54,7 @@
   text-align: left;
 }
 .justspace{
-  text-align: left;
+  text-align: left ;
   /* font-size: 1.5rem !important;  */
 }
  

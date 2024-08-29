@@ -5,7 +5,7 @@ const Ethos = () => {
   return (
     <div className="ethos-container">
       <div>
-      <h1>Interllekt, a quest to make the<span style={{color:"#FFB32C"}}>  future-proof </span></h1>
+      <h1><span style={{color:"#31175b"}}>Interllekt, a quest to make the</span><span style={{color:"#FFB32C"}}>  future proof </span></h1>
       </div>
       <div className='souln'>
       <p>
