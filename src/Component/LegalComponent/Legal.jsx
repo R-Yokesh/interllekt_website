@@ -32,8 +32,8 @@ const Legal = () => {
       <p>
         We reserve the right to modify these Terms at any time. Please check these Terms periodically for changes. Your continued use of this Website after the posting of changes constitutes your binding acceptance of such changes.
       </p>
-      <h2 className='titlsublegl'>CONTACT INFORMATION</h2>
-      <p>
+      <h2 className='titlsublegl '>CONTACT INFORMATION</h2>
+      <p className='text-left'>
         Any questions, concerns, or complaints regarding these Terms should be sent to <a href="mailto:contactus@interllekt.com"  target="_blank" rel="noopener noreferrer"  className='emalc'>contactus@interllekt.com</a><br/>
         Effective Date: June 1, 2024<br/>
         ©2024 Interllekt Ventures Private Limited. All Rights Reserved

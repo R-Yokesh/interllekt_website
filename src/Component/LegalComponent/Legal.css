@@ -33,6 +33,10 @@
   color: var(--black);
   font-weight: 600;
 }
+
+.text-left{
+  text-align: left;
+}
 .justspace{
   text-align: left;
   /* font-size: 1.5rem !important;  */

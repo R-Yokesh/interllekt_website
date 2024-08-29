@@ -74,6 +74,9 @@ h3 {
   .privacy-container {
     padding: 10px;
   }
+  .para-left{
+    text-align: left !important;
+  }
 
   h2 {
     font-size: 1.2em;
