@@ -54,7 +54,7 @@
   text-align: left;
 }
 .justspace{
-  text-align: left ;
+  text-align: left !important;
   /* font-size: 1.5rem !important;  */
 }
  
