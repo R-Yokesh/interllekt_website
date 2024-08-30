@@ -20,7 +20,7 @@ const Legal = () => {
       <p>
         Except to the extent expressly as specified by a Interllekt entity in writing, nothing on this Website is intended to constitute (i) an offer, or solicitation of an offer, to purchase or sell any security, other asset or service, (ii) investment, legal, business or tax advice or an offer to provide such advice, or (iii) a basis for making any investment decision. The Materials are provided for informational purposes and have been prepared by Interllekt for informational purposes to acquaint existing and prospective portfolio companies, entrepreneurs, and other company founders with Interllekt’s recent and historical investment activities. The Materials are not directed toward any existing or prospective investor in any Interllekt investment. The Materials are provided in summary form and do not purport to be complete. Please note that any investments or portfolio companies referenced in the Materials are illustrative and do not reflect the performance of Interllekt’s investments as a whole. The Materials do not include a complete list of all Interllekt’s portfolio companies. Past performance is not indicative of future results and there can be no assurance that any Interllekt investment will achieve comparable results or that any future investments will be profitable. All forward-looking statements are based upon assumptions that may not prove to be correct. There is no obligation for Interllekt to update or alter any forward-looking statements, whether as a result of new information, future events, or otherwise. Except as expressly stated by Interllekt or its entities in writing, neither this Website nor any of the Materials make any effort to present a comprehensive or balanced description of Interllekt or its investment activities.
       </p>
-      <h2 className='titlsublegl'>SUBMITTING A BUSINESS PLAN OR OTHER CONFIDENTIAL INFORMATION</h2>
+      <h2 className='titlsublegl justspace'>SUBMITTING A BUSINESS PLAN OR OTHER CONFIDENTIAL INFORMATION</h2>
       <p>
         Due to the large number of business plan ideas and related materials that we review, and the similarity of many such plans and materials, we cannot accept responsibility for protecting against misuse or disclosure of any confidential or proprietary information or other materials in the absence of our express written agreement to do so. Any plans, information, and other materials you submit in connection with this Website may be used or disclosed by us for any purpose and in any manner, as we determine in our sole discretion. Please consider this carefully before sending us any information or other materials that you deem confidential or proprietary.
       </p>
@@ -32,8 +32,8 @@ const Legal = () => {
       <p>
         We reserve the right to modify these Terms at any time. Please check these Terms periodically for changes. Your continued use of this Website after the posting of changes constitutes your binding acceptance of such changes.
       </p>
-      <h2 className='titlsublegl'>CONTACT INFORMATION</h2>
-      <p>
+      <h2 className='titlsublegl '>CONTACT INFORMATION</h2>
+      <p className='text-left'>
         Any questions, concerns, or complaints regarding these Terms should be sent to <a href="mailto:contactus@interllekt.com"  target="_blank" rel="noopener noreferrer"  className='emalc'>contactus@interllekt.com</a><br/>
         Effective Date: June 1, 2024<br/>
         ©2024 Interllekt Ventures Private Limited. All Rights Reserved

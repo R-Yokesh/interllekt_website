@@ -10,10 +10,10 @@ const PrivacyAndPolicy = () => {
       </p>
       <p>
         We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Privacy Policy Generator.
-      </p>
+      </p><br/>
 
       <div className="section">
-        <h2>Interpretation and Definitions</h2>
+        <h2>Interpretation and Definitions</h2><br/><br/>
         <h3>Interpretation</h3>
         <p>
           The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
@@ -38,7 +38,7 @@ const PrivacyAndPolicy = () => {
       </div>
 
       <div className="section">
-        <h2>Collecting and Using Your Personal Data</h2>
+        <h2>Collecting and Using Your Personal Data</h2><br/><br/>
         <h3>Types of Data Collected</h3>
         <p><strong>Personal Data</strong></p>
         <p>
@@ -172,13 +172,10 @@ const PrivacyAndPolicy = () => {
           {/* <!-- Include relevant content as needed --> */}
           <p>Our Service may give You the ability to delete certain information about You from within the Service. </p>
           <p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us. </p>
-          <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so. </p>
-        </div>
-
-        <div className="privacy-container">
-          <h1>Disclosure of Your Personal Data</h1>
-
-          <div className="section">
+          <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so. </p><br/>
+        
+        <div className="section">
+          <h2 className='disclosure'>Disclosure of Your Personal Data</h2>
             <h2>Business Transactions</h2>
             <p>
               If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.
@@ -249,13 +246,9 @@ const PrivacyAndPolicy = () => {
         </div>
         <div className="section">
           <h2>Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-          <ul>
-          <li><a href="mailto:contactus@interllekt.com" className='emalc' target="_blank" rel="noopener noreferrer"> contactus@interllekt.com</a></li>
-          </ul>
-        </div>
-      
-      
+          <p className='para-left'>If you have any questions about this Privacy Policy, You can contact us:
+          <a href="mailto:contactus@interllekt.com" className='emalc' target="_blank" rel="noopener noreferrer"> contactus@interllekt.com</a></p>
+        </div>  
       </div>
       );
 };
