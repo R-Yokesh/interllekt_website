@@ -9,7 +9,7 @@
 .contact-form {
   /* padding: 20px;
   margin: 20px; */
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   padding-bottom: 6.25rem;
   padding-left: 2%;
@@ -182,7 +182,7 @@
 }
 
 .cform-group select {
-  width: 100%;
+  width: 50%;
   padding: 0.5em;
   font-family: 'Switzer-Regular', sans-serif !important;
   font-size: 1em;
