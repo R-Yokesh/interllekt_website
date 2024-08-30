@@ -5,11 +5,21 @@ import interllektlogo from "./Images/interllekt-logo.png"
 import menuicon from "./Images/menu-icon.png"
 import ind from "./Images/ind.avif"
 import indst from "./Images/industry_agencies.jpg"
-import c1 from "./Images/card/c1.png"
-import c2 from "./Images/card/c2.png"
-import c3 from "./Images/card/c3.png"
-import c4 from "./Images/card/c4.png"
+import c1 from "./Images/card/cardOne/c1.png"
+import c2 from "./Images/card/cardOne/c2.png"
+import c3 from "./Images/card/cardOne/c3.png"
+import c4 from "./Images/card/cardOne/c4.png"
 import fotlo from "./fotlo.jpg"
+// Innovation image
+import sp1 from './Images/card/cardTwo/sp1.png'
+import sp2 from './Images/card/cardTwo/sp2.png'
+import sp3 from './Images/card/cardTwo/sp3.png'
+import sp4 from './Images/card/cardTwo/sp4.png'
+// Business image
+import na1 from './Images/card/cardThree/na1.png'
+import na2 from './Images/card/cardThree/na2.png'
+import na3 from './Images/card/cardThree/na3.png'
+import na4 from './Images/card/cardThree/na4.png'
 // capa
 
 import cap1 from "./Images/capa/1.jpg"
@@ -58,8 +68,8 @@ import busk11 from "./Images/busk/(11).jpg"
 import busk12 from "./Images/busk/(12).jpg"
 import busk13 from "./Images/busk/(13).jpg"
 
-const Assets ={
-    logo:logo,
+const Assets = {
+    logo: logo,
     logoo,
     searchicon,
     interllektlogo,
@@ -76,30 +86,38 @@ const Assets ={
     cap3,
     cap4,
     cap5,
-    cap6,cap7,cap8,cap9,cap10,cap11,cap12,cap13,cap14,
-    inno1 ,
-inno2 ,
-inno3 ,
-inno4 ,
-inno5 ,
-inno6 ,
-inno7 ,
-inno8 ,
-inno9 ,
-inno10,
-inno11,
-busk1,
-busk2,
-busk3,
-busk4,
-busk5,
-busk6,
-busk7,
-busk8,
-busk9,
-busk10,
-busk11,
-busk12,
-busk13,
+    cap6, cap7, cap8, cap9, cap10, cap11, cap12, cap13, cap14,
+    inno1,
+    inno2,
+    inno3,
+    inno4,
+    inno5,
+    inno6,
+    inno7,
+    inno8,
+    inno9,
+    inno10,
+    inno11,
+    busk1,
+    busk2,
+    busk3,
+    busk4,
+    busk5,
+    busk6,
+    busk7,
+    busk8,
+    busk9,
+    busk10,
+    busk11,
+    busk12,
+    busk13,
+    sp1,
+    sp2,
+    sp3,
+    sp4,
+    na1,
+    na2,
+    na3,
+    na4
 }
 export default Assets;

@@ -120,8 +120,8 @@ const CardContent = () => {
   );
 
   const renderMasonryGrid2 = () => (
-    <div className="brandMasonry eq-2">
-      {[images[1], images[0], images[3], images[2]].map((image, index) => (
+    <div className="brandMasonry eq-3">
+      {[Assets.sp2, Assets.sp3, Assets.sp1, Assets.sp4].map((image, index) => (
         <div
           key={index}
           className="col"
@@ -137,7 +137,7 @@ const CardContent = () => {
 
   const renderMasonryGrid3 = () => (
     <div className="brandMasonry eq-2">
-      {[images[2], images[1], images[3], images[0]].map((image, index) => (
+      {[Assets.na3, Assets.na2, Assets.na4, Assets.na1].map((image, index) => (
         <div
           key={index}
           className="col"
@@ -195,7 +195,7 @@ const CardContent = () => {
           setFadeState(`fade-in-${i}`);
           await new Promise(resolve => setTimeout(resolve, 1000)); // Adjust timing as needed
         }
-        
+
         // Keep all images visible for a moment
         setFadeState('show-all');
         await new Promise(resolve => setTimeout(resolve, 2000)); // Adjust timing as needed
@@ -218,7 +218,7 @@ const CardContent = () => {
         <div
           key={index}
           className={`col transition-opacity ${fadeState === `fade-in-${index}` ? 'fade-in' : ''} ${fadeState === 'show-all' ? 'fade-in' : ''} ${fadeState === 'fade-out' ? 'fade-out' : ''}`}
-          style={{ backgroundImage: `url(${images[img]})` }}
+          style={{ backgroundImage: `url(${img})` }}
         ></div>
       ))}
     </div>
@@ -289,22 +289,22 @@ const CardContent = () => {
       </div>
 
       <div className="tabsresponsive">
-      <div className="firstsechg">
-        <Link to="/capabilities" className='caplin'>Capabilities</Link>
-        {renderMasonryGrid([0, 1, 2, 3])}
-        <p className='subvism'>With visionary ideas and meticulous craftsmanship, we help design amazing experiences.</p>
+        <div className="firstsechg">
+          <Link to="/capabilities" className='caplin'>Capabilities</Link>
+          {renderMasonryGrid([Assets.c1, Assets.c4, Assets.c2, Assets.c3])}
+          <p className='subvism'>With visionary ideas and meticulous craftsmanship, we help design amazing experiences.</p>
+        </div>
+        <div className="firstsechg">
+          <Link to="/innovation" className='caplin'>Innovation</Link>
+          {renderMasonryGrid([Assets.sp2, Assets.sp3, Assets.sp1, Assets.sp4])}
+          <p className='subvism'>We help abstract approaches get built into highly versatile products for the next generation.</p>
+        </div>
+        <div className="firstsechg">
+          <Link to="/business" className='caplin'>Business</Link>
+          {renderMasonryGrid([Assets.na3, Assets.na2, Assets.na4, Assets.na1])}
+          <p className='subvism'>We help build processes and provide support services to make businesses future-proof.</p>
+        </div>
       </div>
-      <div className="firstsechg">
-        <Link to="/innovation" className='caplin'>Innovation</Link>
-        {renderMasonryGrid([1, 0, 3, 2])}
-        <p className='subvism'>We help abstract approaches get built into highly versatile products for the next generation.</p>
-      </div>
-      <div className="firstsechg">
-        <Link to="/business" className='caplin'>Business</Link>
-        {renderMasonryGrid([2, 1, 3, 0])}
-        <p className='subvism'>We help build processes and provide support services to make businesses future-proof.</p>
-      </div>
-    </div>
     </div>
   );
 };
