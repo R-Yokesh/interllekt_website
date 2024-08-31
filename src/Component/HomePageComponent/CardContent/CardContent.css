@@ -424,3 +424,16 @@
 .transition-opacity.fade-out {
   opacity: 0;
 }
+
+.image-slide {
+  width: 50%;
+  margin: auto;
+}
+
+.client-head {
+  font-family: 'Ranberg Regular', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #31175b;
+}

@@ -1,7 +1,7 @@
 {
   "name": "interllekt_website",
   "version": "0.1.0",
-  "homepage": "http://democenter.in/interllekt/",
+  "homepage": "http://democenter.in/interllekt.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",

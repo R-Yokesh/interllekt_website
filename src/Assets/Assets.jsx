@@ -67,6 +67,12 @@ import busk10 from "./Images/busk/(10).jpg"
 import busk11 from "./Images/busk/(11).jpg"
 import busk12 from "./Images/busk/(12).jpg"
 import busk13 from "./Images/busk/(13).jpg"
+// client Logo
+import clientAmj from "./Images/client-logo/AMJ.png"
+import clientCmc from "./Images/client-logo/CMC.png"
+import clientDisney from "./Images/client-logo/Disney.png"
+import clientProdapt from "./Images/client-logo/Prodapt.png"
+import clientCiros from "./Images/client-logo/ciros.png"
 
 const Assets = {
     logo: logo,
@@ -118,6 +124,11 @@ const Assets = {
     na1,
     na2,
     na3,
-    na4
+    na4,
+    clientAmj,
+    clientCmc,
+    clientDisney,
+    clientProdapt,
+    clientCiros
 }
 export default Assets;

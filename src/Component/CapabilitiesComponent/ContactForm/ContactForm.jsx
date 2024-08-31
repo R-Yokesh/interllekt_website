@@ -12,9 +12,9 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form container-fluid common-class">
-      <h2>
-        {location.pathname !== '/' && 'Want to learn more?'} 
-        <span>Get in touch.</span>
+      <h2 className='text-center'>
+        {location.pathname !== '/' && 'Want to learn more?'}
+        <span>Get in touch</span>
       </h2>
       <form>
         <div className="cform-row">

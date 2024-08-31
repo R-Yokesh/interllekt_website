@@ -7,12 +7,16 @@ const images = [Assets.c1, Assets.c4, Assets.c2, Assets.c3];
 
 const CardContent = () => {
   const [focusedCard, setFocusedCard] = useState('Capabilities');
-  const [activeImageIndex1, setActiveImageIndex1] = useState(0);
-  const [activeImageIndex2, setActiveImageIndex2] = useState(0);
-  const [activeImageIndex3, setActiveImageIndex3] = useState(0);
+  const [activeImageIndex1, setActiveImageIndex1] = useState(-1);
+  const [activeImageIndex2, setActiveImageIndex2] = useState(-1);
+  const [activeImageIndex3, setActiveImageIndex3] = useState(-1);
   const [isLooping1, setIsLooping1] = useState(false);
   const [isLooping2, setIsLooping2] = useState(false);
   const [isLooping3, setIsLooping3] = useState(false);
+
+  const customOrder = [0, 2, 1, 3];
+  const innovateOrder = [2, 0, 1, 3];
+  const businessOrder = [3, 1, 0, 2];
 
   const handleScroll = () => {
     const cards = document.querySelectorAll('.card');
@@ -40,22 +44,30 @@ const CardContent = () => {
     if (focusedCard === 'Capabilities') {
       if (!isLooping1) {
         timer = setTimeout(() => {
-          setActiveImageIndex1((prevIndex) => (prevIndex + 1) % images.length);
+          setActiveImageIndex1((prevIndex) => {
+            if (prevIndex === -1) {
+              return 0;
+            } else {
+              return (prevIndex + 1) % customOrder.length;
+            }
+          });
+
         }, 1000);
       } else {
         timer = setTimeout(() => {
           setIsLooping1(false);
-          setActiveImageIndex1(0);
+          setActiveImageIndex1(-1);
         }, 1000);
       }
 
-      if (activeImageIndex1 === images.length - 1) {
+      if (activeImageIndex1 === customOrder.length - 1) {
         setIsLooping1(true);
       }
     }
 
     return () => clearTimeout(timer);
   }, [activeImageIndex1, isLooping1, focusedCard]);
+  console.log('outactive', activeImageIndex1)
 
   // Opacity function for renderMasonryGrid2
   useEffect(() => {
@@ -63,16 +75,22 @@ const CardContent = () => {
     if (focusedCard === 'Innovation') {
       if (!isLooping2) {
         timer = setTimeout(() => {
-          setActiveImageIndex2((prevIndex) => (prevIndex + 1) % images.length);
+          setActiveImageIndex2((prevIndex) => {
+            if (prevIndex === -1) {
+              return 0;
+            } else {
+              return (prevIndex + 1) % innovateOrder.length;
+            }
+          });
         }, 1000);
       } else {
         timer = setTimeout(() => {
           setIsLooping2(false);
-          setActiveImageIndex2(0);
+          setActiveImageIndex2(-1);
         }, 1000);
       }
 
-      if (activeImageIndex2 === images.length - 1) {
+      if (activeImageIndex2 === innovateOrder.length - 1) {
         setIsLooping2(true);
       }
     }
@@ -86,16 +104,22 @@ const CardContent = () => {
     if (focusedCard === 'Business') {
       if (!isLooping3) {
         timer = setTimeout(() => {
-          setActiveImageIndex3((prevIndex) => (prevIndex + 1) % images.length);
+          setActiveImageIndex3((prevIndex) => {
+            if (prevIndex === -1) {
+              return 0;
+            } else {
+              return (prevIndex + 1) % businessOrder.length;
+            }
+          });
         }, 1000);
       } else {
         timer = setTimeout(() => {
           setIsLooping3(false);
-          setActiveImageIndex3(0);
+          setActiveImageIndex3(-1);
         }, 1000);
       }
 
-      if (activeImageIndex3 === images.length - 1) {
+      if (activeImageIndex3 === businessOrder.length - 1) {
         setIsLooping3(true);
       }
     }
@@ -111,7 +135,7 @@ const CardContent = () => {
           className="col"
           style={{
             backgroundImage: `url(${image})`,
-            opacity: index <= activeImageIndex1 ? 1 : 0,
+            opacity: customOrder.indexOf(index) <= activeImageIndex1 ? 1 : 0,
             transition: 'opacity 1s ease-in-out',
           }}
         ></div>
@@ -127,7 +151,7 @@ const CardContent = () => {
           className="col"
           style={{
             backgroundImage: `url(${image})`,
-            opacity: index >= 3 - activeImageIndex2 ? 1 : 0,
+            opacity: innovateOrder.indexOf(index) <= activeImageIndex2 ? 1 : 0,
             transition: 'opacity 1s ease-in-out',
           }}
         ></div>
@@ -143,7 +167,7 @@ const CardContent = () => {
           className="col"
           style={{
             backgroundImage: `url(${image})`,
-            opacity: index <= activeImageIndex3 ? 1 : 0,
+            opacity: businessOrder.indexOf(index) <= activeImageIndex3 ? 1 : 0,
             transition: 'opacity 1s ease-in-out',
           }}
         ></div>
