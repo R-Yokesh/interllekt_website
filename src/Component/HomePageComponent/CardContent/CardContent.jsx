@@ -52,7 +52,7 @@ const CardContent = () => {
             }
           });
 
-        }, 1000);
+        }, 700);
       } else {
         timer = setTimeout(() => {
           setIsLooping1(false);
@@ -82,7 +82,7 @@ const CardContent = () => {
               return (prevIndex + 1) % innovateOrder.length;
             }
           });
-        }, 1000);
+        }, 700);
       } else {
         timer = setTimeout(() => {
           setIsLooping2(false);
@@ -111,7 +111,7 @@ const CardContent = () => {
               return (prevIndex + 1) % businessOrder.length;
             }
           });
-        }, 1000);
+        }, 700);
       } else {
         timer = setTimeout(() => {
           setIsLooping3(false);

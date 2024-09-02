@@ -1,64 +1,69 @@
-
+html,
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 :root {
   --swatches--elderberry: #17182b;
   --swatches--lighter-gray: #d4d3d8;
   --swatches--white: white;
-  --swatches--fades--lighter-gray-50: rgba(212,211,216,.5);
-  --swatches--fades--white-50: rgba(255,255,255,.5);
+  --swatches--fades--lighter-gray-50: rgba(212, 211, 216, .5);
+  --swatches--fades--white-50: rgba(255, 255, 255, .5);
   --swatches--light-gray: #aaa9b2;
   --swatches--gray: #82818e;
   --swatches--dark-gray: #5c5b6b;
-  --swatches--fades--black-50: rgba(13,13,23,.5);
-  --swatches--fades--elderberry-5: rgba(23,24,43,.05);
-  --swatches--fades--elderberry-10: rgba(23,24,43,.1);
+  --swatches--fades--black-50: rgba(13, 13, 23, .5);
+  --swatches--fades--elderberry-5: rgba(23, 24, 43, .05);
+  --swatches--fades--elderberry-10: rgba(23, 24, 43, .1);
   --swatches--black: #0d0d17;
   --swatches--white-smoke: #f8f8fa;
   --webflow-blue: #146ef5;
   --swatches--sea-green: #00ffcd;
-  --swatches--fades--rasperry-10: rgba(255,0,108,.1);
+  --swatches--fades--rasperry-10: rgba(255, 0, 108, .1);
   --swatches--rasperry: #ff006c;
   --swatches--darker-gray: #38384a;
   --nav-color: var(--swatches--elderberry);
   --white: white;
   --black: black;
- 
-   
-    --fluor: #e7ffb3;
-    --fluors: #e7ffb388;
-    --light_green: #c4d0a1;
-    --green: #616657;
+
+
+  --fluor: #e7ffb3;
+  --fluors: #e7ffb388;
+  --light_green: #c4d0a1;
+  --green: #616657;
 }
+
 @font-face {
   font-family: 'Switzer-Regular';
   src: url('./Fonts/Switzer/Switzer-Regular.woff2') format('woff2'),
-       url('./Fonts/Switzer/Switzer-Regular.woff') format('woff'),
-       url('./Fonts/Switzer/Switzer-Regular.ttf') format('ttf');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
+    url('./Fonts/Switzer/Switzer-Regular.woff') format('woff'),
+    url('./Fonts/Switzer/Switzer-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Switzer-Semibold';
   src: url('./Fonts/Switzer/Switzer-Semibold.woff2') format('woff2'),
-       url('./Fonts/Switzer/Switzer-Semibold.woff') format('woff'),
-       url('./Fonts/Switzer/Switzer-Semibold.ttf') format('ttf');
-       font-weight: 600;
-       font-display: swap;
-       font-style: normal;
+    url('./Fonts/Switzer/Switzer-Semibold.woff') format('woff'),
+    url('./Fonts/Switzer/Switzer-Semibold.ttf') format('ttf');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------*/    
+/* ----------------------------------------------------------------------------------------------------------------*/
 @font-face {
   font-family: 'Ranberg Semibold';
   src: url('./Fonts/RanbergFree/Ranberg-Semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Ranberg Regular';
   src: url('./Fonts/RanbergFree/Ranberg_regular.otf') format('opentype');
@@ -69,7 +74,7 @@ body {
 
 body {
   margin: 0;
-  font-family:'Switzer-Regular', 'Ranberg Semibold', sans-serif;
+  font-family: 'Switzer-Regular', 'Ranberg Semibold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -83,7 +88,7 @@ code {
 
 /* Common Css */
 
-a{
+a {
   text-decoration: none !important;
 }
 
@@ -92,13 +97,14 @@ a{
   margin-bottom: 6%;
 }
 
-.res-section h1{
+.res-section h1 {
   margin-top: 0 !important;
   margin-bottom: 3% !important;
   font-size: 3.5rem !important;
   font-weight: 200 !important;
 }
-.res-section h3{
+
+.res-section h3 {
   margin-top: 0 !important;
   margin-bottom: 3% !important;
   font-size: 3rem !important;
@@ -117,5 +123,3 @@ a{
   margin-top: 10%;
   margin-bottom: 10%;
 }
-
-

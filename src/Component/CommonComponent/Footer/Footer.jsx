@@ -45,7 +45,7 @@ const Footer = () => {
 
 
         <div className="clientsligos col-lg-2 col-md-2 col-sm-12">
-          <img style={{ width: "100px" }} src={Assets.fotlo} alt="" />
+          <img src={Assets.fotlo} alt="" className='footer-logo' />
         </div>
       </div>
       <p className="footer-bottom-text">
