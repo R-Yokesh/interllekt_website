@@ -4,17 +4,18 @@
     box-shadow: 1px 1px 20px 2px #7777772b;
     padding: 8px 20px;
     border-radius: 25px;
+    height: max-content;
 }
 
 .industry-sec .row {
     gap: 10px;
 }
 
-.industry-content {
+/* .industry-content {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-}
+} */
 
 .industry h1 {
     font-family: 'Ranberg Regular', sans-serif;
@@ -27,4 +28,37 @@
 .industry-sec {
     margin-bottom: 4%;
     padding: 0% 2%;
+    margin-top: 12%;
+}
+
+.sec-one,
+.sec-two,
+.sec-three,
+.sec-four,
+.sec-five {
+    display: flex;
+    gap: 15%;
+    margin-bottom: 30px;
+}
+
+.industry-content div:nth-child(even) {
+    justify-content: center;
+}
+
+.industry-content div:nth-child(odd) {
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .industry-content p {
+        text-align: center;
+    }
+
+    .sec-one,
+    .sec-two,
+    .sec-three,
+    .sec-four,
+    .sec-five {
+        display: block;
+    }
 }

@@ -335,6 +335,7 @@
   /* Default width when not focused */
   width: 50%;
   transition: width 1s ease;
+  position: relative;
   /* Smooth transition */
 
 }
@@ -433,7 +434,7 @@
 .client-head {
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 3rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   text-align: center;
   color: #31175b;
 }

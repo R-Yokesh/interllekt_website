@@ -32,7 +32,7 @@ const HomePage = () => {
       <div className='industry container-fluid'>
         <Industry />
       </div>
-      <div className='slide-sec'>
+      <div className='slide-sec common-class'>
         <ClientSection />
       </div>
       {/* <IndustrySection/> */}

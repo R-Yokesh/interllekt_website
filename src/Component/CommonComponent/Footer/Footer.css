@@ -75,3 +75,9 @@
   text-align: justify;
   font-family: 'Ranberg Regular', sans-serif;
 }
+
+.footer-logo {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #fff;
+}
