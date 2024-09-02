@@ -12,14 +12,14 @@
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-image: linear-gradient(90deg, #D16BA5, #86A8E7, #5FFBF1);
-  animation: scroll-reveal-text 3s linear forwards;
+  animation: scroll-reveal-text 5s linear forwards;
 }
 
 @keyframes scroll-reveal-text {
   to {
     background-size: 100% 100%;
-    /* color: #000; */
-    color: linear-gradient(90deg, #D16BA5, #86A8E7, #5FFBF1);
+    color: #000;
+    /* color: linear-gradient(90deg, #D16BA5, #86A8E7, #5FFBF1); */
   }
 }
 

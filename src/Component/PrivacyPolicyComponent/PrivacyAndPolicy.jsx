@@ -175,7 +175,7 @@ const PrivacyAndPolicy = () => {
           <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so. </p><br/>
         
         <div className="section">
-          <h2 className='disclosure'>Disclosure of Your Personal Data</h2>
+          <h2 className='disclosure'>Disclosure of Your Personal Data</h2><br/><br/>
             <h2>Business Transactions</h2>
             <p>
               If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.
