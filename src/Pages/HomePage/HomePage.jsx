@@ -10,34 +10,42 @@ import CardContent from '../../Component/HomePageComponent/CardContent/CardConte
 import HomeServices from '../../Component/HomePageComponent/HomeServices/HomeServices'
 import TestAnimation from '../../Component/HomePageComponent/TestAnimation/TestAnimation'
 import ImageScrollEffect from '../../Component/ImageScrollEffect/ImageScrollEffect'
+import ClientSection from '../../Component/HomePageComponent/ClientSection/ClientSection'
+import Industry from '../../Component/HomePageComponent/Industry/Industry'
 
 
 
 const HomePage = () => {
   return (
     <div>
-        <AnimationVideo/>
-        {/* <AnimationBanner/> */}
-        {/* <ArrowAni/> */}
-        <div className='container-fluid'>
+      <AnimationVideo />
+      {/* <AnimationBanner/> */}
+      {/* <ArrowAni/> */}
+      <div className='container-fluid'>
         <TestAnimation />
-        </div>
-       
-        {/* <DesignFutureAnimation/> */}
-        <div className='container-fluid'>
+      </div>
+
+      {/* <DesignFutureAnimation/> */}
+      <div className='container-fluid'>
         <CardContent />
-        </div>
-        {/* <IndustrySection/> */}
-        {/* <ScrollSection/> */}
-        
-        <HomeServices />
+      </div>
+      <div className='industry container-fluid'>
+        <Industry />
+      </div>
+      <div className='slide-sec'>
+        <ClientSection />
+      </div>
+      {/* <IndustrySection/> */}
+      {/* <ScrollSection/> */}
 
-{/* <ImageScrollEffect/> */}
+      {/* <HomeServices /> */}
 
-        
-        <div id="contact container-fluid">
-        <ContactForm/>
-        </div>
+      {/* <ImageScrollEffect/> */}
+
+
+      <div id="contact container-fluid">
+        <ContactForm />
+      </div>
     </div>
   )
 }

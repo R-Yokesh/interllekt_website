@@ -1,0 +1,30 @@
+.industry-content p {
+    color: #CF1817;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 2px #7777772b;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+.industry-sec .row {
+    gap: 10px;
+}
+
+.industry-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.industry h1 {
+    font-family: 'Ranberg Regular', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #31175b;
+}
+
+.industry-sec {
+    margin-bottom: 4%;
+    padding: 0% 2%;
+}

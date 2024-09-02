@@ -2,7 +2,7 @@
 
 /* General Styles */
 .custom-footer {
-   background-color: #31175b;
+  background-color: #31175b;
   color: #fff;
   padding: 2rem 1rem;
   /* text-align: center; */
@@ -19,21 +19,24 @@
   max-width: 100%;
   height: auto;
 }
-.twoms{
+
+.twoms {
   display: flex;
-    justify-content: end;
-    gap: 7%;
+  justify-content: end;
+  gap: 7%;
 }
 
 .footer-secton {
   display: flex;
   flex-direction: column;
 }
+
 .footer-secton a {
   color: #fff;
   text-decoration: none;
   padding: 0.5rem;
   font-size: 1rem;
+  font-family: 'Ranberg Regular', sans-serif;
 }
 
 .footer-secton a:hover {
@@ -42,6 +45,7 @@
 
 .folow-us h3 {
   margin-bottom: 0.5rem;
+  font-family: 'Ranberg Regular', sans-serif;
 }
 
 .folow-us {
@@ -57,15 +61,17 @@
   height: auto;
 }
 
-.footer-bottom-text{
+.footer-bottom-text {
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 1rem 0;
+  font-family: 'Ranberg Regular', sans-serif;
 }
+
 .footer-bottom-paragraph p {
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 1rem 0;
   text-align: justify;
+  font-family: 'Ranberg Regular', sans-serif;
 }
-
