@@ -21,7 +21,7 @@ const Section1 = () => {
   }, []);
 
   return (
-    <div className="section1-container ">
+    <div className="section1-container padding-sec">
       <div className="section1-body">
 
         <h1 className="heading-style-h1">

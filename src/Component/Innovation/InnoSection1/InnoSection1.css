@@ -1,6 +1,6 @@
 .Isection2-container {
-  margin: 1%;
-  padding: 1%;
+  /* margin: 1%; */
+  /* padding: 1%; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,7 +10,7 @@
 .Isection2-body {
   text-align: left;
   display: flex;
-  padding: 1%;
+  /* padding: 1%; */
   flex-direction: column;
   align-items: flex-start;
 }

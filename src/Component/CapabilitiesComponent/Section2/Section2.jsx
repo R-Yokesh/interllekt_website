@@ -4,9 +4,9 @@ import TabSection from '../TabSection/TabSection';
 
 const Section2 = () => {
   return (
-    <div className="section2-container container-fluid">
+    <div className="section2-container container-fluid padding-sec">
       {/* <TabSection /> */}
-      <div className="section2-body res-section">
+      <div className="section2-body res-section ">
         {/* <h3>Concept & Design</h3> */}
         <p>
           A visionary creative network striving to craft sublime communication
