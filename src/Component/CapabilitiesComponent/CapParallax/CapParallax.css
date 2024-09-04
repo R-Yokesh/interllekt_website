@@ -10,10 +10,15 @@
   background-color: #fff
 }
 
+.cap-animation {
+  width: 40%;
+  height: 60%;
+}
+
 .cap-parallax-image {
   position: absolute;
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
   max-width: none;
   transition: all 3s ease-out;
   opacity: 0;
@@ -30,7 +35,7 @@
 }
 
 .cap-parallax-container.animate .icon-image {
-  transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(-50%);
   opacity: 1;
 }
 
@@ -41,7 +46,7 @@
 
 .top-left-image {
   top: 0;
-  left:0;
+  left: 0;
   transform: translateX(-100%) translateY(-100%);
   width: 90%;
 }
@@ -55,10 +60,14 @@
 }
 
 .icon-image {
-  top: 12%;
-  left: 15%;
+  top: 50%;
+  left: 0px;
   transform: translateX(-50%) translateY(-100%);
-  width: 80%;
+  /* width: 80%; */
+  right: 0px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  /* width: 80%; */
 }
 
 .cap-text-image {
@@ -67,4 +76,3 @@
   transform: translateY(100%);
   width: 50%;
 }
-

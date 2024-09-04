@@ -6,6 +6,7 @@ import Layout from "./Pages/Layout/Layout";
 import ErrorBoundary from './Utiliz/ErrorBoundary';
 import { Helmet } from 'react-helmet';
 import "./Utiliz/Responsive.css"
+import ScrollToTop from './Component/ScrollTop/ScrollTop';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       {/* <RoutesComponent /> */}
       <ErrorBoundary>
         <Router basename='/interllekt.com'>
+          <ScrollToTop />
           <Routes>
             <Route path='/*' element={<Layout />} />
           </Routes>

@@ -252,8 +252,8 @@ const CardContent = () => {
     <div className="res-commoncard">
       <div className="card-content row container-fluid">
         <div className="sleft-side col-lg-12 col-md-6 col-sm-6">
-          <div className="row" style={{ paddingLeft: '2%' }}>
-            <div className="capclass col-lg-6">
+          <div className="row padding-sec">
+            <div className="capclass col-lg-6 px-0">
               <div className={`linkssa ${focusedCard === 'Capabilities' ? 'focused' : ''}`}>
                 <Link to="/capabilities" className={`card ${focusedCard === 'Capabilities' ? 'focused' : ''}`} data-card="Capabilities">
                   <div><h1>Capabilities</h1></div>
@@ -272,7 +272,7 @@ const CardContent = () => {
               )}
             </div>
 
-            <div className="innoclass col-lg-6">
+            <div className="innoclass col-lg-6 px-0">
               <div className={`linkssa ${focusedCard === 'Innovation' ? 'focused' : ''}`}>
                 <Link to="/innovation" className={`card ${focusedCard === 'Innovation' ? 'focused' : ''}`} data-card="Innovation">
                   <div><h1>Innovation</h1></div>
@@ -290,7 +290,7 @@ const CardContent = () => {
                 </div>
               )}
             </div>
-            <div className="buiclass col-lg-6">
+            <div className="buiclass col-lg-6 px-0">
               <div className={`linkssa ${focusedCard === 'Business' ? 'focused' : ''}`}>
                 <Link to="/business" className={`card ${focusedCard === 'Business' ? 'focused' : ''}`} data-card="Business">
                   <div><h1>Business</h1></div>

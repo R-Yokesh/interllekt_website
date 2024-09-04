@@ -8,18 +8,30 @@
   align-items: center;
 }
 
+.innovation-animation {
+  width: 50%;
+  height: 70%;
+}
+
+.innovation-animation .brandMasonry {
+  grid-gap: 2.3px;
+}
+
 .parallax-image {
   position: absolute;
   width: 80%;
   height: auto;
   max-width: none;
   transition: transform 3.5s ease-out, opacity 1.5s ease-out;
-  opacity: 0; /* Ensure the images are hidden initially */
+  opacity: 0;
+  /* Ensure the images are hidden initially */
 }
 
 .parallax-container.animate .left-image {
-  transform: translateX(0); /* Image moves into view */
-  opacity: 1; /* Image fades in */
+  transform: translateX(0);
+  /* Image moves into view */
+  opacity: 1;
+  /* Image fades in */
 }
 
 .parallax-container.animate .right-image {
@@ -33,13 +45,16 @@
 }
 
 .left-image {
-  transform: translateX(-30%); /* Starting position off-screen to the left */
+  transform: translateX(-30%);
+  /* Starting position off-screen to the left */
 }
 
 .right-image {
-  transform: translateX(30%); /* Starting position off-screen to the right */
+  transform: translateX(30%);
+  /* Starting position off-screen to the right */
 }
 
 .bottom-image {
-  transform: translateY(30%); /* Starting position off-screen to the bottom */
+  transform: translateY(30%);
+  /* Starting position off-screen to the bottom */
 }

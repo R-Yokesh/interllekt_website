@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../../Assets/Images/logoblue.png";
+import logo from "../../../Assets/Images/logo-org.png";
 import menu from "../../../Assets/Images/menu-icon.png";
 import searchIcon from "../../../Assets/Images/search-icon.png";
 import closeIcon from "../../../Assets/Images/close-icon.png";
@@ -45,6 +45,9 @@ const NewHeader = () => {
     setSearchOpen(false);
   }, [location]);
 
+  const [scrollPosition, setScrollPosition] = useState();
+
+
   useEffect(() => {
     const handleScroll = () => {
       const videoElement = document.getElementById("animation-video");
@@ -59,6 +62,7 @@ const NewHeader = () => {
       } else {
         setHeaderStyle("not-transparent");
       }
+      setScrollPosition(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -78,9 +82,9 @@ const NewHeader = () => {
   return (
     <div className="reshed">
       <header
-        className={`new-header ${headerStyle} ${
-          searchOpen ? "search-active" : ""
-        }`}
+        className={`new-header ${headerStyle} ${searchOpen ? "search-active" : ""
+          }`}
+      // style={scrollPosition > 100 ? { position: 'fixed' } : {}}
       >
         <div className="logo-container">
           <img

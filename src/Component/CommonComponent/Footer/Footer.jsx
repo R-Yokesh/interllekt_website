@@ -16,14 +16,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="custom-footer">
+    <footer className="custom-footer padding-sec">
       <div className="c-layout is-foter row">
-        <div className="footer-let col-lg-3 col-md-3 col-sm-12">
+        <div className="footer-let col-lg-3 col-md-3 col-sm-12 pl-0">
           <img src={Assets.interllektlogo} alt="Logo" style={{ width: '' }} />
         </div>
         <div className="col-lg-7 col-md-7 col-sm-12 twoms">
           <div className="footer-secton col-lg-3">
-            <Link to="/Contact" onClick={() => console.log('Navigating to Home')}>Home</Link>
+            <Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link>
             <Link to="/About" onClick={() => console.log('Navigating to About')}>About</Link>
             <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
             <Link to="/" onClick={handleCareersClick}>Careers</Link>
@@ -44,13 +44,16 @@ const Footer = () => {
         </div>
 
 
-        <div className="clientsligos col-lg-2 col-md-2 col-sm-12">
-          <img src={Assets.fotlo} alt="" className='footer-logo' />
-        </div>
+        {/* <div className="clientsligos col-lg-2 col-md-2 col-sm-12">
+
+        </div> */}
       </div>
-      <p className="footer-bottom-text">
-        &copy; {new Date().getFullYear()} Interllekt. All rights reserved.
-      </p>
+      <div className='footer-flex'>
+        <p className="footer-bottom-text">
+          &copy; {new Date().getFullYear()} Interllekt. All rights reserved.
+        </p>
+        <img src={Assets.fotlo} alt="" className='footer-logo clientsligos' />
+      </div>
       <div className="footer-bottom-paragraph">
         <p>
           Interllekt is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable.

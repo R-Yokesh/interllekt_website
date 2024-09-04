@@ -1,4 +1,4 @@
-import logo from "./Images/logoblue.png"
+import logo from "./Images/logo-org.png"
 import logoo from "./Images/Mark-12.png"
 import searchicon from "./Images/search-icon.png"
 import interllektlogo from "./Images/interllekt-logo.png"

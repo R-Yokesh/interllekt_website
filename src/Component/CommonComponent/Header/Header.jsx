@@ -1,18 +1,21 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import Assets from '../../../Assets/Assets';
 
 import "./Header.css";
 
 const Header = () => {
+
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
 
   return (
     <div className="mainheaderrs">

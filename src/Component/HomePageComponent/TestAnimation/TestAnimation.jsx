@@ -33,7 +33,7 @@ const TestAnimation = () => {
       <h2 className="section-title-text">
         <span>"We are here <br />to design <br />your future"</span>
       </h2>
-      <p className='txtn'>
+      <p className='txtn padding-sec'>
         <span>
           “We look ahead and manifest the future, through design, technology, strategy, venture, and an omni-thinking approach. From a startup to a legacy enterprise, building challenging transformations online and offline.”
         </span>

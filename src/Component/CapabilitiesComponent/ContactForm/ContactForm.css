@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +11,6 @@
   /* text-align: center; */
   position: relative;
   padding-bottom: 6.25rem;
-  padding-left: 2%;
   padding-top: 3rem;
   font-family: 'Switzer-Regular', sans-serif;
 }
@@ -20,8 +18,8 @@
 .contact-form h2 {
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.2em;
+  font-weight: 500;
+  line-height: 1.2em;
   margin-bottom: 1em;
   text-align: left;
   color: #000;
@@ -32,9 +30,9 @@
   /* font-weight: bold; */
   font-style: italic;
   font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.2em;
-  
+  font-weight: 500;
+  line-height: 1.2em;
+
 }
 
 .cform-row {
@@ -94,7 +92,7 @@
   outline: 1px solid #31175b;
 }
 
-.cform-row > .cform-group {
+.cform-row>.cform-group {
   margin-bottom: 2em;
 }
 
@@ -195,7 +193,7 @@
 }
 
 .cform-group select:focus {
-  border-bottom: 1px solid #31C0FF ;
+  border-bottom: 1px solid #31C0FF;
 }
 
 .cform-group select option {

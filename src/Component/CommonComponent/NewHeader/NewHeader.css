@@ -1,209 +1,211 @@
 /* General Header Styles */
 .new-header {
-    display: flex;
-    z-index: 1000;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: background-color 0.3s;
-  }
-  
-  .new-header.transparent {
-    background-color: transparent;
-  }
-  
-  .new-header.not-transparent {
-    background-color: var(--white);
-  }
-  
-  .new-header.search-active {
-    background-color: #FFB32C;
-  }
-  
-  /* Logo Styles */
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 70px;
-    width: 70px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  /* Icons Container Styles */
-  .icons-container {
-    display: flex;
-    align-items: center;
-    /* gap: 20px; */
-  }
-  
-  .search-icon,
-  .menu-icon {
-    margin-left: 20px;
-    cursor: pointer;
-  }
-  
-  .search-img,
-  .menu-img {
-    width: 20px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  /* Search Bar Styles */
-  .search-bar {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #FFB32C;
-    padding: 10px 20px 30px 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .search-bar input {
-    background-color: #FFB32C;
-    flex: 1;
-    padding: 20px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 2px solid black;
-    border-radius: 0;
-    outline: none;
-    padding-right: 50px; /* Add padding to the right for the icon */
-  }
-  
-  .search-bar input::placeholder {
-    font-family: 'Ranberg Regular', sans-serif;
-    color: #000;
-    font-size: 2rem;
-  }
-  
-  .search-icon-input {
-    position: absolute;
-    right: 30px; /* Adjust this value to move the icon */
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .search-icon-input img {
-    width: 30px;
-    height: auto;
-    font-size: 18px;
-  }
-  
-  /* Menu Page Styles */
-  .menu-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #31175b;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: top 0.5s ease-in-out;
-  }
-  
-  .menu-page.active {
-    top: 0;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 50px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  /* Menu Content Styles */
-  .menu-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 50px 0;
-    box-sizing: border-box;
-  }
-  
-  /* Menu Column Styles */
-  .menu-column {
-    flex: 1;
-    min-width: 200px;
-    margin: 20px;
-    box-sizing: border-box;
-  }
-  
-  .menu-column p {
-    color: #fff;
-    font-family: 'Switzer-Regular', sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: left;
-  }
-  
-  .menu-column ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    justify-items: flex-start;
-  }
-  
-  .menu-column ul li {
-    margin-bottom: 20px;
-  }
-  
-  .menu-column ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2.5rem;
-    font-weight: 500;
-    font-family: 'Ranberg Regular', sans-serif !important;
-  }
-  
-  .menu-column ul li a:hover {
-    color: #FFB32C;
-  }
-  
-  .menu-column ul.social-icons {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .menu-column ul.social-icons li {
-    margin-right: 20px;
-  }
-  
-  .menu-column ul.social-icons li a {
-    font-size: 28px;
-    color: #fff;
-  }
-  
-  .menu-column ul.social-icons li a:hover {
-    color: #FFB32C;
-  }
-  
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s;
+  padding: 12px 40px;
+}
+
+.new-header.transparent {
+  background-color: transparent;
+}
+
+.new-header.not-transparent {
+  background-color: var(--white);
+}
+
+.new-header.search-active {
+  background-color: #FFB32C;
+}
+
+/* Logo Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  /* margin-right: 10px; */
+  cursor: pointer;
+}
+
+/* Icons Container Styles */
+.icons-container {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.search-icon,
+.menu-icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.search-img,
+.menu-img {
+  width: 20px;
+  height: auto;
+}
+
+.search-img {
+  margin-right: 20px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #FFB32C;
+  padding: 10px 20px 30px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar input {
+  background-color: #FFB32C;
+  flex: 1;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 0;
+  outline: none;
+  padding-right: 50px;
+  /* Add padding to the right for the icon */
+}
+
+.search-bar input::placeholder {
+  font-family: 'Ranberg Regular', sans-serif;
+  color: #000;
+  font-size: 2rem;
+}
+
+.search-icon-input {
+  position: absolute;
+  right: 30px;
+  /* Adjust this value to move the icon */
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-icon-input img {
+  width: 30px;
+  height: auto;
+  font-size: 18px;
+}
+
+/* Menu Page Styles */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #31175b;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: top 0.5s ease-in-out;
+}
+
+.menu-page.active {
+  top: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Menu Content Styles */
+.menu-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+/* Menu Column Styles */
+.menu-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.menu-column p {
+  color: #fff;
+  font-family: 'Switzer-Regular', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.menu-column ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  justify-items: flex-start;
+}
+
+.menu-column ul li {
+  margin-bottom: 20px;
+}
+
+.menu-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: 'Ranberg Regular', sans-serif !important;
+}
+
+.menu-column ul li a:hover {
+  color: #FFB32C;
+}
+
+.menu-column ul.social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-column ul.social-icons li {
+  margin-right: 20px;
+}
+
+.menu-column ul.social-icons li a {
+  font-size: 28px;
+  color: #fff;
+}
+
+.menu-column ul.social-icons li a:hover {
+  color: #FFB32C;
+}

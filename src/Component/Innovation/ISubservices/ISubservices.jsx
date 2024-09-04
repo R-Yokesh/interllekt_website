@@ -6,9 +6,12 @@ const ISubservices = () => {
     { name: 'Software', logo: require('../../../Assets/Images/Color Mark 4.png') },
     { name: 'Digital Integration', logo: require('../../../Assets/Images/Color Mark 2.png') },
     { name: 'Product Development', logo: require('../../../Assets/Images/Color Mark 3.png') },
+  ];
+
+  const servicesTwo = [
     { name: 'Social Impact', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Design Thinking', logo: require('../../../Assets/Images/Color Mark 2.png') },
-  ];
+  ]
 
   const [scrollDirection, setScrollDirection] = useState(null);
   const carouselRef = useRef(null);
@@ -57,12 +60,16 @@ const ISubservices = () => {
   return (
     <div className="icarousel-container common-class">
       <div ref={carouselRef} className="icarousel">
-        {renderCarouselItems(firstAllServices)}
-        {renderCarouselItems(firstAllServices)}
+        {renderCarouselItems(services)}
+        {renderCarouselItems(services)}
+        {renderCarouselItems(services)}
+        {renderCarouselItems(services)}
       </div>
       <div ref={reverseCarouselRef} className="icarousel reverse">
-        {renderCarouselItems(allServicesReversed)}
-        {renderCarouselItems(allServicesReversed)}
+        {renderCarouselItems(servicesTwo)}
+        {renderCarouselItems(servicesTwo)}
+        {renderCarouselItems(servicesTwo)}
+        {renderCarouselItems(servicesTwo)}
       </div>
     </div>
   );

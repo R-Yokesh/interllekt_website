@@ -11,35 +11,35 @@ import CardContent from '../../Component/HomePageComponent/CardContent/CardConte
 import ImageScrollEffect from '../../Component/ImageScrollEffect/ImageScrollEffect'
 import Assets from '../../Assets/Assets';
 
-const BuisnessPage = () => {
+const BuisnessPage = ({ marginSec }) => {
   const businessImages = [
     Assets.busk1,
-  Assets.busk2,
-  Assets.busk3,
-  Assets.busk4,
-  Assets.busk5,
-  Assets.busk6,
-  Assets.busk7,
-  Assets.busk8,
-  Assets.busk9,
-  Assets.busk10,
-  Assets.busk11,
-  Assets.busk12,
-  Assets.busk13,
+    Assets.busk2,
+    Assets.busk3,
+    Assets.busk4,
+    Assets.busk5,
+    Assets.busk6,
+    Assets.busk7,
+    Assets.busk8,
+    Assets.busk9,
+    Assets.busk10,
+    Assets.busk11,
+    Assets.busk12,
+    Assets.busk13,
     // Add more images as needed
   ];
   return (
     <div>
-        <BParallax />
-        <BSection2 />
-        {/* <BSubservices /> */}
-        {/* <BSlider /> */}
-        {/* <BCard /> */}
-        {/* <BSlider2 /> */}
-        {/* <BTestiomonial /> */}
-        {/* <CardContent /> */}
-        <ImageScrollEffect images={businessImages}/>
-        <ContactForm />
+      <BParallax marginSec={marginSec} />
+      <BSection2 />
+      {/* <BSubservices /> */}
+      {/* <BSlider /> */}
+      {/* <BCard /> */}
+      {/* <BSlider2 /> */}
+      {/* <BTestiomonial /> */}
+      {/* <CardContent /> */}
+      <ImageScrollEffect images={businessImages} />
+      <ContactForm />
     </div>
   )
 }

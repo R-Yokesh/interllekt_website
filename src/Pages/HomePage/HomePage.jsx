@@ -1,5 +1,5 @@
 import React from 'react'
-// import AnimationBanner from '../../Component/HomePageComponent/AnimationBanner/AnimationBanner'
+import AnimationBanner from '../../Component/HomePageComponent/AnimationBanner/AnimationBanner'
 // import ScrollSection from '../../Component/HomePageComponent/ScrollSection/ScrollSection'
 // import DesignFutureAnimation from '../../Component/HomePageComponent/DesignFutureAnimation/DesignFutureAnimation'
 // import ArrowAni from '../../Component/HomePageComponent/AnimationBanner/ArrowAni'
@@ -14,22 +14,21 @@ import ClientSection from '../../Component/HomePageComponent/ClientSection/Clien
 import Industry from '../../Component/HomePageComponent/Industry/Industry'
 
 
-
 const HomePage = () => {
   return (
     <div>
       <AnimationVideo />
-      {/* <AnimationBanner/> */}
+      {/* <AnimationBanner /> */}
       {/* <ArrowAni/> */}
-      <div className='container-fluid'>
+      <div className='container-fluid px-0'>
         <TestAnimation />
       </div>
 
       {/* <DesignFutureAnimation/> */}
-      <div className='container-fluid'>
+      <div className='container-fluid px-0'>
         <CardContent />
       </div>
-      <div className='industry container-fluid'>
+      <div className='industry container-fluid px-0'>
         <Industry />
       </div>
       <div className='slide-sec common-class'>

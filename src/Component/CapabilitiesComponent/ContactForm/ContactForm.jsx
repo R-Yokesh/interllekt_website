@@ -11,7 +11,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form container-fluid common-class">
+    <div className="contact-form container-fluid common-class padding-sec">
       <h2 className='text-center'>
         {location.pathname !== '/' && 'Want to learn more?'}
         <span>Get in touch</span>

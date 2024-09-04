@@ -18,33 +18,33 @@ import ImageScrollEffect from '../../Component/ImageScrollEffect/ImageScrollEffe
 
 
 const CapabilitiesPage = () => {
-  
-const capabilitiesImages = [
-  Assets.cap1,
-  Assets.cap2,
-  Assets.cap3,
-  Assets.cap4,
-  Assets.cap5,
-  Assets.cap6,
-  Assets.cap7,
-  Assets.cap8,
-  Assets.cap9,
-  Assets.cap10,
-  Assets.cap11,
-  Assets.cap12,
-  Assets.cap13,
-];
+
+  const capabilitiesImages = [
+    Assets.cap1,
+    Assets.cap2,
+    Assets.cap3,
+    Assets.cap4,
+    Assets.cap5,
+    Assets.cap6,
+    Assets.cap7,
+    Assets.cap8,
+    Assets.cap9,
+    Assets.cap10,
+    Assets.cap11,
+    Assets.cap12,
+    Assets.cap13,
+  ];
 
   return (
     <div>
       <Section1 />
       <TabSection />
       <div id="capabilities">
-      <CapParallax />
+        <CapParallax />
         <Section2 />
       </div>
-     {/* <ImageScrollEffect/> */}
-      
+      {/* <ImageScrollEffect/> */}
+
       <CapSubservices />
       {/* <Slider /> */}
       {/* <CardSection /> */}
@@ -53,13 +53,13 @@ const capabilitiesImages = [
       {/* <CardContent /> */}
       <ImageScrollEffect images={capabilitiesImages} />
       <div id="contact">
-        <ContactForm/>
-        </div>
+        <ContactForm />
+      </div>
       <div id="innovation">
-        <InnovationPage />
+        <InnovationPage marginSec='false' />
       </div>
       <div id="business">
-        <BusinessPage />
+        <BusinessPage marginSec='false' />
       </div>
     </div>
   );
