@@ -78,7 +78,7 @@
   transition: all 0.25s;
   cursor: pointer;
   letter-spacing: 0.08em;
-  width: 15%;
+  /* width: 15%; */
   float: left;
   margin-left: 0;
   margin-bottom: 2rem;
