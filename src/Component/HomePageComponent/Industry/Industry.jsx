@@ -1,37 +1,36 @@
-import React from 'react'
-import './Industry.css'
+import React from 'react';
+import './Industry.css';
 
 function Industry() {
     return (
         <div className='industry-sec padding-sec'>
             <h1>Industries</h1>
             <div className='industry-content'>
-                {/* <div className='sec-one'> */}
-                <p className=''>Aerospace</p>
-                <p className=''>Consumer Products Industry</p>
-                <p className=''>Advertising</p>
-                {/* </div> */}
-                {/* <div className='sec-two'> */}
-                <p className=''>Media &amp; Entertainment</p>
-                <p className=''>Energy</p>
-                <p className=''>Education</p>
-                {/* </div> */}
-                {/* <div className='sec-three'> */}
-                <p className=''>Telecommunication</p>
-                <p className=''>Industrial Goods</p>
-                <p className=''>Logistics</p>
-                {/* </div> */}
-                {/* <div className='sec-four'> */}
-                <p className=''>Technology</p>
-                <p className=''>Publishing</p>
-                <p className=''>Fashion &amp; Luxury</p>
-                {/* </div> */}
-                {/* <div className='sec-five'> */}
-                <p className=''>Automotive</p>
-                {/* </div> */}
+                {/* Row 1 */}
+                <div className='industry-row'>
+                    <p>Aerospace</p>
+                    <p>Consumer Products Industry</p>
+                    <p>Advertising</p>
+                    <p>Media &amp; Entertainment</p>
+                </div>
+                {/* Row 2 */}
+                <div className='industry-row'>
+                    <p>Energy</p>
+                    <p>Education</p>
+                    <p>Telecommunication</p>
+                    <p>Industrial Goods</p>
+                    <p>Logistics</p>
+                </div>
+                {/* Row 3 */}
+                <div className='industry-row'>
+                    <p>Technology</p>
+                    <p>Publishing</p>
+                    <p>Fashion &amp; Luxury</p>
+                    <p>Automotive</p>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Industry
+export default Industry;
