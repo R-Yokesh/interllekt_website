@@ -1,34 +1,41 @@
-.bsubservices-container {
-  text-align: center;
-  background-color: #111;
-  color: white;
-  height: 200vh;
-}
-
-.marquee-items {
-  height: 15%;
-  width: auto;
-  padding: 0 20px;
-  margin-bottom: 20px;
-  background: #555;
-  position: relative;
+.ccarousel-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   overflow: hidden;
+  width: 100%;
+    /* border: 10px solid transparent;
+    border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
+    padding: 10px;  */
 }
 
-.marquee-item {
+.ccarousel {
   display: flex;
+  white-space: nowrap;
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  margin-top: 20px;
+}
+
+.ccarousel.reverse {
+  display: flex;
+  white-space: nowrap;
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
+  margin-bottom: 20px;
+}
+
+.ccarousel-item {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  background: green;
-  height: 80%;
-  width: 20%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  flex-shrink: 0;
-  color: black;
-  font-size: 21px;
-  cursor: pointer;
+  padding: 0 10px;
+}
+
+.ccarousel-item span {
+  font-family: 'Ranberg Regular', sans-serif;
+  font-size: 32px;
+}
+
+.ccarousel-item img {
+  height: 30px;
+  width: auto;
+  margin-right: 15px;
 }

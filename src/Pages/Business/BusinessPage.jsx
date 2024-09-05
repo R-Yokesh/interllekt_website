@@ -32,7 +32,7 @@ const BuisnessPage = ({ marginSec }) => {
     <div>
       <BParallax marginSec={marginSec} />
       <BSection2 />
-      {/* <BSubservices /> */}
+      <BSubservices />
       {/* <BSlider /> */}
       {/* <BCard /> */}
       {/* <BSlider2 /> */}

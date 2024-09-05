@@ -46,9 +46,6 @@
     top: 50%;
     left: 50%;
     transform: rotate(0);
-   
-   
-   
 }
 
 .mega-heading {
@@ -58,28 +55,7 @@
     transition: all .2s;
     position: absolute;
     left: 50%;
-    transform: rotate(0);
-   
-   
 }
-
-.mh {
-    letter-spacing: -.02em;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Outfit, sans-serif;
-    font-size: 140px;
-    line-height: 1em;
-}
-
-.mh._1 {
-    text-align: center;
-}
-
-.mh._2 {
-    text-align: left;
-}
-
 
 .target-circle {
     width: 600px;
@@ -104,47 +80,9 @@
     width: 420px;
     height: 420px;
 }
-.target-circle {
-    border: 1px solid var(--swatches--lighter-gray);
-    background-color: var(--swatches--white);
-    box-shadow: 0 20px 80px 0 var(--swatches--fades--lighter-gray-50);
-    border-radius: 50%;
-    position: absolute;
-    overflow: hidden;
-   
-   
-   
-}
-
-.mega-wrap {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100svw;
-    height: 100svh;
-    margin-top: -50svh;
-    margin-left: -50svw;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: rotate(0);
-}
-.mega-heading {
-    width: 1100px;
-    margin-left: -550px;
-    line-height: 1em;
-    transition: all .2s;
-    position: absolute;
-    left: 50%;
-}
-
 .target-circle.sm {
     width: 200px;
     height: 200px;
-   
-   
-   
 }
 .target-circle.xs {
     background-color: var(--swatches--lighter-gray);
@@ -153,158 +91,4 @@
 }
 .mono-track {
     position: relative;
-}
-@media (min-width: 900px) and (max-width: 1100px){
-    .mega-heading {
-        width: 920px;
-        margin-left: -460px;
-        line-height: 1em;
-        transition: all .2s;
-        position: absolute;
-        left: 50%;
-        transform: rotate(0);
-    }
-    .mh {
-        letter-spacing: -.02em;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Outfit, sans-serif;
-        font-size: 130px;
-        font-weight: 600;
-        line-height: 1em;
-    }
-    .target-circle {
-        border: 1px solid var(--swatches--lighter-gray);
-        background-color: var(--swatches--white);
-        box-shadow: 0 20px 80px 0 var(--swatches--fades--lighter-gray-50);
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        overflow: hidden;
-    }
-    .target-circle.md {
-        width: 350px;
-        height: 350px;
-    }
-    .target-circle.sm {
-        width: 166px;
-        height: 166px;
-    }
-    .target-circle.xs {
-        background-color: var(--swatches--lighter-gray);
-        width: 10px;
-        height: 10px;
-    }
-}
-@media (min-width: 600px) and (max-width: 800px){
-    .mega-heading {
-        width: 720px;
-        margin-left: -340px;
-        line-height: 1em;
-    }
-    .mh {
-        font-size: 90px;
-        line-height: 1em;
-    }
-    .target-circle {
-        width: 420px;
-        height: 420px;
-    }
-    .target-circle.md {
-        width: 294px;
-        height: 294px;
-    }
-    .target-circle.sm {
-        width: 140px;
-        height: 140px;
-    }
-    .target-circle.xs {
-        width: 8px;
-        height: 8px;
-    }
-}
-@media (min-width: 399px) and (max-width: 589px){
-    .scroll-path.target-puzzle {
-        min-height: 300svh;
-    }
-    .overline {
-        height: 60px;
-    }
-    .mega-heading {
-        width: 320px;
-        margin-left: -160px;
-    }
-    .mh {
-        font-size: 83px;
-        line-height: .8em;
-    }
-    .mh._1 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .target-circle {
-        width: 420px;
-        height: 420px;
-    }
-    .mega-heading {
-        width: 320px;
-        /* margin-left: -198px; */
-    }
-   
-    .target-circle.md {
-        width: 294px;
-        height: 294px;
-    }
-    .target-circle.sm {
-        width: 140px;
-        height: 140px;
-    }
-    .target-circle.xs {
-        width: 6px;
-        height: 6px;
-    }
-}
-@media (min-width: 280px) and (max-width: 398px){
-    .scroll-path.target-puzzle {
-        min-height: 300svh;
-    }
-    .overline {
-        height: 60px;
-    }
-    .mega-heading {
-        width: 320px;
-        margin-left: -170px;
-    }
-    .mh {
-        font-size: 93px;
-        line-height: .8em;
-    }
-    .mh._1 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .target-circle {
-        width: 420px;
-        height: 420px;
-    }
-    /* .mega-heading {
-        width: 320px;
-        margin-left: -188px;
-    } */
-   
-    .target-circle.md {
-        width: 294px;
-        height: 294px;
-    }
-    .target-circle.sm {
-        width: 140px;
-        height: 140px;
-    }
-    .target-circle.xs {
-        width: 6px;
-        height: 6px;
-    }
 }

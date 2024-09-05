@@ -56,5 +56,5 @@
 
 .animated-text {
   display: inline-block;
-  animation: slideIn 3s linear infinite;
+  animation: slideIn 5s linear infinite;
 }
