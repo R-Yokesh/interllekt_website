@@ -1,15 +1,6 @@
-.industry-content p {
-    color: #CF1817;
-    background-color: #fff;
-    box-shadow: 1px 1px 20px 2px #7777772b;
-    padding: 8px 20px;
-    border-radius: 25px;
-    height: max-content;
-    margin-bottom: 8px;
-}
-
-.industry-sec .row {
-    gap: 10px;
+.industry-sec {
+    margin-bottom: 4%;
+    margin-top: 12%;
 }
 
 .industry h1 {
@@ -20,45 +11,44 @@
     color: #31175b;
 }
 
-.industry-sec {
-    margin-bottom: 4%;
-    margin-top: 12%;
-}
-
-.sec-one,
-.sec-two,
-.sec-three,
-.sec-four,
-.sec-five {
-    display: flex;
-    gap: 15%;
-    margin-bottom: 30px;
-}
-
-.industry-content div:nth-child(even) {
-    justify-content: center;
-}
-
-.industry-content div:nth-child(odd) {
-    justify-content: space-between;
-}
-
 .industry-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
+.industry-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.industry-content p {
+    color: #CF1817;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 2px #7777772b;
+    padding: 8px 20px;
+    border-radius: 25px;
+    height: max-content;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 180px;
+}
+
+.industry-row:nth-child(2) {
+    padding-left: 60px; /* Offset for honeycomb structure */
+}
+
 @media screen and (max-width: 600px) {
-    .industry-content p {
-        text-align: center;
+    .industry-row {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
     }
 
-    .sec-one,
-    .sec-two,
-    .sec-three,
-    .sec-four,
-    .sec-five {
-        display: block;
+    .industry-content p {
+        width: 100%;
     }
 }
