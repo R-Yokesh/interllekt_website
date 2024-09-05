@@ -86,4 +86,5 @@
 .footer-flex {
   display: flex;
   gap: 70px;
+  justify-content: space-between;
 }
