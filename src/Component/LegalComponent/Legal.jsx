@@ -3,7 +3,7 @@ import './Legal.css';
 
 const Legal = () => {
   return (
-    <div className="legal-container ">
+    <div className="legal-container padding-sec ">
       <h1>Terms of Use</h1>
       <p>
         Thanks for your interest in our Website at <a href="http://www.interllekt.com" target="_blank" rel="noopener noreferrer">www.interllekt.com</a>. Your use of this Website, including the content, materials, and information available on or through this Website (together, the “Materials”), is governed by these Terms of Use (these “Terms”). By using this Website, you acknowledge that you have read and agree to these Terms.

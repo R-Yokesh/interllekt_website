@@ -3,7 +3,7 @@ import './PrivacyAndPolicy.css';
 
 const PrivacyAndPolicy = () => {
   return (
-    <div className="privacy-container">
+    <div className="privacy-container padding-sec">
       <h1>Privacy Policy</h1>
       <p>
         This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of your information when you use the Service and tells you about Your privacy rights and how the law protects you.

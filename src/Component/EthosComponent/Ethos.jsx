@@ -3,7 +3,7 @@ import './Ethos.css';
 
 const Ethos = () => {
   return (
-    <div className="ethos-container">
+    <div className="ethos-container padding-sec">
       <div>
       <h1><span style={{color:"#31175b"}}>Interllekt, a quest to make the</span><span style={{color:"#FFB32C"}}>  future proof </span></h1>
       </div>
