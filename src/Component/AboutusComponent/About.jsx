@@ -3,7 +3,7 @@ import './About.css'
  
 const About = () => {
     return (
-        <div className="about-page" id="about">
+        <div className="about-page padding-sec" id="about" >
             <h2>
                 <span>We are a <br /><span style={{color:"#FFB32C",fontWeight:"bold"}}> legion of business experts and investors.</span>  </span><br></br>
               
