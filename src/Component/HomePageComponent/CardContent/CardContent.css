@@ -201,7 +201,7 @@
   position: relative;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(29, 1fr);
-  grid-gap: 0.5px;
+  grid-gap: 0.5px !important;
 }
 
 .brandMasonry .col {
