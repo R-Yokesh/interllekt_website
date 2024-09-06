@@ -20,7 +20,7 @@
 
 .text-style-italic {
   font-family: 'Ranberg Regular', sans-serif;
-  font-style: italic;
+  /* font-style: italic; */
   color: #ff2e2e;
   padding-bottom: 2.5%;
 }
