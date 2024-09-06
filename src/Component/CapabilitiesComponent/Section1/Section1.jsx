@@ -15,7 +15,7 @@ const Section1 = () => {
           return 'Core';
         }
       });
-    }, 3000); // 3 seconds interval for each word
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
@@ -23,19 +23,17 @@ const Section1 = () => {
   return (
     <div className="section1-container padding-sec">
       <div className="section1-body">
-
         <h1 className="heading-style-h1">
           Our <br />
-          <span className="text-style-italic animated-text">{displayText}</span>
+          <span className="text-style-italic">{displayText}</span>
         </h1>
-        </div>
-        <div className="para">
-          <p>
-            Interllekt is decades of collective expertise to help individuals & organisations achieve transformation and growth, translating concepts into enduring branding and legacies. Embracing a global perspective towards an impactful future.
-          </p>
-        </div>
       </div>
-    
+      <div className="para">
+        <p>
+          Interllekt is decades of collective expertise to help individuals & organisations achieve transformation and growth, translating concepts into enduring branding and legacies. Embracing a global perspective towards an impactful future.
+        </p>
+      </div>
+    </div>
   );
 };
 
