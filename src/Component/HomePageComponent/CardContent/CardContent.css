@@ -201,7 +201,7 @@
   position: relative;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(29, 1fr);
-  grid-gap: 0.5px !important;
+  grid-gap: 1.5px !important;
 }
 
 .brandMasonry .col {
@@ -229,7 +229,7 @@
 }
 
 .brandMasonry.eq-2 .col:nth-of-type(4) {
-  grid-column: 13 / span 11;
+  grid-column: 14 / span 11;
   grid-row: 15 / span 15;
 }
 
