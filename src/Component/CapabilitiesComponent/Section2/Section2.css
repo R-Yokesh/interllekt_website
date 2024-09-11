@@ -14,7 +14,7 @@ padding: 2%; */
 
 .section2-body p {
   font-size: 1.5rem;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-family: 'Switzer-Regular', sans-serif;
 }
 

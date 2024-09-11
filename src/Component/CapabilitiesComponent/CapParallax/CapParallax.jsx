@@ -59,7 +59,7 @@ const CapParallax = () => {
   }, [activeImageIndex1, isLooping1]);
 
   return (
-    <div className="cap-parallax-container common-class">
+    <div className="cap-parallax-container">
       {/* <img src={leftImage} alt="Left" className="cap-parallax-image top-left-image" />
       <img src={rightImage} alt="Right" className="cap-parallax-image bottom-right-image" /> */}
       <div className="cap-animation cap-parallax-image icon-image">

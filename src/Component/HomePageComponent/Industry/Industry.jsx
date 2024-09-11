@@ -9,24 +9,24 @@ function Industry() {
                 {/* Row 1 */}
                 <div className='industry-row'>
                     <p>Aerospace</p>
-                    <p>Consumer Products Industry</p>
+                    <p>Energy</p>
                     <p>Advertising</p>
                     <p>Media &amp; Entertainment</p>
                 </div>
                 {/* Row 2 */}
                 <div className='industry-row'>
-                    <p>Energy</p>
+                    <p>Technology</p>
                     <p>Education</p>
-                    <p>Telecommunication</p>
-                    <p>Industrial Goods</p>
+                    <p>Consumer Products Industry</p>
+                    <p>Automotive</p>
                     <p>Logistics</p>
                 </div>
                 {/* Row 3 */}
                 <div className='industry-row'>
-                    <p>Technology</p>
+                    <p>Telecommunication</p>
                     <p>Publishing</p>
+                    <p>Industrial Goods</p>
                     <p>Fashion &amp; Luxury</p>
-                    <p>Automotive</p>
                 </div>
             </div>
         </div>

@@ -7,7 +7,8 @@ const ImageScrollEffect = ({ images = [] }) => {
   }
 
   return (
-    <div className="sh">
+    <div className="padding-seg common-class">
+    <div className="sh common-class">
       <div className="mainssv">
         <article>
           {images.map((image, index) => (
@@ -29,6 +30,7 @@ const ImageScrollEffect = ({ images = [] }) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

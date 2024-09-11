@@ -59,7 +59,7 @@ const ISubservices = () => {
   };
 
   return (
-    <div className="icarousel-container common-class">
+    <div className="icarousel-container">
       <div ref={carouselRef} className="icarousel">
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}

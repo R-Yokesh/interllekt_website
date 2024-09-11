@@ -56,7 +56,7 @@ const BParallax = ({ marginSec }) => {
   }, [activeImageIndex3, isLooping3]);
 
   return (
-    <div className={`common-class ${marginSec == 'false' ? 'b-parallax-container' : 'b-parallax-container margin-added'}`}>
+    <div className={marginSec == 'false' ? 'b-parallax-container' : 'b-parallax-container margin-added'}>
       <div className="busines-animation">
         <div className="brandMasonry eq-2">
           {[Assets.na3, Assets.na2, Assets.na4, Assets.na1].map((image, index) => (

@@ -57,7 +57,7 @@ const InnoParallax = ({ marginSec }) => {
   }, [activeImageIndex2, isLooping2]);
 
   return (
-    <div className={`common-class ${marginSec == 'false' ? "parallax-container" : "parallax-container margin-added"}`}>
+    <div className={marginSec == 'false' ? "parallax-container" : "parallax-container margin-added"}>
       <div className='innovation-animation'>
         <div className="brandMasonry eq-3">
           {[Assets.sp2, Assets.sp3, Assets.sp1, Assets.sp4].map((image, index) => (
