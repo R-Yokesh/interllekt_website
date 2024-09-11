@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="custom-footer padding-sec">
       <div className="c-layout is-foter row">
         <div className="footer-let col-lg-3 col-md-3 col-sm-12 pl-0">
-          <img src={Assets.interllektlogo} alt="Logo" style={{ width: '' }} />
+          <img src={Assets.WhiteLogo} alt="Logo" style={{ width: '' }} />
         </div>
         <div className="col-lg-7 col-md-7 col-sm-12 twoms">
           <div className="footer-secton col-lg-3">

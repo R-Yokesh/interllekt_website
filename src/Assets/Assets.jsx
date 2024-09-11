@@ -10,6 +10,9 @@ import c2 from "./Images/card/cardOne/c2.png"
 import c3 from "./Images/card/cardOne/c3.png"
 import c4 from "./Images/card/cardOne/c4.png"
 import fotlo from "./mma-logo.png"
+import WhiteLogo from "./Images/LOGO_WHITE.png"
+
+
 // Innovation image
 import sp1 from './Images/card/cardTwo/sp1.png'
 import sp2 from './Images/card/cardTwo/sp2.png'
@@ -79,6 +82,7 @@ const Assets = {
     logoo,
     searchicon,
     interllektlogo,
+    WhiteLogo,
     menuicon,
     ind,
     indst,
