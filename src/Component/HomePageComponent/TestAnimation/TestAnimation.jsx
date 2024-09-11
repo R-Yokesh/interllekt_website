@@ -29,7 +29,7 @@ const TestAnimation = () => {
   }, []);
 
   return (
-    <section className="scroll-reveal-text">
+    <section className="scroll-reveal-text common-class">
       <h2 className="section-title-text">
         <span>"We are here <br />to design <br />your future"</span>
       </h2>

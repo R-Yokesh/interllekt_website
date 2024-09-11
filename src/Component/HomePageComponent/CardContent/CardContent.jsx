@@ -249,7 +249,7 @@ const CardContent = () => {
   );
 
   return (
-    <div className="res-commoncard">
+    <div className="res-commoncard common-class">
       <div className="card-content row container-fluid">
         <div className="sleft-side col-lg-12 col-md-6 col-sm-6">
           <div className="row padding-sec">
@@ -272,7 +272,7 @@ const CardContent = () => {
               )}
             </div>
 
-            <div className="innoclass col-lg-6 px-0">
+            <div className="innoclass col-lg-6 px-0 ">
               <div className={`linkssa ${focusedCard === 'Innovation' ? 'focused' : ''}`}>
                 <Link to="/innovation" className={`card ${focusedCard === 'Innovation' ? 'focused' : ''}`} data-card="Innovation">
                   <div><h1>Innovation</h1></div>

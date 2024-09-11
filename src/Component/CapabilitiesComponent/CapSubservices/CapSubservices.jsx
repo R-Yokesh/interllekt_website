@@ -43,15 +43,15 @@ const CapSubservices = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Showing services from 0 to 5 for the first carousel
-  const firstSixServices = services.slice(0, 6);
+  // Showing all services from 0 to 4 (first carousel)
+  const firstAllServices = services.slice(0, 5);
 
-  // Showing services from 5 to 0 for the reverse carousel
-  const lastSixServicesReversed = services.slice(0, 6).reverse();
+  // Showing the same services from 4 to 0 in reverse order (reverse carousel)
+  const allServicesReversed = services.slice(0, 5).reverse();
 
   const renderCarouselItems = (serviceList) => {
     return serviceList.map((service, index) => (
-      <div key={index} className="ccarousel-item">
+      <div key={index} className="icarousel-item">
         <img src={service.logo} alt={`Logo ${index + 1}`} />
         <span>{service.name}</span>
       </div>
@@ -59,12 +59,16 @@ const CapSubservices = () => {
   };
 
   return (
-    <div className="ccarousel-container common-class">
-      <div ref={carouselRef} className="ccarousel">
+    <div className="icarousel-container common-class">
+      <div ref={carouselRef} className="icarousel">
+        {renderCarouselItems(services)}
+        {renderCarouselItems(services)}
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}
       </div>
-      <div ref={reverseCarouselRef} className="ccarousel reverse">
+      <div ref={reverseCarouselRef} className="icarousel reverse">
+        {renderCarouselItems(servicesTwo)}
+        {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
       </div>
@@ -73,3 +77,4 @@ const CapSubservices = () => {
 };
 
 export default CapSubservices;
+

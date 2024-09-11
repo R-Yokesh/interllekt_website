@@ -3,7 +3,7 @@ import './Industry.css';
 
 function Industry() {
     return (
-        <div className='industry-sec padding-sec'>
+        <div className='industry-sec padding-sec common-class'>
             <h1>Industries</h1>
             <div className='industry-content'>
                 {/* Row 1 */}

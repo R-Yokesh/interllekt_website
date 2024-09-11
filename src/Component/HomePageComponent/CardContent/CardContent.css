@@ -17,8 +17,8 @@
 }
 
 .res-commoncards {
-  margin-bottom: 10%;
-  margin-top: 7%;
+  /* margin-bottom: 10%; */
+  /* margin-top: 7%; */
 }
 
 .sleft-side {
@@ -293,16 +293,16 @@
 .c-content {
   transition: opacity 0.3s ease;
   /* margin: 10px; */
-  padding-left: 7%;
-  width: 85%;
-  margin-top: 7%;
+  padding-left: 15%;
+  width: 100%;
+  margin-top: 4%;
 }
 
 
 .c-content h2 {
   font-family: 'Ranberg Regular', sans-serif;
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #000;
   display: inline;
   position: relative;
@@ -341,7 +341,7 @@
 }
 
 .builn {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
 }
 
 .linkssa.focused {

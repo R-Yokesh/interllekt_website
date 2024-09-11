@@ -94,8 +94,8 @@ a {
 }
 
 .common-class {
-  margin-top: 6%;
-  margin-bottom: 6%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .res-section h1 {
@@ -116,13 +116,13 @@ a {
   margin-top: 0 !important;
   margin-bottom: 3% !important;
   font-size: 2rem !important;
-  text-align: justify;
+  text-align: left;
 }
 
 
 .res-commoncard {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  /* margin-top: 10%; */
+  /* margin-bottom: 10%; */
 }
 
 .padding-sec {

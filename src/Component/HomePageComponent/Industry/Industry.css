@@ -1,6 +1,6 @@
 .industry-sec {
-    margin-bottom: 12%;
-    margin-top: 12%;
+    /* margin-bottom: 12%; */
+    /* margin-top: 12%; */
 }
 
 .industry h1 {
@@ -46,10 +46,41 @@
     .industry-row {
         flex-direction: column;
         gap: 10px;
-        padding-left: 0;
+        padding-left: unset !important;
     }
 
     .industry-content p {
         width: 100%;
+    }
+}
+
+/* Responsive for all screen sizes */
+@media screen and (max-width: 1024px) {
+    .industry-row {
+        gap: 20px;
+    }
+
+    .industry-content p {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .industry-row {
+        flex-direction: column;
+        align-items: center; 
+        gap: 15px;
+        padding-left: unset !important;
+    }
+
+    .industry-content p {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .industry h1 {
+        font-size: 2.5rem; 
     }
 }

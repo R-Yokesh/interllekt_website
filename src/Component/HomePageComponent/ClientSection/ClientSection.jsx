@@ -27,8 +27,8 @@ function ClientSection() {
     };
 
     return (
-        <div className='client-main'>
-            <h1 className='client-head'>Clients</h1>
+        <div className='client-main common-class'>
+            <h1 className='client-head'>Partners</h1>
             <Slider {...FeatureSettings}>
 
                 {clientLogo.map((item, i) => (

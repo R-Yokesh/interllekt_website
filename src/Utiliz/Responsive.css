@@ -160,7 +160,7 @@
         /* display: none !important; */
         height: 50vh !important;
         width: 60% !important;
-        left: auto !important;
+        left: 110px !important;
         top: 30px !important;
     }
 
@@ -283,9 +283,10 @@
     }
 
     .scroll-reveal-text p span {
-        letter-spacing: normal !important;
-        line-height: 33px !important;
-        font-weight: 500 !important;
+        font-size: 16px !important;
+        /* letter-spacing: normal !important; */
+        line-height: 20px !important;
+        /* font-weight: 500 !important; */
     }
 
     .scroll-reveal-text p {
@@ -618,6 +619,7 @@
 }
 
 @media (min-width: 290px) and (max-width: 398px) {
+   
     .tab-container {
         background-color: unset !important;
     }
@@ -667,9 +669,10 @@
     }
 
     .scroll-reveal-text p span {
-        letter-spacing: normal !important;
-        line-height: 33px !important;
-        font-weight: 500 !important;
+        font-size: 16px !important;
+        /* letter-spacing: normal !important; */
+        line-height: 20px !important;
+        /* font-weight: 500 !important; */
     }
 
     .scroll-reveal-text p {
@@ -807,7 +810,7 @@
     }
 
     .res-section p {
-        font-size: 26px !important;
+        font-size: 16px !important;
         text-align: unset !important;
     }
 
@@ -821,7 +824,7 @@
     }
 
     .contact-form h2 {
-        font-size: 3em !important;
+        font-size: 2em !important;
     }
 
     section.a {
@@ -843,7 +846,7 @@
     }
 
     .para p {
-        font-size: 24px !important;
+        font-size: 14px !important;
         margin-top: 7%;
     }
 
@@ -863,8 +866,8 @@
 
     /* ////sceondhead */
     .heading-style-h1 {
-        font-size: 3rem !important;
-        margin-top: 50% !important;
+        font-size: 3.5rem !important;
+        margin-top: 35% !important;
     }
 
     .heading-style-h1,
@@ -879,6 +882,9 @@
     }
 
     /* //tabss */
+    .tab-nav {
+        background-color: var(--white) !important;
+    }
     .tab-link {
         font-size: 14px !important;
     }
@@ -897,7 +903,7 @@
 
     /* ///secton2 */
     .section2-body .line1 {
-        font-size: 32px !important;
+        font-size: 24px !important;
     }
 
     .section2-body {
@@ -971,7 +977,7 @@
     }
 
     .res-section h1 {
-        font-size: 2rem !important;
+        font-size: 24px !important;
     }
 
     .footer-left {
