@@ -16,7 +16,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="custom-footer padding-sec">
+    // <footer className="custom-footer padding-sec">
+    <footer className="custom-footer padding-sec" >
+
       <div className="c-layout is-foter row">
         <div className="footer-let col-lg-3 col-md-3 col-sm-12 pl-0">
           <img src={Assets.WhiteLogo} alt="Logo" style={{ width: '' }} />

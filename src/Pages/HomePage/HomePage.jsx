@@ -29,7 +29,7 @@ const HomePage = () => {
         <CardContent />
       </div>
       <div className='industry container-fluid px-0'>
-        <Industry />
+        {/* <Industry /> */}
       </div>
       <div className='slide-sec common-class'>
         <ClientSection />

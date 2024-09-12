@@ -49,12 +49,12 @@
 }
 
 .mega-heading {
-    width: 1100px;
-    margin-left: -550px;
+    width: 2000px;
+    margin-left: 0px;
     line-height: 1em;
     transition: all .2s;
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
 }
 
 .target-circle {
