@@ -189,6 +189,7 @@
   background: none;
   outline: none;
   font-weight: 700;
+  font-style: italic;
   transition: border-bottom 0.3s;
 }
 
