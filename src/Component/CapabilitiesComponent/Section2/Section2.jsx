@@ -7,7 +7,7 @@ const Section2 = () => {
     <div className="section2-container container-fluid padding-sec common-class">
       {/* <TabSection /> */}
       <div className="section2-body res-section ">
-        <h3>Concept & Design</h3>
+        <h3>Concept and Design</h3>
         <p>
           A visionary creative network striving to craft sublime communication
           through design, pushing boundaries, we boldly explore new horizons,
