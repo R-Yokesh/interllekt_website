@@ -2,77 +2,109 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  margin-top: 30px;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff
-}
-
-.cap-animation {
-  width: 40%;
-  height: 60%;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  left: 15%;
+  background-color: #fff;
+  margin-top: 50px; /* Adjust margin-top as per your need */
 }
 
 .cap-parallax-image {
   position: absolute;
-  /* width: auto;
-  height: auto; */
-  max-width: none;
-  transition: all 3s ease-out;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
   opacity: 0;
 }
 
-.cap-parallax-container.animate .top-left-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.cap-parallax-container.animate .bottom-right-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.cap-parallax-container.animate .icon-image {
-  transform: translateX(0) translateY(-50%);
-  opacity: 1;
-}
-
-.cap-parallax-container.animate .cap-text-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
+/* Initial positions of the images */
 .top-left-image {
-  top: 0;
-  left: 0;
   transform: translateX(-100%) translateY(-100%);
-  width: 90%;
+  width: 135%; /* Adjust size as needed */
+}
+
+.top-right-image {
+  transform: translateX(100%) translateY(-100%);
+  width: 135%; /* Adjust size as needed */
+}
+
+.bottom-left-image {
+  transform: translateX(-100%) translateY(100%);
+  width: 135%; /* Adjust size as needed */
 }
 
 .bottom-right-image {
-  top: 25%;
-  bottom: 0;
-  right: 0;
   transform: translateX(100%) translateY(100%);
-  width: 70%;
+  width: 135%; /* Adjust size as needed */
 }
 
-.icon-image {
-  top: 50%;
-  left: 0px;
-  transform: translateX(-50%) translateY(-100%);
-  /* width: 80%; */
-  right: 0px;
-  margin: 0 auto;
-  transform: translateY(-50%);
-  /* width: 80%; */
+/* Scroll down animation - Images join to the center */
+.cap-parallax-container.down .top-left-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
 }
 
-.cap-text-image {
-  bottom: 2%;
-  left: 10%;
-  transform: translateY(100%);
-  width: 50%;
+.cap-parallax-container.down .top-right-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.down .bottom-left-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.down .bottom-right-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+
+.cap-parallax-container.down .humanoid-image {
+  opacity: 1;
+}
+
+/* Scroll up animation */
+.cap-parallax-container.up .top-left-image {
+  transform: translateX(-10%) translateY(-10%);
+  opacity: 1;
+}
+
+.cap-parallax-container.up .top-right-image {
+  transform: translateX(10%) translateY(-10%);
+  opacity: 1;
+}
+
+.cap-parallax-container.up .bottom-left-image {
+  transform: translateX(-10%) translateY(10%);
+  opacity: 1;
+}
+
+.cap-parallax-container.up .bottom-right-image {
+  transform: translateX(10%) translateY(10%);
+  opacity: 1;
+}
+
+.cap-parallax-container.up .humanoid-image {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .cap-parallax-image {
+    width: 90%;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .cap-parallax-image {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .cap-parallax-image {
+    width: 100%;
+    height: 70vh;
+  }
 }
