@@ -17,8 +17,8 @@ import Industry from '../../Component/HomePageComponent/Industry/Industry'
 const HomePage = () => {
   return (
     <div>
-      <AnimationVideo />
-      {/* <AnimationBanner /> */}
+      {/* <AnimationVideo /> */}
+      <AnimationBanner />
       {/* <ArrowAni/> */}
       <div className='container-fluid px-0'>
         <TestAnimation />
