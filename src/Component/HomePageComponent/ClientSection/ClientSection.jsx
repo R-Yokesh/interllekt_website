@@ -27,7 +27,7 @@ function ClientSection() {
     };
 
     return (
-        <div className='client-main'>
+        <div className='client-main' style={{overflow: 'hidden' , height:'50vh'}}>
             <h1 className='client-head'>Partners</h1>
             <Slider {...FeatureSettings}>
 
