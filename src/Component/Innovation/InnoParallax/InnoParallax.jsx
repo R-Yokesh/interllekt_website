@@ -1,16 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import './InnoParallax.css';
-import leftImage from '../../../Assets/Images/left.png';
-import rightImage from '../../../Assets/Images/right.png';
-import bottomImage from '../../../Assets/Images/bottom.png';
-import Assets from '../../../Assets/Assets';
+import React, { useEffect, useState } from "react";
+import "./InnoParallax.css";
+import leftImage from '../../../Assets/Images/card/i1.png';   // Blue square
+import rightImage from '../../../Assets/Images/card/i2.png';  // Red square
+import iconImage from '../../../Assets/Images/card/i3.png';   // Yellow square
+import textImage from '../../../Assets/Images/card/i4.png';   // Green square
 
-const InnoParallax = ({ marginSec }) => {
+
+const InnoParallax = () => {
+  const [scrollDirection, setScrollDirection] = useState('down');
+
   useEffect(() => {
-    const handleScroll = () => {
-      const section = document.querySelector('.parallax-container');
-      const rect = section.getBoundingClientRect();
+    let lastScrollTop = 0;
 
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+      if (currentScrollTop > lastScrollTop) {
+        setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
+      }
+      lastScrollTop = currentScrollTop;
+
+      const section = document.querySelector('.cap-parallax-container');
+      const rect = section.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom >= 0) {
         section.classList.add('animate');
       } else {
@@ -19,63 +31,19 @@ const InnoParallax = ({ marginSec }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const innovateOrder = [2, 0, 1, 3];
-  const [activeImageIndex2, setActiveImageIndex2] = useState(-1);
-  const [isLooping2, setIsLooping2] = useState(false);
-
-
-  // Opacity function for renderMasonryGrid2
-  useEffect(() => {
-    let timer;
-    if (!isLooping2) {
-      timer = setTimeout(() => {
-        setActiveImageIndex2((prevIndex) => {
-          if (prevIndex === -1) {
-            return 0;
-          } else {
-            return (prevIndex + 1) % innovateOrder.length;
-          }
-        });
-      }, 700);
-    } else {
-      timer = setTimeout(() => {
-        setIsLooping2(false);
-        setActiveImageIndex2(-1);
-      }, 1000);
-    }
-
-    if (activeImageIndex2 === innovateOrder.length - 1) {
-      setIsLooping2(true);
-    }
-
-    return () => clearTimeout(timer);
-  }, [activeImageIndex2, isLooping2]);
-
   return (
-    <div className={marginSec == 'false' ? "parallax-container" : "parallax-container margin-added"}>
-      <div className='innovation-animation'>
-        <div className="brandMasonry eq-3">
-          {[Assets.sp2, Assets.sp3, Assets.sp1, Assets.sp4].map((image, index) => (
-            <div
-              key={index}
-              className="col"
-              style={{
-                backgroundImage: `url(${image})`,
-                opacity: innovateOrder.indexOf(index) <= activeImageIndex2 ? 1 : 0,
-                transition: 'opacity 1s ease-in-out',
-              }}
-            ></div>
-          ))}
-        </div>
-      </div>
-      {/* <img src={leftImage} alt="Left" className="parallax-image left-image" />
-      <img src={rightImage} alt="Right" className="parallax-image right-image" /> */}
-      {/* <img src={bottomImage} alt="Bottom" className="parallax-image bottom-image" /> */}
+    <div className={`i-parallax-container ${scrollDirection}`}>
+      <img src={leftImage} alt="Left" className="i-parallax-image itop-left-image" />
+      <img src={rightImage} alt="Right" className="i-parallax-image itop-right-image" />
+      <img src={iconImage} alt="Icon" className="i-parallax-image ibottom-left-image" />
+      <img src={textImage} alt="Text" className="i-parallax-image ibottom-right-image" />
     </div>
   );
 };

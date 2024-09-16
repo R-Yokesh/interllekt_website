@@ -1,60 +1,110 @@
-.parallax-container {
+.i-parallax-container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  /* left: 15%; */
+  background-color: #fff;
+  margin-top: 50px; /* Adjust margin-top as per your need */
 }
 
-.innovation-animation {
-  width: 50%;
-  height: 70%;
-}
-
-.innovation-animation .brandMasonry {
-  grid-gap: 2.3px;
-}
-
-.parallax-image {
+.i-parallax-image {
   position: absolute;
-  width: 80%;
-  height: auto;
-  max-width: none;
-  transition: transform 3.5s ease-out, opacity 1.5s ease-out;
+  transition: transform 3s ease-out, opacity 2s ease-out;
   opacity: 0;
-  /* Ensure the images are hidden initially */
 }
 
-.parallax-container.animate .left-image {
-  transform: translateX(0);
-  /* Image moves into view */
+/* Initial positions of the images */
+.itop-left-image {
+  transform: translateX(-100%) translateY(-100%);
+  width: 170%; /* Adjust size as needed */
+}
+
+.itop-right-image {
+  transform: translateX(100%) translateY(-100%);
+  width: 170%; /* Adjust size as needed */
+}
+
+.ibottom-left-image {
+  transform: translateX(-100%) translateY(100%);
+  width: 170%; /* Adjust size as needed */
+}
+
+.ibottom-right-image {
+  transform: translateX(100%) translateY(100%);
+  width: 170%; /* Adjust size as needed */
+}
+
+/* Scroll down animation - Images join to the center */
+.i-parallax-container.down .itop-left-image {
+  transform: translateX(0) translateY(0);
   opacity: 1;
-  /* Image fades in */
 }
 
-.parallax-container.animate .right-image {
-  transform: translateX(0);
+.i-parallax-container.down .itop-right-image {
+  transform: translateX(0) translateY(0);
   opacity: 1;
 }
 
-.parallax-container.animate .bottom-image {
-  transform: translateY(0);
+.i-parallax-container.down .ibottom-left-image {
+  transform: translateX(0) translateY(0);
   opacity: 1;
 }
 
-.left-image {
-  transform: translateX(-30%);
-  /* Starting position off-screen to the left */
+.i-parallax-container.down .ibottom-right-image {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
 }
 
-.right-image {
-  transform: translateX(30%);
-  /* Starting position off-screen to the right */
+.i-parallax-container.down .ihumanoid-image {
+  opacity: 1;
 }
 
-.bottom-image {
-  transform: translateY(30%);
-  /* Starting position off-screen to the bottom */
+/* Scroll up animation */
+.i-parallax-container.up .itop-left-image {
+  transform: translateX(-10%) translateY(-10%);
+  opacity: 1;
+}
+
+.i-parallax-container.up .itop-right-image {
+  transform: translateX(10%) translateY(-10%);
+  opacity: 1;
+}
+
+.i-parallax-container.up .ibottom-left-image {
+  transform: translateX(-10%) translateY(10%);
+  opacity: 1;
+}
+
+.i-parallax-container.up .ibottom-right-image {
+  transform: translateX(10%) translateY(10%);
+  opacity: 1;
+}
+
+.i-parallax-container.up .ihumanoid-image {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .i-parallax-image {
+    width: 90%;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .i-parallax-image {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .i-parallax-image {
+    width: 100%;
+    height: 70vh;
+  }
 }

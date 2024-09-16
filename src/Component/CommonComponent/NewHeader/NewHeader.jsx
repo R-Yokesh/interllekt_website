@@ -122,7 +122,7 @@ const NewHeader = () => {
               <p>WHAT WE DO</p>
               <ul>
                 <li>
-                  <Link to="/capabilities">Capabilities</Link>
+                  <Link to="/capabilities">Concept and Design</Link>
                 </li>
                 <li>
                   <Link to="/innovation">Innovation</Link>

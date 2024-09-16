@@ -54,7 +54,7 @@ const TabSection = () => {
               className={`tab-link ${activeTab === 'capabilities' ? 'active' : ''}`}
               onClick={() => scrollToSection('capabilities')}
             >
-              Capabilities
+              Concept and Design
             </a>
           </li>
           <li className="tab-item">

@@ -1,16 +1,28 @@
 import React, { useEffect, useState } from "react";
 import "./BParallax.css";
-import topImage from '../../../Assets/Images/building.png';
-import bottomImage from '../../../Assets/Images/hands.png';
-import textImage from '../../../Assets/Images/text.png';
-import Assets from "../../../Assets/Assets";
+import leftImage from '../../../Assets/Images/card/b1.png';   // Blue square
+import rightImage from '../../../Assets/Images/card/b2.png';  // Red square
+import iconImage  from '../../../Assets/Images/card/b3.png';   // Yellow square
+import textImage from '../../../Assets/Images/card/b4.png';   // Green square
 
-const BParallax = ({ marginSec }) => {
+
+const BParallax = () => {
+  const [scrollDirection, setScrollDirection] = useState('down');
+
   useEffect(() => {
-    const handleScroll = () => {
-      const section = document.querySelector('.b-parallax-container');
-      const rect = section.getBoundingClientRect();
+    let lastScrollTop = 0;
 
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+      if (currentScrollTop > lastScrollTop) {
+        setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
+      }
+      lastScrollTop = currentScrollTop;
+
+      const section = document.querySelector('.cap-parallax-container');
+      const rect = section.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom >= 0) {
         section.classList.add('animate');
       } else {
@@ -19,62 +31,19 @@ const BParallax = ({ marginSec }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const businessOrder = [3, 1, 0, 2];
-  const [activeImageIndex3, setActiveImageIndex3] = useState(-1);
-  const [isLooping3, setIsLooping3] = useState(false);
-
-  // Opacity function for renderMasonryGrid3
-  useEffect(() => {
-    let timer;
-    if (!isLooping3) {
-      timer = setTimeout(() => {
-        setActiveImageIndex3((prevIndex) => {
-          if (prevIndex === -1) {
-            return 0;
-          } else {
-            return (prevIndex + 1) % businessOrder.length;
-          }
-        });
-      }, 700);
-    } else {
-      timer = setTimeout(() => {
-        setIsLooping3(false);
-        setActiveImageIndex3(-1);
-      }, 1000);
-    }
-
-    if (activeImageIndex3 === businessOrder.length - 1) {
-      setIsLooping3(true);
-    }
-
-    return () => clearTimeout(timer);
-  }, [activeImageIndex3, isLooping3]);
-
   return (
-    <div className={marginSec == 'false' ? 'b-parallax-container' : 'b-parallax-container margin-added'}>
-      <div className="busines-animation">
-        <div className="brandMasonry eq-2">
-          {[Assets.na3, Assets.na2, Assets.na4, Assets.na1].map((image, index) => (
-            <div
-              key={index}
-              className="col"
-              style={{
-                backgroundImage: `url(${image})`,
-                opacity: businessOrder.indexOf(index) <= activeImageIndex3 ? 1 : 0,
-                transition: 'opacity 1s ease-in-out',
-              }}
-            ></div>
-          ))}
-        </div>
-      </div>
-      {/* <img src={topImage} alt="Building" className="b-parallax-image top-image" />
-      <img src={bottomImage} alt="Hands" className="b-parallax-image bottom-image" /> */}
-      {/* <img src={textImage} alt="Text" className="b-parallax-image text-image" /> */}
+    <div className={`b-parallax-container ${scrollDirection}`}>
+      <img src={leftImage} alt="Left" className="b-parallax-image btop-left-image" />
+      <img src={rightImage} alt="Right" className="b-parallax-image btop-right-image" />
+      <img src={iconImage} alt="Icon" className="b-parallax-image bbottom-left-image" />
+      <img src={textImage} alt="Text" className="b-parallax-image bbottom-right-image" />
     </div>
   );
 };
