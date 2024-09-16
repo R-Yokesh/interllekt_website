@@ -256,7 +256,7 @@ const CardContent = () => {
             <div className="capclass col-lg-6 px-0">
               <div className={`linkssa ${focusedCard === 'Capabilities' ? 'focused' : ''}`}>
                 <Link to="/capabilities" className={`card ${focusedCard === 'Capabilities' ? 'focused' : ''}`} data-card="Capabilities">
-                  <div><h1>Capabilities</h1></div>
+                  <div><h1>Concept <br/>and Design</h1></div>
                 </Link>
                 <div className="dop">
                   {focusedCard === 'Capabilities' && getMasonryGrid()}
@@ -266,7 +266,7 @@ const CardContent = () => {
             <div className="col-lg-6">
               {focusedCard === 'Capabilities' && (
                 <div className="c-content cap-content">
-                  <h2>Capabilities</h2>
+                  <h2>Concept and Design</h2>
                   <p className='builn'>With visionary ideas and meticulous craftsmanship, we help design amazing experiences.</p>
                 </div>
               )}
