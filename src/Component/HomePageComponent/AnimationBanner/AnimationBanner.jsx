@@ -9,13 +9,17 @@ const AnimationBanner = () => {
   const [circleToSquare, setCircleToSquare] = useState(false);
   const [allCirclesAligned, setAllCirclesAligned] = useState(false);
   const [circlesHidden, setCirclesHidden] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0); // State to track current playback time
-
+  const [currentTime, setCurrentTime] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState('down'); // Track scroll direction
   const bannerRef = useRef(null);
+  let lastScrollY = window.scrollY; // Initial scroll position
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
+      const isScrollingDown = scrollY > lastScrollY;
+      setScrollDirection(isScrollingDown ? 'down' : 'up');
+      lastScrollY = scrollY;
 
       if (bannerRef.current) {
         const bannerPosition = bannerRef.current.getBoundingClientRect();
@@ -57,25 +61,28 @@ const AnimationBanner = () => {
 
           if (scrollY > 500) {
             setCircleToSquare(true);
+          } else if (scrollDirection === 'up') {
+            setCircleToSquare(false);
           }
 
           if (scrollY > 1000) {
             setAllCirclesAligned(true);
             setCirclesHidden(true);
-          }
-
-          if (scrollY <= 1000) {
+          } else if (scrollDirection === 'up') {
+            setAllCirclesAligned(false);
             setCirclesHidden(false);
           }
 
           if (scrollY <= 500) {
-            setCircleToSquare(false);
-            setAllCirclesAligned(false);
             setPlayVideo(false);
           }
 
-          if (allCirclesAligned && !playVideo) {
+          if (allCirclesAligned && !playVideo && scrollDirection === 'down') {
             setPlayVideo(true);
+          }
+
+          if (scrollDirection === 'up' && scrollY < 1000) {
+            setPlayVideo(false); // Pause or reset video when scrolling up
           }
         }
       }
@@ -85,10 +92,10 @@ const AnimationBanner = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [playVideo, circleToSquare, allCirclesAligned]);
+  }, [playVideo, circleToSquare, allCirclesAligned, scrollDirection]);
 
   const handlePause = (event) => {
-    setCurrentTime(event.target.currentTime); // Update current time when video is paused
+    setCurrentTime(event.target.currentTime);
   };
 
   return (
