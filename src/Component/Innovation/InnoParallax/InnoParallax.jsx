@@ -1,37 +1,30 @@
 import React, { useEffect, useState } from "react";
 import "./InnoParallax.css";
-import leftImage from '../../../Assets/Images/card/i1.png';   // Blue square
-import rightImage from '../../../Assets/Images/card/i2.png';  // Red square
-import iconImage from '../../../Assets/Images/card/i3.png';   // Yellow square
-import textImage from '../../../Assets/Images/card/i4.png';   // Green square
-
+import leftImage from '../../../Assets/Images/card/i1.png';
+import rightImage from '../../../Assets/Images/card/i2.png';
+import iconImage from '../../../Assets/Images/card/i3.png';
+import textImage from '../../../Assets/Images/card/i4.png';
 
 const InnoParallax = () => {
-  const [scrollDirection, setScrollDirection] = useState('down');
+  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    let lastScrollTop = 0;
-
     const handleScroll = () => {
-      const currentScrollTop = window.scrollY;
-      if (currentScrollTop > lastScrollTop) {
-        setScrollDirection('down');
-      } else {
-        setScrollDirection('up');
-      }
-      lastScrollTop = currentScrollTop;
-
-      const section = document.querySelector('.cap-parallax-container');
+      const section = document.querySelector('.i-parallax-container');
       const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        section.classList.add('animate');
+
+      // Check if section is halfway into the viewport
+      const halfwayVisible = rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5;
+
+      if (halfwayVisible) {
+        setIsInView(true);
       } else {
-        section.classList.remove('animate');
+        setIsInView(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    handleScroll(); // To check on initial render
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -39,7 +32,7 @@ const InnoParallax = () => {
   }, []);
 
   return (
-    <div className={`i-parallax-container ${scrollDirection}`}>
+    <div className={`i-parallax-container ${isInView ? 'animate' : ''}`}>
       <img src={leftImage} alt="Left" className="i-parallax-image itop-left-image" />
       <img src={rightImage} alt="Right" className="i-parallax-image itop-right-image" />
       <img src={iconImage} alt="Icon" className="i-parallax-image ibottom-left-image" />

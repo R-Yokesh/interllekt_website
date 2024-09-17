@@ -4,87 +4,46 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
+  justify-content: center;
+  align-items: center;
   /* left: 15%; */
   background-color: #fff;
-  margin-top: 50px; /* Adjust margin-top as per your need */
+  margin-top: 50px;
 }
 
 .i-parallax-image {
   position: absolute;
-  transition: transform 3s ease-out, opacity 2s ease-out;
+  transition: transform 2s ease-out, opacity 2s ease-out;
   opacity: 0;
 }
 
 /* Initial positions of the images */
 .itop-left-image {
   transform: translateX(-100%) translateY(-100%);
-  width: 170%; /* Adjust size as needed */
+  width: 170%;
 }
 
 .itop-right-image {
   transform: translateX(100%) translateY(-100%);
-  width: 170%; /* Adjust size as needed */
+  width: 170%;
 }
 
 .ibottom-left-image {
   transform: translateX(-100%) translateY(100%);
-  width: 170%; /* Adjust size as needed */
+  width: 170%;
 }
 
 .ibottom-right-image {
   transform: translateX(100%) translateY(100%);
-  width: 170%; /* Adjust size as needed */
+  width: 170%;
 }
 
-/* Scroll down animation - Images join to the center */
-.i-parallax-container.down .itop-left-image {
+/* Trigger animation when the section is in view */
+.i-parallax-container.animate .itop-left-image,
+.i-parallax-container.animate .itop-right-image,
+.i-parallax-container.animate .ibottom-left-image,
+.i-parallax-container.animate .ibottom-right-image {
   transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.i-parallax-container.down .itop-right-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.i-parallax-container.down .ibottom-left-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.i-parallax-container.down .ibottom-right-image {
-  transform: translateX(0) translateY(0);
-  opacity: 1;
-}
-
-.i-parallax-container.down .ihumanoid-image {
-  opacity: 1;
-}
-
-/* Scroll up animation */
-.i-parallax-container.up .itop-left-image {
-  transform: translateX(-10%) translateY(-10%);
-  opacity: 1;
-}
-
-.i-parallax-container.up .itop-right-image {
-  transform: translateX(10%) translateY(-10%);
-  opacity: 1;
-}
-
-.i-parallax-container.up .ibottom-left-image {
-  transform: translateX(-10%) translateY(10%);
-  opacity: 1;
-}
-
-.i-parallax-container.up .ibottom-right-image {
-  transform: translateX(10%) translateY(10%);
-  opacity: 1;
-}
-
-.i-parallax-container.up .ihumanoid-image {
   opacity: 1;
 }
 
@@ -97,8 +56,8 @@
 
 @media (max-width: 768px) {
   .i-parallax-image {
-    width: 100%;
-    height: 80vh;
+    width: 100% !important;
+    height: 50vh !important;
   }
 }
 

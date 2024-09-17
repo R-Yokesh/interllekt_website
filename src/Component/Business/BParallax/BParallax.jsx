@@ -1,32 +1,25 @@
 import React, { useEffect, useState } from "react";
 import "./BParallax.css";
-import leftImage from '../../../Assets/Images/card/b1.png';   // Blue square
-import rightImage from '../../../Assets/Images/card/b2.png';  // Red square
-import iconImage  from '../../../Assets/Images/card/b3.png';   // Yellow square
-import textImage from '../../../Assets/Images/card/b4.png';   // Green square
-
+import leftImage from '../../../Assets/Images/card/b1.png';
+import rightImage from '../../../Assets/Images/card/b2.png';
+import iconImage from '../../../Assets/Images/card/b3.png';
+import textImage from '../../../Assets/Images/card/b4.png';
 
 const BParallax = () => {
-  const [scrollDirection, setScrollDirection] = useState('down');
+  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    let lastScrollTop = 0;
-
     const handleScroll = () => {
-      const currentScrollTop = window.scrollY;
-      if (currentScrollTop > lastScrollTop) {
-        setScrollDirection('down');
-      } else {
-        setScrollDirection('up');
-      }
-      lastScrollTop = currentScrollTop;
-
-      const section = document.querySelector('.cap-parallax-container');
+      const section = document.querySelector('.b-parallax-container');
       const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        section.classList.add('animate');
+
+      // Check if section is halfway into the viewport
+      const halfwayVisible = rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5;
+
+      if (halfwayVisible) {
+        setIsInView(true);
       } else {
-        section.classList.remove('animate');
+        setIsInView(false);
       }
     };
 
@@ -39,7 +32,7 @@ const BParallax = () => {
   }, []);
 
   return (
-    <div className={`b-parallax-container ${scrollDirection}`}>
+    <div className={`b-parallax-container ${isInView ? 'animate' : ''}`}>
       <img src={leftImage} alt="Left" className="b-parallax-image btop-left-image" />
       <img src={rightImage} alt="Right" className="b-parallax-image btop-right-image" />
       <img src={iconImage} alt="Icon" className="b-parallax-image bbottom-left-image" />

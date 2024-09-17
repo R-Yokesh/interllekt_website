@@ -1,36 +1,31 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './AnimationVideo.css';
 import video from '../../../Assets/WebsiteVideo.webm';
 
-const AnimationVideo = () => {
+const AnimationVideo = ({ play, currentTime }) => {
   const videoRef = useRef(null);
 
   useEffect(() => {
     const videoElement = videoRef.current;
 
-    const handlePlayPause = (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          videoElement.currentTime = 0;
-          videoElement.play();
-          videoElement.classList.remove('paused');
-        } else {
-          videoElement.pause();
-          videoElement.classList.add('paused');
-        }
-      });
-    };
+    if (videoElement) {
+      if (play) {
+        videoElement.play();
+        videoElement.classList.remove('paused');
+      } else {
+        videoElement.pause();
+        videoElement.classList.add('paused');
+      }
+    }
+  }, [play]);
 
-    const observer = new IntersectionObserver(handlePlayPause, {
-      threshold: 0.5,
-    });
+  useEffect(() => {
+    const videoElement = videoRef.current;
 
-    observer.observe(videoElement);
-
-    return () => {
-      observer.unobserve(videoElement);
-    };
-  }, []);
+    if (videoElement && currentTime !== undefined) {
+      videoElement.currentTime = currentTime;
+    }
+  }, [currentTime]);
 
   return (
     <div id="animation-video" className="video-container">

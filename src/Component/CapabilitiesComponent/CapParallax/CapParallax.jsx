@@ -1,37 +1,30 @@
 import React, { useEffect, useState } from "react";
 import "./CapParallax.css";
-import leftImage from '../../../Assets/Images/card/c1.png';   // Blue square
-import rightImage from '../../../Assets/Images/card/c2.png';  // Red square
-import textImage from '../../../Assets/Images/card/c3.png';   // Yellow square
-import iconImage from '../../../Assets/Images/card/c4.png';   // Green square
-
+import leftImage from '../../../Assets/Images/card/c1.png';
+import rightImage from '../../../Assets/Images/card/c2.png';
+import textImage from '../../../Assets/Images/card/c3.png';
+import iconImage from '../../../Assets/Images/card/c4.png';
 
 const CapParallax = () => {
-  const [scrollDirection, setScrollDirection] = useState('down');
+  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    let lastScrollTop = 0;
-
     const handleScroll = () => {
-      const currentScrollTop = window.scrollY;
-      if (currentScrollTop > lastScrollTop) {
-        setScrollDirection('down');
-      } else {
-        setScrollDirection('up');
-      }
-      lastScrollTop = currentScrollTop;
-
       const section = document.querySelector('.cap-parallax-container');
       const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        section.classList.add('animate');
+
+      // Check if section is halfway into the viewport
+      const halfwayVisible = rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5;
+
+      if (halfwayVisible) {
+        setIsInView(true);
       } else {
-        section.classList.remove('animate');
+        setIsInView(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    handleScroll(); // To check on initial render
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -39,7 +32,7 @@ const CapParallax = () => {
   }, []);
 
   return (
-    <div className={`cap-parallax-container ${scrollDirection}`}>
+    <div className={`cap-parallax-container ${isInView ? 'animate' : ''}`}>
       <img src={leftImage} alt="Left" className="cap-parallax-image top-left-image" />
       <img src={rightImage} alt="Right" className="cap-parallax-image top-right-image" />
       <img src={iconImage} alt="Icon" className="cap-parallax-image bottom-left-image" />

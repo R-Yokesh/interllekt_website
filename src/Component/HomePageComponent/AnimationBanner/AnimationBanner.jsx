@@ -5,30 +5,28 @@ import AnimationVideo from '../AnimationVideo/AnimationVideo';
 const AnimationBanner = () => {
   const overlineRef = useRef(null);
   const megaHeadingRefs = useRef([]);
-  const [playVideo, setPlayVideo] = useState(false); // State to control video playback
-  const [circleToSquare, setCircleToSquare] = useState(false); // State to control circle-to-square animation
-  const [allCirclesAligned, setAllCirclesAligned] = useState(false); // State to check circle alignment
-  const [circlesHidden, setCirclesHidden] = useState(false); // State to hide circles after alignment
+  const [playVideo, setPlayVideo] = useState(false);
+  const [circleToSquare, setCircleToSquare] = useState(false);
+  const [allCirclesAligned, setAllCirclesAligned] = useState(false);
+  const [circlesHidden, setCirclesHidden] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0); // State to track current playback time
 
-  const bannerRef = useRef(null); // Reference to the entire component
+  const bannerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
       if (bannerRef.current) {
-        const bannerPosition = bannerRef.current.getBoundingClientRect(); // Get component position
+        const bannerPosition = bannerRef.current.getBoundingClientRect();
 
-        // Only trigger disappearance if the banner is still in view
         if (bannerPosition.top < window.innerHeight && bannerPosition.bottom > 0) {
-          // Overline rotation
           if (overlineRef.current) {
             const maxOverlineRotation = -36.032;
             const overlineRotation = Math.max(0 - scrollY * 0.02, maxOverlineRotation);
             overlineRef.current.style.transform = `translate3d(0px, ${99.372 + Math.min(scrollY, 508) * 0.05}%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${overlineRotation}deg) skew(0deg, 0deg)`;
           }
 
-          // Mega headings rotation
           const rotations = [0.0036, -0.00288, 0.00288, -0.0036];
           megaHeadingRefs.current.forEach((ref, index) => {
             if (ref) {
@@ -57,31 +55,27 @@ const AnimationBanner = () => {
             }
           });
 
-          // Handle scroll down
           if (scrollY > 500) {
-            setCircleToSquare(true); // Transform circles to squares
+            setCircleToSquare(true);
           }
 
-          // Handle when circles are aligned
           if (scrollY > 1000) {
-            setAllCirclesAligned(true); // Circles are aligned
-            setCirclesHidden(true); // Hide circles
+            setAllCirclesAligned(true);
+            setCirclesHidden(true);
           }
 
-          // Handle scroll back
           if (scrollY <= 1000) {
-            setCirclesHidden(false); // Show circles again
+            setCirclesHidden(false);
           }
 
           if (scrollY <= 500) {
-            setCircleToSquare(false); // Transform squares back to circles
-            setAllCirclesAligned(false); // Reset alignment state
-            setPlayVideo(false); // Stop video when scrolling back
+            setCircleToSquare(false);
+            setAllCirclesAligned(false);
+            setPlayVideo(false);
           }
 
-          // Play video after alignment
           if (allCirclesAligned && !playVideo) {
-            setPlayVideo(true); // Play video when aligned
+            setPlayVideo(true);
           }
         }
       }
@@ -93,6 +87,10 @@ const AnimationBanner = () => {
     };
   }, [playVideo, circleToSquare, allCirclesAligned]);
 
+  const handlePause = (event) => {
+    setCurrentTime(event.target.currentTime); // Update current time when video is paused
+  };
+
   return (
     <div className="mono-track" ref={bannerRef}>
       <div className="scroll-path target-puzzle">
@@ -103,14 +101,14 @@ const AnimationBanner = () => {
 
           <div className="mega-wrap">
             <div className="mega-heading _1" ref={(el) => (megaHeadingRefs.current[0] = el)}>
-              {allCirclesAligned && <AnimationVideo play={playVideo} />} {/* Play video only when aligned */}
+              {allCirclesAligned && <AnimationVideo play={playVideo} currentTime={currentTime} />}
             </div>
           </div>
 
           <div className={`target-circle ${circleToSquare ? 'square' : ''} ${circlesHidden ? 'hidden' : ''}`}>
             <div className="mega-wrap">
               <div className="mega-heading _2" ref={(el) => (megaHeadingRefs.current[1] = el)}>
-                <AnimationVideo play={playVideo} />
+                <AnimationVideo play={playVideo} currentTime={currentTime} />
               </div>
             </div>
             <div className="target-glare"></div>
@@ -119,7 +117,7 @@ const AnimationBanner = () => {
           <div className={`target-circle md ${circleToSquare ? 'square' : ''} ${circlesHidden ? 'hidden' : ''}`}>
             <div className="mega-wrap">
               <div className="mega-heading _3" ref={(el) => (megaHeadingRefs.current[2] = el)}>
-                <AnimationVideo play={playVideo} />
+                <AnimationVideo play={playVideo} currentTime={currentTime} />
               </div>
             </div>
             <div className="target-glare"></div>
@@ -128,7 +126,7 @@ const AnimationBanner = () => {
           <div className={`target-circle sm ${circleToSquare ? 'square' : ''} ${circlesHidden ? 'hidden' : ''}`}>
             <div className="mega-wrap">
               <div className="mega-heading _4" ref={(el) => (megaHeadingRefs.current[3] = el)}>
-                <AnimationVideo play={playVideo} />
+                <AnimationVideo play={playVideo} currentTime={currentTime} />
               </div>
             </div>
             <div className="target-glare"></div>
@@ -137,7 +135,7 @@ const AnimationBanner = () => {
           <div className={`target-circle xs ${circleToSquare ? 'square' : ''} ${circlesHidden ? 'hidden' : ''}`}>
             <div className="mega-wrap">
               <div className="mega-heading _5" ref={(el) => (megaHeadingRefs.current[4] = el)}>
-                <AnimationVideo play={playVideo} />
+                <AnimationVideo play={playVideo} currentTime={currentTime} />
               </div>
             </div>
             <div className="target-glare"></div>

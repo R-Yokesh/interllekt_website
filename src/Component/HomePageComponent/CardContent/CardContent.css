@@ -2,11 +2,11 @@
   /* margin-top: 50px;
   margin-bottom: 50px; */
 }
-
+ 
 .card-content.s {
   padding-top: 5%;
 }
-
+ 
 .capclass,
 .innoclass,
 .buiclass {
@@ -15,12 +15,12 @@
   justify-content: space-between;
   margin-top: 0%;
 }
-
+ 
 .res-commoncards {
   /* margin-bottom: 10%; */
   /* margin-top: 7%; */
 }
-
+ 
 .sleft-side {
   /* width: 50%; */
   /* display: flex; */
@@ -28,7 +28,7 @@
   position: sticky;
   top: 20px;
 }
-
+ 
 .card {
   padding: 20px;
   border-radius: 30px 0px 30px 30px;
@@ -40,11 +40,11 @@
   background-color: #eff3f9;
   text-decoration: none;
 }
-
+ 
 .tabsresponsive {
   display: none;
 }
-
+ 
 .card h1 {
   color: #000;
   font-family: 'Ranberg Regular', sans-serif;
@@ -53,7 +53,7 @@
   position: relative;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+ 
 .card h1::after {
   position: absolute;
   bottom: -5px;
@@ -63,7 +63,7 @@
   background: transparent;
   transition: background-color 0.3s ease;
 }
-
+ 
 .card.focused {
   width: 95%;
   height: 36vh;
@@ -73,7 +73,7 @@
   border-radius: 30px 0px 30px 30px;
   padding-bottom: 20px;
 }
-
+ 
 .card.focused h1 {
   height: 45vh;
   width: 100%;
@@ -82,116 +82,116 @@
   align-items: center;
   /* justify-content: center; */
 }
-
+ 
 .card.focused h1::after {
   background-color: #fff;
   width: 50%;
 }
-
+ 
 @keyframes colorChangeCol2 {
   0% {
     background-color: #31175b;
   }
-
+ 
   20% {
     background-color: #ffb32c;
   }
-
+ 
   40% {
     background-color: #17591b;
   }
-
+ 
   60% {
     background-color: #31c0ff;
   }
-
+ 
   80% {
     background-color: #ff2e2e;
   }
-
+ 
   100% {
     background-color: #31175b;
   }
 }
-
+ 
 @keyframes colorChangeCol3 {
   0% {
     background-color: #ff2e2e;
   }
-
+ 
   20% {
     background-color: #31c0ff;
   }
-
+ 
   40% {
     background-color: #17591b;
   }
-
+ 
   60% {
     background-color: #ffb32c;
   }
-
+ 
   80% {
     background-color: #31175b;
   }
-
+ 
   100% {
     background-color: #ff2e2e;
   }
 }
-
+ 
 @keyframes colorChangeCol6 {
   0% {
     background-color: #31c0ff;
   }
-
+ 
   20% {
     background-color: #ff2e2e;
   }
-
+ 
   40% {
     background-color: #31175b;
   }
-
+ 
   60% {
     background-color: #ffb32c;
   }
-
+ 
   80% {
     background-color: #17591b;
   }
-
+ 
   100% {
     background-color: #31c0ff;
   }
 }
-
+ 
 @keyframes colorChangeCol4 {
   0% {
     background-color: #31c0ff;
   }
-
+ 
   20% {
     background-color: #ff2e2e;
   }
-
+ 
   40% {
     background-color: #31175b;
   }
-
+ 
   60% {
     background-color: #ffb32c;
   }
-
+ 
   80% {
     background-color: #17591b;
   }
-
+ 
   100% {
     background-color: #31c0ff;
   }
 }
-
+ 
 .brandMasonry {
   display: grid;
   --aspect-ratio: 1.185;
@@ -203,93 +203,93 @@
   grid-template-rows: repeat(29, 1fr);
   grid-gap: 1.5px !important;
 }
-
+ 
 .brandMasonry .col {
   background-size: 100% 100%, cover;
   /* background-position: center; */
   /* border-radius: 5px; */
   /* background-color: #ccc; */
 }
-
+ 
 .brandMasonry.eq-2 .col:nth-of-type(1) {
   /* background-color: #2A9C6C; */
   grid-column: 8 / span 6;
   grid-row: 1 / span 7;
 }
-
+ 
 .brandMasonry.eq-2 .col:nth-of-type(2) {
   grid-column: 1 / span 13;
   /* grid-row: 8 / span 13; */
   grid-row: 8 / span 20;
 }
-
+ 
 .brandMasonry.eq-2 .col:nth-of-type(3) {
   grid-column: 14 / span 11;
   grid-row: 4 / span 11;
 }
-
+ 
 .brandMasonry.eq-2 .col:nth-of-type(4) {
-  grid-column: 14 / span 11;
-  grid-row: 15 / span 15;
+  grid-column: 14 / span 30;
+  grid-row: 15 / span 20;
 }
-
+ 
 .brandMasonry.eq-2 .col:nth-of-type(5) {
   background-color: #0B1525;
   grid-column: 9 / span 5;
   grid-row: 19 / span 5;
 }
-
+ 
 .brandMasonry.eq-2 .col:nth-of-type(6) {
   background-color: #2A9C6C;
   grid-column: 4 / span 5;
   grid-row: 24 / span 5;
 }
-
+ 
 /* Eq3 */
 .brandMasonry.eq-3 .col:nth-of-type(1) {
   /* background-color: #2A9C6C; */
   grid-column: 8 / span 6;
   grid-row: 1 / span 6;
 }
-
+ 
 .brandMasonry.eq-3 .col:nth-of-type(2) {
   grid-column: 1 / span 13;
-  grid-row: 7 / span 20;
+  grid-row: 7 / span 19;
 }
-
+ 
 .brandMasonry.eq-3 .col:nth-of-type(3) {
   grid-column: 14 / span 11;
   grid-row: 5 / span 11;
 }
-
+ 
 .brandMasonry.eq-3 .col:nth-of-type(4) {
   grid-column: 14 / span 40;
-  grid-row: 16 / span 58;
+  grid-row: 16 / span 35;
 }
-
+ 
 /* CardContent.css */
 .brandMasonry .col {
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
-
+ 
 .w-embed:after {
   clear: both;
 }
-
+ 
 .w-embed:before,
 .w-embed:after {
   content: " ";
   grid-area: 1 / 1 / 2 / 2;
   display: table;
 }
-
+ 
 .sright-side {
   width: 50%;
   padding: 20px;
   transition: all 0.3s ease;
 }
-
-
+ 
+ 
 .c-content {
   transition: opacity 0.3s ease;
   /* margin: 10px; */
@@ -297,8 +297,8 @@
   width: 100%;
   margin-top: 4%;
 }
-
-
+ 
+ 
 .c-content h2 {
   font-family: 'Ranberg Regular', sans-serif;
   font-weight: 500;
@@ -313,12 +313,12 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 }
-
+ 
 .c-content:hover h2 {
   box-shadow: inset 100% 0 0 0 #95dbff;
   background-size: 100% 40%;
 }
-
+ 
 .c-content p {
   margin-top: 30px;
   font-family: 'Switzer-Regular', sans-serif;
@@ -329,108 +329,108 @@
   letter-spacing: 1px;
   /* text-align: justify; */
 }
-
-
+ 
+ 
 .linkssa {
   /* Default width when not focused */
   width: 50%;
   transition: width 1s ease;
   position: relative;
   /* Smooth transition */
-
+ 
 }
-
+ 
 .builn {
   font-size: 1.5rem !important;
 }
-
+ 
 .linkssa.focused {
   /* Width when focused */
   width: 100%;
   /* Adjust width as needed */
   position: relative;
-
+ 
 }
-
+ 
 .dop {
-  width: 50%;
+  width: 55%;
   position: absolute;
   top: -35px;
   /* left: 0; */
-  right: 0;
+  right: -50px;
   height: 45vh;
 }
-
+ 
 .hidden {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-
+ 
 .visible {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-
+ 
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
+ 
 .fade-in {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
-
+ 
 .col.hidden {
   opacity: 0;
   visibility: hidden;
 }
-
+ 
 .col.visible {
   opacity: 1;
   visibility: visible;
   transition: opacity 2s ease-in-out;
 }
-
+ 
 @media (max-width: 768px) {
-
-
-
-
+ 
+ 
+ 
+ 
   .tabsresponsive {
     padding: 10px;
   }
-
+ 
   .firstsechg,
   .secondsechg,
   .thirdsechg {
     margin-bottom: 20px;
   }
 }
-
-
+ 
+ 
 /* Add this to your CSS file */
 .transition-opacity {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   /* Adjust timing as needed */
 }
-
+ 
 .transition-opacity.fade-in {
   opacity: 1;
 }
-
+ 
 .transition-opacity.fade-out {
   opacity: 0;
 }
-
+ 
 .image-slide {
   width: 50%;
   margin: auto;
 }
-
+ 
 .client-head {
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 3rem;
