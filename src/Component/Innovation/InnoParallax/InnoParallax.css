@@ -4,9 +4,9 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* left: 15%; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding-left: 7%;
   background-color: #fff;
   margin-top: 50px;
 }
@@ -20,22 +20,22 @@
 /* Initial positions of the images */
 .itop-left-image {
   transform: translateX(-100%) translateY(-100%);
-  width: 170%;
+  width: 135%;
 }
 
 .itop-right-image {
   transform: translateX(100%) translateY(-100%);
-  width: 170%;
+  width: 135%;
 }
 
 .ibottom-left-image {
   transform: translateX(-100%) translateY(100%);
-  width: 170%;
+  width: 135%;
 }
 
 .ibottom-right-image {
   transform: translateX(100%) translateY(100%);
-  width: 170%;
+  width: 135%;
 }
 
 /* Trigger animation when the section is in view */
@@ -47,23 +47,4 @@
   opacity: 1;
 }
 
-@media (max-width: 1024px) {
-  .i-parallax-image {
-    width: 90%;
-    height: 90vh;
-  }
-}
 
-@media (max-width: 768px) {
-  .i-parallax-image {
-    width: 100% !important;
-    height: 50vh !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .i-parallax-image {
-    width: 100%;
-    height: 70vh;
-  }
-}

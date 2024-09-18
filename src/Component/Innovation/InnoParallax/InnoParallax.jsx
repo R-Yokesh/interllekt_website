@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./InnoParallax.css";
-import leftImage from '../../../Assets/Images/card/i1.png';
-import rightImage from '../../../Assets/Images/card/i2.png';
-import iconImage from '../../../Assets/Images/card/i3.png';
-import textImage from '../../../Assets/Images/card/i4.png';
+import leftImage from '../../../Assets/Images/card/ii1.png';
+import rightImage from '../../../Assets/Images/card/ii2.png';
+import iconImage from '../../../Assets/Images/card/ii3.png';
+import textImage from '../../../Assets/Images/card/ii4.png';
 
 const InnoParallax = () => {
   const [isInView, setIsInView] = useState(false);
