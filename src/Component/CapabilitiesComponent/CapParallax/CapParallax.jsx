@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./CapParallax.css";
-import leftImage from '../../../Assets/Images/card/c1.png';
-import rightImage from '../../../Assets/Images/card/c2.png';
-import textImage from '../../../Assets/Images/card/c3.png';
-import iconImage from '../../../Assets/Images/card/c4.png';
+import leftImage from '../../../Assets/Images/card/cc1.png';
+import rightImage from '../../../Assets/Images/card/cc2.png';
+import iconImage from '../../../Assets/Images/card/cc3.png';
+import textImage from '../../../Assets/Images/card/cc4.png';
 
 const CapParallax = () => {
   const [isInView, setIsInView] = useState(false);

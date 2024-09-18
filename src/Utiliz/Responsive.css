@@ -456,8 +456,25 @@
         height: auto !important;
 
     }
+    .i-parallax-container {
+        height: 50vh !important;
+    }
 
     .cap-parallax-image {}
+
+    .cap-parallax-image {
+        width: 150% !important;
+        height: 50vh !important;
+    }
+
+    .i-parallax-image {
+        width: 150% !important;
+        height: 50vh !important;
+    }
+    .b-parallax-image {
+        width: 150% !important;
+        height: 50vh !important;
+    }
 
     .parallax-container {
         height: 68vh !important;
@@ -800,6 +817,10 @@
         height: 50vh !important;
     }
 
+    .i-parallax-container {
+        height: 50vh !important;
+    }
+
     .cap-parallax-image {
         width: 100% !important;
         height: 52vh !important;
@@ -924,7 +945,16 @@
     }
 
     .cap-parallax-image {
-        width: 60% !important;
+        width: 150% !important;
+        height: 50vh !important;
+    }
+
+    .i-parallax-image {
+        width: 150% !important;
+        height: 50vh !important;
+    }
+    .b-parallax-image {
+        width: 150% !important;
         height: 50vh !important;
     }
 
