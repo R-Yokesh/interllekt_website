@@ -139,8 +139,8 @@
         width: 600px; /* Adjust for mobile phones */
     }
     .target-circle {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .target-circle.md {
         width: 180px;
