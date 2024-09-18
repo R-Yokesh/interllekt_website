@@ -314,7 +314,7 @@ const CardContent = () => {
 
       <div className="tabsresponsive">
         <div className="firstsechg">
-          <Link to="/capabilities" className='caplin'>Capabilities</Link>
+          <Link to="/capabilities" className='caplin'>Concept and Design</Link>
           {renderMasonryGrid([Assets.c1, Assets.c4, Assets.c2, Assets.c3])}
           <p className='subvism'>With visionary ideas and meticulous craftsmanship, we help design amazing experiences.</p>
         </div>
