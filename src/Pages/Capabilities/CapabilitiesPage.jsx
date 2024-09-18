@@ -40,7 +40,9 @@ const CapabilitiesPage = () => {
       <Section1 />
       <TabSection />
       <div id="capabilities">
+      <div style={{ overflowX: 'hidden' }}>
         <CapParallax />
+      </div>
         <Section2 />
       </div>
       {/* <ImageScrollEffect/> */}
