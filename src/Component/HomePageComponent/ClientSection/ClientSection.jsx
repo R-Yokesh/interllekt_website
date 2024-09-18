@@ -4,7 +4,7 @@ import Assets from '../../../Assets/Assets';
 
 function ClientSection() {
 
-    const clientLogo = [Assets.clientAmj, Assets.clientCmc, Assets.clientDisney, Assets.clientProdapt, Assets.clientCiros];
+    const clientLogo = [Assets.clientAmj, Assets.clientCmc, Assets.clientDisney, Assets.clientProdapt, Assets.clientCiros,Assets.atrllogo,Assets.mashalogo,Assets.kizulogo];
 
     const FeatureSettings = {
         dots: true,

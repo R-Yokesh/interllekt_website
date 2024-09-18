@@ -1,6 +1,7 @@
 {
-  "name": "interllekt_website",
+  "name": "interllekt",
   "version": "0.1.0",
+  "description": "Interllekt - A Global Business Development Company",
   "homepage": "http://democenter.in/interllekt.com/",
   "private": true,
   "dependencies": {

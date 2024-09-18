@@ -76,6 +76,9 @@ import clientCmc from "./Images/client-logo/CMC.png"
 import clientDisney from "./Images/client-logo/Disney.png"
 import clientProdapt from "./Images/client-logo/Prodapt.png"
 import clientCiros from "./Images/client-logo/ciros.png"
+import atrllogo from "./Images/client-logo/atrl.png"
+import kizulogo from "./Images/client-logo/kizu.png"
+import mashalogo from "./Images/client-logo/masha.png"
 
 const Assets = {
     logo: logo,
@@ -133,6 +136,9 @@ const Assets = {
     clientCmc,
     clientDisney,
     clientProdapt,
-    clientCiros
+    clientCiros,
+    atrllogo,
+    kizulogo,
+    mashalogo
 }
 export default Assets;
