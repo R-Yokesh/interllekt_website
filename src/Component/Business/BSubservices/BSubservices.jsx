@@ -6,12 +6,18 @@ const BSubservices = () => {
     { name: 'Business Strategy', logo: require('../../../Assets/Images/Color Mark 3.png') },
     { name: 'Brand Strategy', logo: require('../../../Assets/Images/Color Mark 2.png') },
     { name: 'Digital Marketing & Sales', logo: require('../../../Assets/Images/Color Mark 4.png') },
-  ];
-
-  const servicesTwo = [
     { name: 'Operational Strategy', logo: require('../../../Assets/Images/Color Mark 3.png') },
     { name: 'People & Organization', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'M & A', logo: require('../../../Assets/Images/Color Mark 2.png') },
+  ];
+
+  const servicesTwo = [
+    { name: 'Operational Strategy', logo: require('../../../Assets/Images/Color Mark 4.png') },
+    { name: 'People & Organization', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    { name: 'M & A', logo: require('../../../Assets/Images/Color Mark 2.png') },
+    { name: 'Business Strategy', logo: require('../../../Assets/Images/Color Mark 3.png') },
+    { name: 'Brand Strategy', logo: require('../../../Assets/Images/Color Mark 2.png') },
+    { name: 'Digital Marketing & Sales', logo: require('../../../Assets/Images/Color Mark 4.png') },
   ]
 
   const [scrollDirection, setScrollDirection] = useState(null);

@@ -36,9 +36,9 @@ const NewHeader = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
-  };
+  // const toggleSearch = () => {
+  //   setSearchOpen(!searchOpen);
+  // };
 
   useEffect(() => {
     setMenuOpen(false);
@@ -95,13 +95,13 @@ const NewHeader = () => {
           />
         </div>
         <div className="icons-container">
-          <div className="search-icon" onClick={toggleSearch}>
+          {/* <div className="search-icon" onClick={toggleSearch}>
             <img
               src={searchOpen ? closeIcon : searchIcon}
               alt="Search Icon"
               className="search-img"
             />
-          </div>
+          </div> */}
           <div className="menu-icon" onClick={toggleMenu}>
             <img src={menu} alt="Menu Icon" className="menu-img" />
           </div>

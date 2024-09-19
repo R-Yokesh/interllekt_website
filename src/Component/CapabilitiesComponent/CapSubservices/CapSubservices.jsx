@@ -6,12 +6,18 @@ const CapSubservices = () => {
     { name: 'Social Media Imaging', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Creative Ideation', logo: require('../../../Assets/Images/Color Mark 2.png') },
     { name: 'Digital Environment', logo: require('../../../Assets/Images/Color Mark 3.png') },
+    { name: 'Aesthetics', logo: require('../../../Assets/Images/Color Mark 4.png') },
+    { name: 'Web app development', logo: require('../../../Assets/Images/Color Mark 2.png') },
+    { name: 'Event Design Production', logo: require('../../../Assets/Images/Color Mark 1.png') },
   ];
 
   const servicesTwo = [
     { name: 'Aesthetics', logo: require('../../../Assets/Images/Color Mark 4.png') },
-    { name: 'Web app development', logo: require('../../../Assets/Images/Color Mark 2.png') },
+    { name: 'Web app development', logo: require('../../../Assets/Images/Color Mark 3.png') },
     { name: 'Event Design Production', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    { name: 'Social Media Imaging', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    { name: 'Creative Ideation', logo: require('../../../Assets/Images/Color Mark 2.png') },
+    { name: 'Digital Environment', logo: require('../../../Assets/Images/Color Mark 3.png') },
   ]
 
   const [scrollDirection, setScrollDirection] = useState(null);
