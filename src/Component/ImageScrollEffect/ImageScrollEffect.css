@@ -12,9 +12,11 @@
   height: 100vh;
   overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
 }
+
 .mobileResponsivecode {
   display: none;
 }
+
 .mainssv {
   position: absolute;
   top: 0;
@@ -56,25 +58,28 @@ section.a:nth-of-type(even) {
   background: rgb(63, 27, 27);
   color: #fff;
 }
-.imokj{
+
+.imokj {
   width: 100%;
 }
 
 .slider {
   width: 100%;
-  overflow: hidden;
+  overflow-x: scroll; /* Enable horizontal scroll */
+  scroll-snap-type: x mandatory; /* Snap effect when scrolling */
   position: relative;
 }
 
 .slider-track {
   display: flex;
   width: calc(100% * 6); /* Adjust based on the number of images */
-  animation: scroll 20s linear infinite;
+  /* Remove animation for manual scroll */
 }
 
 .slide {
   min-width: calc(100% / 6); /* Adjust based on the number of images */
   box-sizing: border-box;
+  scroll-snap-align: start; /* Snap each slide to the start */
 }
 
 .slider-image {
@@ -83,19 +88,16 @@ section.a:nth-of-type(even) {
   display: block;
 }
 
-/* CSS animation for continuous horizontal sliding */
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .sh {
     position: relative;
     height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
   }
+
   .mainssv {
-    display: none; /* Hide the main image scroll effect on mobile */
+    display: none;
   }
 
   .mobileResponsivecode {
@@ -115,14 +117,14 @@ section.a:nth-of-type(even) {
   }
 
   section.a {
-    font-size: 1.5rem; /* Further adjust font size for very small screens */
+    font-size: 1.5rem;
   }
 
   .mainssv {
-    display: none; /* Hide the main image scroll effect on mobile */
+    display: none;
   }
 
   .mobileResponsivecode {
-    display: block; /* Show the mobile slider */
+    display: block;
   }
 }
