@@ -151,10 +151,25 @@
 
     }
 
+    
     .cap-parallax-image {
-        width: 75% !important;
+        left: -15%;
+        width: 200% !important;
         height: 77vh !important;
     }
+
+    .i-parallax-image {
+        left: -15%;
+        width: 200% !important;
+        height: 77vh !important;
+    }
+    
+    .b-parallax-image {
+        left: -15%;
+        width: 200% !important;
+        height: 77vh !important;
+    }
+    
 
     .brandMasonry {
         /* display: none !important; */
@@ -268,6 +283,21 @@
         /* height: 50vh !important; */
     }
 
+    .full-screen-video {
+        width: unset !important;
+        margin-top: 7.50rem !important;
+        height: 50vh !important;
+    }
+
+.mega-heading {
+    width: 130% !important;
+    margin-left: 0px;
+    line-height: 1em;
+    transition: all .2s;
+    position: absolute;
+    /* left: -8%; */
+    }
+
     .new-header {
         padding-left: 8px !important;
     }
@@ -279,7 +309,7 @@
     }
 
     .scroll-reveal-text {
-        margin-top: 30% !important;
+        margin-top: 10% !important;
     }
 
     .scroll-reveal-text p span {
@@ -463,16 +493,19 @@
     .cap-parallax-image {}
 
     .cap-parallax-image {
-        width: 150% !important;
+        left: -30% !important;
+        width: 250% !important;
         height: 50vh !important;
     }
 
     .i-parallax-image {
-        width: 150% !important;
+        left: -30% !important;
+        width: 250% !important;
         height: 50vh !important;
     }
     .b-parallax-image {
-        width: 150% !important;
+        left: -30% !important;
+        width: 250% !important;
         height: 50vh !important;
     }
 
@@ -674,15 +707,27 @@
     }
 
     .full-screen-video {
-        /* height: 50vh !important; */
-    }
+            width: 80% !important;
+            margin-top: 24.5% !important;
+            height: 55vh !important;
+        }
+
+    .mega-heading {
+        width: 130% !important;
+        margin-left: 0px;
+        line-height: 1em;
+        transition: all .2s;
+        position: absolute;
+        /* left: -8%; */
+        }
+    
 
     .new-header {
         padding-left: 8px !important;
     }
 
     .scroll-reveal-text {
-        margin-top: 30% !important;
+        /* margin-top: 30% !important; */
     }
 
     .scroll-reveal-text p span {
@@ -945,16 +990,23 @@
     }
 
     .cap-parallax-image {
-        width: 150% !important;
+        left: -44% !important;
+        width: 300% !important;
         height: 50vh !important;
     }
 
     .i-parallax-image {
-        width: 150% !important;
-        height: 50vh !important;
+            left: -42% !important;
+            width: 300% !important;
+            height: 50vh !important;
+    }
+
+    .b-parallax-container {
+        margin-top: 0 !important;
     }
     .b-parallax-image {
-        width: 150% !important;
+        left: -45% !important;
+        width: 300% !important;
         height: 50vh !important;
     }
 
