@@ -74,7 +74,7 @@ const ContactForm = () => {
         setTitle('');
         setCompany('');
         setEmail('');
-        setInterest('');
+        setSelectedOption('');
       },
       (error) => {
         toast.error('Oops! Something went wrong. Please try again later.', {
