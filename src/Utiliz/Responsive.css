@@ -169,15 +169,14 @@
         width: 200% !important;
         height: 77vh !important;
     }
-    
-
     .brandMasonry {
         /* display: none !important; */
-        height: 50vh !important;
-        width: 60% !important;
-        left: 110px !important;
+        height: 55vh !important;
+        width: 50% !important;
+        left: 30% !important;
         top: 30px !important;
     }
+
 
     p.subvism {
         margin-top: 7%;
@@ -233,6 +232,10 @@
         display: block !important;
     }
 
+    .client-main{
+        height: 20vh !important;
+    }
+
     .sright-side {
         /* width: 100% !important; */
         padding: 1% !important;
@@ -283,8 +286,12 @@
         /* height: 50vh !important; */
     }
 
+    .scroll-path.target-puzzle {
+        min-height: unset !important;
+    }
+
     .full-screen-video {
-        width: unset !important;
+        /* width: unset !important; */
         margin-top: 7.50rem !important;
         height: 50vh !important;
     }
@@ -519,7 +526,7 @@
 
     .brandMasonry {
         /* display: none !important; */
-        height: 40vh !important;
+        height: 50vh !important;
         width: 70% !important;
         left: auto !important;
         top: 30px !important;
@@ -627,7 +634,11 @@
     .tabsresponsive {
         display: block !important;
         background-color: #f5f9ff;
-        margin-top: 25% !important;
+        /* margin-top: 25% !important; */
+    }
+
+    .client-main{
+        height: 30vh !important;
     }
 
     .menu-column ul li a {
@@ -707,9 +718,13 @@
     }
 
     .full-screen-video {
-            width: 80% !important;
+            /* width: 80% !important; */
             margin-top: 24.5% !important;
             height: 55vh !important;
+        }
+
+        .scroll-path.target-puzzle {
+            min-height: 80vh !important;
         }
 
     .mega-heading {
@@ -745,13 +760,13 @@
     .tabsresponsive {
 
         padding: 4% !important;
-        margin-top: 25% !important;
+        /* margin-top: 25% !important; */
     }
 
     .tabsresponsive {
         display: block !important;
         background-color: #f5f9ff;
-        margin-top: 25% !important;
+        /* margin-top: 25% !important; */
     }
 
     .card.focused {
@@ -779,6 +794,10 @@
 
     .hcarousel-item span {
         font-size: 30px !important;
+    }
+
+    .client-main{
+        height: 30vh !important;
     }
 
     .section-titlewwn {
@@ -1016,7 +1035,7 @@
 
     .brandMasonry {
         /* display: none !important; */
-        height: 32vh !important;
+        height: 45vh !important;
         width: 77% !important;
         left: auto !important;
         top: 30px !important;

@@ -13,7 +13,7 @@ const AnimationBanner = () => {
   const [scrollDirection, setScrollDirection] = useState('down'); // Track scroll direction
   const bannerRef = useRef(null);
   let lastScrollY = window.scrollY; // Initial scroll position
-
+  const [isMobile,setIsmobile]=useState(false)
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -98,10 +98,38 @@ const AnimationBanner = () => {
     setCurrentTime(event.target.currentTime);
   };
 
+  function checkScreenSize() {
+    const screenWidth = window.innerWidth;
+  
+    if (screenWidth <= 425) {
+      console.log("This is a mobile or tablet screen.");
+      setIsmobile(true)
+    } else if (screenWidth > 768 && screenWidth <= 1024) {
+      console.log("This is a laptop or small desktop screen.");
+      setIsmobile(false);
+    } else {
+      console.log("This is a large desktop screen.");
+      setIsmobile(false);
+    }
+  }
+  
+  useEffect(()=>{
+          // Call the function on load or resize
+  checkScreenSize();
+  
+  window.addEventListener('resize', checkScreenSize);
+  },[])
+
+
+
   return (
     <div className="mono-track" ref={bannerRef}>
       <div className="scroll-path target-puzzle">
-        <div className="scroll-frame sticky">
+        {isMobile ?
+      <div className="">
+      <AnimationVideo play={true} currentTime={currentTime} />
+      </div> :
+         <div className="scroll-frame sticky">
           <div className="overline">
             <div ref={overlineRef} className="overline-fill"></div>
           </div>
@@ -147,7 +175,8 @@ const AnimationBanner = () => {
             </div>
             <div className="target-glare"></div>
           </div>
-        </div>
+        </div> 
+      }
       </div>
     </div>
   );
