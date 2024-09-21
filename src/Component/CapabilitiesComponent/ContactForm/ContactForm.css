@@ -191,7 +191,10 @@
   font-weight: 700;
   font-style: italic;
   transition: border-bottom 0.3s;
-  text-decoration: none !important;
+  /* text-decoration: none !important; */
+  background-color: transparent; /* Make background transparent */
+  color: #000; /* Set text color */
+  outline: none; /* Remove default outline */
 }
 
 .cform-group select:focus {
@@ -202,4 +205,10 @@
   font-family: 'Switzer-Regular', sans-serif !important;
   /* font-weight: bold; */
   color: #000;
+}
+
+@supports (-webkit-appearance: none) {
+  .cform-group select {
+    background-color: #fff; /* White background */
+  }
 }
