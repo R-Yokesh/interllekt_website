@@ -17,7 +17,6 @@ const BuisnessPage = ({ marginSec }) => {
     Assets.busk2,
     Assets.busk3,
     Assets.busk4,
-    Assets.busk5,
     Assets.busk6,
     Assets.busk7,
     Assets.busk8,
@@ -26,6 +25,7 @@ const BuisnessPage = ({ marginSec }) => {
     Assets.busk11,
     Assets.busk12,
     Assets.busk13,
+    Assets.busk5,
     // Add more images as needed
   ];
   return (

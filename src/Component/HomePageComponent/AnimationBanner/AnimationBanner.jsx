@@ -101,7 +101,7 @@ const AnimationBanner = () => {
   function checkScreenSize() {
     const screenWidth = window.innerWidth;
   
-    if (screenWidth <= 425) {
+    if (screenWidth <= 440) {
       console.log("This is a mobile or tablet screen.");
       setIsmobile(true)
     } else if (screenWidth > 768 && screenWidth <= 1024) {
