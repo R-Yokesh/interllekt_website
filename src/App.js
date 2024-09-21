@@ -19,7 +19,7 @@ function App() {
 
       {/* <RoutesComponent /> */}
       <ErrorBoundary>
-        <Router basename='/demo.interllekt.com'>
+        <Router basename='/'>
           <ScrollToTop />
           <Routes>
             <Route path='/*' element={<Layout />} />

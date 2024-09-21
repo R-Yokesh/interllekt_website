@@ -2,7 +2,7 @@
   "name": "interllekt",
   "version": "0.1.0",
   "description": "Interllekt - A Global Business Development Company",
-  "homepage": "https://democenter.in/demo.interllekt.com/",
+  "homepage": "https://demo.interllekt.com/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
