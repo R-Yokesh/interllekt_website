@@ -1,78 +1,85 @@
-/* Footer.css */
-
-/* General Styles */
 .custom-footer {
   background-color: #31175b;
   color: #fff;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  /* text-align: center; */
+  padding-top: 3%;
+  padding-bottom: 3%;
   font-family: 'Arial', sans-serif;
 }
 
-
-
-.footer-let {
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 
+/* First Row */
 .footer-let img {
-  max-width: 100%;
-  height: auto;
+  max-width: 20%;
+  height: 15vh;
 }
 
-.twoms {
+/* Second Row: Footer Links and Icons */
+.footer-links-icons {
   display: flex;
-  justify-content: end;
-  gap: 7%;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.footer-secton {
+.footer-links {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
-.footer-secton a {
+.footer-links-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
   color: #fff;
   text-decoration: none;
-  padding: 0.5rem;
   font-size: 1rem;
   font-family: 'Ranberg Regular', sans-serif;
+  cursor: pointer;
+
 }
 
-.footer-secton a:hover {
+.footer-links a:hover {
   color: #ccc;
 }
 
-.folow-us h3 {
-  margin-bottom: 0.5rem;
-  font-family: 'Ranberg Regular', sans-serif;
+.footer-icons {
+  display: flex;
+  align-items: flex-end;
 }
 
-.folow-us {
-  margin-bottom: 1.5rem;
+.footer-icons a {
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.footer-icons a:hover {
+  color: #ccc;
 }
 
-.clientsligos {
-  margin-bottom: 1.5rem;
-}
-
-.clientsligos {
-  max-width: 100%;
-  height: auto;
-}
-
-.footer-bottom-text {
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin: 1rem 0;
-  font-family: 'Ranberg Regular', sans-serif;
+/* Third Row: Paragraph and Logo */
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-bottom-paragraph p {
-  font-size: 16px;
+  width: 80%;
+  font-size: 14px;
   line-height: 1.5;
-  margin: 1rem 0;
+  margin: 0;
   text-align: left;
   font-family: 'Ranberg Regular', sans-serif;
 }
@@ -83,8 +90,70 @@
   border: 1px solid #fff;
 }
 
-.footer-flex {
-  display: flex;
-  gap: 70px;
-  justify-content: space-between;
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer-divider {
+  border: 1px solid #fff;
+  margin: 1rem 0;
+}
+
+.footer-bottom-text {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: 'Ranberg Regular', sans-serif;
+}
+
+/* Mobile L, Mobile M, Mobile S Adjustments */
+@media (max-width: 767px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-let img {
+    max-width: 100%;
+    /* margin-bottom: 1rem; */
+  }
+
+  .footer-links-icons {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-links-row {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .footer-links a {
+    font-size: 13px !important;
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+    gap: 10px;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+  }
+
+  .footer-bottom-paragraph p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* font-size: 0.9rem !important; */
+    font-size: 13px !important;
+  }
+  .footer-bottom-text {
+    font-size: 13px !important;
+  }
 }

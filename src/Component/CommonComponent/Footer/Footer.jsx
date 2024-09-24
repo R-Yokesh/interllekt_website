@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import Assets from '../../../Assets/Assets';
 import './Footer.css';
 
@@ -16,50 +18,59 @@ const Footer = () => {
   };
 
   return (
-    // <footer className="custom-footer padding-sec">
-    <footer className="custom-footer padding-sec" >
+    <footer className="custom-footer padding-sec">
+      {/* First Row: Logo */}
+      <div className="footer-row footer-let">
+        <img src={Assets.WhiteLogo} alt="Logo" />
+      </div>
+      <hr className="footer-divider" />
 
-      <div className="c-layout is-foter row">
-        <div className="footer-let col-lg-3 col-md-3 col-sm-12 pl-0">
-          <img src={Assets.WhiteLogo} alt="Logo" style={{ width: '' }} />
-        </div>
-        <div className="col-lg-7 col-md-7 col-sm-12 twoms">
-          <div className="footer-secton col-lg-3">
-            <Link to="/" onClick={() => console.log('Navigating to Home')}>Home</Link>
-            <Link to="/About" onClick={() => console.log('Navigating to About')}>About</Link>
-            <Link to="/capabilities" onClick={() => console.log('Navigating to Capabilities')}>Capabilities</Link>
+      {/* Second Row: Links (flex-start) and Follow us (flex-end) */}
+      <div className="footer-row footer-links-icons">
+        <div className="footer-links">
+          <div className="footer-links-row">
+            <Link to="/">Home</Link>
+            <Link to="/About">About</Link>
+            <Link to="/capabilities">Capabilities</Link>
             <Link to="/" onClick={handleCareersClick}>Careers</Link>
+          </div>
+          <div className="footer-links-row">
             <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
             <Link to="/Ethos" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
             <Link to="/legal" onClick={() => scrollToSection('legal')}>Legal</Link>
-            <Link to="/PrivacyAndPolicy" onClick={() => console.log('Navigating to Privacy and Policy')}>Privacy Policy</Link>
-          </div>
-
-
-          <div className="footer-secton folow-us col-lg-2">
-            <h3>Follow us</h3>
-            <a href="https://www.linkedin.com/company/interllekt" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://twitter.com/interllekt" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://www.facebook.com/interllekt" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://www.instagram.com/interllekt" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <Link to="/PrivacyAndPolicy">Privacy Policy</Link>
           </div>
         </div>
-
-
-        {/* <div className="clientsligos col-lg-2 col-md-2 col-sm-12">
-
-        </div> */}
+        <div className="footer-icons">
+          <a href="https://www.facebook.com/interllekt" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://www.instagram.com/interllekt" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://www.linkedin.com/company/interllekt" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://twitter.com/interllekt" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+        </div>
       </div>
-      <div className='footer-flex'>
-        <p className="footer-bottom-text">
-          &copy; {new Date().getFullYear()} Interllekt. All rights reserved.
-        </p>
-        <img src={Assets.fotlo} alt="" className='footer-logo clientsligos' />
+
+      {/* Third Row: Paragraph (left) and Footer Logo (right) */}
+      <div className="footer-row footer-bottom-content">
+        <div className="footer-bottom-paragraph">
+          <p>
+            Interllekt is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable.
+          </p>
+        </div>
+        <img src={Assets.fotlo} alt="Client Logos" className='footer-logo' />
       </div>
-      <div className="footer-bottom-paragraph">
-        <p>
-          Interllekt is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable.
-        </p>
+
+      {/* Footer Bottom */}
+      <div className="footer-bottom">
+        <hr className="footer-divider" />
+        <p className="footer-bottom-text">&copy; 2024 Interllekt. All rights reserved.</p>
       </div>
     </footer>
   );
