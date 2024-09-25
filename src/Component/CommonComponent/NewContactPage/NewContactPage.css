@@ -1,4 +1,4 @@
-container {
+.container {
   width: 100%;
   background: #fff;
   border-radius: 6px;
@@ -9,6 +9,7 @@ container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .container .content .left-side {
   width: 50%;
@@ -20,18 +21,9 @@ container {
   margin-top: 15px;
   position: relative;
 }
-.content .left-side::before {
-  content: "";
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  /* background: #afafb6; */
-}
+
 .content .left-side .details {
-  margin: 10% 0 0 0;
+  margin: 25% 0 0 0;
   /* text-align: center; */
 }
 .content .left-side .details i {
@@ -47,6 +39,27 @@ container {
 }
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
+  font-size: 20px;
+  /* color: #afafb6; */
+}
+
+.content .left-side .cdetails {
+  margin: 10% 0 0 0;
+  /* text-align: center; */
+}
+.content .left-side .cdetails i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .cdetails .topic {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Ranberg Regular', sans-serif;
+}
+.content .left-side .cdetails .text-one,
+.content .left-side .cdetails .text-two {
   font-size: 20px;
   /* color: #afafb6; */
 }
@@ -209,6 +222,11 @@ container {
     margin-bottom: 1em;
     text-align: left;
     color: #000;
+  }
+
+  .email-llink {
+    /* color: black; */
+    text-decoration: underline;
   }
   
   
