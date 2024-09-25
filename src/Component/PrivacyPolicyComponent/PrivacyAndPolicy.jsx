@@ -194,7 +194,7 @@ const PrivacyAndPolicy = () => {
             <p>
               The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
             </p>
-            <ul>
+            <ul className='ptextleft'>
               <li>Comply with a legal obligation</li>
               <li>Protect and defend the rights or property of the Company</li>
               <li>Prevent or investigate possible wrongdoing in connection with the Service</li>

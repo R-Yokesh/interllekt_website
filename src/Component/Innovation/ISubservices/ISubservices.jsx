@@ -3,20 +3,20 @@ import './ISubservices.css';
 
 const ISubservices = () => {
   const services = [
-    { name: 'Software', logo: require('../../../Assets/Images/Color Mark 4.png') },
+    { name: 'Software', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Digital Integration', logo: require('../../../Assets/Images/Color Mark 3.png') },
     { name: 'Product Development', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Social Impact', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    // { name: 'Social Impact', logo: require('../../../Assets/Images/Color Mark 1.png') },
     // { name: 'Design Thinking', logo: require('../../../Assets/Images/Color Mark 4.png') },
     
   ];
 
   const servicesTwo = [
     
-    { name: 'Design Thinking', logo: require('../../../Assets/Images/Color Mark 2.png') },
+    { name: 'Design Thinking', logo: require('../../../Assets/Images/Color Mark 3.png') },
     { name: 'Product Development', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Social Impact', logo: require('../../../Assets/Images/Color Mark 4.png') },
-    { name: 'Digital Integration', logo: require('../../../Assets/Images/Color Mark 3.png') },
+    // { name: 'Digital Integration', logo: require('../../../Assets/Images/Color Mark 3.png') },
     // { name: 'Software', logo: require('../../../Assets/Images/Color Mark 3.png') },
   ]
 
@@ -71,12 +71,14 @@ const ISubservices = () => {
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}
+        
       </div>
       <div ref={reverseCarouselRef} className="icarousel reverse">
         {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
+        
       </div>
     </div>
   );

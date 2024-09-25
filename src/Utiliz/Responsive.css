@@ -607,6 +607,10 @@
         font-size: 0.9em !important;
     }
 
+    .ptextleft li{
+        text-align: left !important;
+    }
+
     .cap-content {
         margin-top: 1px !important;
     }
