@@ -1,27 +1,41 @@
 .hcarousel-container {
-  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   width: 100%;
-  /* padding-top: 10%; */
-  /* border: 10px solid transparent;
-  border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
-  padding: 10px; */
+  padding-top: 10%;
+  padding-bottom: 10%;
+    /* border: 10px solid transparent;
+    border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
+    padding: 10px;  */
 }
 
-.hcarousel {
+.hcarousel-container h1 {
+  font-family: 'Ranberg Regular', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: #31175b;
+}
+
+.hcarousel
+ {
   display: flex;
   white-space: nowrap;
-  transition: transform 2s ease-in-out; /* Ensure transition is applied */
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
   margin-top: 20px;
 }
 
-.hcarousel.reverse {
+.hcarousel-container .common-class {
+  /* margin-bottom: 4%; */
+  /* margin-top: 4%; */
+}
+
+.hcarousel .reverse {
   display: flex;
   white-space: nowrap;
-  transition: transform 2s ease-in-out; /* Ensure transition is applied */
+  transition: transform 2s ease-in-out; /* Increased the transition duration */
   margin-bottom: 20px;
 }
 
@@ -33,27 +47,33 @@
 
 .hcarousel-item span {
   font-family: 'Ranberg Regular', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .hcarousel-item img {
-  height: 30px;
+  height: 28px;
   width: auto;
   margin-right: 15px;
 }
 
-.section-titlewwn {
-  font-size: 4rem;
-  font-weight: 600;
-  text-align: center;
-  font-family: 'Ranberg Regular', sans-serif;
-  margin-top: 4%;
+@media (min-width: 399px) and (max-width: 589px) {
+  .hcarousel-item span {
+    font-size: 18px; /* Reduce the font size */
+  }
+
+  .hcarousel-item img {
+    height: 18px; /* Adjust image height */
+    width: auto; /* Keep the aspect ratio */
+  }
 }
 
-.hcarousel-down {
-  transform: translateX(-100px) !important; /* For downward scroll */
-}
+@media (min-width: 290px) and (max-width: 398px) {
+  .hcarousel-item span {
+    font-size: 14px; /* Reduce the font size further */
+  }
 
-.hcarousel-up {
-  transform: translateX(100px) !important; /* For upward scroll */
+  .hcarousel-item img {
+    height: 14px; /* Adjust image height */
+    width: auto; /* Keep the aspect ratio */
+  }
 }

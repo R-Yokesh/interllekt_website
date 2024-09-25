@@ -148,7 +148,6 @@
     .parallax-image {
         width: 100% !important;
         height: auto !important;
-
     }
 
     
@@ -287,13 +286,13 @@
     }
 
     .scroll-path.target-puzzle {
-        min-height: unset !important;
+        /* min-height: unset !important; */
     }
 
     .full-screen-video {
-        /* width: unset !important; */
+        width: 80% !important;
         margin-top: 7.50rem !important;
-        height: 50vh !important;
+        height: 55vh !important;
     }
 
 .mega-heading {
@@ -722,13 +721,13 @@
     }
 
     .full-screen-video {
-            /* width: 80% !important; */
-            margin-top: 24.5% !important;
-            height: 45vh !important;
+            width: 80% !important;
+            margin-top: 30% !important;
+        height: 55vh !important;
         }
 
         .scroll-path.target-puzzle {
-            min-height: 65vh !important;
+            /* min-height: 65vh !important; */
         }
 
     .mega-heading {
@@ -797,7 +796,7 @@
     }
 
     .hcarousel-item span {
-        font-size: 30px !important;
+        font-size: 14px !important;
     }
 
     .client-main{
@@ -925,6 +924,9 @@
         width: 100vw !important;
         height: 100vh !important;
         transform: rotate(-90deg) translateX(-100vw);
+    }
+    .content .left-side .details {
+        margin-top: 15% !important;
     }
 
     .sh {

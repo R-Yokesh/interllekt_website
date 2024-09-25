@@ -11,7 +11,7 @@ import HomeServices from '../../Component/HomePageComponent/HomeServices/HomeSer
 import TestAnimation from '../../Component/HomePageComponent/TestAnimation/TestAnimation'
 import ImageScrollEffect from '../../Component/ImageScrollEffect/ImageScrollEffect'
 import ClientSection from '../../Component/HomePageComponent/ClientSection/ClientSection'
-import Industry from '../../Component/HomePageComponent/Industry/Industry'
+// import Industry from '../../Component/HomePageComponent/Industry/Industry'
 
 
 const HomePage = () => {
@@ -28,17 +28,15 @@ const HomePage = () => {
       <div className='container-fluid px-0'>
         <CardContent />
       </div>
-      <div className='industry container-fluid px-0'>
+      {/* <div className='industry container-fluid px-0'>
         <Industry />
-      </div>
+      </div> */}
+      <HomeServices />
       <div className='slide-sec common-class'>
         <ClientSection />
       </div>
       {/* <IndustrySection/> */}
       {/* <ScrollSection/> */}
-
-      {/* <HomeServices /> */}
-
       {/* <ImageScrollEffect/> */}
 
 

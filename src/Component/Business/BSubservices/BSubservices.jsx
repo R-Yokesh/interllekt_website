@@ -57,7 +57,7 @@ const BSubservices = () => {
 
   const renderCarouselItems = (serviceList) => {
     return serviceList.map((service, index) => (
-      <div key={index} className="icarousel-item">
+      <div key={index} className="bcarousel-item">
         <img src={service.logo} alt={`Logo ${index + 1}`} />
         <span>{service.name}</span>
       </div>
@@ -65,14 +65,14 @@ const BSubservices = () => {
   };
 
   return (
-    <div className="icarousel-container common-class">
-      <div ref={carouselRef} className="icarousel">
+    <div className="bcarousel-container common-class">
+      <div ref={carouselRef} className="bcarousel">
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}
         {renderCarouselItems(services)}
       </div>
-      <div ref={reverseCarouselRef} className="icarousel reverse">
+      <div ref={reverseCarouselRef} className="bcarousel reverse">
         {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
         {renderCarouselItems(servicesTwo)}
