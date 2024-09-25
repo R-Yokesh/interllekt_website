@@ -94,8 +94,10 @@ const NewContactPage = () => {
                         <div className="topic">Reach Us Through</div>
                         <div className="text-one">12/1, Murugappa Road, Koturpuram</div>
                         <div className="text-two">Chennai, India-600085</div>
-                        <div className="text-two">contactus@perfektiv.com</div>
-                        <div className="country details">
+                        <div className="text-two">
+                            <a href="mailto:contactus@interllekt.com" className="email-llink">contactus@interllekt.com</a>
+                        </div>
+                        <div className="country cdetails">
                             <div className="countriess">
                                 <div className="coun-head"><h3>Countries</h3></div>
                                 <div className="coun-sub">UAE | South Africa | Europe | Latin America</div>
