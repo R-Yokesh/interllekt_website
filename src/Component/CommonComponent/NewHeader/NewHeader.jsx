@@ -136,16 +136,16 @@ const NewHeader = () => {
               <p>WHO WE ARE</p>
               <ul>
                 <li>
-                  <Link to="/About">About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/Ethos">Interllekt Ethos</Link>
+                  <Link to="/ethos">Interllekt Ethos</Link>
                 </li>
                 <li>
                   <Link to="/legal">Legal</Link>
                 </li>
                 <li>
-                  <Link to="/PrivacyAndPolicy">Privacy and Policy</Link>
+                  <Link to="/privacyandpolicy">Privacy and Policy</Link>
                 </li>
               </ul>
             </div>
@@ -153,7 +153,7 @@ const NewHeader = () => {
               <p>GET IN TOUCH</p>
               <ul>
                 <li>
-                  <Link to="/" onClick={() => scrollToSection("contact")}>
+                  <Link to="/contact" onClick={() => scrollToSection("contact")}>
                     Contact
                   </Link>
                 </li>

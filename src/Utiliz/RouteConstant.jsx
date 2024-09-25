@@ -29,17 +29,24 @@ const HomePage = React.lazy(() =>
     import('../Pages/Business/BusinessPage')
   );
 
+  const NewContactPage = React.lazy(() =>
+    import('../Pages/NewContactPage/NewContactPage')
+  );
+
+
+
 
 
 
   export const routes = [
-    { path: '/PrivacyAndPolicy', name: 'Privacy And Policy', element: PrivacyPolicyPage },
+    { path: '/privacyandpolicy', name: 'Privacy And Policy', element: PrivacyPolicyPage },
     { path: '/', name: 'Home ', element: HomePage },
-    { path: '/About', name: 'About ', element: AboutPage },
-    { path: '/Capabilities', name: 'Capabilities', element: CapabilitiesPage },
+    { path: '/about', name: 'About ', element: AboutPage },
+    { path: '/capabilities', name: 'Capabilities', element: CapabilitiesPage },
     { path: '/legal', name: 'Legal', element: LegalPage },
-    { path: '/Ethos', name: 'Ethos', element: EthosPage },
-    { path: '/Careers', name: 'Careers', element: CareersPage },
-    {path:'/Innovation', name:'Innovation', element:InnovationPage},
-    {path:'/Business', name:'Business', element:BusinessPage},
+    { path: '/ethos', name: 'Ethos', element: EthosPage },
+    { path: '/careers', name: 'Careers', element: CareersPage },
+    {path:'/innovation', name:'Innovation', element:InnovationPage},
+    {path:'/business', name:'Business', element:BusinessPage},
+    {path:'/contact', name:'contact', element:NewContactPage},
   ]  

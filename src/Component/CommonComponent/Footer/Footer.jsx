@@ -30,15 +30,15 @@ const Footer = () => {
         <div className="footer-links">
           <div className="footer-links-row">
             <Link to="/">Home</Link>
-            <Link to="/About">About</Link>
+            <Link to="/about">About</Link>
             <Link to="/capabilities">Capabilities</Link>
             <Link to="/" onClick={handleCareersClick}>Careers</Link>
           </div>
           <div className="footer-links-row">
-            <Link to="/" onClick={() => scrollToSection('contact')}>Contact</Link>
-            <Link to="/Ethos" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
+            <Link to="/contact" onClick={() => scrollToSection('contact')}>Contact</Link>
+            <Link to="/ethos" onClick={() => scrollToSection('ethos')}>Interllekt Ethos</Link>
             <Link to="/legal" onClick={() => scrollToSection('legal')}>Legal</Link>
-            <Link to="/PrivacyAndPolicy">Privacy Policy</Link>
+            <Link to="/privacyandpolicy">Privacy Policy</Link>
           </div>
         </div>
         <div className="footer-icons">

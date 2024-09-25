@@ -19,6 +19,10 @@ const ContactForm = () => {
     setSelectedOption(event.target.value);
   };
 
+  const service = process.env.REACT_APP_SERVICE_ID;
+  const template = process.env.REACT_APP_TEMPLATE_ID;
+  const appId = process.env.REACT_APP_PUBLIC_KEY;
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     switch (name) {
@@ -48,19 +52,21 @@ const ContactForm = () => {
   const sendEmail = (event) => {
     event.preventDefault();
     const templateParams = {
-      from_name: `${firstName} ${lastName}`,
-      to_name: lastName,
-      title: title,
-      company: company,
-      email: email,
-      interest: selectedOption,
+            firstName,
+            lastName,
+            interest: selectedOption,
+            email,
+            company,
+            title,  
     };
 
     emailjs.send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
+      
+      service,
+      template,
       templateParams,
-      process.env.REACT_APP_PUBLIC_KEY
+      appId
+      
     ).then(
       (response) => {
         toast.success('Thank you for contacting us!', {
