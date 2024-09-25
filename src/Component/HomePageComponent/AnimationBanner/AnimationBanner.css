@@ -139,16 +139,16 @@
         width: 600px; /* Adjust for mobile phones */
     }
     .target-circle {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     .target-circle.md {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
     .target-circle.sm {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 }
 

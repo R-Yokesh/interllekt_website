@@ -98,27 +98,27 @@ const AnimationBanner = () => {
     setCurrentTime(event.target.currentTime);
   };
 
-  function checkScreenSize() {
-    const screenWidth = window.innerWidth;
+  // function checkScreenSize() {
+  //   const screenWidth = window.innerWidth;
   
-    if (screenWidth <= 440) {
-      console.log("This is a mobile or tablet screen.");
-      setIsmobile(true)
-    } else if (screenWidth > 768 && screenWidth <= 1024) {
-      console.log("This is a laptop or small desktop screen.");
-      setIsmobile(false);
-    } else {
-      console.log("This is a large desktop screen.");
-      setIsmobile(false);
-    }
-  }
+  //   if (screenWidth <= 440) {
+  //     console.log("This is a mobile or tablet screen.");
+  //     setIsmobile(true)
+  //   } else if (screenWidth > 768 && screenWidth <= 1024) {
+  //     console.log("This is a laptop or small desktop screen.");
+  //     setIsmobile(false);
+  //   } else {
+  //     console.log("This is a large desktop screen.");
+  //     setIsmobile(false);
+  //   }
+  // }
   
-  useEffect(()=>{
-          // Call the function on load or resize
-  checkScreenSize();
+  // useEffect(()=>{
+  //         // Call the function on load or resize
+  // checkScreenSize();
   
-  window.addEventListener('resize', checkScreenSize);
-  },[])
+  // window.addEventListener('resize', checkScreenSize);
+  // },[])
 
 
 

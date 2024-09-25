@@ -1,4 +1,4 @@
-.ccarousel-container {
+.bcarousel-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,32 +9,32 @@
     padding: 10px;  */
 }
 
-.ccarousel {
+.bcarousel {
   display: flex;
   white-space: nowrap;
   transition: transform 2s ease-in-out; /* Increased the transition duration */
   margin-top: 20px;
 }
 
-.ccarousel.reverse {
+.bcarousel.reverse {
   display: flex;
   white-space: nowrap;
   transition: transform 2s ease-in-out; /* Increased the transition duration */
   margin-bottom: 20px;
 }
 
-.ccarousel-item {
+.bcarousel-item {
   display: inline-flex;
   align-items: center;
   padding: 0 10px;
 }
 
-.ccarousel-item span {
+.bcarousel-item span {
   font-family: 'Ranberg Regular', sans-serif;
   font-size: 32px;
 }
 
-.ccarousel-item img {
+.bcarousel-item img {
   height: 30px;
   width: auto;
   margin-right: 15px;
