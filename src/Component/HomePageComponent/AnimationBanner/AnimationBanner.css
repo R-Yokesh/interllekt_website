@@ -152,3 +152,10 @@
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    /* Safari-specific CSS */
+    video {
+      object-fit: fill; /* Ensure video expands and fills in Safari */
+      -webkit-transform: none; /* Remove unnecessary transforms */
+    }
+  }

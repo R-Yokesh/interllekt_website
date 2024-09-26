@@ -94,6 +94,16 @@ const AnimationBanner = () => {
     };
   }, [playVideo, circleToSquare, allCirclesAligned, scrollDirection]);
 
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    const isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
+  
+    if (isSafari) {
+      // Custom logic for Safari
+      setPlayVideo(true); // or set to false depending on the scroll condition
+    }
+  }, []);
+
   const handlePause = (event) => {
     setCurrentTime(event.target.currentTime);
   };
