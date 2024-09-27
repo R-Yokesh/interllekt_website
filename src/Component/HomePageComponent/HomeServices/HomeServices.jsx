@@ -3,28 +3,33 @@ import './HomeServices.css';
 
 const HomeServices = () => {
   const services = [
-    { name: 'Logistics', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Aerospace', logo: require('../../../Assets/Images/Color Mark 1.png') },
-    { name: 'Advertising', logo: require('../../../Assets/Images/Color Mark 3.png') },
-    { name: 'Media & Entertainment', logo: require('../../../Assets/Images/Color Mark 4.png') },
-    { name: 'Technology', logo: require('../../../Assets/Images/Color Mark 1.png') },
-  ];
-
-  const servicesTwo = [
-    { name: 'Energy', logo: require('../../../Assets/Images/Color Mark 1.png') },
-    { name: 'Consumer Products Industry', logo: require('../../../Assets/Images/Color Mark 4.png') },
-    { name: 'Automotive', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Education', logo: require('../../../Assets/Images/Color Mark 4.png') },
-    { name: 'Private Equity', logo: require('../../../Assets/Images/Color Mark 3.png') },
-  ];
-
-  const servicesThree = [
-    { name: 'Telecommunication', logo: require('../../../Assets/Images/Color Mark 1.png') },
-    { name: 'Publishing', logo: require('../../../Assets/Images/Color Mark 3.png') },
-    { name: 'Industrial Goods', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Fashion & Luxury', logo: require('../../../Assets/Images/Color Mark 1.png') },
-    { name: 'Logistics', logo: require('../../../Assets/Images/Color Mark 4.png') },
-  ];
+      { name: 'Aerospace', logo: require('../../../Assets/Images/Color Mark 1.png') },
+      { name: 'Energy', logo: require('../../../Assets/Images/Color Mark 2.png') },
+      { name: 'Advertising', logo: require('../../../Assets/Images/Color Mark 3.png') },
+      { name: 'Media & Entertainment', logo: require('../../../Assets/Images/Color Mark 4.png')},
+      { name: 'Technology', logo: require('../../../Assets/Images/Color Mark 3.png') },
+    ];
+  
+    const servicesTwo = [
+      { name: 'Technology', logo: require('../../../Assets/Images/Color Mark 2.png') },
+      { name: 'Education', logo: require('../../../Assets/Images/Color Mark 4.png') },
+      { name: 'Consumer Products Industry', logo: require('../../../Assets/Images/Color Mark 1.png') },
+      { name: 'Automotive', logo: require('../../../Assets/Images/Color Mark 2.png') },
+      { name: 'Logistics', logo: require('../../../Assets/Images/Color Mark 3.png') },	
+    ];
+  
+    const servicesThree = [
+      { name: 'Telecommunication', logo: require('../../../Assets/Images/Color Mark 4.png') },
+      { name: 'Publishing', logo: require('../../../Assets/Images/Color Mark 2.png') },
+      { name: 'Industrial Goods', logo: require('../../../Assets/Images/Color Mark 3.png') },
+      { name: 'Fashion & Luxury', logo: require('../../../Assets/Images/Color Mark 4.png') },
+      { name: 'Private Equity', logo: require('../../../Assets/Images/Color Mark 1.png') },
+    ];
+  
+  
+  
+  
+   
 
   const [scrollDirection, setScrollDirection] = useState(null);
   const carouselRef = useRef(null);
