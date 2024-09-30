@@ -39,3 +39,26 @@
   width: auto;
   margin-right: 15px;
 }
+
+@media (min-width: 399px) and (max-width: 589px) {
+  .bcarousel-item span {
+    font-size: 18px; /* Reduce the font size */
+  }
+
+  .bcarousel-item img {
+    height: 18px; /* Adjust image height */
+    width: auto; /* Keep the aspect ratio */
+  }
+}
+
+@media (min-width: 290px) and (max-width: 398px) {
+  .bcarousel-item span {
+    font-size: 14px; /* Reduce the font size further */
+  }
+
+  .bcarousel-item img {
+    height: 14px; /* Adjust image height */
+    width: auto; /* Keep the aspect ratio */
+  }
+}
+
