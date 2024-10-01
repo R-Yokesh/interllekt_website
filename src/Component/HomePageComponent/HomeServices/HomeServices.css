@@ -23,7 +23,7 @@
  {
   display: flex;
   white-space: nowrap;
-  transition: transform 7s ease-in-out; /* Increased the transition duration */
+  transition: transform 10s ease-in-out; /* Increased the transition duration */
   margin-top: 30px;
 }
 
@@ -35,7 +35,7 @@
 .hcarousel .reverse {
   display: flex;
   white-space: nowrap;
-  transition: transform 7s ease-in-out; /* Increased the transition duration */
+  transition: transform 10s ease-in-out; /* Increased the transition duration */
   margin-bottom: 20px;
 }
 

@@ -8,7 +8,7 @@ const CapSubservices = () => {
     { name: 'Digital Environment', logo: require('../../../Assets/Images/Color Mark 2.png') },
     { name: 'Aesthetics', logo: require('../../../Assets/Images/Color Mark 1.png') },
     { name: 'Web app development', logo: require('../../../Assets/Images/Color Mark 2.png') },
-    { name: 'Event Design Production', logo: require('../../../Assets/Images/Color Mark 3.png') },
+    { name: 'Event Design & Production', logo: require('../../../Assets/Images/Color Mark 3.png') },
   ];
 
   const renderCarouselItems = (serviceList) => {

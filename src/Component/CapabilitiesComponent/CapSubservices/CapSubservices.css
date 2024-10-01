@@ -23,7 +23,7 @@
 .ccarousel-item {
   display: inline-flex;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 10px;
   flex-shrink: 0; /* Prevent shrinking of items */
 }
 
@@ -35,7 +35,7 @@
 .ccarousel-item img {
   height: 30px; /* Adjusted image size */
   width: auto;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 /* Media queries for responsive adjustments */
@@ -57,17 +57,17 @@
 
 @media (min-width: 290px) and (max-width: 398px) {
   .ccarousel-item {
-    padding: 0 10px;
+    padding: 0 5px;
     
   }
 
   .ccarousel-item span {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .ccarousel-item img {
     height: 20px;
     width: auto;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
