@@ -1,69 +1,73 @@
 .ccarousel-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+  justify-content: center;
+  overflow: hidden; /* Hide the overflowing items */
   width: 100%;
-    /* border: 10px solid transparent;
-    border-image: linear-gradient(to right, #FFB32C, #31175B, #FF2E2E, #17591B, #31C0FF) 1;
-    padding: 10px;  */
 }
 
-.ccarousel
- {
+.ccarousel {
   display: flex;
-  white-space: nowrap;
-  transition: transform 2s ease-in-out; /* Increased the transition duration */
-  margin-top: 20px;
+  width: calc(200%); /* Ensures the carousel covers twice the width */
+  animation: scroll 10s linear infinite; /* Continuous scrolling animation */
 }
 
-.ccarousel-container.common-class {
-  /* margin-bottom: 4%; */
-  /* margin-top: 4%; */
-}
-
-.ccarousel .reverse {
-  display: flex;
-  white-space: nowrap;
-  transition: transform 2s ease-in-out; /* Increased the transition duration */
-  margin-bottom: 20px;
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the first item */
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll exactly halfway to loop seamlessly */
+  }
 }
 
 .ccarousel-item {
   display: inline-flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 15px;
+  flex-shrink: 0; /* Prevent shrinking of items */
 }
 
 .ccarousel-item span {
   font-family: 'Ranberg Regular', sans-serif;
-  font-size: 32px;
+  font-size: 28px; /* Adjusted font size */
 }
 
 .ccarousel-item img {
-  height: 30px;
+  height: 30px; /* Adjusted image size */
   width: auto;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
+/* Media queries for responsive adjustments */
 @media (min-width: 399px) and (max-width: 589px) {
+  .ccarousel-item {
+    padding: 0 10px;
+    
+  }
   .ccarousel-item span {
-    font-size: 18px; /* Reduce the font size */
+    font-size: 16px;
   }
 
   .ccarousel-item img {
-    height: 18px; /* Adjust image height */
-    width: auto; /* Keep the aspect ratio */
+    height: 25px;
+    width: auto;
+    margin-right: 20px;
   }
 }
 
 @media (min-width: 290px) and (max-width: 398px) {
+  .ccarousel-item {
+    padding: 0 10px;
+    
+  }
+
   .ccarousel-item span {
-    font-size: 14px; /* Reduce the font size further */
+    font-size: 14px;
   }
 
   .ccarousel-item img {
-    height: 14px; /* Adjust image height */
-    width: auto; /* Keep the aspect ratio */
+    height: 20px;
+    width: auto;
+    margin-right: 20px;
   }
 }
