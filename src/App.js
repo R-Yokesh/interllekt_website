@@ -19,7 +19,7 @@ function App() {
 
       {/* <RoutesComponent /> */}
       <ErrorBoundary>
-        <Router basename='/'>
+        <Router basename='/reactjs'>
           <ScrollToTop />
           <Routes>
             <Route path='/*' element={<Layout />} />
